@@ -1,0 +1,52 @@
+name: AI Trend Research
+
+on:
+  schedule:
+    # Run daily at 9:00 AM JST (0:00 UTC)
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+    # Allow manual execution
+
+jobs:
+  research:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+    
+    - name: Run AI trend research
+      env:
+        ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      run: |
+        python ai_trend_researcher.py
+    
+    - name: Commit research results
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add reports/
+        git add keywords/
+        if git diff --staged --quiet; then
+          echo "No changes to commit"
+        else
+          git commit -m "Daily AI trend research results - $(date '+%Y-%m-%d')"
+          git push
+        fi
+    
+    - name: Upload research report
+      uses: actions/upload-artifact@v3
+      with:
+        name: ai-trend-report-${{ github.run_number }}
+        path: reports/
+        retention-days: 30

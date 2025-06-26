@@ -1,0 +1,104 @@
+{
+  "生成AI": {
+    "score": 100,
+    "last_used": "2025-06-26",
+    "source": "manual",
+    "created_date": "2025-01-01"
+  },
+  "LLM": {
+    "score": 95,
+    "last_used": "2025-06-26",
+    "source": "manual",
+    "created_date": "2025-01-01"
+  },
+  "RAG": {
+    "score": 90,
+    "last_used": "2025-06-26",
+    "source": "manual",
+    "created_date": "2025-01-01"
+  },
+  "Claude": {
+    "score": 85,
+    "last_used": "2025-06-26",
+    "source": "manual",
+    "created_date": "2025-01-01"
+  },
+  "ChatGPT": {
+    "score": 80,
+    "last_used": "2025-06-26",
+    "source": "manual",
+    "created_date": "2025-01-01"
+  },
+  "Gemini": {
+    "score": 75,
+    "last_used": "2025-06-26",
+    "source": "manual",
+    "created_date": "2025-01-01"
+  },
+  "プロンプト": {
+    "score": 70,
+    "last_used": "2025-06-26",
+    "source": "manual",
+    "created_date": "2025-01-01"
+  },
+  "ファインチューニング": {
+    "score": 65,
+    "last_used": "2025-06-26",
+    "source": "manual",
+    "created_date": "2025-01-01"
+  },
+  "マルチモーダル": {
+    "score": 60,
+    "last_used": "2025-06-26",
+    "source": "manual",
+    "created_date": "2025-01-01"
+  },
+  "エージェント": {
+    "score": 55,
+    "last_used": "2025-06-26",
+    "source": "manual",
+    "created_date": "2025-01-01"
+  },
+  "Llama": {
+    "score": 50,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-06-26",
+    "discovered_from": "daily_research"
+  },
+  "PaLM": {
+    "score": 50,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-06-26",
+    "discovered_from": "daily_research"
+  },
+  "GPT-4": {
+    "score": 50,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-06-26",
+    "discovered_from": "daily_research"
+  },
+  "DALL-E": {
+    "score": 50,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-06-26",
+    "discovered_from": "daily_research"
+  },
+  "Stable Diffusion": {
+    "score": 50,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-06-26",
+    "discovered_from": "daily_research"
+  },
+  "MidJourney": {
+    "score": 50,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-06-26",
+    "discovered_from": "daily_research"
+  }
+}

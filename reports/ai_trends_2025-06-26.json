@@ -1,0 +1,433 @@
+{
+  "date": "2025-06-26",
+  "summary": {
+    "platforms_searched": 9,
+    "keywords_used": [
+      "生成AI",
+      "Claude",
+      "RAG",
+      "ChatGPT",
+      "LLM"
+    ],
+    "new_keywords_found": 6,
+    "total_results": 0
+  },
+  "detailed_results": [
+    {
+      "platform": "twitter",
+      "keyword": "生成AI",
+      "timestamp": "2025-06-26T19:03:45.295051",
+      "results": [],
+      "new_keywords": [],
+      "sentiment_score": 0.0,
+      "engagement_metrics": {}
+    },
+    {
+      "platform": "youtube",
+      "keyword": "生成AI",
+      "timestamp": "2025-06-26T19:03:45.295051",
+      "results": [],
+      "new_keywords": [],
+      "sentiment_score": 0.0,
+      "engagement_metrics": {}
+    },
+    {
+      "platform": "web",
+      "keyword": "生成AI",
+      "timestamp": "2025-06-26T19:03:45.295051",
+      "results": [],
+      "new_keywords": [],
+      "sentiment_score": 0.0,
+      "engagement_metrics": {}
+    },
+    {
+      "platform": "github",
+      "keyword": "生成AI",
+      "timestamp": "2025-06-26T19:03:45.295051",
+      "results": [],
+      "new_keywords": [],
+      "sentiment_score": 0.0,
+      "engagement_metrics": {}
+    },
+    {
+      "platform": "reddit",
+      "keyword": "生成AI",
+      "timestamp": "2025-06-26T19:03:45.295051",
+      "results": [],
+      "new_keywords": [],
+      "sentiment_score": 0.0,
+      "engagement_metrics": {}
+    },
+    {
+      "platform": "linkedin",
+      "keyword": "生成AI",
+      "timestamp": "2025-06-26T19:03:45.295051",
+      "results": [],
+      "new_keywords": [],
+      "sentiment_score": 0.0,
+      "engagement_metrics": {}
+    },
+    {
+      "platform": "arxiv",
+      "keyword": "生成AI",
+      "timestamp": "2025-06-26T19:03:45.295051",
+      "results": [],
+      "new_keywords": [],
+      "sentiment_score": 0.0,
+      "engagement_metrics": {}
+    },
+    {
+      "platform": "hackernews",
+      "keyword": "生成AI",
+      "timestamp": "2025-06-26T19:03:45.295051",
+      "results": [],
+      "new_keywords": [],
+      "sentiment_score": 0.0,
+      "engagement_metrics": {}
+    },
+    {
+      "platform": "producthunt",
+      "keyword": "生成AI",
+      "timestamp": "2025-06-26T19:03:45.295051",
+      "results": [],
+      "new_keywords": [],
+      "sentiment_score": 0.0,
+      "engagement_metrics": {}
+    },
+    {
+      "platform": "twitter",
+      "keyword": "LLM",
+      "timestamp": "2025-06-26T19:03:45.295051",
+      "results": [],
+      "new_keywords": [],
+      "sentiment_score": 0.0,
+      "engagement_metrics": {}
+    },
+    {
+      "platform": "youtube",
+      "keyword": "LLM",
+      "timestamp": "2025-06-26T19:03:45.295051",
+      "results": [],
+      "new_keywords": [],
+      "sentiment_score": 0.0,
+      "engagement_metrics": {}
+    },
+    {
+      "platform": "web",
+      "keyword": "LLM",
+      "timestamp": "2025-06-26T19:03:45.295051",
+      "results": [],
+      "new_keywords": [],
+      "sentiment_score": 0.0,
+      "engagement_metrics": {}
+    },
+    {
+      "platform": "github",
+      "keyword": "LLM",
+      "timestamp": "2025-06-26T19:03:45.295051",
+      "results": [],
+      "new_keywords": [],
+      "sentiment_score": 0.0,
+      "engagement_metrics": {}
+    },
+    {
+      "platform": "reddit",
+      "keyword": "LLM",
+      "timestamp": "2025-06-26T19:03:45.295051",
+      "results": [],
+      "new_keywords": [],
+      "sentiment_score": 0.0,
+      "engagement_metrics": {}
+    },
+    {
+      "platform": "linkedin",
+      "keyword": "LLM",
+      "timestamp": "2025-06-26T19:03:45.295051",
+      "results": [],
+      "new_keywords": [],
+      "sentiment_score": 0.0,
+      "engagement_metrics": {}
+    },
+    {
+      "platform": "arxiv",
+      "keyword": "LLM",
+      "timestamp": "2025-06-26T19:03:45.295051",
+      "results": [],
+      "new_keywords": [],
+      "sentiment_score": 0.0,
+      "engagement_metrics": {}
+    },
+    {
+      "platform": "hackernews",
+      "keyword": "LLM",
+      "timestamp": "2025-06-26T19:03:45.295051",
+      "results": [],
+      "new_keywords": [],
+      "sentiment_score": 0.0,
+      "engagement_metrics": {}
+    },
+    {
+      "platform": "producthunt",
+      "keyword": "LLM",
+      "timestamp": "2025-06-26T19:03:45.295051",
+      "results": [],
+      "new_keywords": [],
+      "sentiment_score": 0.0,
+      "engagement_metrics": {}
+    },
+    {
+      "platform": "twitter",
+      "keyword": "RAG",
+      "timestamp": "2025-06-26T19:03:45.295051",
+      "results": [],
+      "new_keywords": [],
+      "sentiment_score": 0.0,
+      "engagement_metrics": {}
+    },
+    {
+      "platform": "youtube",
+      "keyword": "RAG",
+      "timestamp": "2025-06-26T19:03:45.295051",
+      "results": [],
+      "new_keywords": [],
+      "sentiment_score": 0.0,
+      "engagement_metrics": {}
+    },
+    {
+      "platform": "web",
+      "keyword": "RAG",
+      "timestamp": "2025-06-26T19:03:45.295051",
+      "results": [],
+      "new_keywords": [],
+      "sentiment_score": 0.0,
+      "engagement_metrics": {}
+    },
+    {
+      "platform": "github",
+      "keyword": "RAG",
+      "timestamp": "2025-06-26T19:03:45.295051",
+      "results": [],
+      "new_keywords": [],
+      "sentiment_score": 0.0,
+      "engagement_metrics": {}
+    },
+    {
+      "platform": "reddit",
+      "keyword": "RAG",
+      "timestamp": "2025-06-26T19:03:45.295051",
+      "results": [],
+      "new_keywords": [],
+      "sentiment_score": 0.0,
+      "engagement_metrics": {}
+    },
+    {
+      "platform": "linkedin",
+      "keyword": "RAG",
+      "timestamp": "2025-06-26T19:03:45.295051",
+      "results": [],
+      "new_keywords": [],
+      "sentiment_score": 0.0,
+      "engagement_metrics": {}
+    },
+    {
+      "platform": "arxiv",
+      "keyword": "RAG",
+      "timestamp": "2025-06-26T19:03:45.295051",
+      "results": [],
+      "new_keywords": [],
+      "sentiment_score": 0.0,
+      "engagement_metrics": {}
+    },
+    {
+      "platform": "hackernews",
+      "keyword": "RAG",
+      "timestamp": "2025-06-26T19:03:45.295051",
+      "results": [],
+      "new_keywords": [],
+      "sentiment_score": 0.0,
+      "engagement_metrics": {}
+    },
+    {
+      "platform": "producthunt",
+      "keyword": "RAG",
+      "timestamp": "2025-06-26T19:03:45.295051",
+      "results": [],
+      "new_keywords": [],
+      "sentiment_score": 0.0,
+      "engagement_metrics": {}
+    },
+    {
+      "platform": "twitter",
+      "keyword": "Claude",
+      "timestamp": "2025-06-26T19:03:45.295051",
+      "results": [],
+      "new_keywords": [],
+      "sentiment_score": 0.0,
+      "engagement_metrics": {}
+    },
+    {
+      "platform": "youtube",
+      "keyword": "Claude",
+      "timestamp": "2025-06-26T19:03:45.295051",
+      "results": [],
+      "new_keywords": [],
+      "sentiment_score": 0.0,
+      "engagement_metrics": {}
+    },
+    {
+      "platform": "web",
+      "keyword": "Claude",
+      "timestamp": "2025-06-26T19:03:45.295051",
+      "results": [],
+      "new_keywords": [],
+      "sentiment_score": 0.0,
+      "engagement_metrics": {}
+    },
+    {
+      "platform": "github",
+      "keyword": "Claude",
+      "timestamp": "2025-06-26T19:03:45.295051",
+      "results": [],
+      "new_keywords": [],
+      "sentiment_score": 0.0,
+      "engagement_metrics": {}
+    },
+    {
+      "platform": "reddit",
+      "keyword": "Claude",
+      "timestamp": "2025-06-26T19:03:45.295051",
+      "results": [],
+      "new_keywords": [],
+      "sentiment_score": 0.0,
+      "engagement_metrics": {}
+    },
+    {
+      "platform": "linkedin",
+      "keyword": "Claude",
+      "timestamp": "2025-06-26T19:03:45.295051",
+      "results": [],
+      "new_keywords": [],
+      "sentiment_score": 0.0,
+      "engagement_metrics": {}
+    },
+    {
+      "platform": "arxiv",
+      "keyword": "Claude",
+      "timestamp": "2025-06-26T19:03:45.295051",
+      "results": [],
+      "new_keywords": [],
+      "sentiment_score": 0.0,
+      "engagement_metrics": {}
+    },
+    {
+      "platform": "hackernews",
+      "keyword": "Claude",
+      "timestamp": "2025-06-26T19:03:45.295051",
+      "results": [],
+      "new_keywords": [],
+      "sentiment_score": 0.0,
+      "engagement_metrics": {}
+    },
+    {
+      "platform": "producthunt",
+      "keyword": "Claude",
+      "timestamp": "2025-06-26T19:03:45.295051",
+      "results": [],
+      "new_keywords": [],
+      "sentiment_score": 0.0,
+      "engagement_metrics": {}
+    },
+    {
+      "platform": "twitter",
+      "keyword": "ChatGPT",
+      "timestamp": "2025-06-26T19:03:45.295051",
+      "results": [],
+      "new_keywords": [],
+      "sentiment_score": 0.0,
+      "engagement_metrics": {}
+    },
+    {
+      "platform": "youtube",
+      "keyword": "ChatGPT",
+      "timestamp": "2025-06-26T19:03:45.295051",
+      "results": [],
+      "new_keywords": [],
+      "sentiment_score": 0.0,
+      "engagement_metrics": {}
+    },
+    {
+      "platform": "web",
+      "keyword": "ChatGPT",
+      "timestamp": "2025-06-26T19:03:45.295051",
+      "results": [],
+      "new_keywords": [],
+      "sentiment_score": 0.0,
+      "engagement_metrics": {}
+    },
+    {
+      "platform": "github",
+      "keyword": "ChatGPT",
+      "timestamp": "2025-06-26T19:03:45.295051",
+      "results": [],
+      "new_keywords": [],
+      "sentiment_score": 0.0,
+      "engagement_metrics": {}
+    },
+    {
+      "platform": "reddit",
+      "keyword": "ChatGPT",
+      "timestamp": "2025-06-26T19:03:45.295051",
+      "results": [],
+      "new_keywords": [],
+      "sentiment_score": 0.0,
+      "engagement_metrics": {}
+    },
+    {
+      "platform": "linkedin",
+      "keyword": "ChatGPT",
+      "timestamp": "2025-06-26T19:03:45.295051",
+      "results": [],
+      "new_keywords": [],
+      "sentiment_score": 0.0,
+      "engagement_metrics": {}
+    },
+    {
+      "platform": "arxiv",
+      "keyword": "ChatGPT",
+      "timestamp": "2025-06-26T19:03:45.301008",
+      "results": [],
+      "new_keywords": [],
+      "sentiment_score": 0.0,
+      "engagement_metrics": {}
+    },
+    {
+      "platform": "hackernews",
+      "keyword": "ChatGPT",
+      "timestamp": "2025-06-26T19:03:45.301008",
+      "results": [],
+      "new_keywords": [],
+      "sentiment_score": 0.0,
+      "engagement_metrics": {}
+    },
+    {
+      "platform": "producthunt",
+      "keyword": "ChatGPT",
+      "timestamp": "2025-06-26T19:03:45.301008",
+      "results": [],
+      "new_keywords": [],
+      "sentiment_score": 0.0,
+      "engagement_metrics": {}
+    }
+  ],
+  "new_keywords": [
+    "Llama",
+    "PaLM",
+    "GPT-4",
+    "DALL-E",
+    "Stable Diffusion",
+    "MidJourney"
+  ],
+  "recommendations": [
+    "Consider adding 6 new keywords to monitoring"
+  ]
+}
