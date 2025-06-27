@@ -10,6 +10,7 @@ from mcp.client.stdio import stdio_client
 from mcp.client.stdio import StdioServerParameters
 from contextlib import AsyncExitStack
 from dotenv import load_dotenv
+import requests
 
 # Load environment variables from .env file
 load_dotenv()
@@ -19,37 +20,48 @@ class RemoteMCPClient:
     
     def __init__(self):
         self.session: Optional[ClientSession] = None
-        self.exit_stack = AsyncExitStack()
-        self.transport = None
+        self.exit_stack: Optional[AsyncExitStack] = None
+        self._connected = False
+        self._cleanup_attempted = False
         
-    async def connect_to_server_by_name(self, server_name: str):
+    async def connect_to_server_by_name(self, server_name: str, args: List[str] = None):
         """Connect to a local MCP server by name using stdio transport"""
         try:
+            # Create exit stack to manage contexts properly
+            self.exit_stack = AsyncExitStack()
+            
             # Create stdio server parameters for the named server
             server_params = StdioServerParameters(
                 command=server_name,
-                args=[],
+                args=args or [],
                 env=None
             )
             
-            # Connect using stdio transport
-            self.transport = await self.exit_stack.enter_async_context(stdio_client(server_params))
-            self.session = await self.exit_stack.enter_async_context(ClientSession(*self.transport))
+            # Connect using stdio transport with proper context management
+            stdio_context = stdio_client(server_params)
+            read_stream, write_stream = await self.exit_stack.enter_async_context(stdio_context)
+            
+            # Create session with proper context management
+            session_context = ClientSession(read_stream, write_stream)
+            self.session = await self.exit_stack.enter_async_context(session_context)
             await self.session.initialize()
             
             # List available tools
             response = await self.session.list_tools()
             tools = response.tools
             print(f"✓ Connected to server '{server_name}' with tools: {[tool.name for tool in tools]}")
+            self._connected = True
             return True
             
         except Exception as e:
             print(f"✗ Failed to connect to server '{server_name}': {e}")
+            self._connected = False
+            await self._cleanup()
             return False
     
     async def call_tool(self, tool_name: str, arguments: Dict[str, Any]):
         """Call a tool on the MCP server"""
-        if not self.session:
+        if not self.session or not self._connected:
             raise Exception("Not connected to any server")
         
         try:
@@ -65,20 +77,37 @@ class RemoteMCPClient:
             print(f"✗ Error calling tool {tool_name}: {e}")
             return None
     
-    async def close(self):
-        """Close the connection"""
+    async def _cleanup(self):
+        """Internal cleanup method with timeout"""
+        if self._cleanup_attempted:
+            return
+        self._cleanup_attempted = True
+        
         try:
             if self.exit_stack:
+                # Close gracefully without timeout to avoid task context issues
                 await self.exit_stack.aclose()
         except Exception as e:
-            print(f"Warning: Error closing MCP client: {e}")
+            # Suppress all exceptions during cleanup to prevent shutdown errors
+            pass
+    
+    async def close(self):
+        """Close the connection"""
+        self._connected = False
+        await self._cleanup()
+        self.session = None
+        self.exit_stack = None
 
 class AITrendResearcher:
     def __init__(self):
         self.keyword_manager = KeywordManager()
         self.reports_dir = "reports"
         self.claude_client = Anthropic(api_key=os.getenv("ANTHROPIC_API_KEY"))
-        print(os.getenv("ANTHROPIC_API_KEY"))
+        # Verify API key is loaded (don't print the actual key)
+        if os.getenv("ANTHROPIC_API_KEY"):
+            print("✓ Anthropic API key loaded")
+        else:
+            print("✗ Anthropic API key not found")
         self.mcp_clients = {}  # Dictionary to store multiple MCP clients
         # self.platforms = [
         #     "twitter", "youtube", "web", "github", "reddit", 
@@ -115,6 +144,12 @@ class AITrendResearcher:
                 "tools": ["one_search", "one_extract", "one_scrape"],
                 "enabled": True
             },
+            "notion": {
+                "server_name": "npx",
+                "args": ["@ramidecodes/mcp-server-notion@latest", "-y", f"--api-key={os.getenv('NOTION_API_KEY')}"],
+                "tools": ["create-page", "get-page", "update-page", "query-database", "search"],
+                "enabled": True
+            },
             "arxiv": {
                 "server_name": "arxiv-mcp-server",
                 "tools": ["search_papers", "get_recent_papers"],
@@ -147,7 +182,8 @@ class AITrendResearcher:
                     mcp_client = RemoteMCPClient()
                     
                     # Connect to server by name
-                    success = await mcp_client.connect_to_server_by_name(config["server_name"])
+                    args = config.get("args", [])
+                    success = await mcp_client.connect_to_server_by_name(config["server_name"], args)
                     
                     if success:
                         self.mcp_clients[platform] = mcp_client
@@ -508,7 +544,161 @@ Instructions:
         with open(report_file, 'w', encoding='utf-8') as f:
             json.dump(report, f, ensure_ascii=False, indent=2)
         
+        # Also create Notion report
+        await self.create_notion_report(report)
+        
         return report_file
+    
+    async def create_notion_report(self, report: Dict):
+        """Create organized report in Notion using MCP server"""
+        if not self.mcp_clients.get("notion"):
+            print("Notion MCP server not available, skipping Notion report")
+            return
+        
+        try:
+            today = report["date"]
+            page_title = f"AI Trend Research Report - {today}"
+            
+            # Prepare page content
+            content = self._format_notion_content(report)
+            
+            # Create page using MCP server
+            parent_id = os.getenv("NOTION_PARENT_PAGE_ID", "")
+            if not parent_id:
+                print("NOTION_PARENT_PAGE_ID not set, skipping Notion report")
+                return
+                
+            response = await self.mcp_clients["notion"].call_tool(
+                "create-page",
+                {
+                    "parent_type": "page_id",
+                    "parent_id": parent_id,
+                    "properties": json.dumps({
+                        "title": {
+                            "title": [{"text": {"content": page_title}}]
+                        }
+                    }),
+                    "children": json.dumps(self._create_notion_blocks(report))
+                }
+            )
+            
+            print(f"✓ Notion report created: {page_title}")
+            return response
+            
+        except Exception as e:
+            print(f"✗ Error creating Notion report: {e}")
+
+    def _format_notion_content(self, report: Dict) -> str:
+        """Format report data for Notion"""
+        today = report["date"]
+        summary = report["summary"]
+        new_keywords = report["new_keywords"]
+        recommendations = report["recommendations"]
+        
+        content = f"""# AI Trend Research Report - {today}
+
+## 📊 Summary
+- **Platforms Searched**: {summary['platforms_searched']}
+- **Keywords Used**: {', '.join(summary['keywords_used'])}
+- **New Keywords Found**: {summary['new_keywords_found']}
+- **Total Results**: {summary['total_results']}
+
+## 🔍 New Keywords Discovered
+"""
+        
+        if new_keywords:
+            for keyword in new_keywords:
+                content += f"- {keyword}\n"
+        else:
+            content += "- No new keywords found\n"
+        
+        content += "\n## 📋 Recommendations\n"
+        for rec in recommendations:
+            content += f"- {rec}\n"
+        
+        content += "\n## 🔬 Detailed Research Results\n"
+        
+        # Group results by platform
+        platform_results = {}
+        for data in report["detailed_results"]:
+            platform = data["platform"]
+            if platform not in platform_results:
+                platform_results[platform] = []
+            platform_results[platform].extend(data["results"])
+        
+        for platform, results in platform_results.items():
+            content += f"\n### {platform.upper()}\n"
+            if results:
+                for i, result in enumerate(results[:5], 1):  # Limit to top 5 results
+                    title = result.get('title', result.get('name', 'No title'))
+                    url = result.get('url', result.get('link', ''))
+                    snippet = result.get('snippet', result.get('description', ''))[:200]
+                    
+                    content += f"\n#### {i}. {title}\n"
+                    if url:
+                        content += f"🔗 {url}\n"
+                    if snippet:
+                        content += f"📝 {snippet}...\n"
+            else:
+                content += "- No results found\n"
+        
+        return content
+    
+    def _create_notion_blocks(self, report: Dict) -> List[Dict]:
+        """Create Notion blocks from report data"""
+        blocks = []
+        
+        # Add summary section
+        blocks.append({
+            "object": "block",
+            "type": "heading_2",
+            "heading_2": {
+                "rich_text": [{"type": "text", "text": {"content": "📊 Summary"}}]
+            }
+        })
+        
+        summary = report["summary"]
+        summary_text = f"• Platforms Searched: {summary['platforms_searched']}\n"
+        summary_text += f"• Keywords Used: {', '.join(summary['keywords_used'])}\n"
+        summary_text += f"• New Keywords Found: {summary['new_keywords_found']}\n"
+        summary_text += f"• Total Results: {summary['total_results']}"
+        
+        blocks.append({
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+                "rich_text": [{"type": "text", "text": {"content": summary_text}}]
+            }
+        })
+        
+        # Add new keywords section
+        blocks.append({
+            "object": "block",
+            "type": "heading_2",
+            "heading_2": {
+                "rich_text": [{"type": "text", "text": {"content": "🔍 New Keywords Discovered"}}]
+            }
+        })
+        
+        if report["new_keywords"]:
+            for keyword in report["new_keywords"]:
+                blocks.append({
+                    "object": "block",
+                    "type": "bulleted_list_item",
+                    "bulleted_list_item": {
+                        "rich_text": [{"type": "text", "text": {"content": keyword}}]
+                    }
+                })
+        else:
+            blocks.append({
+                "object": "block",
+                "type": "paragraph",
+                "paragraph": {
+                    "rich_text": [{"type": "text", "text": {"content": "No new keywords found"}}]
+                }
+            })
+        
+        return blocks
     
     def _generate_recommendations(self, research_data: List[Dict], new_keywords: List[str]) -> List[str]:
         """Generate recommendations based on research"""
@@ -581,14 +771,9 @@ Instructions:
             return report_file
             
         finally:
-            # Clean up MCP connections
-            print("Cleaning up MCP connections...")
-            for client in self.mcp_clients.values():
-                if client:
-                    try:
-                        await client.close()
-                    except Exception as e:
-                        print(f"Warning: Error closing MCP client: {e}")
+            # Properly close MCP connections
+            await self._close_all_mcp_clients()
+
 
     async def research_platform(self, platform: str, keyword: str) -> Dict[str, Any]:
         """Research a specific platform for a keyword"""
@@ -609,22 +794,60 @@ Instructions:
             "sentiment_score": 0.0,
             "engagement_metrics": {}
         }
+    
+    async def _close_all_mcp_clients(self):
+        """Close all MCP clients properly"""
+        for platform, client in self.mcp_clients.items():
+            if client:
+                try:
+                    await client.close()
+                except Exception:
+                    # Suppress all exceptions during shutdown
+                    pass
+        self.mcp_clients.clear()
 
 async def main():
     researcher = AITrendResearcher()
+    
+    # Set up signal handlers for graceful shutdown
+    def signal_handler():
+        print("\n🛑 Received shutdown signal - forcing cleanup...")
+        # Force exit after brief cleanup attempt
+        asyncio.create_task(force_cleanup_and_exit(researcher))
+    
+    if hasattr(asyncio, 'create_task'):
+        import signal
+        for sig in [signal.SIGTERM, signal.SIGINT]:
+            try:
+                asyncio.get_event_loop().add_signal_handler(sig, signal_handler)
+            except NotImplementedError:
+                # Windows doesn't support add_signal_handler
+                pass
+    
     try:
         await researcher.run_daily_research()
+    except KeyboardInterrupt:
+        print("\n🛑 Interrupted by user")
     except Exception as e:
         print(f"Error in main execution: {e}")
         raise
     finally:
-        # Ensure all MCP clients are properly closed
-        for client in researcher.mcp_clients.values():
-            if client:
-                try:
-                    await client.close()
-                except Exception as e:
-                    print(f"Warning: Error closing MCP client: {e}")
+        # Properly close MCP clients
+        try:
+            await researcher._close_all_mcp_clients()
+        except Exception:
+            # Suppress exceptions during final cleanup
+            pass
+
+async def force_cleanup_and_exit(researcher):
+    """Force exit after timeout"""
+    print("⚠ Force exiting...")
+    try:
+        await researcher._close_all_mcp_clients()
+    except Exception:
+        pass
+    import os
+    os._exit(1)
 
 if __name__ == "__main__":
     asyncio.run(main())

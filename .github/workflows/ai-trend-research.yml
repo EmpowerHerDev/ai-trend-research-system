@@ -3,7 +3,8 @@ name: AI Trend Research
 on:
   schedule:
     # Run daily at 9:00 AM JST (0:00 UTC)
-    - cron: '0 0 * * *'
+    # - cron: '0 0 * * *'
+    - cron: '*/1 * * * *'      
   workflow_dispatch:
     # Allow manual execution
 
@@ -25,19 +26,23 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
     
-    - name: Install one-search-mcp
-      run: npm install -g one-search-mcp
+    - name: Install MCP servers
+      run: |
+        npm install -g one-search-mcp
+        npm install -g @ramidecodes/mcp-server-notion@latest
 
     - name: Run AI trend research
       env:
         ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
+        NOTION_PARENT_PAGE_ID: ${{ secrets.NOTION_PARENT_PAGE_ID }}
       run: |
         python ai_trend_researcher.py
     
     - name: Commit research results
       run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
+        git config user.email "miyuu112288@gmail.com"
+        git config user.name "EmpowerHerDev"
         git add reports/
         git add keywords/
         if git diff --staged --quiet; then

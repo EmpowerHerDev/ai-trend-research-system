@@ -16,5 +16,68 @@
     "last_used": "2025-06-26",
     "source": "manual",
     "created_date": "2025-01-01"
+  },
+  "generative AI": {
+    "score": 55,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-06-27",
+    "discovered_from": "daily_research"
+  },
+  "AI tools": {
+    "score": 50,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-06-27",
+    "discovered_from": "daily_research"
+  },
+  "AI services": {
+    "score": 50,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-06-27",
+    "discovered_from": "daily_research"
+  },
+  "AI comparison": {
+    "score": 50,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-06-27",
+    "discovered_from": "daily_research"
+  },
+  "AI applications": {
+    "score": 50,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-06-27",
+    "discovered_from": "daily_research"
+  },
+  "AI trends": {
+    "score": 50,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-06-27",
+    "discovered_from": "daily_research"
+  },
+  "AI use cases": {
+    "score": 50,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-06-27",
+    "discovered_from": "daily_research"
+  },
+  "AI technology": {
+    "score": 50,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-06-27",
+    "discovered_from": "daily_research"
+  },
+  "AI platforms": {
+    "score": 50,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-06-27",
+    "discovered_from": "daily_research"
   }
 }

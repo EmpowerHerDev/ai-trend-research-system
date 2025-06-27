@@ -1,0 +1,76 @@
+{
+  "date": "2025-06-27",
+  "summary": {
+    "platforms_searched": 1,
+    "keywords_used": [
+      "生成AI"
+    ],
+    "new_keywords_found": 10,
+    "total_results": 6
+  },
+  "detailed_results": [
+    {
+      "platform": "web",
+      "keyword": "生成AI",
+      "timestamp": "2025-06-27T19:26:38.311180",
+      "results": [
+        {
+          "title": "生成AI比較30選！【図解】用途別おすすめ紹介！無料プランも ...",
+          "snippet": "ASPIC 1 日前 · 生成AIツールを検討しているものの、「たくさん種類があってどれを使ったらいいかわからない」「用途に最適なものを選びたい」という方へ。生成AIにできることや利用に関す …",
+          "url": "https://www.aspicjapan.org/asu/article/68407",
+          "source": "www.aspicjapan.org"
+        },
+        {
+          "title": "生成aiの種類一覧と最新トレンド・活用事例比較表を徹底解説 ...",
+          "snippet": "株式会社アシスト 3 日前 · 生成AIでは種類一覧を徹底解説！最新トレンドと活用事例まとめ 生成AIと従来AIの違 …",
+          "url": "https://assist-all.co.jp/column/ai/20250624-5655/",
+          "source": "assist-all.co.jp"
+        },
+        {
+          "title": "【2025年6月最新】生成AIサービス・ツール比較おすすめ一覧 ...",
+          "snippet": "miralab.co.jp 2025年6月3日 · 「生成AIサービスが増えすぎて、どれを選べばいいか分からない」「用途別 …",
+          "url": "https://miralab.co.jp/media/generative_ai_tools_comparison/",
+          "source": "miralab.co.jp"
+        },
+        {
+          "title": "生成AIで何ができる？生成AIができること7選と活用事例を解説",
+          "snippet": "fioriera.co.jp 10 時間前 · 何ができる？生成AIができること7選 従来のAIとの違いがわかったところで、いよ …",
+          "url": "https://kuraberuai.fioriera.co.jp/useful-content/generative-ai-what-it-can-do/",
+          "source": "kuraberuai.fioriera.co.jp"
+        },
+        {
+          "title": "生成AIとは？ いまさら聞けない？！基本的な仕組みとよく使わ ...",
+          "snippet": "neo-m.jp 2025年6月18日 · 生成AI（ジェネレーティブAI）とは、学習データを活用して新たなコンテン …",
+          "url": "https://corp.neo-m.jp/column/ai_001_generative-ai-toha",
+          "source": "corp.neo-m.jp"
+        },
+        {
+          "title": "生成AIに関する実態調査 2025春 5カ国比較 ―進まな …",
+          "snippet": "PwC 4 日前 · 生成AI（Generative AI）とは、大量のデータを学習することで、画像や文章、音楽など多様な領域で独自に新しいコンテンツを生み出すことができるAI（人工知能）のことです。生成AIに関する各種トピックを分かりやすく説明いたします。 ...",
+          "url": "https://www.pwc.com/jp/ja/knowledge/thoughtleadership/generative-ai-survey2025.html",
+          "source": "www.pwc.com"
+        }
+      ],
+      "new_keywords": [],
+      "sentiment_score": 0.0,
+      "engagement_metrics": {
+        "total_web_items": 6
+      }
+    }
+  ],
+  "new_keywords": [
+    "生成AI",
+    "generative AI",
+    "AI tools",
+    "AI services",
+    "AI comparison",
+    "AI applications",
+    "AI trends",
+    "AI use cases",
+    "AI technology",
+    "AI platforms"
+  ],
+  "recommendations": [
+    "Consider adding 10 new keywords to monitoring"
+  ]
+}
