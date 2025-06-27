@@ -25,9 +25,12 @@ ai-trend-research-system/
 
 ## Setup
 1. Install dependencies: `pip install -r requirements.txt`
-2. Set up GitHub secrets:
+2. Install MCP servers:
+   - **Web Search**: `npm install -g one-search-mcp` (enables web search functionality)
+   - Other MCP servers can be configured as needed
+3. Set up GitHub secrets:
    - `ANTHROPIC_API_KEY`: Your Claude API key
-3. Configure MCP connections for each platform
+4. Configure MCP connections for each platform
 
 ## Usage
 - **Manual execution**: `python ai_trend_researcher.py`
