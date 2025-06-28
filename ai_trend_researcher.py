@@ -24,7 +24,7 @@ class RemoteMCPClient:
         self._connected = False
         self._cleanup_attempted = False
         
-    async def connect_to_server_by_name(self, server_name: str, args: List[str] = None):
+    async def connect_to_server_by_name(self, server_name: str, args: List[str] = None, env: Dict[str, str] = None):
         """Connect to a local MCP server by name using stdio transport"""
         try:
             # Create exit stack to manage contexts properly
@@ -34,7 +34,7 @@ class RemoteMCPClient:
             server_params = StdioServerParameters(
                 command=server_name,
                 args=args or [],
-                env=None
+                env=env
             )
             
             # Connect using stdio transport with proper context management
@@ -115,14 +115,20 @@ class AITrendResearcher:
         # ]
         self.platforms = [
             "web",
+            "youtube",
         ]
 
         # MCP server configurations using server names
         self.mcp_servers = {
             "youtube": {
-                "server_name": "youtube-mcp-server",
-                "tools": ["search_videos", "get_video_details"],
-                "enabled": False
+                "server_name": "npx",
+                "args": ["-y", "youtube-data-mcp-server"],
+                "env": {
+                    "YOUTUBE_API_KEY": os.getenv("YOUTUBE_API_KEY"),
+                    "YOUTUBE_TRANSCRIPT_LANG": "ja"  # Changed to Japanese for your use case
+                },
+                "tools": ["searchVideos", "getVideoDetails", "getTranscripts"],
+                "enabled": True
             },
             "twitter": {
                 "server_name": "twitter-mcp-server",
@@ -183,7 +189,8 @@ class AITrendResearcher:
                     
                     # Connect to server by name
                     args = config.get("args", [])
-                    success = await mcp_client.connect_to_server_by_name(config["server_name"], args)
+                    env = config.get("env", {})
+                    success = await mcp_client.connect_to_server_by_name(config["server_name"], args, env)
                     
                     if success:
                         self.mcp_clients[platform] = mcp_client
@@ -211,6 +218,10 @@ class AITrendResearcher:
             
             if platform == "youtube":
                 params["order"] = "relevance"
+                params["type"] = "video"  # Only search for videos
+                params["max_results"] = 15  # Get more results for better analysis
+                # Use just the keyword without additional restrictions for better results
+                params["query"] = keyword
             elif platform == "github":
                 params["sort"] = "stars"
             elif platform == "reddit":
@@ -219,6 +230,11 @@ class AITrendResearcher:
                 params["max_results"] = 5
             elif platform == "hackernews":
                 params["time_range"] = "week"
+            elif platform == "web":
+                # Add Japanese language preference for web search
+                params["query"] = f"{keyword} 日本語"
+                params["language"] = "ja"
+                params["region"] = "jp"
             
             response = await client.call_tool(tool_name, params)
             print(f"MCP response: {response}")
@@ -242,32 +258,79 @@ class AITrendResearcher:
         results = []
         
         # Process MCP response format
-        if hasattr(response, 'content') and response.content:
-            data = response.content
-        elif isinstance(response, dict):
-            data = response
-        elif isinstance(response, list) and len(response) > 0:
-            # Handle list of TextContent objects (like from one-search-mcp)
+        if isinstance(response, list) and len(response) > 0:
+            # Handle list of TextContent objects (like from youtube-data-mcp-server or one-search-mcp)
             first_item = response[0]
             if hasattr(first_item, 'text'):
-                data = first_item.text
+                # For web platform, parse the text directly as search results
+                if platform == "web":
+                    results = self._parse_web_search_text(first_item.text)
+                else:
+                    # For other platforms, try to parse as JSON
+                    try:
+                        import json
+                        data = json.loads(first_item.text)
+                    except (json.JSONDecodeError, AttributeError):
+                        data = {}
             else:
                 data = response
+        elif hasattr(response, 'content') and response.content:
+            data = response.content
+        elif isinstance(response, dict):
+            # Handle structured data - check if it contains TextContent objects
+            if 'results' in response or 'items' in response:
+                # Standard structured format
+                web_results = response.get('results', response.get('items', []))
+                for result in web_results:
+                    results.append({
+                        'title': result.get('title', ''),
+                        'snippet': result.get('snippet', result.get('description', '')),
+                        'url': result.get('url', result.get('link', '')),
+                        'source': result.get('source', '')
+                    })
+            else:
+                # Dictionary with TextContent objects (one-search-mcp format)
+                # Look for any list in the dictionary
+                for key, value in response.items():
+                    if isinstance(value, list) and len(value) > 0:
+                        first_item = value[0]
+                        if hasattr(first_item, 'text'):
+                            if platform == "web":
+                                results = self._parse_web_search_text(first_item.text)
+                            break
         else:
             data = {}
         
         # Platform-specific processing
         if platform == "youtube":
-            videos = data.get('videos', data.get('items', []))
+            # Handle different YouTube response formats
+            if isinstance(data, list):
+                # Direct list of video items (YouTube API format)
+                videos = data
+            else:
+                # Dictionary format with 'videos' or 'items' keys
+                videos = data.get('videos', data.get('items', []))
+            
             for video in videos:
+                # Extract data from YouTube API response structure
+                snippet = video.get('snippet', {})
+                video_id = video.get('id', {}).get('videoId', '')
+                
+                # Classify content type based on title and description
+                content_type = self._classify_youtube_content(
+                    snippet.get('title', ''),
+                    snippet.get('description', '')
+                )
+                
                 results.append({
-                    'title': video.get('title', ''),
-                    'description': video.get('description', ''),
-                    'published_at': video.get('published_at', video.get('publishedAt', '')),
-                    'channel': video.get('channel_title', video.get('channelTitle', '')),
-                    'video_id': video.get('video_id', video.get('videoId', '')),
-                    'view_count': video.get('view_count', 0),
-                    'duration': video.get('duration', '')
+                    'title': snippet.get('title', ''),
+                    'description': snippet.get('description', ''),
+                    'published_at': snippet.get('publishedAt', ''),
+                    'channel': snippet.get('channelTitle', ''),
+                    'video_id': video_id,
+                    'url': f"https://www.youtube.com/watch?v={video_id}",
+                    'content_type': content_type,
+                    'language': self._detect_language(snippet.get('title', '') + ' ' + snippet.get('description', ''))
                 })
         
         elif platform == "twitter":
@@ -310,21 +373,43 @@ class AITrendResearcher:
                 })
         
         elif platform == "web":
-            print(f"Web MCP response type: {type(data)}")
+            print(f"Web MCP response type: {type(response)}")
+            print(f"Web MCP response data: {response}")
             
-            # Handle text-based response from one-search-mcp
-            if isinstance(data, str):
-                results = self._parse_web_search_text(data)
-            else:
-                # Handle structured data
-                web_results = data.get('results', data.get('items', []))
-                for result in web_results:
-                    results.append({
-                        'title': result.get('title', ''),
-                        'snippet': result.get('snippet', result.get('description', '')),
-                        'url': result.get('url', result.get('link', '')),
-                        'source': result.get('source', '')
-                    })
+            # If results are already populated from TextContent parsing above, use them
+            if not results:
+                # Handle text-based response from one-search-mcp
+                if isinstance(data, str):
+                    results = self._parse_web_search_text(data)
+                elif isinstance(data, dict):
+                    # Handle structured data - check if it contains TextContent objects
+                    if 'results' in data or 'items' in data:
+                        # Standard structured format
+                        web_results = data.get('results', data.get('items', []))
+                        for result in web_results:
+                            results.append({
+                                'title': result.get('title', ''),
+                                'snippet': result.get('snippet', result.get('description', '')),
+                                'url': result.get('url', result.get('link', '')),
+                                'source': result.get('source', '')
+                            })
+                    else:
+                        # Dictionary with TextContent objects (one-search-mcp format)
+                        # Look for any list in the dictionary
+                        for key, value in data.items():
+                            if isinstance(value, list) and len(value) > 0:
+                                first_item = value[0]
+                                if hasattr(first_item, 'text'):
+                                    results = self._parse_web_search_text(first_item.text)
+                                    break
+                else:
+                    # Handle list of TextContent objects
+                    if isinstance(data, list) and len(data) > 0:
+                        first_item = data[0]
+                        if hasattr(first_item, 'text'):
+                            results = self._parse_web_search_text(first_item.text)
+            
+            print(f"Parsed {len(results)} web results")
         
         elif platform == "arxiv":
             papers = data.get('papers', data.get('entries', []))
@@ -380,17 +465,15 @@ class AITrendResearcher:
             "results": results,
             "new_keywords": [],
             "sentiment_score": 0.0,
-            "engagement_metrics": {
-                f"total_{platform}_items": len(results)
-            }
+            "engagement_metrics": self._calculate_engagement_metrics(platform, results)
         }
     
     def _parse_web_search_text(self, text: str) -> List[Dict[str, str]]:
         """Parse web search results from text format"""
         results = []
         
-        # Split by double newlines to separate results
-        sections = text.split('\n\n\n')
+        # Split by double newlines to separate results (one-search-mcp format)
+        sections = text.split('\n\n')
         
         for section in sections:
             if not section.strip():
@@ -805,6 +888,106 @@ Instructions:
                     # Suppress all exceptions during shutdown
                     pass
         self.mcp_clients.clear()
+
+    def _classify_youtube_content(self, title: str, description: str) -> str:
+        """Classify YouTube content type based on title and description"""
+        text = (title + ' ' + description).lower()
+        
+        # Japanese keywords for content classification
+        if any(keyword in text for keyword in ['解説', '説明', '入門', '基礎', '学習', 'チュートリアル']):
+            return "解説動画"  # Explanatory video
+        elif any(keyword in text for keyword in ['デモ', 'デモンストレーション', '実演', '動作確認', 'サンプル']):
+            return "デモ"  # Demo
+        elif any(keyword in text for keyword in ['カンファレンス', 'セミナー', '講演', '発表', 'conference', 'talk']):
+            return "カンファレンス"  # Conference
+        elif any(keyword in text for keyword in ['ニュース', '最新', 'アップデート', 'リリース']):
+            return "ニュース"  # News
+        elif any(keyword in text for keyword in ['レビュー', '比較', '検証', '評価']):
+            return "レビュー"  # Review
+        else:
+            return "その他"  # Other
+
+    def _detect_language(self, text: str) -> str:
+        """Detect language of the text"""
+        # Simple Japanese character detection
+        japanese_chars = set('あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほまみむめもやゆよらりるれろわをんアイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲン')
+        
+        # Check if text contains Japanese characters
+        if any(char in japanese_chars for char in text):
+            return "ja"  # Japanese
+        elif any(char.isascii() for char in text):
+            return "en"  # English
+        else:
+            return "unknown"
+
+    def _calculate_engagement_metrics(self, platform: str, results: List[Dict]) -> Dict:
+        """Calculate engagement metrics for a platform"""
+        metrics = {}
+        
+        if platform == "youtube":
+            # YouTube-specific engagement metrics
+            video_count = len([result for result in results if result.get('content_type') == '解説動画'])
+            metrics["video_count"] = video_count
+            
+            # Additional YouTube-specific metrics can be added here
+            
+        elif platform == "twitter":
+            # Twitter-specific engagement metrics
+            tweet_count = len(results)
+            metrics["tweet_count"] = tweet_count
+            
+            # Additional Twitter-specific metrics can be added here
+            
+        elif platform == "github":
+            # GitHub-specific engagement metrics
+            repo_count = len(results)
+            metrics["repo_count"] = repo_count
+            
+            # Additional GitHub-specific metrics can be added here
+            
+        elif platform == "reddit":
+            # Reddit-specific engagement metrics
+            post_count = len(results)
+            metrics["post_count"] = post_count
+            
+            # Additional Reddit-specific metrics can be added here
+            
+        elif platform == "web":
+            # Web-specific engagement metrics
+            search_count = len(results)
+            metrics["search_count"] = search_count
+            
+            # Additional Web-specific metrics can be added here
+            
+        elif platform == "arxiv":
+            # Arxiv-specific engagement metrics
+            paper_count = len(results)
+            metrics["paper_count"] = paper_count
+            
+            # Additional Arxiv-specific metrics can be added here
+            
+        elif platform == "hackernews":
+            # Hacker News-specific engagement metrics
+            story_count = len(results)
+            metrics["story_count"] = story_count
+            
+            # Additional Hacker News-specific metrics can be added here
+            
+        elif platform == "producthunt":
+            # Product Hunt-specific engagement metrics
+            product_count = len(results)
+            metrics["product_count"] = product_count
+            
+            # Additional Product Hunt-specific metrics can be added here
+            
+        elif platform == "linkedin":
+            # LinkedIn-specific engagement metrics
+            post_count = len(results)
+            metrics["post_count"] = post_count
+            
+            # Additional LinkedIn-specific metrics can be added here
+            
+        return metrics
 
 async def main():
     researcher = AITrendResearcher()
