@@ -2,7 +2,7 @@ import asyncio
 import json
 import os
 from datetime import datetime
-from typing import Dict, List, Any, Optional
+from typing import Dict, List, Any, Optional, Tuple
 from anthropic import Anthropic
 from keyword_manager import KeywordManager
 from mcp import ClientSession
@@ -109,13 +109,10 @@ class AITrendResearcher:
         else:
             print("✗ Anthropic API key not found")
         self.mcp_clients = {}  # Dictionary to store multiple MCP clients
-        # self.platforms = [
-        #     "twitter", "youtube", "web", "github", "reddit", 
-        #     "linkedin", "arxiv", "hackernews", "producthunt"
-        # ]
         self.platforms = [
             "web",
             "youtube",
+            "github",
         ]
 
         # MCP server configurations using server names
@@ -136,9 +133,16 @@ class AITrendResearcher:
                 "enabled": False
             },
             "github": {
-                "server_name": "github-mcp-server",
-                "tools": ["search_repositories", "get_trending_repos"],
-                "enabled": False
+                "server_name": "npx",
+                "args": [
+                    "-y",
+                    "@modelcontextprotocol/server-github"
+                ],
+                "env": {
+                    "GITHUB_PERSONAL_ACCESS_TOKEN": os.getenv("GITHUB_PERSONAL_ACCESS_TOKEN")
+                },
+                "tools": ["search_code", "search_repositories", "get_repository"],
+                "enabled": True
             },
             "reddit": {
                 "server_name": "reddit-mcp-server",
@@ -222,8 +226,15 @@ class AITrendResearcher:
                 params["max_results"] = 15  # Get more results for better analysis
                 # Use just the keyword without additional restrictions for better results
                 params["query"] = keyword
-            elif platform == "github":
-                params["sort"] = "stars"
+            elif platform == "github":     
+                # GitHub-specific search parameters
+                params = {
+                    "query": f"{keyword} followers:>1000 stars:>50",
+                    "sort": "stars",
+                    "order": "desc",
+                    "per_page": 10
+                }
+                tool_name = "search_repositories"
             elif platform == "reddit":
                 params["subreddit"] = "MachineLearning"
             elif platform == "arxiv":
@@ -236,8 +247,11 @@ class AITrendResearcher:
                 params["language"] = "ja"
                 params["region"] = "jp"
             
+            print(f"Searching {platform} for keyword: {keyword}")
             response = await client.call_tool(tool_name, params)
-            print(f"MCP response: {response}")
+            print(f"{platform.capitalize()} MCP response type: {type(response)}")
+            print(f"{platform.capitalize()} MCP response: {response}")
+            
             return self._process_mcp_response(platform, response, keyword)
             
         except Exception as e:
@@ -256,6 +270,7 @@ class AITrendResearcher:
     def _process_mcp_response(self, platform: str, response: Any, keyword: str) -> Dict[str, Any]:
         """Process MCP response for any platform"""
         results = []
+        data = {}  # Initialize data variable
         
         # Process MCP response format
         if isinstance(response, list) and len(response) > 0:
@@ -346,17 +361,67 @@ class AITrendResearcher:
                 })
         
         elif platform == "github":
-            repos = data.get('repositories', data.get('items', []))
+            # Handle GitHub repository search results
+            repos = []
+            
+            # Extract repositories from different response formats
+            if isinstance(data, list):
+                repos = data
+            elif isinstance(data, dict):
+                repos = data.get('repositories', data.get('items', data.get('data', [])))
+            
+            # Handle TextContent objects for GitHub responses
+            if not repos and isinstance(response, list) and len(response) > 0:
+                first_item = response[0]
+                if hasattr(first_item, 'text'):
+                    try:
+                        import json
+                        parsed_data = json.loads(first_item.text)
+                        if isinstance(parsed_data, list):
+                            repos = parsed_data
+                        elif isinstance(parsed_data, dict):
+                            repos = parsed_data.get('repositories', parsed_data.get('items', parsed_data.get('data', [])))
+                    except (json.JSONDecodeError, AttributeError):
+                        repos = self._parse_github_text_response(first_item.text)
+            
+            # Process repositories
             for repo in repos:
-                results.append({
-                    'name': repo.get('name', ''),
-                    'description': repo.get('description', ''),
-                    'owner': repo.get('owner', {}).get('login', ''),
-                    'stars': repo.get('stargazers_count', 0),
-                    'language': repo.get('language', ''),
-                    'url': repo.get('html_url', ''),
-                    'created_at': repo.get('created_at', '')
-                })
+                if isinstance(repo, dict):
+                    # Extract owner information
+                    owner_data = repo.get('owner', {})
+                    owner = owner_data.get('login', '') if isinstance(owner_data, dict) else str(owner_data)
+                    
+                    # Extract basic repository data
+                    stars = repo.get('stargazers_count', repo.get('stars', 0))
+                    created_at = repo.get('created_at', '')
+                    updated_at = repo.get('updated_at', '')
+                    
+                    # Calculate trend metrics
+                    star_rate, days_old, is_trending, is_accelerating = self._calculate_github_trend_metrics(
+                        stars, created_at
+                    )
+                    
+                    results.append({
+                        'name': repo.get('name', ''),
+                        'description': repo.get('description', ''),
+                        'owner': owner,
+                        'stars': stars,
+                        'language': repo.get('language', ''),
+                        'url': repo.get('html_url', repo.get('url', '')),
+                        'created_at': created_at,
+                        'forks': repo.get('forks_count', repo.get('forks', 0)),
+                        'topics': repo.get('topics', []),
+                        'license': repo.get('license', {}).get('name', '') if repo.get('license') else '',
+                        'updated_at': updated_at,
+                        'size': repo.get('size', 0),
+                        'open_issues': repo.get('open_issues_count', 0),
+                        # Trend analysis
+                        'star_rate': round(star_rate, 2),
+                        'days_old': days_old,
+                        'is_trending': is_trending,
+                        'is_accelerating': is_accelerating,
+                        'trend_score': self._calculate_trend_score(stars, days_old, star_rate)
+                    })
         
         elif platform == "reddit":
             posts = data.get('posts', data.get('data', {}).get('children', []))
@@ -513,6 +578,72 @@ class AITrendResearcher:
                 })
         
         print(f"Parsed {len(results)} web search results from text")
+        return results
+    
+    def _parse_github_text_response(self, text: str) -> List[Dict[str, Any]]:
+        """Parse GitHub repository results from text format"""
+        results = []
+        
+        # Split by double newlines to separate repository entries
+        sections = text.split('\n\n')
+        
+        for section in sections:
+            if not section.strip():
+                continue
+                
+            lines = section.strip().split('\n')
+            if len(lines) < 2:
+                continue
+            
+            repo_info = {}
+            
+            for line in lines:
+                line = line.strip()
+                if line.startswith('Name: '):
+                    repo_info['name'] = line[6:]
+                elif line.startswith('Owner: '):
+                    repo_info['owner'] = line[7:]
+                elif line.startswith('Description: '):
+                    repo_info['description'] = line[13:]
+                elif line.startswith('URL: '):
+                    repo_info['url'] = line[5:]
+                elif line.startswith('Stars: '):
+                    try:
+                        repo_info['stars'] = int(line[7:])
+                    except ValueError:
+                        repo_info['stars'] = 0
+                elif line.startswith('Language: '):
+                    repo_info['language'] = line[10:]
+                elif line.startswith('Created: '):
+                    repo_info['created_at'] = line[9:]
+                elif line.startswith('Forks: '):
+                    try:
+                        repo_info['forks'] = int(line[7:])
+                    except ValueError:
+                        repo_info['forks'] = 0
+                elif line.startswith('Topics: '):
+                    topics_str = line[8:]
+                    repo_info['topics'] = [t.strip() for t in topics_str.split(',') if t.strip()]
+            
+            # Only add if we have at least name and owner
+            if repo_info.get('name') and repo_info.get('owner'):
+                results.append({
+                    'name': repo_info.get('name', ''),
+                    'description': repo_info.get('description', ''),
+                    'owner': repo_info.get('owner', ''),
+                    'stars': repo_info.get('stars', 0),
+                    'language': repo_info.get('language', ''),
+                    'url': repo_info.get('url', ''),
+                    'created_at': repo_info.get('created_at', ''),
+                    'forks': repo_info.get('forks', 0),
+                    'topics': repo_info.get('topics', []),
+                    'license': '',
+                    'updated_at': '',
+                    'size': 0,
+                    'open_issues': 0
+                })
+        
+        print(f"Parsed {len(results)} GitHub repositories from text")
         return results
     
     def _extract_domain_from_url(self, url: str) -> str:
@@ -943,8 +1074,95 @@ Instructions:
             repo_count = len(results)
             metrics["repo_count"] = repo_count
             
-            # Additional GitHub-specific metrics can be added here
-            
+            if repo_count > 0:
+                # Calculate average stars, forks, and other metrics
+                total_stars = sum(repo.get('stars', 0) for repo in results)
+                total_forks = sum(repo.get('forks', 0) for repo in results)
+                total_issues = sum(repo.get('open_issues', 0) for repo in results)
+                
+                metrics["avg_stars"] = round(total_stars / repo_count, 2)
+                metrics["avg_forks"] = round(total_forks / repo_count, 2)
+                metrics["avg_issues"] = round(total_issues / repo_count, 2)
+                metrics["total_stars"] = total_stars
+                metrics["total_forks"] = total_forks
+                metrics["total_issues"] = total_issues
+                
+                # Language distribution
+                languages = [repo.get('language', 'Unknown') for repo in results if repo.get('language')]
+                if languages:
+                    from collections import Counter
+                    lang_counts = Counter(languages)
+                    metrics["top_languages"] = dict(lang_counts.most_common(3))
+                
+                # Topic analysis
+                all_topics = []
+                for repo in results:
+                    topics = repo.get('topics', [])
+                    if isinstance(topics, list):
+                        all_topics.extend(topics)
+                
+                if all_topics:
+                    from collections import Counter
+                    topic_counts = Counter(all_topics)
+                    metrics["top_topics"] = dict(topic_counts.most_common(5))
+                
+                # Repository age analysis (if created_at is available)
+                recent_repos = 0
+                for repo in results:
+                    created_at = repo.get('created_at', '')
+                    if created_at:
+                        try:
+                            from datetime import datetime
+                            created_date = datetime.fromisoformat(created_at.replace('Z', '+00:00'))
+                            days_old = (datetime.now(created_date.tzinfo) - created_date).days
+                            if days_old <= 30:  # Repositories created in the last 30 days
+                                recent_repos += 1
+                        except:
+                            pass
+                
+                metrics["recent_repos"] = recent_repos
+                metrics["recent_repos_percentage"] = round((recent_repos / repo_count) * 100, 2) if repo_count > 0 else 0
+                
+                # Trend analysis using new data
+                trending_repos = [repo for repo in results if repo.get('is_trending', False)]
+                accelerating_repos = [repo for repo in results if repo.get('is_accelerating', False)]
+                
+                metrics["trending_repos_count"] = len(trending_repos)
+                metrics["star_acceleration_count"] = len(accelerating_repos)
+                
+                # Top trending repositories by trend score
+                top_trending = sorted(results, key=lambda x: x.get('trend_score', 0), reverse=True)[:5]
+                metrics["top_trending_repos"] = [
+                    {
+                        'name': repo.get('name', ''),
+                        'owner': repo.get('owner', ''),
+                        'stars': repo.get('stars', 0),
+                        'trend_score': repo.get('trend_score', 0),
+                        'star_rate': repo.get('star_rate', 0),
+                        'days_old': repo.get('days_old', 0),
+                        'url': repo.get('url', '')
+                    }
+                    for repo in top_trending
+                ]
+                
+                # Top star acceleration projects
+                top_acceleration = sorted(results, key=lambda x: x.get('star_rate', 0), reverse=True)[:5]
+                metrics["top_star_acceleration"] = [
+                    {
+                        'name': repo.get('name', ''),
+                        'owner': repo.get('owner', ''),
+                        'stars': repo.get('stars', 0),
+                        'star_rate': repo.get('star_rate', 0),
+                        'days_old': repo.get('days_old', 0),
+                        'url': repo.get('url', '')
+                    }
+                    for repo in top_acceleration
+                ]
+                
+                # Average trend score
+                avg_trend_score = sum(repo.get('trend_score', 0) for repo in results) / repo_count
+                metrics["avg_trend_score"] = round(avg_trend_score, 2)
+        
         elif platform == "reddit":
             # Reddit-specific engagement metrics
             post_count = len(results)
@@ -988,6 +1206,52 @@ Instructions:
             # Additional LinkedIn-specific metrics can be added here
             
         return metrics
+
+    def _calculate_trend_score(self, stars: int, days_old: int, star_rate: float) -> float:
+        """Calculate a comprehensive trend score for GitHub repositories"""
+        if days_old <= 0:
+            return 0.0
+        
+        # Base score from star rate
+        base_score = min(star_rate * 10, 50)  # Cap at 50 points
+        
+        # Bonus for high total stars
+        star_bonus = min(stars / 100, 20)  # Up to 20 points for high star count
+        
+        # Recency bonus (newer repos get higher scores)
+        recency_bonus = max(0, (365 - days_old) / 365 * 30)  # Up to 30 points for very recent repos
+        
+        # Star acceleration bonus
+        acceleration_bonus = 0
+        if star_rate >= 2.0:
+            acceleration_bonus = 20  # High acceleration
+        elif star_rate >= 1.0:
+            acceleration_bonus = 10  # Moderate acceleration
+        
+        total_score = base_score + star_bonus + recency_bonus + acceleration_bonus
+        return round(min(total_score, 100), 2)  # Cap at 100
+
+    def _calculate_github_trend_metrics(self, stars: int, created_at: str) -> Tuple[float, int, bool, bool]:
+        """Calculate GitHub repository trend metrics"""
+        if not created_at:
+            return (0.0, 0, False, False)
+        
+        try:
+            created_date = datetime.fromisoformat(created_at.replace('Z', '+00:00'))
+            days_old = (datetime.now(created_date.tzinfo) - created_date).days
+            
+            if days_old <= 0:
+                return (0.0, 0, False, False)
+            
+            star_rate = stars / days_old
+            
+            is_trending = (stars >= 100 and days_old <= 365)
+            is_accelerating = (star_rate >= 1.0 and stars >= 50)
+            
+            return (star_rate, days_old, is_trending, is_accelerating)
+        except Exception:
+            # Return default values if date parsing fails
+            return (0.0, 0, False, False)
 
 async def main():
     researcher = AITrendResearcher()
