@@ -157,19 +157,157 @@ class GitHubHandler(BasePlatformHandler):
     async def research_keyword(self, client, keyword: str, config: Dict) -> Dict[str, Any]:
         """Research keyword on GitHub"""
         try:
-            params = {
-                "query": f"{keyword} followers:>1000 stars:>50",
-                "sort": "stars",
-                "order": "desc",
-                "per_page": 10
-            }
+            # Get available tools from client
+            available_tools = []
+            try:
+                if hasattr(client, 'get_available_tools'):
+                    available_tools = client.get_available_tools()
+                    print(f"🔍 GitHub: Available tools from client: {available_tools}")
+            except Exception as e:
+                print(f"⚠️ GitHub: Could not get available tools: {e}")
             
-            tool_name = "search_repositories"
-            response = await client.call_tool(tool_name, params)
+            print(f"🔍 GitHub: Available tools: {available_tools}")
+            
+            # Get tool name from config - use index 1 for GitHub MCP server
+            tool_name = config.get("tools", ["search_repositories"])[1] if len(config.get("tools", [])) > 1 else config.get("tools", ["search_repositories"])[0]
+            print(f"🔍 GitHub: Using tool '{tool_name}' for keyword '{keyword}'")
+            print(f"🔍 GitHub: Config tools: {config.get('tools', [])}")
+            print(f"🔍 GitHub: Selected tool index 1: {tool_name}")
+            
+            # Check if we have a GitHub token
+            github_token = config.get("env", {}).get("GITHUB_PERSONAL_ACCESS_TOKEN")
+            if not github_token:
+                print("⚠️ GitHub: No GitHub token found in config")
+            else:
+                print(f"🔍 GitHub: Token available (length: {len(github_token)})")
+            
+            # Try multiple tool names if the configured one doesn't work
+            tool_names_to_try = [tool_name]
+            if available_tools:
+                # Add any available GitHub-related tools
+                github_tools = [t for t in available_tools if 'github' in t.lower() or 'search' in t.lower()]
+                tool_names_to_try.extend(github_tools)
+            
+            # Also try common GitHub tool names
+            common_tools = ["search_repositories", "search_code", "get_repository", "github_search"]
+            for common_tool in common_tools:
+                if common_tool not in tool_names_to_try:
+                    tool_names_to_try.append(common_tool)
+            
+            print(f"🔍 GitHub: Will try tools in order: {tool_names_to_try}")
+            
+            # If no tools available, try the most common ones
+            if not available_tools:
+                print("⚠️ GitHub: No tools available from client, using fallback tools")
+                tool_names_to_try = ["search_repositories", "search_code", "get_repository"]
+            
+            # Create simple search queries
+            search_queries = [
+                keyword,  # Just the keyword
+                f"{keyword} stars:>10",  # With star filter
+                f"{keyword} language:python",  # Python specific
+                f"{keyword} created:>2023-01-01",  # Recent
+            ]
+            
+            response = None
+            working_tool = None
+            
+            # Try each tool with each query
+            for tool in tool_names_to_try:
+                print(f"🔍 GitHub: Trying tool: {tool}")
+                for i, query in enumerate(search_queries):
+                    print(f"🔍 GitHub: Trying query {i+1}: '{query}'")
+                    
+                    # Try different parameter formats
+                    param_variations = [
+                        {"query": query, "per_page": 5},
+                        {"q": query, "per_page": 5},
+                        {"search": query, "limit": 5},
+                        {"query": query}
+                    ]
+                    
+                    for j, params in enumerate(param_variations):
+                        print(f"🔍 GitHub: Trying params {j+1}: {params}")
+                        try:
+                            response = await client.call_tool(tool, params)
+                            print(f"🔍 GitHub: Success with tool '{tool}', query '{query}', params {j+1}")
+                            print(f"🔍 GitHub: Response type: {type(response)}")
+                            print(f"🔍 GitHub: Response: {response}")
+                            working_tool = tool
+                            break
+                        except Exception as e:
+                            print(f"❌ GitHub: Tool '{tool}', query '{query}', params {j+1} failed: {e}")
+                            continue
+                    
+                    if response:
+                        break
+                
+                if response:
+                    break
+            
+            if not response:
+                print("❌ GitHub: All tool and query combinations failed")
+                return self.create_error_result(keyword, "No working GitHub search method found")
+            
+            # If we got a response but no repositories, try English equivalents
+            repos = self._extract_repositories(response)
+            if not repos:
+                print(f"🔍 GitHub: No results found, trying English equivalents...")
+                english_keywords = self._get_english_equivalents(keyword)
+                for eng_keyword in english_keywords:
+                    print(f"🔍 GitHub: Trying English keyword: {eng_keyword}")
+                    try:
+                        response = await client.call_tool(working_tool, {"query": eng_keyword, "per_page": 5})
+                        repos = self._extract_repositories(response)
+                        if repos:
+                            print(f"🔍 GitHub: Found {len(repos)} results with English keyword '{eng_keyword}'")
+                            break
+                    except Exception as eng_error:
+                        print(f"❌ GitHub: English keyword '{eng_keyword}' error: {eng_error}")
+            
             return self.process_response(response, keyword)
             
         except Exception as e:
+            print(f"❌ GitHub research error: {e}")
             return self.create_error_result(keyword, str(e))
+    
+    def _get_english_equivalents(self, keyword: str) -> List[str]:
+        """Get English equivalents for Japanese keywords"""
+        # Common Japanese to English translations for tech keywords
+        translations = {
+            "生成AI": ["generative AI", "AI generation", "AI tools"],
+            "人工知能": ["artificial intelligence", "AI", "machine learning"],
+            "機械学習": ["machine learning", "ML", "AI"],
+            "深層学習": ["deep learning", "neural networks", "AI"],
+            "自然言語処理": ["natural language processing", "NLP", "AI"],
+            "コンピュータビジョン": ["computer vision", "CV", "AI"],
+            "強化学習": ["reinforcement learning", "RL", "AI"],
+            "ニューラルネットワーク": ["neural networks", "deep learning", "AI"],
+            "大規模言語モデル": ["large language models", "LLM", "AI"],
+            "LLM": ["large language models", "LLM", "AI"],
+            "GPT": ["GPT", "OpenAI", "AI"],
+            "ChatGPT": ["ChatGPT", "OpenAI", "AI"],
+            "画像生成": ["image generation", "AI art", "AI"],
+            "音声認識": ["speech recognition", "AI", "voice"],
+            "音声合成": ["speech synthesis", "text to speech", "AI"],
+            "推薦システム": ["recommendation systems", "AI", "ML"],
+            "異常検知": ["anomaly detection", "AI", "ML"],
+            "時系列予測": ["time series prediction", "AI", "ML"],
+            "クラスタリング": ["clustering", "machine learning", "AI"],
+            "分類": ["classification", "machine learning", "AI"]
+        }
+        
+        # Direct translation
+        if keyword in translations:
+            return translations[keyword]
+        
+        # Try partial matches
+        for jp, en in translations.items():
+            if jp in keyword or keyword in jp:
+                return en
+        
+        # If no translation found, try common AI-related terms
+        return ["AI", "machine learning", "artificial intelligence"]
     
     def process_response(self, response: Any, keyword: str) -> Dict[str, Any]:
         """Process GitHub response"""
@@ -219,25 +357,69 @@ class GitHubHandler(BasePlatformHandler):
     
     def _extract_repositories(self, response: Any) -> List[Dict]:
         """Extract repositories from various response formats"""
+        print(f"🔍 GitHub: Extracting repositories from response type: {type(response)}")
         repos = []
         
+        # Handle None or empty response
+        if not response:
+            print("🔍 GitHub: Response is empty or None")
+            return repos
+        
+        # Handle string response (might be JSON string)
+        if isinstance(response, str):
+            print(f"🔍 GitHub: Response is string: {response[:200]}...")
+            try:
+                parsed_data = json.loads(response)
+                return self._extract_repositories(parsed_data)
+            except json.JSONDecodeError:
+                # Try to parse as text format
+                return self._parse_github_text_response(response)
+        
+        # Handle list response
         if isinstance(response, list):
-            repos = response
+            print(f"🔍 GitHub: Response is list with {len(response)} items")
+            if len(response) > 0:
+                first_item = response[0]
+                print(f"🔍 GitHub: First item type: {type(first_item)}")
+                
+                # Handle TextContent objects
+                if hasattr(first_item, 'text'):
+                    text_content = first_item.text
+                    print(f"🔍 GitHub: First item has text attribute: {text_content[:200]}...")
+                    
+                    # Try JSON parsing first
+                    if text_content.strip().startswith('{') or text_content.strip().startswith('['):
+                        try:
+                            parsed_data = json.loads(text_content)
+                            print(f"🔍 GitHub: Parsed JSON data type: {type(parsed_data)}")
+                            return self._extract_repositories(parsed_data)
+                        except json.JSONDecodeError as e:
+                            print(f"❌ GitHub: JSON parsing error: {e}")
+                            return self._parse_github_text_response(text_content)
+                    else:
+                        # Not JSON format, parse as text
+                        print(f"🔍 GitHub: Not JSON format, parsing as text")
+                        return self._parse_github_text_response(text_content)
+                else:
+                    # Direct list of repository objects
+                    repos = response
+        
+        # Handle dict response
         elif isinstance(response, dict):
-            repos = response.get('repositories', response.get('items', response.get('data', [])))
+            print(f"🔍 GitHub: Response is dict with keys: {list(response.keys())}")
+            # Try different possible keys for repositories
+            for key in ['repositories', 'items', 'data', 'results']:
+                if key in response:
+                    repos = response[key]
+                    print(f"🔍 GitHub: Found repositories under key '{key}': {len(repos)} items")
+                    break
+            
+            # If no repositories found, treat the whole response as a single repository
+            if not repos and any(key in response for key in ['name', 'full_name', 'html_url']):
+                repos = [response]
+                print("🔍 GitHub: Treating response as single repository")
         
-        if not repos and isinstance(response, list) and len(response) > 0:
-            first_item = response[0]
-            if hasattr(first_item, 'text'):
-                try:
-                    parsed_data = json.loads(first_item.text)
-                    if isinstance(parsed_data, list):
-                        repos = parsed_data
-                    elif isinstance(parsed_data, dict):
-                        repos = parsed_data.get('repositories', parsed_data.get('items', parsed_data.get('data', [])))
-                except (json.JSONDecodeError, AttributeError):
-                    repos = self._parse_github_text_response(first_item.text)
-        
+        print(f"🔍 GitHub: Extracted {len(repos)} repositories")
         return repos
     
     def _parse_github_text_response(self, text: str) -> List[Dict]:

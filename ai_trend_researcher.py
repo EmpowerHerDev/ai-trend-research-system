@@ -190,19 +190,28 @@ async def main():
         await researcher.run_daily_research()
     except KeyboardInterrupt:
         print("\n🛑 Interrupted by user")
+    except asyncio.CancelledError:
+        print("\n🛑 Operation was cancelled")
     except Exception as e:
         print(f"Error in main execution: {e}")
         raise
     finally:
-        # Cleanup is handled in run_daily_research()
-        pass
+        # Ensure cleanup happens even if there's an error
+        try:
+            await asyncio.wait_for(researcher.mcp_manager.close_all_clients(), timeout=10.0)
+        except asyncio.TimeoutError:
+            print("Warning: Cleanup timeout in main")
+        except asyncio.CancelledError:
+            print("Warning: Cleanup was cancelled in main")
+        except Exception as e:
+            print(f"Warning: Error during main cleanup: {e}")
 
 
 async def force_cleanup_and_exit(researcher):
     """Force exit after timeout"""
     print("⚠ Force exiting...")
     try:
-        await researcher.mcp_manager.close_all_clients()
+        await asyncio.wait_for(researcher.mcp_manager.close_all_clients(), timeout=5.0)
     except Exception:
         pass
     import os

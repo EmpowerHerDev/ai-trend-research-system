@@ -14,6 +14,7 @@ class RemoteMCPClient:
         self.exit_stack: Optional[AsyncExitStack] = None
         self._connected = False
         self._cleanup_attempted = False
+        self._available_tools: List[str] = []
         
     async def connect_to_server_by_name(self, server_name: str, args: List[str] = None, env: Dict[str, str] = None):
         """Connect to a local MCP server by name using stdio transport"""
@@ -26,6 +27,10 @@ class RemoteMCPClient:
                 env=env
             )
             
+            print(f"🔍 Connecting to {server_name} with args: {args}")
+            if env:
+                print(f"🔍 Environment variables: {list(env.keys())}")
+            
             stdio_context = stdio_client(server_params)
             read_stream, write_stream = await self.exit_stack.enter_async_context(stdio_context)
             
@@ -35,7 +40,13 @@ class RemoteMCPClient:
             
             response = await self.session.list_tools()
             tools = response.tools
-            print(f"✓ Connected to server '{server_name}' with tools: {[tool.name for tool in tools]}")
+            self._available_tools = [tool.name for tool in tools]
+            print(f"✓ Connected to server '{server_name}' with tools: {self._available_tools}")
+            
+            # Print tool details for debugging
+            for tool in tools:
+                print(f"  - {tool.name}: {tool.description[:100]}...")
+            
             self._connected = True
             return True
             
@@ -62,6 +73,10 @@ class RemoteMCPClient:
             print(f"✗ Error calling tool {tool_name}: {e}")
             return None
     
+    def get_available_tools(self) -> List[str]:
+        """Get list of available tool names"""
+        return self._available_tools
+    
     async def _cleanup(self):
         """Internal cleanup method with timeout"""
         if self._cleanup_attempted:
@@ -70,16 +85,34 @@ class RemoteMCPClient:
         
         try:
             if self.exit_stack:
-                await self.exit_stack.aclose()
-        except Exception:
-            pass
+                # Add timeout to prevent hanging
+                await asyncio.wait_for(self.exit_stack.aclose(), timeout=5.0)
+        except asyncio.TimeoutError:
+            print("Warning: Cleanup timeout, forcing close")
+            # Force cleanup by setting to None
+            self.exit_stack = None
+        except asyncio.CancelledError:
+            print("Warning: Cleanup was cancelled")
+            # Handle cancellation gracefully
+            self.exit_stack = None
+        except Exception as e:
+            print(f"Warning: Error during cleanup: {e}")
+            self.exit_stack = None
     
     async def close(self):
         """Close the connection"""
         self._connected = False
-        await self._cleanup()
-        self.session = None
-        self.exit_stack = None
+        try:
+            await asyncio.wait_for(self._cleanup(), timeout=10.0)
+        except asyncio.TimeoutError:
+            print("Warning: Close timeout, forcing cleanup")
+        except asyncio.CancelledError:
+            print("Warning: Close was cancelled")
+        except Exception as e:
+            print(f"Warning: Error during close: {e}")
+        finally:
+            self.session = None
+            self.exit_stack = None
 
 
 class MCPClientManager:
@@ -124,6 +157,13 @@ class MCPClientManager:
     def is_platform_available(self, platform: str) -> bool:
         """Check if a platform's MCP client is available"""
         return platform in self.clients and self.clients[platform] is not None
+    
+    def get_available_tools(self, platform: str) -> List[str]:
+        """Get available tools for a specific platform"""
+        client = self.get_client(platform)
+        if client:
+            return client.get_available_tools()
+        return []
     
     async def close_all_clients(self):
         """Close all MCP clients properly"""

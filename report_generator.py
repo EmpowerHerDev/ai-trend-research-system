@@ -46,8 +46,58 @@ class NotionReportGenerator:
             return None
         
         try:
-            today = report["date"]
+            today = report.get("date", datetime.now().strftime("%Y-%m-%d"))
             page_title = f"AI Trend Research Report - {today}"
+            
+            # Try simplified blocks first to avoid validation issues
+            print("🔍 Creating simplified Notion blocks...")
+            blocks = self._create_simple_notion_blocks(report)
+            
+            # Debug: Print block count and structure
+            print(f"🔍 Created {len(blocks)} simplified blocks for Notion")
+            self._debug_print_blocks(blocks, "Simplified blocks")
+            
+            # Ensure we have at least some content
+            if not blocks:
+                print("Warning: No valid blocks created, skipping Notion report")
+                return None
+            
+            # Validate the blocks structure before sending
+            if not self._validate_blocks_structure(blocks):
+                print("Warning: Invalid blocks structure, trying detailed blocks...")
+                # Fallback to detailed blocks if simplified fails validation
+                blocks = self._create_notion_blocks(report)
+                if not self._validate_blocks_structure(blocks):
+                    print("Warning: Detailed blocks also failed validation, skipping Notion report")
+                    return None
+            
+            # Final validation: Ensure each block has the exact structure Notion expects
+            validated_blocks = self._final_validate_blocks(blocks)
+            if not validated_blocks:
+                print("Warning: Final validation failed, skipping Notion report")
+                return None
+            
+            print(f"✅ Final validation passed: {len(validated_blocks)} blocks ready for Notion")
+            self._debug_print_blocks(validated_blocks, "Validated blocks")
+            
+            # Check if we have block 17 (index 16) and print its details
+            if len(validated_blocks) > 16:
+                print(f"🔍 Block 17 (index 16) details:")
+                block_17 = validated_blocks[16]
+                print(f"  Type: {block_17.get('type')}")
+                print(f"  Content: {json.dumps(block_17, indent=2, ensure_ascii=False)}")
+            
+            # Debug: Print the exact JSON being sent
+            children_json = json.dumps(validated_blocks, ensure_ascii=False)
+            print(f"🔍 JSON being sent to Notion (first 500 chars): {children_json[:500]}...")
+            
+            # Try a different approach: limit the number of blocks to avoid the issue
+            # Notion might have a limit or issue with too many blocks
+            if len(validated_blocks) > 20:
+                print(f"⚠️ Too many blocks ({len(validated_blocks)}), limiting to first 20")
+                limited_blocks = validated_blocks[:20]
+            else:
+                limited_blocks = validated_blocks
             
             response = await self.notion_client.call_tool(
                 "create-page",
@@ -59,7 +109,7 @@ class NotionReportGenerator:
                             "title": [{"text": {"content": page_title}}]
                         }
                     }),
-                    "children": json.dumps(self._create_notion_blocks(report))
+                    "children": json.dumps(limited_blocks)
                 }
             )
             
@@ -70,130 +120,155 @@ class NotionReportGenerator:
             print(f"✗ Error creating Notion report: {e}")
             return None
     
+    def _validate_blocks_structure(self, blocks: List[Dict]) -> bool:
+        """Validate that all blocks have the correct structure for Notion API"""
+        if not isinstance(blocks, list):
+            print("Error: blocks is not a list")
+            return False
+        
+        for i, block in enumerate(blocks):
+            if not isinstance(block, dict):
+                print(f"Error: Block {i} is not a dictionary")
+                return False
+            
+            # Check required fields
+            if "object" not in block or block["object"] != "block":
+                print(f"Error: Block {i} missing or invalid 'object' field")
+                return False
+            
+            if "type" not in block:
+                print(f"Error: Block {i} missing 'type' field")
+                return False
+            
+            block_type = block["type"]
+            if block_type not in block:
+                print(f"Error: Block {i} missing content for type '{block_type}'")
+                return False
+            
+            # Validate rich_text structure
+            if "rich_text" in block[block_type]:
+                rich_text = block[block_type]["rich_text"]
+                if not isinstance(rich_text, list):
+                    print(f"Error: Block {i} rich_text is not a list")
+                    return False
+                
+                if len(rich_text) == 0:
+                    print(f"Error: Block {i} has empty rich_text")
+                    return False
+                
+                for j, text_item in enumerate(rich_text):
+                    if not isinstance(text_item, dict):
+                        print(f"Error: Block {i} text item {j} is not a dictionary")
+                        return False
+                    
+                    if "type" not in text_item or text_item["type"] != "text":
+                        print(f"Error: Block {i} text item {j} has invalid type")
+                        return False
+                    
+                    if "text" not in text_item:
+                        print(f"Error: Block {i} text item {j} missing 'text' field")
+                        return False
+                    
+                    content = text_item["text"].get("content", "")
+                    if not content or not content.strip():
+                        print(f"Error: Block {i} text item {j} has empty content")
+                        return False
+        
+        return True
+    
     def _create_notion_blocks(self, report: Dict) -> List[Dict]:
         """Create Notion blocks from report data"""
+        # Validate input report
+        if not isinstance(report, dict):
+            print("Error: report is not a dictionary")
+            return []
+        
         blocks = []
         
-        # Add summary section
-        blocks.append({
-            "object": "block",
-            "type": "heading_2",
-            "heading_2": {
-                "rich_text": [{"type": "text", "text": {"content": "📊 Summary"}}]
-            }
-        })
-        
-        summary = report["summary"]
-        summary_text = f"• Platforms Searched: {summary['platforms_searched']}\n"
-        summary_text += f"• Keywords Used: {', '.join(summary['keywords_used'])}\n"
-        summary_text += f"• New Keywords Found: {summary['new_keywords_found']}\n"
-        summary_text += f"• Total Results: {summary['total_results']}"
-        
-        blocks.append({
-            "object": "block",
-            "type": "paragraph",
-            "paragraph": {
-                "rich_text": [{"type": "text", "text": {"content": summary_text}}]
-            }
-        })
-        
-        # Add new keywords section
-        blocks.append({
-            "object": "block",
-            "type": "heading_2",
-            "heading_2": {
-                "rich_text": [{"type": "text", "text": {"content": "🔍 New Keywords Discovered"}}]
-            }
-        })
-        
-        if report["new_keywords"]:
-            for keyword in report["new_keywords"]:
-                blocks.append({
-                    "object": "block",
-                    "type": "bulleted_list_item",
-                    "bulleted_list_item": {
-                        "rich_text": [{"type": "text", "text": {"content": keyword}}]
-                    }
-                })
-        else:
-            blocks.append({
-                "object": "block", 
-                "type": "paragraph",
-                "paragraph": {
-                    "rich_text": [{"type": "text", "text": {"content": "No new keywords found"}}]
-                }
-            })
-        
-        # Add recommendations section
-        blocks.append({
-            "object": "block",
-            "type": "heading_2", 
-            "heading_2": {
-                "rich_text": [{"type": "text", "text": {"content": "📋 Recommendations"}}]
-            }
-        })
-        
-        for rec in report["recommendations"]:
+        try:
+            # Add summary section
             blocks.append({
                 "object": "block",
-                "type": "bulleted_list_item",
-                "bulleted_list_item": {
-                    "rich_text": [{"type": "text", "text": {"content": rec}}]
-                }
-            })
-        
-        # Add detailed results section
-        blocks.append({
-            "object": "block",
-            "type": "heading_2",
-            "heading_2": {
-                "rich_text": [{"type": "text", "text": {"content": "🔬 Detailed Research Results"}}]
-            }
-        })
-        
-        # Group results by platform
-        platform_results = self._group_results_by_platform(report["detailed_results"])
-        
-        for platform, results in platform_results.items():
-            # Platform heading
-            blocks.append({
-                "object": "block",
-                "type": "heading_3",
-                "heading_3": {
-                    "rich_text": [{"type": "text", "text": {"content": platform.upper()}}]
+                "type": "heading_2",
+                "heading_2": {
+                    "rich_text": [{"type": "text", "text": {"content": "📊 Summary"}}]
                 }
             })
             
-            if results:
-                for i, result in enumerate(results[:5], 1):  # Limit to top 5 results
-                    title = result.get('title', result.get('name', 'No title'))
-                    url = result.get('url', result.get('link', ''))
-                    snippet = result.get('snippet', result.get('description', ''))[:200]
-                    
-                    # Result item
-                    blocks.append({
-                        "object": "block",
-                        "type": "heading_4",
-                        "heading_4": {
-                            "rich_text": [{"type": "text", "text": {"content": f"{i}. {title}"}}]
-                        }
-                    })
-                    
-                    if url:
+            summary = report.get("summary", {})
+            if not isinstance(summary, dict):
+                summary = {}
+                
+            summary_text = f"• Platforms Searched: {summary.get('platforms_searched', 'N/A')}\n"
+            summary_text += f"• Keywords Used: {', '.join(summary.get('keywords_used', []))}\n"
+            summary_text += f"• New Keywords Found: {summary.get('new_keywords_found', 0)}\n"
+            summary_text += f"• Total Results: {summary.get('total_results', 0)}"
+            
+            # Ensure summary text is not empty
+            if not summary_text.strip():
+                summary_text = "No summary data available"
+            
+            blocks.append({
+                "object": "block",
+                "type": "paragraph",
+                "paragraph": {
+                    "rich_text": [{"type": "text", "text": {"content": summary_text}}]
+                }
+            })
+            
+            # Add new keywords section
+            blocks.append({
+                "object": "block",
+                "type": "heading_2",
+                "heading_2": {
+                    "rich_text": [{"type": "text", "text": {"content": "🔍 New Keywords Discovered"}}]
+                }
+            })
+            
+            new_keywords = report.get("new_keywords", [])
+            if not isinstance(new_keywords, list):
+                new_keywords = []
+                
+            if new_keywords:
+                for keyword in new_keywords:
+                    if keyword and isinstance(keyword, str) and keyword.strip():  # Ensure keyword is not empty
                         blocks.append({
                             "object": "block",
-                            "type": "paragraph",
-                            "paragraph": {
-                                "rich_text": [{"type": "text", "text": {"content": f"🔗 {url}"}}]
+                            "type": "bulleted_list_item",
+                            "bulleted_list_item": {
+                                "rich_text": [{"type": "text", "text": {"content": keyword.strip()}}]
                             }
                         })
-                    
-                    if snippet:
+            else:
+                blocks.append({
+                    "object": "block", 
+                    "type": "paragraph",
+                    "paragraph": {
+                        "rich_text": [{"type": "text", "text": {"content": "No new keywords found"}}]
+                    }
+                })
+            
+            # Add recommendations section
+            blocks.append({
+                "object": "block",
+                "type": "heading_2", 
+                "heading_2": {
+                    "rich_text": [{"type": "text", "text": {"content": "📋 Recommendations"}}]
+                }
+            })
+            
+            recommendations = report.get("recommendations", [])
+            if not isinstance(recommendations, list):
+                recommendations = []
+                
+            if recommendations:
+                for rec in recommendations:
+                    if rec and isinstance(rec, str) and rec.strip():  # Ensure recommendation is not empty
                         blocks.append({
                             "object": "block",
-                            "type": "paragraph", 
-                            "paragraph": {
-                                "rich_text": [{"type": "text", "text": {"content": f"📝 {snippet}..."}}]
+                            "type": "bulleted_list_item",
+                            "bulleted_list_item": {
+                                "rich_text": [{"type": "text", "text": {"content": rec.strip()}}]
                             }
                         })
             else:
@@ -201,9 +276,111 @@ class NotionReportGenerator:
                     "object": "block",
                     "type": "paragraph",
                     "paragraph": {
-                        "rich_text": [{"type": "text", "text": {"content": "- No results found"}}]
+                        "rich_text": [{"type": "text", "text": {"content": "No recommendations available"}}]
                     }
                 })
+            
+            # Add detailed results section
+            blocks.append({
+                "object": "block",
+                "type": "heading_2",
+                "heading_2": {
+                    "rich_text": [{"type": "text", "text": {"content": "🔬 Detailed Research Results"}}]
+                }
+            })
+            
+            # Group results by platform
+            detailed_results = report.get("detailed_results", [])
+            if not isinstance(detailed_results, list):
+                detailed_results = []
+                
+            platform_results = self._group_results_by_platform(detailed_results)
+            
+            if platform_results:
+                for platform, results in platform_results.items():
+                    # Ensure platform name is valid
+                    if not platform or not isinstance(platform, str):
+                        platform = "Unknown"
+                    
+                    # Platform heading
+                    blocks.append({
+                        "object": "block",
+                        "type": "heading_3",
+                        "heading_3": {
+                            "rich_text": [{"type": "text", "text": {"content": platform.upper()}}]
+                        }
+                    })
+                    
+                    if results and isinstance(results, list):
+                        for i, result in enumerate(results[:5], 1):  # Limit to top 5 results
+                            if not isinstance(result, dict):
+                                continue
+                                
+                            title = result.get('title', result.get('name', 'No title'))
+                            url = result.get('url', result.get('link', ''))
+                            snippet = result.get('snippet', result.get('description', ''))
+                            
+                            # Ensure title is not empty and is a string
+                            if not title or not isinstance(title, str) or not title.strip():
+                                title = "Untitled"
+                            
+                            # Result item
+                            blocks.append({
+                                "object": "block",
+                                "type": "heading_4",
+                                "heading_4": {
+                                    "rich_text": [{"type": "text", "text": {"content": f"{i}. {title}"}}]
+                                }
+                            })
+                            
+                            if url and isinstance(url, str) and url.strip():
+                                blocks.append({
+                                    "object": "block",
+                                    "type": "paragraph",
+                                    "paragraph": {
+                                        "rich_text": [{"type": "text", "text": {"content": f"🔗 {url}"}}]
+                                    }
+                                })
+                            
+                            if snippet and isinstance(snippet, str) and snippet.strip():
+                                # Truncate snippet to avoid too long content
+                                snippet_text = snippet[:200] + "..." if len(snippet) > 200 else snippet
+                                blocks.append({
+                                    "object": "block",
+                                    "type": "paragraph", 
+                                    "paragraph": {
+                                        "rich_text": [{"type": "text", "text": {"content": f"📝 {snippet_text}"}}]
+                                    }
+                                })
+                    else:
+                        blocks.append({
+                            "object": "block",
+                            "type": "paragraph",
+                            "paragraph": {
+                                "rich_text": [{"type": "text", "text": {"content": "- No results found"}}]
+                            }
+                        })
+            else:
+                blocks.append({
+                    "object": "block",
+                    "type": "paragraph",
+                    "paragraph": {
+                        "rich_text": [{"type": "text", "text": {"content": "No detailed results available"}}]
+                    }
+                })
+            
+        except Exception as e:
+            print(f"Error creating Notion blocks: {e}")
+            # Return minimal valid blocks if there's an error
+            return [
+                {
+                    "object": "block",
+                    "type": "paragraph",
+                    "paragraph": {
+                        "rich_text": [{"type": "text", "text": {"content": "Error occurred while generating report content."}}]
+                    }
+                }
+            ]
         
         return blocks
     
@@ -216,6 +393,264 @@ class NotionReportGenerator:
                 platform_results[platform] = []
             platform_results[platform].extend(data["results"])
         return platform_results
+    
+    def _final_validate_blocks(self, blocks: List[Dict]) -> List[Dict]:
+        """Final validation to ensure blocks have exact Notion API structure"""
+        validated_blocks = []
+        
+        for i, block in enumerate(blocks):
+            try:
+                # Ensure block is a dictionary
+                if not isinstance(block, dict):
+                    print(f"❌ Block {i}: Not a dictionary, skipping")
+                    continue
+                
+                # Ensure required fields exist
+                if "object" not in block or block["object"] != "block":
+                    print(f"❌ Block {i}: Missing or invalid 'object' field")
+                    continue
+                
+                if "type" not in block:
+                    print(f"❌ Block {i}: Missing 'type' field")
+                    continue
+                
+                block_type = block["type"]
+                
+                # Ensure the block type field exists
+                if block_type not in block:
+                    print(f"❌ Block {i}: Missing content for type '{block_type}'")
+                    continue
+                
+                # Validate the specific block type structure
+                if not self._validate_block_type_structure(block, block_type, i):
+                    continue
+                
+                # Create a clean, validated block
+                validated_block = {
+                    "object": "block",
+                    "type": block_type,
+                    block_type: block[block_type]
+                }
+                
+                validated_blocks.append(validated_block)
+                print(f"✅ Block {i}: Validated {block_type}")
+                
+            except Exception as e:
+                print(f"❌ Block {i}: Error during validation: {e}")
+                continue
+        
+        return validated_blocks
+    
+    def _validate_block_type_structure(self, block: Dict, block_type: str, block_index: int) -> bool:
+        """Validate the structure of a specific block type"""
+        try:
+            block_content = block[block_type]
+            
+            # Validate rich_text structure for text-based blocks
+            if "rich_text" in block_content:
+                rich_text = block_content["rich_text"]
+                
+                if not isinstance(rich_text, list):
+                    print(f"❌ Block {block_index}: rich_text is not a list")
+                    return False
+                
+                if len(rich_text) == 0:
+                    print(f"❌ Block {block_index}: rich_text is empty")
+                    return False
+                
+                for j, text_item in enumerate(rich_text):
+                    if not isinstance(text_item, dict):
+                        print(f"❌ Block {block_index}: text item {j} is not a dictionary")
+                        return False
+                    
+                    if "type" not in text_item or text_item["type"] != "text":
+                        print(f"❌ Block {block_index}: text item {j} has invalid type")
+                        return False
+                    
+                    if "text" not in text_item:
+                        print(f"❌ Block {block_index}: text item {j} missing 'text' field")
+                        return False
+                    
+                    text_content = text_item["text"]
+                    if not isinstance(text_content, dict):
+                        print(f"❌ Block {block_index}: text item {j} 'text' is not a dictionary")
+                        return False
+                    
+                    if "content" not in text_content:
+                        print(f"❌ Block {block_index}: text item {j} missing 'content' field")
+                        return False
+                    
+                    content = text_content["content"]
+                    if not isinstance(content, str) or not content.strip():
+                        print(f"❌ Block {block_index}: text item {j} has empty content")
+                        return False
+                    
+                    # Ensure content is not too long (Notion has limits)
+                    if len(content) > 2000:
+                        print(f"⚠️ Block {block_index}: text item {j} content is too long, truncating")
+                        text_content["content"] = content[:2000] + "..."
+            
+            return True
+            
+        except Exception as e:
+            print(f"❌ Block {block_index}: Error validating {block_type} structure: {e}")
+            return False
+
+    def _debug_print_blocks(self, blocks: List[Dict], title: str = "Blocks"):
+        """Debug function to print block information"""
+        print(f"\n🔍 {title} ({len(blocks)} blocks):")
+        for i, block in enumerate(blocks):
+            try:
+                block_type = block.get("type", "unknown")
+                print(f"  Block {i}: {block_type}")
+                
+                if block_type in block:
+                    content = block[block_type]
+                    if "rich_text" in content:
+                        rich_text = content["rich_text"]
+                        if isinstance(rich_text, list) and len(rich_text) > 0:
+                            first_text = rich_text[0]
+                            if isinstance(first_text, dict) and "text" in first_text:
+                                text_content = first_text["text"].get("content", "")
+                                preview = text_content[:50] + "..." if len(text_content) > 50 else text_content
+                                print(f"    Content: {preview}")
+                            else:
+                                print(f"    Content: Invalid rich_text structure")
+                        else:
+                            print(f"    Content: Empty or invalid rich_text")
+                    else:
+                        print(f"    Content: No rich_text field")
+                else:
+                    print(f"    Content: Missing {block_type} field")
+                    
+            except Exception as e:
+                print(f"    Error analyzing block {i}: {e}")
+        print()
+
+    def _create_simple_notion_blocks(self, report: Dict) -> List[Dict]:
+        """Create simplified Notion blocks to avoid validation issues"""
+        blocks = []
+        
+        try:
+            # Add title
+            blocks.append({
+                "object": "block",
+                "type": "heading_1",
+                "heading_1": {
+                    "rich_text": [{"type": "text", "text": {"content": f"AI Trend Research Report - {report.get('date', 'Today')}"}}]
+                }
+            })
+            
+            # Add summary
+            summary = report.get("summary", {})
+            if isinstance(summary, dict):
+                summary_text = f"Platforms: {summary.get('platforms_searched', 'N/A')} | Keywords: {len(summary.get('keywords_used', []))} | New Keywords: {summary.get('new_keywords_found', 0)} | Total Results: {summary.get('total_results', 0)}"
+            else:
+                summary_text = "Summary data not available"
+            
+            blocks.append({
+                "object": "block",
+                "type": "paragraph",
+                "paragraph": {
+                    "rich_text": [{"type": "text", "text": {"content": summary_text}}]
+                }
+            })
+            
+            # Add new keywords
+            new_keywords = report.get("new_keywords", [])
+            if isinstance(new_keywords, list) and new_keywords:
+                blocks.append({
+                    "object": "block",
+                    "type": "heading_2",
+                    "heading_2": {
+                        "rich_text": [{"type": "text", "text": {"content": "New Keywords"}}]
+                    }
+                })
+                
+                # Add keywords as a single paragraph to reduce block count
+                keywords_text = ", ".join([kw for kw in new_keywords if isinstance(kw, str) and kw.strip()])
+                if keywords_text:
+                    blocks.append({
+                        "object": "block",
+                        "type": "paragraph",
+                        "paragraph": {
+                            "rich_text": [{"type": "text", "text": {"content": keywords_text}}]
+                        }
+                    })
+            
+            # Add recommendations
+            recommendations = report.get("recommendations", [])
+            if isinstance(recommendations, list) and recommendations:
+                blocks.append({
+                    "object": "block",
+                    "type": "heading_2",
+                    "heading_2": {
+                        "rich_text": [{"type": "text", "text": {"content": "Recommendations"}}]
+                    }
+                })
+                
+                # Add recommendations as a single paragraph
+                rec_text = " | ".join([rec for rec in recommendations if isinstance(rec, str) and rec.strip()])
+                if rec_text:
+                    blocks.append({
+                        "object": "block",
+                        "type": "paragraph",
+                        "paragraph": {
+                            "rich_text": [{"type": "text", "text": {"content": rec_text}}]
+                        }
+                    })
+            
+            # Add platform results (simplified)
+            detailed_results = report.get("detailed_results", [])
+            if isinstance(detailed_results, list) and detailed_results:
+                blocks.append({
+                    "object": "block",
+                    "type": "heading_2",
+                    "heading_2": {
+                        "rich_text": [{"type": "text", "text": {"content": "Research Results"}}]
+                    }
+                })
+                
+                # Group by platform and add summary
+                platform_results = self._group_results_by_platform(detailed_results)
+                for platform, results in platform_results.items():
+                    if isinstance(results, list) and results:
+                        platform_text = f"{platform.upper()}: {len(results)} results"
+                        blocks.append({
+                            "object": "block",
+                            "type": "paragraph",
+                            "paragraph": {
+                                "rich_text": [{"type": "text", "text": {"content": platform_text}}]
+                            }
+                        })
+                        
+                        # Add first result as example
+                        first_result = results[0]
+                        if isinstance(first_result, dict):
+                            title = first_result.get('title', first_result.get('name', 'No title'))
+                            if isinstance(title, str) and title.strip():
+                                blocks.append({
+                                    "object": "block",
+                                    "type": "paragraph",
+                                    "paragraph": {
+                                        "rich_text": [{"type": "text", "text": {"content": f"Example: {title[:100]}..."}}]
+                                    }
+                                })
+            
+        except Exception as e:
+            print(f"Error creating simple Notion blocks: {e}")
+            # Return minimal valid blocks if there's an error
+            return [
+                {
+                    "object": "block",
+                    "type": "paragraph",
+                    "paragraph": {
+                        "rich_text": [{"type": "text", "text": {"content": "Error occurred while generating report content."}}]
+                    }
+                }
+            ]
+        
+        return blocks
 
 
 class ReportManager:
