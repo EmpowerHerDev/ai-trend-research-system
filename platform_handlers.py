@@ -157,157 +157,19 @@ class GitHubHandler(BasePlatformHandler):
     async def research_keyword(self, client, keyword: str, config: Dict) -> Dict[str, Any]:
         """Research keyword on GitHub"""
         try:
-            # Get available tools from client
-            available_tools = []
-            try:
-                if hasattr(client, 'get_available_tools'):
-                    available_tools = client.get_available_tools()
-                    print(f"🔍 GitHub: Available tools from client: {available_tools}")
-            except Exception as e:
-                print(f"⚠️ GitHub: Could not get available tools: {e}")
+            params = {
+                "query": f"{keyword} followers:>1000 stars:>50",
+                "sort": "stars",
+                "order": "desc",
+                "per_page": 10
+            }
             
-            print(f"🔍 GitHub: Available tools: {available_tools}")
-            
-            # Get tool name from config - use index 1 for GitHub MCP server
-            tool_name = config.get("tools", ["search_repositories"])[1] if len(config.get("tools", [])) > 1 else config.get("tools", ["search_repositories"])[0]
-            print(f"🔍 GitHub: Using tool '{tool_name}' for keyword '{keyword}'")
-            print(f"🔍 GitHub: Config tools: {config.get('tools', [])}")
-            print(f"🔍 GitHub: Selected tool index 1: {tool_name}")
-            
-            # Check if we have a GitHub token
-            github_token = config.get("env", {}).get("GITHUB_PERSONAL_ACCESS_TOKEN")
-            if not github_token:
-                print("⚠️ GitHub: No GitHub token found in config")
-            else:
-                print(f"🔍 GitHub: Token available (length: {len(github_token)})")
-            
-            # Try multiple tool names if the configured one doesn't work
-            tool_names_to_try = [tool_name]
-            if available_tools:
-                # Add any available GitHub-related tools
-                github_tools = [t for t in available_tools if 'github' in t.lower() or 'search' in t.lower()]
-                tool_names_to_try.extend(github_tools)
-            
-            # Also try common GitHub tool names
-            common_tools = ["search_repositories", "search_code", "get_repository", "github_search"]
-            for common_tool in common_tools:
-                if common_tool not in tool_names_to_try:
-                    tool_names_to_try.append(common_tool)
-            
-            print(f"🔍 GitHub: Will try tools in order: {tool_names_to_try}")
-            
-            # If no tools available, try the most common ones
-            if not available_tools:
-                print("⚠️ GitHub: No tools available from client, using fallback tools")
-                tool_names_to_try = ["search_repositories", "search_code", "get_repository"]
-            
-            # Create simple search queries
-            search_queries = [
-                keyword,  # Just the keyword
-                f"{keyword} stars:>10",  # With star filter
-                f"{keyword} language:python",  # Python specific
-                f"{keyword} created:>2023-01-01",  # Recent
-            ]
-            
-            response = None
-            working_tool = None
-            
-            # Try each tool with each query
-            for tool in tool_names_to_try:
-                print(f"🔍 GitHub: Trying tool: {tool}")
-                for i, query in enumerate(search_queries):
-                    print(f"🔍 GitHub: Trying query {i+1}: '{query}'")
-                    
-                    # Try different parameter formats
-                    param_variations = [
-                        {"query": query, "per_page": 5},
-                        {"q": query, "per_page": 5},
-                        {"search": query, "limit": 5},
-                        {"query": query}
-                    ]
-                    
-                    for j, params in enumerate(param_variations):
-                        print(f"🔍 GitHub: Trying params {j+1}: {params}")
-                        try:
-                            response = await client.call_tool(tool, params)
-                            print(f"🔍 GitHub: Success with tool '{tool}', query '{query}', params {j+1}")
-                            print(f"🔍 GitHub: Response type: {type(response)}")
-                            print(f"🔍 GitHub: Response: {response}")
-                            working_tool = tool
-                            break
-                        except Exception as e:
-                            print(f"❌ GitHub: Tool '{tool}', query '{query}', params {j+1} failed: {e}")
-                            continue
-                    
-                    if response:
-                        break
-                
-                if response:
-                    break
-            
-            if not response:
-                print("❌ GitHub: All tool and query combinations failed")
-                return self.create_error_result(keyword, "No working GitHub search method found")
-            
-            # If we got a response but no repositories, try English equivalents
-            repos = self._extract_repositories(response)
-            if not repos:
-                print(f"🔍 GitHub: No results found, trying English equivalents...")
-                english_keywords = self._get_english_equivalents(keyword)
-                for eng_keyword in english_keywords:
-                    print(f"🔍 GitHub: Trying English keyword: {eng_keyword}")
-                    try:
-                        response = await client.call_tool(working_tool, {"query": eng_keyword, "per_page": 5})
-                        repos = self._extract_repositories(response)
-                        if repos:
-                            print(f"🔍 GitHub: Found {len(repos)} results with English keyword '{eng_keyword}'")
-                            break
-                    except Exception as eng_error:
-                        print(f"❌ GitHub: English keyword '{eng_keyword}' error: {eng_error}")
-            
+            tool_name = "search_repositories"
+            response = await client.call_tool(tool_name, params)
             return self.process_response(response, keyword)
             
         except Exception as e:
-            print(f"❌ GitHub research error: {e}")
             return self.create_error_result(keyword, str(e))
-    
-    def _get_english_equivalents(self, keyword: str) -> List[str]:
-        """Get English equivalents for Japanese keywords"""
-        # Common Japanese to English translations for tech keywords
-        translations = {
-            "生成AI": ["generative AI", "AI generation", "AI tools"],
-            "人工知能": ["artificial intelligence", "AI", "machine learning"],
-            "機械学習": ["machine learning", "ML", "AI"],
-            "深層学習": ["deep learning", "neural networks", "AI"],
-            "自然言語処理": ["natural language processing", "NLP", "AI"],
-            "コンピュータビジョン": ["computer vision", "CV", "AI"],
-            "強化学習": ["reinforcement learning", "RL", "AI"],
-            "ニューラルネットワーク": ["neural networks", "deep learning", "AI"],
-            "大規模言語モデル": ["large language models", "LLM", "AI"],
-            "LLM": ["large language models", "LLM", "AI"],
-            "GPT": ["GPT", "OpenAI", "AI"],
-            "ChatGPT": ["ChatGPT", "OpenAI", "AI"],
-            "画像生成": ["image generation", "AI art", "AI"],
-            "音声認識": ["speech recognition", "AI", "voice"],
-            "音声合成": ["speech synthesis", "text to speech", "AI"],
-            "推薦システム": ["recommendation systems", "AI", "ML"],
-            "異常検知": ["anomaly detection", "AI", "ML"],
-            "時系列予測": ["time series prediction", "AI", "ML"],
-            "クラスタリング": ["clustering", "machine learning", "AI"],
-            "分類": ["classification", "machine learning", "AI"]
-        }
-        
-        # Direct translation
-        if keyword in translations:
-            return translations[keyword]
-        
-        # Try partial matches
-        for jp, en in translations.items():
-            if jp in keyword or keyword in jp:
-                return en
-        
-        # If no translation found, try common AI-related terms
-        return ["AI", "machine learning", "artificial intelligence"]
     
     def process_response(self, response: Any, keyword: str) -> Dict[str, Any]:
         """Process GitHub response"""
@@ -357,69 +219,25 @@ class GitHubHandler(BasePlatformHandler):
     
     def _extract_repositories(self, response: Any) -> List[Dict]:
         """Extract repositories from various response formats"""
-        print(f"🔍 GitHub: Extracting repositories from response type: {type(response)}")
         repos = []
         
-        # Handle None or empty response
-        if not response:
-            print("🔍 GitHub: Response is empty or None")
-            return repos
-        
-        # Handle string response (might be JSON string)
-        if isinstance(response, str):
-            print(f"🔍 GitHub: Response is string: {response[:200]}...")
-            try:
-                parsed_data = json.loads(response)
-                return self._extract_repositories(parsed_data)
-            except json.JSONDecodeError:
-                # Try to parse as text format
-                return self._parse_github_text_response(response)
-        
-        # Handle list response
         if isinstance(response, list):
-            print(f"🔍 GitHub: Response is list with {len(response)} items")
-            if len(response) > 0:
-                first_item = response[0]
-                print(f"🔍 GitHub: First item type: {type(first_item)}")
-                
-                # Handle TextContent objects
-                if hasattr(first_item, 'text'):
-                    text_content = first_item.text
-                    print(f"🔍 GitHub: First item has text attribute: {text_content[:200]}...")
-                    
-                    # Try JSON parsing first
-                    if text_content.strip().startswith('{') or text_content.strip().startswith('['):
-                        try:
-                            parsed_data = json.loads(text_content)
-                            print(f"🔍 GitHub: Parsed JSON data type: {type(parsed_data)}")
-                            return self._extract_repositories(parsed_data)
-                        except json.JSONDecodeError as e:
-                            print(f"❌ GitHub: JSON parsing error: {e}")
-                            return self._parse_github_text_response(text_content)
-                    else:
-                        # Not JSON format, parse as text
-                        print(f"🔍 GitHub: Not JSON format, parsing as text")
-                        return self._parse_github_text_response(text_content)
-                else:
-                    # Direct list of repository objects
-                    repos = response
-        
-        # Handle dict response
+            repos = response
         elif isinstance(response, dict):
-            print(f"🔍 GitHub: Response is dict with keys: {list(response.keys())}")
-            # Try different possible keys for repositories
-            for key in ['repositories', 'items', 'data', 'results']:
-                if key in response:
-                    repos = response[key]
-                    print(f"🔍 GitHub: Found repositories under key '{key}': {len(repos)} items")
-                    break
-            
-            # If no repositories found, treat the whole response as a single repository
-            if not repos and any(key in response for key in ['name', 'full_name', 'html_url']):
-                repos = [response]
-                print("🔍 GitHub: Treating response as single repository")
+            repos = response.get('repositories', response.get('items', response.get('data', [])))
         
-        print(f"🔍 GitHub: Extracted {len(repos)} repositories")
+        if not repos and isinstance(response, list) and len(response) > 0:
+            first_item = response[0]
+            if hasattr(first_item, 'text'):
+                try:
+                    parsed_data = json.loads(first_item.text)
+                    if isinstance(parsed_data, list):
+                        repos = parsed_data
+                    elif isinstance(parsed_data, dict):
+                        repos = parsed_data.get('repositories', parsed_data.get('items', parsed_data.get('data', [])))
+                except (json.JSONDecodeError, AttributeError):
+                    repos = self._parse_github_text_response(first_item.text)
+        
         return repos
     
     def _parse_github_text_response(self, text: str) -> List[Dict]:
@@ -748,7 +566,7 @@ class ArxivHandler(BasePlatformHandler):
             
         except Exception as e:
             print(f"❌ Claude translation error: {e}, using fallback")
-            return self._translate_keyword_to_english_fallback(keyword)
+            return keyword
     
     def _get_fallback_query_with_claude(self, query: str) -> str:
         """Get a broader fallback query using Claude AI"""
@@ -782,70 +600,7 @@ class ArxivHandler(BasePlatformHandler):
             
         except Exception as e:
             print(f"❌ Claude fallback suggestion error: {e}, using fallback")
-            return self._get_fallback_query_fallback(query)
-    
-    def _translate_keyword_to_english_fallback(self, keyword: str) -> str:
-        """Fallback translation method using hardcoded dictionary"""
-        # Common Japanese to English translations for AI research
-        translations = {
-            "生成AI": "generative AI",
-            "人工知能": "artificial intelligence",
-            "機械学習": "machine learning",
-            "深層学習": "deep learning",
-            "自然言語処理": "natural language processing",
-            "コンピュータビジョン": "computer vision",
-            "強化学習": "reinforcement learning",
-            "ニューラルネットワーク": "neural networks",
-            "大規模言語モデル": "large language models",
-            "LLM": "large language models",
-            "GPT": "GPT",
-            "ChatGPT": "ChatGPT",
-            "画像生成": "image generation",
-            "音声認識": "speech recognition",
-            "音声合成": "speech synthesis",
-            "推薦システム": "recommendation systems",
-            "異常検知": "anomaly detection",
-            "時系列予測": "time series prediction",
-            "クラスタリング": "clustering",
-            "分類": "classification"
-        }
-        
-        # Direct translation
-        if keyword in translations:
-            return translations[keyword]
-        
-        # Try partial matches
-        for jp, en in translations.items():
-            if jp in keyword or keyword in jp:
-                return en
-        
-        # If no translation found, try to use the keyword as-is
-        # Many Japanese researchers use English terms in their papers
-        return keyword
-    
-    def _get_fallback_query_fallback(self, query: str) -> str:
-        """Fallback method for getting broader search terms"""
-        fallback_mappings = {
-            "generative AI": "AI",
-            "artificial intelligence": "AI",
-            "machine learning": "AI",
-            "deep learning": "neural networks",
-            "natural language processing": "NLP",
-            "computer vision": "vision",
-            "reinforcement learning": "learning",
-            "neural networks": "AI",
-            "large language models": "language models",
-            "image generation": "generation",
-            "speech recognition": "speech",
-            "speech synthesis": "speech",
-            "recommendation systems": "recommendation",
-            "anomaly detection": "detection",
-            "time series prediction": "prediction",
-            "clustering": "machine learning",
-            "classification": "machine learning"
-        }
-        
-        return fallback_mappings.get(query, "AI")  # Default to "AI" if no specific fallback
+            return query
     
     def process_response(self, response: Any, keyword: str) -> Dict[str, Any]:
         """Process arXiv response"""
@@ -1253,6 +1008,570 @@ class ArxivHandler(BasePlatformHandler):
         return metrics
 
 
+class HackerNewsHandler(BasePlatformHandler):
+    """HackerNews platform research handler"""
+    
+    def __init__(self, claude_client=None):
+        super().__init__("hackernews")
+        self.claude_client = claude_client
+        print(f"🔍 HackerNewsHandler initialized with Claude client: {claude_client is not None}")
+    
+    async def research_keyword(self, client, keyword: str, config: Dict) -> Dict[str, Any]:
+        """Research keyword on HackerNews"""
+        try:
+            # First try to get top stories as a fallback since search might not work well
+            print(f"🔍 Getting top stories from HackerNews for keyword: {keyword}")
+            
+            # Try to get top stories first (this is more reliable)
+            try:
+                top_stories_response = await client.call_tool("getStories", {"max_results": 15})
+                print(f"📄 Top stories response type: {type(top_stories_response)}")
+                
+                # Debug: Print raw response for first few items
+                if isinstance(top_stories_response, list) and len(top_stories_response) > 0:
+                    first_item = top_stories_response[0]
+                    if hasattr(first_item, 'text'):
+                        print(f"📄 Raw response sample: {first_item.text[:500]}...")
+                
+                top_posts = self._extract_posts(top_stories_response)
+                
+                if top_posts and len(top_posts) > 0:
+                    print(f"📄 Found {len(top_posts)} top stories")
+                    return self.process_response(top_stories_response, keyword)
+            except Exception as e:
+                print(f"❌ Error getting top stories: {e}")
+            
+            # If top stories failed, try search with translated keyword
+            print(f"🔍 Trying search for keyword: {keyword}")
+            
+            # Translate Japanese keyword to English using Claude API
+            english_keyword = self._translate_keyword_with_claude(keyword)
+            if english_keyword != keyword:
+                print(f"🔍 Claude translated keyword '{keyword}' -> '{english_keyword}'")
+            
+            params = {
+                "query": english_keyword,
+                "max_results": 10
+            }
+            
+            tool_name = "search"
+            print(f"🔍 Calling HackerNews tool '{tool_name}' with params: {params}")
+            response = await client.call_tool(tool_name, params)
+            print(f"📄 HackerNews search response type: {type(response)}")
+            
+            # Check if we got meaningful results
+            posts = self._extract_posts(response)
+            if not posts or self._has_undefined_values(posts):
+                print(f"🔍 No meaningful search results found for '{keyword}', trying broader search")
+                
+                # Try with broader English terms using Claude
+                broader_keywords = self._get_broader_keywords_with_claude(english_keyword)
+                for broader_keyword in broader_keywords:
+                    print(f"🔍 Trying broader keyword: '{broader_keyword}'")
+                    broader_params = {
+                        "query": broader_keyword,
+                        "max_results": 10
+                    }
+                    
+                    try:
+                        broader_response = await client.call_tool(tool_name, broader_params)
+                        broader_posts = self._extract_posts(broader_response)
+                        
+                        if broader_posts and not self._has_undefined_values(broader_posts):
+                            print(f"📄 Found meaningful results with broader keyword '{broader_keyword}'")
+                            return self.process_response(broader_response, keyword)
+                    except Exception as e:
+                        print(f"❌ Error with broader keyword '{broader_keyword}': {e}")
+                        continue
+                
+                # If all searches failed, return top stories as fallback
+                print(f"🔍 All searches failed, returning top stories as fallback")
+                try:
+                    fallback_response = await client.call_tool("getStories", {"max_results": 15})
+                    fallback_posts = self._extract_posts(fallback_response)
+                    if fallback_posts and len(fallback_posts) > 0:
+                        return self.process_response(fallback_response, keyword)
+                except Exception as e:
+                    print(f"❌ Error getting fallback top stories: {e}")
+                
+                return self.create_error_result(keyword, "No meaningful results found")
+            
+            return self.process_response(response, keyword)
+            
+        except Exception as e:
+            print(f"❌ Error in HackerNews research: {e}")
+            return self.create_error_result(keyword, str(e))
+    
+    def _has_undefined_values(self, posts: List[Dict]) -> bool:
+        """Check if posts have undefined values indicating poor search results"""
+        if not posts:
+            return True
+        
+        # Count how many posts have undefined/missing values
+        invalid_count = 0
+        total_count = len(posts)
+        
+        for post in posts:
+            if isinstance(post, dict):
+                # Check if key fields are undefined or missing
+                title = post.get('title', '')
+                if title == 'undefined' or not title:
+                    invalid_count += 1
+                    continue
+                
+                score = post.get('score', post.get('points', 0))
+                if score == 'undefined' or score is None:
+                    invalid_count += 1
+                    continue
+                
+                # If we have a valid title and score, this post is probably valid
+                if title and score != 'undefined' and score is not None:
+                    continue
+                
+                invalid_count += 1
+        
+        # If more than 50% of posts are invalid, consider the results poor
+        invalid_ratio = invalid_count / total_count if total_count > 0 else 1.0
+        print(f"📄 Invalid posts ratio: {invalid_count}/{total_count} ({invalid_ratio:.2%})")
+        
+        return invalid_ratio > 0.5
+    
+    def process_response(self, response: Any, keyword: str) -> Dict[str, Any]:
+        """Process HackerNews response"""
+        results = []
+        posts = self._extract_posts(response)
+        
+        for post in posts:
+            if isinstance(post, dict):
+                # Calculate metrics
+                score = post.get('score', post.get('points', 0))
+                comments_count = post.get('descendants', post.get('comments_count', 0))
+                created_time = post.get('time', post.get('created_at', ''))
+                days_old, is_recent = self._calculate_time_metrics(created_time)
+                
+                results.append({
+                    'title': post.get('title', ''),
+                    'url': post.get('url', post.get('link', '')),
+                    'author': post.get('by', post.get('author', '')),
+                    'score': score,
+                    'comments_count': comments_count,
+                    'created_time': created_time,
+                    'days_old': days_old,
+                    'is_recent': is_recent,
+                    'trend_score': self._calculate_trend_score(score, days_old, comments_count),
+                    'type': post.get('type', 'story')
+                })
+        
+        return {
+            "platform": self.platform_name,
+            "keyword": keyword,
+            "timestamp": datetime.now().isoformat(),
+            "results": results,
+            "new_keywords": [],
+            "sentiment_score": 0.0,
+            "engagement_metrics": self._calculate_engagement_metrics(results)
+        }
+    
+    def _extract_posts(self, response: Any) -> List[Dict]:
+        """Extract posts from various response formats"""
+        posts = []
+        
+        # Handle TextContent objects with text format
+        if isinstance(response, list) and len(response) > 0:
+            first_item = response[0]
+            if hasattr(first_item, 'text'):
+                text_content = first_item.text
+                print(f"📄 Parsing text content: {text_content[:200]}...")
+                
+                # Check if it's a "No stories found" response
+                if "No stories found" in text_content:
+                    print(f"📄 No stories found in response")
+                    return []
+                
+                # Try to parse the numbered list format we're seeing
+                if text_content.strip().startswith('1.') or 'ID:' in text_content:
+                    print(f"📄 Detected numbered format, parsing with regex")
+                    return self._parse_hackernews_numbered_format(text_content)
+                
+                # Try JSON parsing
+                try:
+                    parsed_data = json.loads(text_content)
+                    if isinstance(parsed_data, list):
+                        posts = parsed_data
+                    elif isinstance(parsed_data, dict):
+                        posts = parsed_data.get('posts', parsed_data.get('stories', parsed_data.get('data', [])))
+                except (json.JSONDecodeError, AttributeError) as e:
+                    print(f"❌ JSON parsing error: {e}")
+                    posts = self._parse_hackernews_text_response(text_content)
+            else:
+                # Direct list of post objects
+                posts = response
+        
+        # Handle dict response
+        elif isinstance(response, dict):
+            posts = response.get('posts', response.get('stories', response.get('data', [])))
+        
+        return posts
+    
+    def _parse_hackernews_numbered_format(self, text: str) -> List[Dict]:
+        """Parse the numbered format response from HackerNews server"""
+        results = []
+        
+        # Split by numbered entries (1. title, 2. title, etc.)
+        import re
+        # More robust regex to handle various formats
+        sections = re.split(r'\n\n\d+\.\s+', text)
+        
+        print(f"📄 Found {len(sections)} sections in numbered format")
+        
+        # Skip the first section if it's empty or just whitespace
+        for i, section in enumerate(sections[1:], 1):
+            if not section.strip():
+                continue
+            
+            try:
+                lines = section.strip().split('\n')
+                if len(lines) < 2:
+                    continue
+                
+                # First line is the title
+                title = lines[0].strip()
+                
+                post_info = {
+                    'title': title,
+                    'url': '',
+                    'author': '',
+                    'score': 0,
+                    'comments_count': 0,
+                    'created_time': '',
+                    'type': 'story'
+                }
+                
+                # Parse the metadata lines (indented lines)
+                for line in lines[1:]:
+                    line = line.strip()
+                    
+                    # Handle ID line
+                    if line.startswith('ID: '):
+                        post_info['id'] = line[4:]
+                    
+                    # Handle URL line
+                    elif line.startswith('URL: '):
+                        url_part = line[5:]
+                        if url_part != '(text post)':
+                            post_info['url'] = url_part
+                    
+                    # Handle Points | Author | Comments line (various formats)
+                    elif 'Points:' in line:
+                        # Try to parse different formats:
+                        # "Points: 906 | Author: iyaja | Comments: 123"
+                        # "Points: 906 | Author: iyaja | Comment..."
+                        # "Points: 906 | Author: iyaja"
+                        
+                        # Extract points
+                        points_match = re.search(r'Points:\s*(\d+)', line)
+                        if points_match:
+                            try:
+                                post_info['score'] = int(points_match.group(1))
+                            except ValueError:
+                                post_info['score'] = 0
+                        
+                        # Extract author
+                        author_match = re.search(r'Author:\s*([^|]+)', line)
+                        if author_match:
+                            author_part = author_match.group(1).strip()
+                            if author_part != 'undefined':
+                                post_info['author'] = author_part
+                        
+                        # Extract comments
+                        comments_match = re.search(r'Comments?:\s*(\d+)', line)
+                        if comments_match:
+                            try:
+                                post_info['comments_count'] = int(comments_match.group(1))
+                            except ValueError:
+                                post_info['comments_count'] = 0
+                    
+                    # Handle separate metadata lines (fallback)
+                    elif line.startswith('Points: '):
+                        points_part = line[8:]
+                        if points_part != 'undefined':
+                            try:
+                                post_info['score'] = int(points_part)
+                            except ValueError:
+                                post_info['score'] = 0
+                    elif line.startswith('Author: '):
+                        author_part = line[8:]
+                        if author_part != 'undefined':
+                            post_info['author'] = author_part
+                    elif line.startswith('Comments: '):
+                        comments_part = line[10:]
+                        if comments_part != 'undefined':
+                            try:
+                                post_info['comments_count'] = int(comments_part)
+                            except ValueError:
+                                post_info['comments_count'] = 0
+                
+                # Only add if we have a meaningful title
+                if post_info['title'] and post_info['title'] != 'undefined':
+                    results.append(post_info)
+                    print(f"📄 Parsed post: {post_info['title'][:50]}... (Score: {post_info['score']}, Author: {post_info['author']}, Comments: {post_info['comments_count']})")
+                
+            except Exception as e:
+                print(f"❌ Error parsing section {i}: {e}")
+                continue
+        
+        print(f"📄 Successfully parsed {len(results)} posts from numbered format")
+        return results
+    
+    def _parse_hackernews_text_response(self, text: str) -> List[Dict]:
+        """Parse HackerNews results from text format"""
+        results = []
+        sections = text.split('\n\n')
+        
+        for section in sections:
+            if not section.strip():
+                continue
+                
+            lines = section.strip().split('\n')
+            if len(lines) < 2:
+                continue
+            
+            post_info = {}
+            
+            for line in lines:
+                line = line.strip()
+                if line.startswith('Title: '):
+                    post_info['title'] = line[7:]
+                elif line.startswith('URL: '):
+                    post_info['url'] = line[5:]
+                elif line.startswith('Author: '):
+                    post_info['author'] = line[8:]
+                elif line.startswith('Score: '):
+                    try:
+                        post_info['score'] = int(line[7:])
+                    except ValueError:
+                        post_info['score'] = 0
+                elif line.startswith('Comments: '):
+                    try:
+                        post_info['comments_count'] = int(line[10:])
+                    except ValueError:
+                        post_info['comments_count'] = 0
+                elif line.startswith('Created: '):
+                    post_info['created_time'] = line[9:]
+            
+            if post_info.get('title'):
+                results.append({
+                    'title': post_info.get('title', ''),
+                    'url': post_info.get('url', ''),
+                    'author': post_info.get('author', ''),
+                    'score': post_info.get('score', 0),
+                    'comments_count': post_info.get('comments_count', 0),
+                    'created_time': post_info.get('created_time', ''),
+                    'type': 'story'
+                })
+        
+        return results
+    
+    def _calculate_time_metrics(self, created_time) -> tuple:
+        """Calculate time-based metrics for posts"""
+        if not created_time:
+            # If no created_time is provided, assume it's recent (within last week)
+            # This is a reasonable assumption for top stories from HackerNews
+            return (3, True)  # 3 days old, considered recent
+        
+        try:
+            # Handle Unix timestamp
+            if isinstance(created_time, (int, float)):
+                from datetime import datetime
+                created_date = datetime.fromtimestamp(created_time)
+                days_old = (datetime.now() - created_date).days
+                is_recent = days_old <= 7  # Posts from last week
+                return (days_old, is_recent)
+            
+            # Handle string date
+            from datetime import datetime
+            created_date = datetime.fromisoformat(created_time.replace('Z', '+00:00'))
+            days_old = (datetime.now(created_date.tzinfo) - created_date).days
+            is_recent = days_old <= 7
+            
+            return (days_old, is_recent)
+        except Exception as e:
+            print(f"❌ Error parsing date '{created_time}': {e}")
+            # Return reasonable defaults if date parsing fails
+            return (3, True)  # 3 days old, considered recent
+    
+    def _calculate_trend_score(self, score: int, days_old: int, comments_count: int) -> float:
+        """Calculate trend score for a post"""
+        trend_score = 0.0
+        
+        # Score bonus
+        if score > 100:
+            trend_score += 30
+        elif score > 50:
+            trend_score += 20
+        elif score > 20:
+            trend_score += 10
+        
+        # Recency bonus
+        if days_old <= 1:
+            trend_score += 25
+        elif days_old <= 3:
+            trend_score += 15
+        elif days_old <= 7:
+            trend_score += 5
+        
+        # Engagement bonus (comments)
+        if comments_count > 50:
+            trend_score += 20
+        elif comments_count > 20:
+            trend_score += 10
+        elif comments_count > 5:
+            trend_score += 5
+        
+        return round(min(trend_score, 100), 2)
+    
+    def _calculate_engagement_metrics(self, results: List[Dict]) -> Dict:
+        """Calculate HackerNews engagement metrics"""
+        if not results:
+            return {"post_count": 0}
+        
+        post_count = len(results)
+        total_score = sum(post.get('score', 0) for post in results)
+        total_comments = sum(post.get('comments_count', 0) for post in results)
+        recent_posts = len([post for post in results if post.get('is_recent', False)])
+        
+        metrics = {
+            "post_count": post_count,
+            "recent_posts": recent_posts,
+            "avg_score": round(total_score / post_count, 2) if post_count > 0 else 0,
+            "avg_comments": round(total_comments / post_count, 2) if post_count > 0 else 0,
+            "total_score": total_score,
+            "total_comments": total_comments
+        }
+        
+        # Top authors
+        authors = [post.get('author', '') for post in results if post.get('author')]
+        if authors:
+            from collections import Counter
+            author_counts = Counter(authors)
+            metrics["top_authors"] = dict(author_counts.most_common(3))
+        
+        return metrics
+
+    def _translate_keyword_with_claude(self, keyword: str) -> str:
+        """Translate Japanese keyword to English using Claude API"""
+        print(f"🔍 Claude client available: {self.claude_client is not None}")
+        if not self.claude_client:
+            print("⚠️ Claude client not available, using fallback translation")
+            return self._translate_keyword_to_english_fallback(keyword)
+        
+        try:
+            prompt = f"""
+あなたはAI研究分野の専門家です。以下の日本語のキーワードを、arXivで検索するのに適した英語のキーワードに翻訳してください。
+
+日本語キーワード: {keyword}
+
+以下の点に注意してください：
+1. AI研究分野で一般的に使用される英語の専門用語を使用
+2. arXivで検索する際に効果的なキーワードを選択
+3. 複数の関連キーワードがある場合は、最も適切なものを1つ選択
+4. 回答は英語のキーワードのみで、説明は不要
+
+英語キーワード:"""
+
+            response = self.claude_client.messages.create(
+                model="claude-3-5-sonnet-20241022",
+                max_tokens=50,
+                temperature=0.1,
+                messages=[{"role": "user", "content": prompt}]
+            )
+            
+            english_keyword = response.content[0].text.strip()
+            print(f"🤖 Claude translated '{keyword}' -> '{english_keyword}'")
+            return english_keyword
+            
+        except Exception as e:
+            print(f"❌ Claude translation error: {e}, using fallback")
+            return self._translate_keyword_to_english_fallback(keyword)
+    
+    def _translate_keyword_to_english_fallback(self, keyword: str) -> str:
+        """Fallback translation method using hardcoded dictionary"""
+        # Common Japanese to English translations for AI research
+        translations = {
+            "生成AI": "generative AI",
+            "人工知能": "artificial intelligence",
+            "機械学習": "machine learning",
+            "深層学習": "deep learning",
+            "自然言語処理": "natural language processing",
+            "コンピュータビジョン": "computer vision",
+            "強化学習": "reinforcement learning",
+            "ニューラルネットワーク": "neural networks",
+            "大規模言語モデル": "large language models",
+            "LLM": "large language models",
+            "GPT": "GPT",
+            "ChatGPT": "ChatGPT",
+            "画像生成": "image generation",
+            "音声認識": "speech recognition",
+            "音声合成": "speech synthesis",
+            "推薦システム": "recommendation systems",
+            "異常検知": "anomaly detection",
+            "時系列予測": "time series prediction",
+            "クラスタリング": "clustering",
+            "分類": "classification"
+        }
+        
+        # Direct translation
+        if keyword in translations:
+            return translations[keyword]
+        
+        # Try partial matches
+        for jp, en in translations.items():
+            if jp in keyword or keyword in jp:
+                return en
+        
+        # If no translation found, try to use the keyword as-is
+        # Many Japanese researchers use English terms in their papers
+        return keyword
+    
+    def _get_broader_keywords_with_claude(self, keyword: str) -> List[str]:
+        """Get broader search terms for fallback searches using Claude API"""
+        if not self.claude_client:
+            print("⚠️ Claude client not available, using fallback broader keywords")
+            return self._get_broader_keywords_fallback(keyword)
+        
+        try:
+            prompt = f"""
+あなたはAI研究分野の専門家です。以下の英語のキーワードでHackerNews検索を行ったが結果が見つからなかった場合、より一般的で広範囲な検索キーワードを3つ提案してください。
+
+元のキーワード: {keyword}
+
+以下の点に注意してください：
+1. より一般的で広範囲なAI関連のキーワードを提案
+2. 元のキーワードより具体的でない、より包括的なキーワードを選択
+3. HackerNewsで検索する際に効果的なキーワードを選択
+4. 回答は英語のキーワードのみで、カンマ区切りで3つ提案
+
+提案するキーワード:"""
+
+            response = self.claude_client.messages.create(
+                model="claude-3-5-sonnet-20241022",
+                max_tokens=100,
+                temperature=0.1,
+                messages=[{"role": "user", "content": prompt}]
+            )
+            
+            broader_keywords_text = response.content[0].text.strip()
+            # Parse comma-separated keywords
+            broader_keywords = [kw.strip() for kw in broader_keywords_text.split(',') if kw.strip()]
+            
+            print(f"🤖 Claude suggested broader keywords: '{keyword}' -> {broader_keywords}")
+            return broader_keywords[:3]  # Limit to 3 keywords
+            
+        except Exception as e:
+            print(f"❌ Claude broader keywords error: {e}, using fallback")
+            return keyword
+
+
 class PlatformHandlerFactory:
     """Factory for creating platform handlers"""
     
@@ -1263,7 +1582,8 @@ class PlatformHandlerFactory:
             "youtube": YouTubeHandler,
             "github": GitHubHandler,
             "web": WebHandler,
-            "arxiv": lambda: ArxivHandler(claude_client)
+            "arxiv": lambda: ArxivHandler(claude_client),
+            "hackernews": lambda: HackerNewsHandler(claude_client)
         }
         
         handler_class = handlers.get(platform)

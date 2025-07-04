@@ -19,11 +19,6 @@ class ServerConfig:
                 "tools": ["searchVideos", "getVideoDetails", "getTranscripts"],
                 "enabled": True
             },
-            "twitter": {
-                "server_name": "twitter-mcp-server",
-                "tools": ["search_tweets", "get_trending_topics"],
-                "enabled": False
-            },
             "github": {
                 "server_name": "npx",
                 "args": [
@@ -35,11 +30,6 @@ class ServerConfig:
                 },
                 "tools": ["search_code", "search_repositories", "get_repository"],
                 "enabled": True
-            },
-            "reddit": {
-                "server_name": "reddit-mcp-server",
-                "tools": ["search_posts", "get_subreddit_posts"],
-                "enabled": False
             },
             "web": {
                 "server_name": "one-search-mcp",
@@ -63,19 +53,10 @@ class ServerConfig:
                 "enabled": True
             },
             "hackernews": {
-                "server_name": "hackernews-mcp-server",
-                "tools": ["search_posts", "get_top_stories"],
-                "enabled": False
-            },
-            "producthunt": {
-                "server_name": "producthunt-mcp-server",
-                "tools": ["search_products", "get_trending_products"],
-                "enabled": False
-            },
-            "linkedin": {
-                "server_name": "linkedin-mcp-server",
-                "tools": ["search_posts", "get_company_updates"],
-                "enabled": False
+                "server_name": "npx",
+                "args": ["-y", "@microagents/server-hackernews"],
+                "tools": ["getStories", "getStory", "getStoryWithComments"],
+                "enabled": True
             }
         }
     
@@ -159,6 +140,7 @@ class PlatformConfig:
         "youtube", 
         "github",
         "arxiv",
+        "hackernews",
     ]
     
     @staticmethod
