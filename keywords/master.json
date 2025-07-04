@@ -1,7 +1,7 @@
 {
   "生成AI": {
     "score": 100,
-    "last_used": "2025-06-27",
+    "last_used": "2025-07-04",
     "source": "manual",
     "created_date": "2025-01-01"
   },
@@ -78,6 +78,69 @@
     "last_used": null,
     "source": "discovered",
     "created_date": "2025-06-27",
+    "discovered_from": "daily_research"
+  },
+  "ChatGPT": {
+    "score": 60,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-04",
+    "discovered_from": "daily_research"
+  },
+  "Generative AI": {
+    "score": 60,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-04",
+    "discovered_from": "daily_research"
+  },
+  "AI Generations": {
+    "score": 55,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-04",
+    "discovered_from": "daily_research"
+  },
+  "Weak AI": {
+    "score": 55,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-04",
+    "discovered_from": "daily_research"
+  },
+  "AI Ethics": {
+    "score": 55,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-04",
+    "discovered_from": "daily_research"
+  },
+  "Gemini": {
+    "score": 60,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-04",
+    "discovered_from": "daily_research"
+  },
+  "Claude": {
+    "score": 60,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-04",
+    "discovered_from": "daily_research"
+  },
+  "Grok": {
+    "score": 55,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-04",
+    "discovered_from": "daily_research"
+  },
+  "Copilot": {
+    "score": 55,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-04",
     "discovered_from": "daily_research"
   }
 }
