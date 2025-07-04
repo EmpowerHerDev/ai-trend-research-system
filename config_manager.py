@@ -53,9 +53,14 @@ class ServerConfig:
                 "enabled": True
             },
             "arxiv": {
-                "server_name": "arxiv-mcp-server",
-                "tools": ["search_papers", "get_recent_papers"],
-                "enabled": False
+                "server_name": "npx",
+                "args": ["-y", "@langgpt/arxiv-mcp-server@latest"],
+                "env": {
+                    "SILICONFLOW_API_KEY": os.getenv("SILICONFLOW_API_KEY"),
+                    "WORK_DIR": "./reports"
+                },
+                "tools":  ['search_arxiv', 'download_arxiv_pdf', 'parse_pdf_to_text', 'convert_to_wechat_article', 'parse_pdf_to_markdown', 'process_arxiv_paper', 'clear_workdir'],
+                "enabled": True
             },
             "hackernews": {
                 "server_name": "hackernews-mcp-server",
@@ -133,7 +138,8 @@ class AppConfig:
             ("YOUTUBE_API_KEY", "YouTube API key"),
             ("GITHUB_PERSONAL_ACCESS_TOKEN", "GitHub access token"),
             ("NOTION_API_KEY", "Notion API key"),
-            ("NOTION_PARENT_PAGE_ID", "Notion parent page ID")
+            ("NOTION_PARENT_PAGE_ID", "Notion parent page ID"),
+            ("SILICONFLOW_API_KEY", "Siliconflow API key")
         ]
         
         for var, description in env_vars:
@@ -151,7 +157,8 @@ class PlatformConfig:
     SUPPORTED_PLATFORMS = [
         "web", 
         "youtube", 
-        "github"
+        "github",
+        "arxiv",
     ]
     
     @staticmethod

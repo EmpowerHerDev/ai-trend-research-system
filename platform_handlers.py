@@ -479,20 +479,616 @@ class WebHandler(BasePlatformHandler):
             return ""
 
 
+class ArxivHandler(BasePlatformHandler):
+    """arXiv platform research handler"""
+    
+    def __init__(self, claude_client=None):
+        super().__init__("arxiv")
+        self.claude_client = claude_client
+        print(f"🔍 ArxivHandler initialized with Claude client: {claude_client is not None}")
+    
+    async def research_keyword(self, client, keyword: str, config: Dict) -> Dict[str, Any]:
+        """Research keyword on arXiv"""
+        try:
+            # Translate Japanese keywords to English using Claude AI
+            english_query = self._translate_keyword_with_claude(keyword)
+            
+            # Try primary search
+            params = {
+                "query": english_query,
+                "max_results": 10
+            }
+            
+            tool_name = "search_arxiv"  # Fixed: use correct tool name from config
+            print(f"🔍 Calling arXiv tool '{tool_name}' with params: {params}")
+            print(f"🔍 Original keyword: '{keyword}' -> English query: '{english_query}'")
+            response = await client.call_tool(tool_name, params)
+            print(f"📄 arXiv raw response type: {type(response)}")
+            print(f"📄 arXiv raw response: {response}")
+            
+            # Check if we got results
+            papers = self._extract_papers(response)
+            if not papers:
+                # Try fallback search with broader terms
+                fallback_query = self._get_fallback_query_with_claude(english_query)
+                if fallback_query != english_query:
+                    print(f"🔍 No results found, trying fallback query: '{fallback_query}'")
+                    fallback_params = {
+                        "query": fallback_query,
+                        "max_results": 10
+                    }
+                    fallback_response = await client.call_tool(tool_name, fallback_params)
+                    print(f"📄 Fallback response: {fallback_response}")
+                    
+                    # Use fallback response if it has results
+                    fallback_papers = self._extract_papers(fallback_response)
+                    if fallback_papers:
+                        response = fallback_response
+                        print(f"📄 Using fallback results: {len(fallback_papers)} papers found")
+            
+            return self.process_response(response, keyword)
+            
+        except Exception as e:
+            print(f"❌ Error in arXiv research: {e}")
+            return self.create_error_result(keyword, str(e))
+    
+    def _translate_keyword_with_claude(self, keyword: str) -> str:
+        """Translate Japanese keyword to English using Claude AI"""
+        print(f"🔍 Claude client available: {self.claude_client is not None}")
+        if not self.claude_client:
+            print("⚠️ Claude client not available, using fallback translation")
+            return self._translate_keyword_to_english_fallback(keyword)
+        
+        try:
+            prompt = f"""
+あなたはAI研究分野の専門家です。以下の日本語のキーワードを、arXivで検索するのに適した英語のキーワードに翻訳してください。
+
+日本語キーワード: {keyword}
+
+以下の点に注意してください：
+1. AI研究分野で一般的に使用される英語の専門用語を使用
+2. arXivで検索する際に効果的なキーワードを選択
+3. 複数の関連キーワードがある場合は、最も適切なものを1つ選択
+4. 回答は英語のキーワードのみで、説明は不要
+
+英語キーワード:"""
+
+            response = self.claude_client.messages.create(
+                model="claude-3-5-sonnet-20241022",
+                max_tokens=50,
+                temperature=0.1,
+                messages=[{"role": "user", "content": prompt}]
+            )
+            
+            english_keyword = response.content[0].text.strip()
+            print(f"🤖 Claude translated '{keyword}' -> '{english_keyword}'")
+            return english_keyword
+            
+        except Exception as e:
+            print(f"❌ Claude translation error: {e}, using fallback")
+            return self._translate_keyword_to_english_fallback(keyword)
+    
+    def _get_fallback_query_with_claude(self, query: str) -> str:
+        """Get a broader fallback query using Claude AI"""
+        if not self.claude_client:
+            return self._get_fallback_query_fallback(query)
+        
+        try:
+            prompt = f"""
+あなたはAI研究分野の専門家です。以下の英語のキーワードでarXiv検索を行ったが結果が見つからなかった場合、より一般的で広範囲な検索キーワードを提案してください。
+
+元のキーワード: {query}
+
+以下の点に注意してください：
+1. より一般的で広範囲なAI関連のキーワードを提案
+2. 元のキーワードより具体的でない、より包括的なキーワードを選択
+3. arXivで検索する際に効果的なキーワードを選択
+4. 回答は英語のキーワードのみで、説明は不要
+
+提案するキーワード:"""
+
+            response = self.claude_client.messages.create(
+                model="claude-3-5-sonnet-20241022",
+                max_tokens=50,
+                temperature=0.1,
+                messages=[{"role": "user", "content": prompt}]
+            )
+            
+            fallback_keyword = response.content[0].text.strip()
+            print(f"🤖 Claude suggested fallback: '{query}' -> '{fallback_keyword}'")
+            return fallback_keyword
+            
+        except Exception as e:
+            print(f"❌ Claude fallback suggestion error: {e}, using fallback")
+            return self._get_fallback_query_fallback(query)
+    
+    def _translate_keyword_to_english_fallback(self, keyword: str) -> str:
+        """Fallback translation method using hardcoded dictionary"""
+        # Common Japanese to English translations for AI research
+        translations = {
+            "生成AI": "generative AI",
+            "人工知能": "artificial intelligence",
+            "機械学習": "machine learning",
+            "深層学習": "deep learning",
+            "自然言語処理": "natural language processing",
+            "コンピュータビジョン": "computer vision",
+            "強化学習": "reinforcement learning",
+            "ニューラルネットワーク": "neural networks",
+            "大規模言語モデル": "large language models",
+            "LLM": "large language models",
+            "GPT": "GPT",
+            "ChatGPT": "ChatGPT",
+            "画像生成": "image generation",
+            "音声認識": "speech recognition",
+            "音声合成": "speech synthesis",
+            "推薦システム": "recommendation systems",
+            "異常検知": "anomaly detection",
+            "時系列予測": "time series prediction",
+            "クラスタリング": "clustering",
+            "分類": "classification"
+        }
+        
+        # Direct translation
+        if keyword in translations:
+            return translations[keyword]
+        
+        # Try partial matches
+        for jp, en in translations.items():
+            if jp in keyword or keyword in jp:
+                return en
+        
+        # If no translation found, try to use the keyword as-is
+        # Many Japanese researchers use English terms in their papers
+        return keyword
+    
+    def _get_fallback_query_fallback(self, query: str) -> str:
+        """Fallback method for getting broader search terms"""
+        fallback_mappings = {
+            "generative AI": "AI",
+            "artificial intelligence": "AI",
+            "machine learning": "AI",
+            "deep learning": "neural networks",
+            "natural language processing": "NLP",
+            "computer vision": "vision",
+            "reinforcement learning": "learning",
+            "neural networks": "AI",
+            "large language models": "language models",
+            "image generation": "generation",
+            "speech recognition": "speech",
+            "speech synthesis": "speech",
+            "recommendation systems": "recommendation",
+            "anomaly detection": "detection",
+            "time series prediction": "prediction",
+            "clustering": "machine learning",
+            "classification": "machine learning"
+        }
+        
+        return fallback_mappings.get(query, "AI")  # Default to "AI" if no specific fallback
+    
+    def process_response(self, response: Any, keyword: str) -> Dict[str, Any]:
+        """Process arXiv response"""
+        results = []
+        papers = self._extract_papers(response)
+        
+        for paper in papers:
+            if isinstance(paper, dict):
+                # Extract authors
+                authors = paper.get('authors', [])
+                if isinstance(authors, str):
+                    authors = [author.strip() for author in authors.split(',')]
+                
+                # Calculate metrics
+                published_date = paper.get('published', paper.get('published_date', ''))
+                days_old, is_recent = self._calculate_time_metrics(published_date)
+                
+                results.append({
+                    'title': paper.get('title', ''),
+                    'abstract': paper.get('abstract', ''),
+                    'authors': authors,
+                    'published_date': published_date,
+                    'arxiv_id': paper.get('id', paper.get('arxiv_id', '')),
+                    'url': paper.get('url', paper.get('pdf_url', '')),
+                    'categories': paper.get('categories', []),
+                    'summary': paper.get('summary', ''),
+                    'days_old': days_old,
+                    'is_recent': is_recent,
+                    'citation_count': paper.get('citation_count', 0),
+                    'download_count': paper.get('download_count', 0),
+                    'trend_score': self._calculate_trend_score(paper)
+                })
+        
+        return {
+            "platform": self.platform_name,
+            "keyword": keyword,
+            "timestamp": datetime.now().isoformat(),
+            "results": results,
+            "new_keywords": [],
+            "sentiment_score": 0.0,
+            "engagement_metrics": self._calculate_engagement_metrics(results)
+        }
+    
+    def _extract_papers(self, response: Any) -> List[Dict]:
+        """Extract papers from various response formats"""
+        print(f"🔍 Extracting papers from response type: {type(response)}")
+        papers = []
+        
+        # Handle None or empty response
+        if not response:
+            print("📄 Response is empty or None")
+            return papers
+        
+        # Handle string response (might be JSON string)
+        if isinstance(response, str):
+            print(f"📄 Response is string: {response[:200]}...")
+            # Check if it's Chinese format first
+            if "找到" in response and "篇相关论文" in response:
+                print(f"📄 Detected Chinese format, parsing directly")
+                return self._parse_chinese_arxiv_format(response)
+            try:
+                parsed_data = json.loads(response)
+                return self._extract_papers(parsed_data)
+            except json.JSONDecodeError:
+                # Try to parse as text format
+                return self._parse_arxiv_text_response(response)
+        
+        # Handle list response
+        if isinstance(response, list):
+            print(f"📄 Response is list with {len(response)} items")
+            if len(response) > 0:
+                first_item = response[0]
+                print(f"📄 First item type: {type(first_item)}")
+                
+                # Handle TextContent objects
+                if hasattr(first_item, 'text'):
+                    text_content = first_item.text
+                    print(f"📄 First item has text attribute: {text_content[:200]}...")
+                    
+                    # Check if it's Chinese format first
+                    if "找到" in text_content and "篇相关论文" in text_content:
+                        print(f"📄 Detected Chinese format in TextContent, parsing directly")
+                        return self._parse_chinese_arxiv_format(text_content)
+                    
+                    # Try JSON parsing only if it doesn't look like Chinese format
+                    if text_content.strip().startswith('{') or text_content.strip().startswith('['):
+                        try:
+                            parsed_data = json.loads(text_content)
+                            print(f"📄 Parsed JSON data type: {type(parsed_data)}")
+                            return self._extract_papers(parsed_data)
+                        except json.JSONDecodeError as e:
+                            print(f"❌ JSON parsing error: {e}")
+                            return self._parse_arxiv_text_response(text_content)
+                    else:
+                        # Not JSON format, parse as text
+                        print(f"📄 Not JSON format, parsing as text")
+                        return self._parse_arxiv_text_response(text_content)
+                else:
+                    # Direct list of paper objects
+                    papers = response
+        
+        # Handle dict response
+        elif isinstance(response, dict):
+            print(f"📄 Response is dict with keys: {list(response.keys())}")
+            # Try different possible keys for papers
+            for key in ['papers', 'entries', 'data', 'results', 'items']:
+                if key in response:
+                    papers = response[key]
+                    print(f"📄 Found papers under key '{key}': {len(papers)} items")
+                    break
+            
+            # If no papers found, treat the whole response as a single paper
+            if not papers and any(key in response for key in ['title', 'abstract', 'authors']):
+                papers = [response]
+                print("📄 Treating response as single paper")
+        
+        print(f"📄 Extracted {len(papers)} papers")
+        return papers
+    
+    def _parse_arxiv_text_response(self, text: str) -> List[Dict]:
+        """Parse arXiv paper results from text format"""
+        results = []
+        
+        # Check if response indicates no results found
+        no_results_indicators = [
+            "找到 0 篇相关论文",  # Chinese: Found 0 related papers
+            "0 篇相关论文",      # Chinese: 0 related papers
+            "no results found",  # English
+            "0 results",         # English
+            "no papers found",   # English
+            "0 papers"           # English
+        ]
+        
+        if any(indicator in text for indicator in no_results_indicators):
+            print(f"📄 No papers found in response: {text}")
+            return results
+        
+        # Parse Chinese format: "找到 X 篇相关论文（总计 Y 篇）："
+        if "找到" in text and "篇相关论文" in text:
+            print(f"📄 Parsing Chinese format response")
+            return self._parse_chinese_arxiv_format(text)
+        
+        # Parse English format
+        sections = text.split('\n\n')
+        
+        for section in sections:
+            if not section.strip():
+                continue
+                
+            lines = section.strip().split('\n')
+            if len(lines) < 2:
+                continue
+            
+            paper_info = {}
+            
+            for line in lines:
+                line = line.strip()
+                if line.startswith('Title: '):
+                    paper_info['title'] = line[7:]
+                elif line.startswith('Authors: '):
+                    authors_str = line[9:]
+                    paper_info['authors'] = [author.strip() for author in authors_str.split(',')]
+                elif line.startswith('Abstract: '):
+                    paper_info['abstract'] = line[10:]
+                elif line.startswith('Published: '):
+                    paper_info['published_date'] = line[11:]
+                elif line.startswith('arXiv ID: '):
+                    paper_info['arxiv_id'] = line[10:]
+                elif line.startswith('URL: '):
+                    paper_info['url'] = line[5:]
+                elif line.startswith('Categories: '):
+                    categories_str = line[12:]
+                    paper_info['categories'] = [cat.strip() for cat in categories_str.split(',')]
+            
+            if paper_info.get('title') and paper_info.get('arxiv_id'):
+                results.append({
+                    'title': paper_info.get('title', ''),
+                    'abstract': paper_info.get('abstract', ''),
+                    'authors': paper_info.get('authors', []),
+                    'published_date': paper_info.get('published_date', ''),
+                    'arxiv_id': paper_info.get('arxiv_id', ''),
+                    'url': paper_info.get('url', ''),
+                    'categories': paper_info.get('categories', []),
+                    'summary': paper_info.get('abstract', ''),
+                    'citation_count': 0,
+                    'download_count': 0
+                })
+        
+        return results
+    
+    def _parse_chinese_arxiv_format(self, text: str) -> List[Dict]:
+        """Parse Chinese format arXiv response"""
+        results = []
+        
+        print(f"📄 Starting Chinese format parsing for text length: {len(text)}")
+        
+        # Split by numbered entries (1. **Title**, 2. **Title**, etc.)
+        import re
+        paper_sections = re.split(r'\n\n\d+\.\s+\*\*', text)
+        
+        print(f"📄 Found {len(paper_sections)} sections after splitting")
+        
+        # If regex splitting didn't work well, try alternative approach
+        if len(paper_sections) <= 1:
+            print(f"📄 Regex splitting didn't work, trying alternative parsing")
+            return self._parse_chinese_arxiv_alternative(text)
+        
+        # Skip the first section (header with "找到 X 篇相关论文")
+        for i, section in enumerate(paper_sections[1:], 1):
+            if not section.strip():
+                continue
+            
+            try:
+                print(f"📄 Processing section {i}")
+                
+                # Extract title (everything before the first newline)
+                lines = section.strip().split('\n')
+                title = lines[0].strip()
+                
+                # Clean up title by removing trailing **
+                if title.endswith('**'):
+                    title = title[:-2]
+                
+                paper_info = {
+                    'title': title,
+                    'abstract': '',
+                    'authors': [],
+                    'published_date': '',
+                    'arxiv_id': '',
+                    'url': '',
+                    'categories': [],
+                    'summary': '',
+                    'citation_count': 0,
+                    'download_count': 0
+                }
+                
+                # Parse the rest of the lines
+                for line in lines[1:]:
+                    line = line.strip()
+                    if line.startswith('ID: '):
+                        paper_info['arxiv_id'] = line[4:]
+                    elif line.startswith('发布日期: '):
+                        paper_info['published_date'] = line[6:]
+                    elif line.startswith('作者: '):
+                        authors_str = line[4:]
+                        paper_info['authors'] = [author.strip() for author in authors_str.split(',')]
+                    elif line.startswith('摘要: '):
+                        paper_info['abstract'] = line[4:]
+                        paper_info['summary'] = line[4:]
+                    elif line.startswith('URL: '):
+                        paper_info['url'] = line[5:]
+                
+                if paper_info['title'] and paper_info['arxiv_id']:
+                    results.append(paper_info)
+                    print(f"📄 Successfully parsed paper: {paper_info['title'][:50]}...")
+                else:
+                    print(f"❌ Skipping paper due to missing title or arxiv_id")
+                
+            except Exception as e:
+                print(f"❌ Error parsing paper section {i}: {e}")
+                continue
+        
+        print(f"📄 Successfully parsed {len(results)} papers from Chinese format")
+        return results
+    
+    def _parse_chinese_arxiv_alternative(self, text: str) -> List[Dict]:
+        """Alternative parsing method for Chinese arXiv format"""
+        results = []
+        
+        # Look for patterns like "**Title**" followed by metadata
+        import re
+        paper_pattern = r'\*\*(.*?)\*\*\s*\n\s*ID:\s*([^\n]+)\s*\n\s*发布日期:\s*([^\n]+)\s*\n\s*作者:\s*([^\n]+)\s*\n\s*摘要:\s*([^\n]+)\s*\n\s*URL:\s*([^\n]+)'
+        
+        matches = re.findall(paper_pattern, text, re.DOTALL)
+        
+        for match in matches:
+            try:
+                title, arxiv_id, published_date, authors_str, abstract, url = match
+                
+                # Clean up title
+                if title.endswith('**'):
+                    title = title[:-2]
+                
+                # Parse authors
+                authors = [author.strip() for author in authors_str.split(',')]
+                
+                paper_info = {
+                    'title': title.strip(),
+                    'abstract': abstract.strip(),
+                    'authors': authors,
+                    'published_date': published_date.strip(),
+                    'arxiv_id': arxiv_id.strip(),
+                    'url': url.strip(),
+                    'categories': [],
+                    'summary': abstract.strip(),
+                    'citation_count': 0,
+                    'download_count': 0
+                }
+                
+                if paper_info['title'] and paper_info['arxiv_id']:
+                    results.append(paper_info)
+                    print(f"📄 Alternative parsing: {paper_info['title'][:50]}...")
+                
+            except Exception as e:
+                print(f"❌ Error in alternative parsing: {e}")
+                continue
+        
+        print(f"📄 Alternative parsing found {len(results)} papers")
+        return results
+    
+    def _calculate_time_metrics(self, published_date: str) -> tuple:
+        """Calculate time-based metrics for papers"""
+        if not published_date:
+            return (0, False)
+        
+        try:
+            # Handle various date formats including Chinese format with timezone
+            if 'T' in published_date and 'Z' in published_date:
+                # Format: "2025-02-16T23:19:44Z"
+                from datetime import datetime
+                pub_date = datetime.strptime(published_date, '%Y-%m-%dT%H:%M:%SZ')
+                days_old = (datetime.now() - pub_date).days
+                is_recent = days_old <= 365  # Papers published within a year
+                return (days_old, is_recent)
+            elif 'T' in published_date:
+                # Format: "2025-02-16T23:19:44"
+                published_date = published_date.split('T')[0]
+            
+            from datetime import datetime
+            pub_date = datetime.strptime(published_date, '%Y-%m-%d')
+            days_old = (datetime.now() - pub_date).days
+            is_recent = days_old <= 365  # Papers published within a year
+            
+            return (days_old, is_recent)
+        except Exception as e:
+            print(f"❌ Error parsing date '{published_date}': {e}")
+            return (0, False)
+    
+    def _calculate_trend_score(self, paper: Dict) -> float:
+        """Calculate trend score for a paper"""
+        score = 0.0
+        
+        # Recency bonus
+        days_old = paper.get('days_old', 0)
+        if days_old <= 30:
+            score += 30
+        elif days_old <= 90:
+            score += 20
+        elif days_old <= 365:
+            score += 10
+        
+        # Citation bonus
+        citations = paper.get('citation_count', 0)
+        if citations > 100:
+            score += 25
+        elif citations > 50:
+            score += 15
+        elif citations > 10:
+            score += 5
+        
+        # Category relevance bonus
+        categories = paper.get('categories', [])
+        ai_categories = ['cs.AI', 'cs.LG', 'cs.CL', 'cs.CV', 'cs.NE', 'stat.ML']
+        if any(cat in categories for cat in ai_categories):
+            score += 15
+        
+        return round(min(score, 100), 2)
+    
+    def _calculate_engagement_metrics(self, results: List[Dict]) -> Dict:
+        """Calculate arXiv engagement metrics"""
+        if not results:
+            return {"paper_count": 0}
+        
+        paper_count = len(results)
+        recent_papers = len([p for p in results if p.get('is_recent', False)])
+        total_citations = sum(p.get('citation_count', 0) for p in results)
+        
+        metrics = {
+            "paper_count": paper_count,
+            "recent_papers": recent_papers,
+            "avg_citations": round(total_citations / paper_count, 2) if paper_count > 0 else 0,
+            "total_citations": total_citations
+        }
+        
+        # Category distribution
+        all_categories = []
+        for paper in results:
+            all_categories.extend(paper.get('categories', []))
+        
+        if all_categories:
+            from collections import Counter
+            cat_counts = Counter(all_categories)
+            metrics["top_categories"] = dict(cat_counts.most_common(5))
+        
+        # Author analysis
+        all_authors = []
+        for paper in results:
+            all_authors.extend(paper.get('authors', []))
+        
+        if all_authors:
+            from collections import Counter
+            author_counts = Counter(all_authors)
+            metrics["top_authors"] = dict(author_counts.most_common(3))
+        
+        return metrics
+
+
 class PlatformHandlerFactory:
     """Factory for creating platform handlers"""
     
     @staticmethod
-    def create_handler(platform: str) -> BasePlatformHandler:
+    def create_handler(platform: str, claude_client=None) -> BasePlatformHandler:
         """Create appropriate handler for platform"""
         handlers = {
             "youtube": YouTubeHandler,
             "github": GitHubHandler,
-            "web": WebHandler
+            "web": WebHandler,
+            "arxiv": lambda: ArxivHandler(claude_client)
         }
         
         handler_class = handlers.get(platform)
         if handler_class:
-            return handler_class()
+            if platform == "arxiv":
+                return handler_class()
+            else:
+                return handler_class()
         else:
             raise ValueError(f"No handler available for platform: {platform}")

@@ -132,7 +132,7 @@ class AITrendResearcher:
         # Check if platform is available via MCP
         if self.mcp_manager.is_platform_available(platform):
             try:
-                handler = PlatformHandlerFactory.create_handler(platform)
+                handler = PlatformHandlerFactory.create_handler(platform, self.claude_client)
                 client = self.mcp_manager.get_client(platform)
                 config = ServerConfig.get_server_configs()[platform]
                 
