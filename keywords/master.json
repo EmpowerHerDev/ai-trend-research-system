@@ -1,7 +1,7 @@
 {
   "生成AI": {
     "score": 100,
-    "last_used": "2025-07-04",
+    "last_used": "2025-07-07",
     "source": "manual",
     "created_date": "2025-01-01"
   },
@@ -17,130 +17,67 @@
     "source": "manual",
     "created_date": "2025-01-01"
   },
-  "generative AI": {
-    "score": 55,
-    "last_used": null,
-    "source": "discovered",
-    "created_date": "2025-06-27",
-    "discovered_from": "daily_research"
-  },
-  "AI tools": {
-    "score": 50,
-    "last_used": null,
-    "source": "discovered",
-    "created_date": "2025-06-27",
-    "discovered_from": "daily_research"
-  },
-  "AI services": {
-    "score": 50,
-    "last_used": null,
-    "source": "discovered",
-    "created_date": "2025-06-27",
-    "discovered_from": "daily_research"
-  },
-  "AI comparison": {
-    "score": 50,
-    "last_used": null,
-    "source": "discovered",
-    "created_date": "2025-06-27",
-    "discovered_from": "daily_research"
-  },
-  "AI applications": {
-    "score": 50,
-    "last_used": null,
-    "source": "discovered",
-    "created_date": "2025-06-27",
-    "discovered_from": "daily_research"
-  },
-  "AI trends": {
-    "score": 50,
-    "last_used": null,
-    "source": "discovered",
-    "created_date": "2025-06-27",
-    "discovered_from": "daily_research"
-  },
-  "AI use cases": {
-    "score": 50,
-    "last_used": null,
-    "source": "discovered",
-    "created_date": "2025-06-27",
-    "discovered_from": "daily_research"
-  },
-  "AI technology": {
-    "score": 50,
-    "last_used": null,
-    "source": "discovered",
-    "created_date": "2025-06-27",
-    "discovered_from": "daily_research"
-  },
-  "AI platforms": {
-    "score": 50,
-    "last_used": null,
-    "source": "discovered",
-    "created_date": "2025-06-27",
-    "discovered_from": "daily_research"
-  },
-  "ChatGPT": {
-    "score": 60,
-    "last_used": null,
-    "source": "discovered",
-    "created_date": "2025-07-04",
-    "discovered_from": "daily_research"
-  },
   "Generative AI": {
-    "score": 60,
+    "score": 65,
     "last_used": null,
     "source": "discovered",
-    "created_date": "2025-07-04",
+    "created_date": "2025-07-07",
     "discovered_from": "daily_research"
   },
-  "AI Generations": {
+  "AI 生成": {
+    "score": 50,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-07",
+    "discovered_from": "daily_research"
+  },
+  "AI 图片生成": {
     "score": 55,
     "last_used": null,
     "source": "discovered",
-    "created_date": "2025-07-04",
+    "created_date": "2025-07-07",
+    "discovered_from": "daily_research"
+  },
+  "AI 大模型": {
+    "score": 50,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-07",
+    "discovered_from": "daily_research"
+  },
+  "AI 低代码开发": {
+    "score": 50,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-07",
+    "discovered_from": "daily_research"
+  },
+  "AI 应用平台": {
+    "score": 50,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-07",
+    "discovered_from": "daily_research"
+  },
+  "AI 伦理": {
+    "score": 50,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-07",
+    "discovered_from": "daily_research"
+  },
+  "AI 1.0 to AI 4.0": {
+    "score": 55,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-07",
     "discovered_from": "daily_research"
   },
   "Weak AI": {
     "score": 55,
     "last_used": null,
     "source": "discovered",
-    "created_date": "2025-07-04",
-    "discovered_from": "daily_research"
-  },
-  "AI Ethics": {
-    "score": 55,
-    "last_used": null,
-    "source": "discovered",
-    "created_date": "2025-07-04",
-    "discovered_from": "daily_research"
-  },
-  "Gemini": {
-    "score": 60,
-    "last_used": null,
-    "source": "discovered",
-    "created_date": "2025-07-04",
-    "discovered_from": "daily_research"
-  },
-  "Claude": {
-    "score": 60,
-    "last_used": null,
-    "source": "discovered",
-    "created_date": "2025-07-04",
-    "discovered_from": "daily_research"
-  },
-  "Grok": {
-    "score": 55,
-    "last_used": null,
-    "source": "discovered",
-    "created_date": "2025-07-04",
-    "discovered_from": "daily_research"
-  },
-  "Copilot": {
-    "score": 55,
-    "last_used": null,
-    "source": "discovered",
-    "created_date": "2025-07-04",
+    "created_date": "2025-07-07",
     "discovered_from": "daily_research"
   }
 }

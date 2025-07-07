@@ -43,9 +43,9 @@ class RemoteMCPClient:
             self._available_tools = [tool.name for tool in tools]
             print(f"✓ Connected to server '{server_name}' with tools: {self._available_tools}")
             
-            # Print tool details for debugging
-            for tool in tools:
-                print(f"  - {tool.name}: {tool.description[:100]}...")
+            # # Print tool details for debugging
+            # for tool in tools:
+            #     print(f"  - {tool.name}: {tool.description[:100]}...")
             
             self._connected = True
             return True
