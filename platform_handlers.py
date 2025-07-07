@@ -164,19 +164,27 @@ class GitHubHandler(BasePlatformHandler):
                 "per_page": 10
             }
             
-            tool_name = "search_repositories"
+            tool_name = config["tools"][1]  # Use "search_repositories" from config
+            print(f"🔍 Calling GitHub tool '{tool_name}' with params: {params}")
             response = await client.call_tool(tool_name, params)
+            print(f"📄 GitHub raw response type: {type(response)}")
+            # print(f"📄 GitHub raw response: {response}")
+            
             return self.process_response(response, keyword)
             
         except Exception as e:
+            print(f"❌ Error in GitHub research: {e}")
             return self.create_error_result(keyword, str(e))
     
     def process_response(self, response: Any, keyword: str) -> Dict[str, Any]:
         """Process GitHub response"""
+        print(f"🔍 Processing GitHub response for keyword: {keyword}")
         results = []
         repos = self._extract_repositories(response)
         
-        for repo in repos:
+        print(f"📄 Processing {len(repos)} repositories")
+        
+        for i, repo in enumerate(repos):
             if isinstance(repo, dict):
                 owner_data = repo.get('owner', {})
                 owner = owner_data.get('login', '') if isinstance(owner_data, dict) else str(owner_data)
@@ -186,7 +194,7 @@ class GitHubHandler(BasePlatformHandler):
                 
                 star_rate, days_old, is_trending, is_accelerating = self._calculate_trend_metrics(stars, created_at)
                 
-                results.append({
+                result = {
                     'name': repo.get('name', ''),
                     'description': repo.get('description', ''),
                     'owner': owner,
@@ -205,7 +213,13 @@ class GitHubHandler(BasePlatformHandler):
                     'is_trending': is_trending,
                     'is_accelerating': is_accelerating,
                     'trend_score': self._calculate_trend_score(stars, days_old, star_rate)
-                })
+                }
+                
+                results.append(result)
+                print(f"📄 Processed repository {i+1}: {result['name']} by {result['owner']} (Stars: {result['stars']}, Language: {result['language']})")
+        
+        engagement_metrics = self._calculate_engagement_metrics(results)
+        print(f"📄 Calculated engagement metrics: {engagement_metrics}")
         
         return {
             "platform": self.platform_name,
@@ -214,38 +228,100 @@ class GitHubHandler(BasePlatformHandler):
             "results": results,
             "new_keywords": [],
             "sentiment_score": 0.0,
-            "engagement_metrics": self._calculate_engagement_metrics(results)
+            "engagement_metrics": engagement_metrics
         }
     
     def _extract_repositories(self, response: Any) -> List[Dict]:
         """Extract repositories from various response formats"""
+        print(f"🔍 Extracting repositories from response type: {type(response)}")
         repos = []
         
+        # Handle None or empty response
+        if not response:
+            print("📄 Response is empty or None")
+            return repos
+        
+        # Handle string response (might be JSON string)
+        if isinstance(response, str):
+            print(f"📄 Response is string: {response[:200]}...")
+            try:
+                parsed_data = json.loads(response)
+                return self._extract_repositories(parsed_data)
+            except json.JSONDecodeError:
+                # Try to parse as text format
+                return self._parse_github_text_response(response)
+        
+        # Handle list response
         if isinstance(response, list):
-            repos = response
+            print(f"📄 Response is list with {len(response)} items")
+            if len(response) > 0:
+                first_item = response[0]
+                print(f"📄 First item type: {type(first_item)}")
+                
+                # Handle TextContent objects
+                if hasattr(first_item, 'text'):
+                    text_content = first_item.text
+                    print(f"📄 First item has text attribute: {text_content[:200]}...")
+                    
+                    # Try JSON parsing
+                    try:
+                        parsed_data = json.loads(text_content)
+                        print(f"📄 Parsed JSON data type: {type(parsed_data)}")
+                        return self._extract_repositories(parsed_data)
+                    except json.JSONDecodeError as e:
+                        print(f"❌ JSON parsing error: {e}")
+                        return self._parse_github_text_response(text_content)
+                else:
+                    # Direct list of repository objects
+                    repos = response
+                    print(f"📄 Treating response as direct list of repositories")
+        
+        # Handle dict response
         elif isinstance(response, dict):
-            repos = response.get('repositories', response.get('items', response.get('data', [])))
+            print(f"📄 Response is dict with keys: {list(response.keys())}")
+            # Try different possible keys for repositories
+            for key in ['repositories', 'items', 'data', 'results']:
+                if key in response:
+                    repos = response[key]
+                    print(f"📄 Found repositories under key '{key}': {len(repos)} items")
+                    break
+            
+            # If no repositories found, treat the whole response as a single repository
+            if not repos and any(key in response for key in ['name', 'full_name', 'owner']):
+                repos = [response]
+                print("📄 Treating response as single repository")
         
-        if not repos and isinstance(response, list) and len(response) > 0:
-            first_item = response[0]
-            if hasattr(first_item, 'text'):
-                try:
-                    parsed_data = json.loads(first_item.text)
-                    if isinstance(parsed_data, list):
-                        repos = parsed_data
-                    elif isinstance(parsed_data, dict):
-                        repos = parsed_data.get('repositories', parsed_data.get('items', parsed_data.get('data', [])))
-                except (json.JSONDecodeError, AttributeError):
-                    repos = self._parse_github_text_response(first_item.text)
-        
+        print(f"📄 Extracted {len(repos)} repositories")
         return repos
     
     def _parse_github_text_response(self, text: str) -> List[Dict]:
         """Parse GitHub repository results from text format"""
+        print(f"🔍 Parsing GitHub text response: {text[:200]}...")
         results = []
-        sections = text.split('\n\n')
         
-        for section in sections:
+        # Check if response indicates no results found
+        no_results_indicators = [
+            "no repositories found",
+            "0 repositories",
+            "no results found",
+            "0 results",
+            "empty result"
+        ]
+        
+        if any(indicator in text.lower() for indicator in no_results_indicators):
+            print(f"📄 No repositories found in response: {text}")
+            return results
+        
+        # Try to parse numbered format first (similar to HackerNews)
+        if text.strip().startswith('1.') or 'Name:' in text:
+            print(f"📄 Detected numbered format, parsing with regex")
+            return self._parse_github_numbered_format(text)
+        
+        # Parse traditional format
+        sections = text.split('\n\n')
+        print(f"📄 Found {len(sections)} sections in text response")
+        
+        for i, section in enumerate(sections):
             if not section.strip():
                 continue
                 
@@ -299,7 +375,88 @@ class GitHubHandler(BasePlatformHandler):
                     'size': 0,
                     'open_issues': 0
                 })
+                print(f"📄 Parsed repository: {repo_info.get('name', '')} by {repo_info.get('owner', '')}")
         
+        print(f"📄 Successfully parsed {len(results)} repositories from text format")
+        return results
+    
+    def _parse_github_numbered_format(self, text: str) -> List[Dict]:
+        """Parse the numbered format response from GitHub server"""
+        results = []
+        
+        # Split by numbered entries (1. name, 2. name, etc.)
+        import re
+        sections = re.split(r'\n\n\d+\.\s+', text)
+        
+        print(f"📄 Found {len(sections)} sections in numbered format")
+        
+        # Skip the first section if it's empty or just whitespace
+        for i, section in enumerate(sections[1:], 1):
+            if not section.strip():
+                continue
+            
+            try:
+                lines = section.strip().split('\n')
+                if len(lines) < 2:
+                    continue
+                
+                # First line is the repository name
+                repo_name = lines[0].strip()
+                
+                repo_info = {
+                    'name': repo_name,
+                    'description': '',
+                    'owner': '',
+                    'stars': 0,
+                    'language': '',
+                    'url': '',
+                    'created_at': '',
+                    'forks': 0,
+                    'topics': [],
+                    'license': '',
+                    'updated_at': '',
+                    'size': 0,
+                    'open_issues': 0
+                }
+                
+                # Parse the metadata lines (indented lines)
+                for line in lines[1:]:
+                    line = line.strip()
+                    
+                    if line.startswith('Owner: '):
+                        repo_info['owner'] = line[7:]
+                    elif line.startswith('Description: '):
+                        repo_info['description'] = line[13:]
+                    elif line.startswith('URL: '):
+                        repo_info['url'] = line[5:]
+                    elif line.startswith('Stars: '):
+                        try:
+                            repo_info['stars'] = int(line[7:])
+                        except ValueError:
+                            repo_info['stars'] = 0
+                    elif line.startswith('Language: '):
+                        repo_info['language'] = line[10:]
+                    elif line.startswith('Created: '):
+                        repo_info['created_at'] = line[9:]
+                    elif line.startswith('Forks: '):
+                        try:
+                            repo_info['forks'] = int(line[7:])
+                        except ValueError:
+                            repo_info['forks'] = 0
+                    elif line.startswith('Topics: '):
+                        topics_str = line[8:]
+                        repo_info['topics'] = [t.strip() for t in topics_str.split(',') if t.strip()]
+                
+                # Only add if we have a meaningful name
+                if repo_info['name'] and repo_info['name'] != 'undefined':
+                    results.append(repo_info)
+                    print(f"📄 Parsed repository: {repo_info['name']} by {repo_info['owner']} (Stars: {repo_info['stars']})")
+                
+            except Exception as e:
+                print(f"❌ Error parsing section {i}: {e}")
+                continue
+        
+        print(f"📄 Successfully parsed {len(results)} repositories from numbered format")
         return results
     
     def _calculate_trend_metrics(self, stars: int, created_at: str) -> tuple:
@@ -1219,7 +1376,6 @@ class HackerNewsHandler(BasePlatformHandler):
         
         # Split by numbered entries (1. title, 2. title, etc.)
         import re
-        # More robust regex to handle various formats
         sections = re.split(r'\n\n\d+\.\s+', text)
         
         print(f"📄 Found {len(sections)} sections in numbered format")
