@@ -1728,6 +1728,21 @@ class HackerNewsHandler(BasePlatformHandler):
             return keyword
 
 
+class SupabaseHandler(BasePlatformHandler):
+    """Supabase platform handler - used for storage, not research"""
+    
+    def __init__(self):
+        super().__init__("supabase")
+    
+    async def research_keyword(self, client, keyword: str, config: Dict) -> Dict[str, Any]:
+        """Supabase is used for storage, not research - return empty result"""
+        return self.create_error_result(keyword, "Supabase is used for storage, not research")
+    
+    def process_response(self, response: Any, keyword: str) -> Dict[str, Any]:
+        """Process Supabase response - not applicable for research"""
+        return self.create_error_result(keyword, "Supabase is used for storage, not research")
+
+
 class PlatformHandlerFactory:
     """Factory for creating platform handlers"""
     
@@ -1739,12 +1754,13 @@ class PlatformHandlerFactory:
             "github": GitHubHandler,
             "web": WebHandler,
             "arxiv": lambda: ArxivHandler(claude_client),
-            "hackernews": lambda: HackerNewsHandler(claude_client)
+            "hackernews": lambda: HackerNewsHandler(claude_client),
+            "supabase": SupabaseHandler
         }
         
         handler_class = handlers.get(platform)
         if handler_class:
-            if platform == "arxiv":
+            if platform in ["arxiv", "hackernews"]:
                 return handler_class()
             else:
                 return handler_class()
