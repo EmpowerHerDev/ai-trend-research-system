@@ -623,19 +623,6 @@ class NotionReportGenerator:
                                 "rich_text": [{"type": "text", "text": {"content": platform_text}}]
                             }
                         })
-                        
-                        # Add first result as example
-                        first_result = results[0]
-                        if isinstance(first_result, dict):
-                            title = first_result.get('title', first_result.get('name', 'No title'))
-                            if isinstance(title, str) and title.strip():
-                                blocks.append({
-                                    "object": "block",
-                                    "type": "paragraph",
-                                    "paragraph": {
-                                        "rich_text": [{"type": "text", "text": {"content": f"Example: {title[:100]}..."}}]
-                                    }
-                                })
             
         except Exception as e:
             print(f"Error creating simple Notion blocks: {e}")
@@ -653,31 +640,101 @@ class NotionReportGenerator:
         return blocks
 
 
+class SupabaseReportGenerator:
+    """Generates reports in Supabase using MCP server"""
+    
+    def __init__(self, supabase_client: RemoteMCPClient):
+        self.supabase_client = supabase_client
+    
+    async def create_supabase_report(self, report: Dict) -> Any:
+        """Create report in Supabase using MCP server"""
+        if not self.supabase_client:
+            print("Supabase MCP server not available, skipping Supabase report")
+            return None
+        
+        try:
+            today = report.get("date", datetime.now().strftime("%Y-%m-%d"))
+            
+            # Prepare the report data for Supabase
+            report_data = {
+                "date": today,
+                "summary": report.get("summary", {}),
+                "detailed_results": report.get("detailed_results", []),
+                "new_keywords": report.get("new_keywords", []),
+                "recommendations": report.get("recommendations", []),
+                "created_at": datetime.now().isoformat()
+            }
+            
+            print(f"🔍 Inserting report into Supabase for date: {today}")
+            
+            project_id = "vfzumtgiwrwluphbagrg"
+
+            sql = """
+            INSERT INTO ai_trend_reports (date, summary, detailed_results, new_keywords, recommendations, created_at)
+            VALUES ('{date}', '{summary}', '{detailed_results}', '{new_keywords}', '{recommendations}', '{created_at}')
+            RETURNING id
+            """
+
+            params = {
+                "date": report_data["date"],
+                "summary": json.dumps(report_data["summary"], ensure_ascii=False).replace("'", "''"),
+                "detailed_results": json.dumps(report_data["detailed_results"], ensure_ascii=False).replace("'", "''"),
+                "new_keywords": json.dumps(report_data["new_keywords"], ensure_ascii=False).replace("'", "''"),
+                "recommendations": json.dumps(report_data["recommendations"], ensure_ascii=False).replace("'", "''"),
+                "created_at": report_data["created_at"]
+            }
+
+            query = sql.format(**params)
+
+            response = await self.supabase_client.call_tool(
+                "execute_sql",
+                {
+                    "project_id": project_id,
+                    "query": query
+                }
+            )
+            
+            print(f"✓ Supabase report created for date: {today}")
+            print(f"Supabase insert response: {response}")
+            return response
+            
+        except Exception as e:
+            print(f"✗ Error creating Supabase report: {e}")
+            return None
+
+
 class ReportManager:
     """Manages both JSON and Notion report generation"""
     
     def __init__(self, reports_dir: str = "reports", notion_client: RemoteMCPClient = None, 
-                 notion_parent_id: str = None):
+                 notion_parent_id: str = None, supabase_client: RemoteMCPClient = None):
         self.json_generator = JSONReportGenerator(reports_dir)
         self.notion_generator = NotionReportGenerator(notion_client, notion_parent_id) if notion_client else None
+        self.supabase_generator = SupabaseReportGenerator(supabase_client) if supabase_client else None
     
     async def generate_all_reports(self, research_data: List[Dict], new_keywords: List[str],
                                  summary: Dict[str, Any], recommendations: List[str]) -> str:
-        """Generate both JSON and Notion reports"""
+        """Generate JSON, Notion, and Supabase reports"""
         # Generate JSON report
         report_file = self.json_generator.generate_report(
             research_data, new_keywords, summary, recommendations
         )
         
+        # Prepare report data for other platforms
+        report_data = {
+            "date": datetime.now().strftime("%Y-%m-%d"),
+            "summary": summary,
+            "detailed_results": research_data,
+            "new_keywords": new_keywords,
+            "recommendations": recommendations
+        }
+        
         # Generate Notion report if available
         if self.notion_generator:
-            report_data = {
-                "date": datetime.now().strftime("%Y-%m-%d"),
-                "summary": summary,
-                "detailed_results": research_data,
-                "new_keywords": new_keywords,
-                "recommendations": recommendations
-            }
             await self.notion_generator.create_notion_report(report_data)
+        
+        # Generate Supabase report if available
+        if self.supabase_generator:
+            await self.supabase_generator.create_supabase_report(report_data)
         
         return report_file

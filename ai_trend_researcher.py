@@ -47,13 +47,15 @@ class AITrendResearcher:
             # Connect to MCP servers
             await self.mcp_manager.connect_all_servers()
             
-            # Set up report manager with Notion client if available
+            # Set up report manager with Notion and Supabase clients if available
             notion_client = self.mcp_manager.get_client("notion")
+            supabase_client = self.mcp_manager.get_client("supabase")
             notion_parent_id = AppConfig.get_notion_parent_page_id()
             self.report_manager = ReportManager(
                 reports_dir=AppConfig.get_reports_directory(),
                 notion_client=notion_client,
-                notion_parent_id=notion_parent_id
+                notion_parent_id=notion_parent_id,
+                supabase_client=supabase_client
             )
             
             # Load and prepare keywords

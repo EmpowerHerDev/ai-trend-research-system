@@ -57,6 +57,17 @@ class ServerConfig:
                 "args": ["-y", "@microagents/server-hackernews"],
                 "tools": ["getStories", "getStory", "getStoryWithComments"],
                 "enabled": True
+            },
+            "supabase": {
+                "server_name": "npx",
+                "args": [
+                    "-y", 
+                    "@supabase/mcp-server-supabase@latest",
+                    "--access-token",
+                    os.getenv("SUPABASE_ACCESS_TOKEN")
+                ],
+                "tools": ["execute_sql"],
+                "enabled": True
             }
         }
     
@@ -93,7 +104,8 @@ class AppConfig:
             "YOUTUBE_API_KEY": "YouTube API key", 
             "GITHUB_PERSONAL_ACCESS_TOKEN": "GitHub access token",
             "NOTION_API_KEY": "Notion API key",
-            "NOTION_PARENT_PAGE_ID": "Notion parent page ID"
+            "NOTION_PARENT_PAGE_ID": "Notion parent page ID",
+            "SUPABASE_ACCESS_TOKEN": "Supabase access token"
         }
         
         missing_vars = []
@@ -120,7 +132,8 @@ class AppConfig:
             ("GITHUB_PERSONAL_ACCESS_TOKEN", "GitHub access token"),
             ("NOTION_API_KEY", "Notion API key"),
             ("NOTION_PARENT_PAGE_ID", "Notion parent page ID"),
-            ("SILICONFLOW_API_KEY", "Siliconflow API key")
+            ("SILICONFLOW_API_KEY", "Siliconflow API key"),
+            ("SUPABASE_ACCESS_TOKEN", "Supabase access token")
         ]
         
         for var, description in env_vars:
@@ -141,6 +154,7 @@ class PlatformConfig:
         "github",
         "arxiv",
         "hackernews",
+        "supabase",
     ]
     
     @staticmethod

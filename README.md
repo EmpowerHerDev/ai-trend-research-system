@@ -9,6 +9,7 @@ An automated system that uses MCP (Model Context Protocol) to collect AI trend i
 - **Automated Execution**: Daily research via GitHub Actions
 - **Report Generation**: Structured JSON reports with insights
 - **Keyword Discovery**: Automatic detection of new trending keywords
+- **Multi-Platform Storage**: Reports saved to JSON, Notion, and Supabase
 
 ## File Structure
 ```
@@ -20,6 +21,7 @@ ai-trend-research-system/
 ├── reports/             # Generated research reports
 ├── ai_trend_researcher.py  # Main research script
 ├── keyword_manager.py   # Keyword management utilities
+├── supabase_schema.sql  # Supabase database schema
 └── .github/workflows/   # GitHub Actions automation
 ```
 
@@ -28,14 +30,30 @@ ai-trend-research-system/
 2. Install MCP servers:
    - **Web Search**: `npm install -g one-search-mcp`
    - **Notion**: `npm install -g @ramidecodes/mcp-server-notion`
+   - **Supabase**: `npm install -g @supabase/mcp-server-supabase`
    - Other MCP servers can be configured as needed
-3. Set up GitHub secrets:
+3. Set up environment variables:
    - `ANTHROPIC_API_KEY`: Your Claude API key
+   - `YOUTUBE_API_KEY`: YouTube Data API key
+   - `GITHUB_PERSONAL_ACCESS_TOKEN`: GitHub personal access token
+   - `NOTION_API_KEY`: Notion API key
+   - `NOTION_PARENT_PAGE_ID`: Notion parent page ID
+   - `SUPABASE_ACCESS_TOKEN`: Supabase access token
 4. Configure MCP connections for each platform
+5. Set up Supabase database:
+   - Create a new Supabase project
+   - Run the SQL commands in `supabase_schema.sql` to create the required tables
+   - Generate an access token in your Supabase dashboard
 
 ## Usage
 - **Manual execution**: `python ai_trend_researcher.py`
 - **Automated**: Runs daily at 9:00 AM JST via GitHub Actions
+
+## Report Storage
+Reports are automatically saved to:
+- **JSON files**: Local storage in `reports/` directory
+- **Notion**: Structured pages in your Notion workspace
+- **Supabase**: Database table `ai_trend_reports` for programmatic access
 
 ## Keyword Management
 - Keywords are scored based on engagement and relevance
