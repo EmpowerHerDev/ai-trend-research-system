@@ -47,6 +47,3 @@ jobs:
         SUPABASE_ACCESS_TOKEN: ${{ secrets.SUPABASE_ACCESS_TOKEN }}
       run: |
         python ai_trend_researcher.py
-    #     name: ai-trend-report-${{ github.run_number }}
-    #     path: reports/
-    #     retention-days: 30
