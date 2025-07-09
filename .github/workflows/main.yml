@@ -49,8 +49,11 @@ jobs:
         python ai_trend_researcher.py
     
     - name: Commit and push changes
+      env:
+        GITHUB_PERSONAL_ACCESS_TOKEN: ${{ secrets.GITHUB_PERSONAL_ACCESS_TOKEN }}
       run: |
         git config user.email "miyuu112288@gmail.com"
         git config user.name "EmpowerHerDev"
+        git remote set-url origin https://x-access-token:${GITHUB_PERSONAL_ACCESS_TOKEN}@github.com/${{ github.repository }}
         git add reports/ keywords/
         git diff --staged --quiet || (git commit -m "Update AI trend research data - $(date '+%Y-%m-%d %H:%M:%S')" && git push)
