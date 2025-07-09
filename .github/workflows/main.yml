@@ -49,8 +49,6 @@ jobs:
         python ai_trend_researcher.py
     
     - name: Commit and push changes
-      env:
-        GITHUB_PERSONAL_ACCESS_TOKEN: ${{ secrets.GITHUB_PERSONAL_ACCESS_TOKEN }}
       run: |
         git config user.email "miyuu112288@gmail.com"
         git config user.name "EmpowerHerDev"
