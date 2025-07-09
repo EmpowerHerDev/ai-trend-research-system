@@ -37,10 +37,9 @@ jobs:
     
     - name: Install MCP servers
       run: |
-        npm install -g @modelcontextprotocol/server-everything
-        npm install -g @modelcontextprotocol/server-github
-        npm install -g @ramidecodes/mcp-server-notion@latest
-        npm install -g @ktanaka101/mcp-server-supabase@latest
+        npm install -g one-search-mcp
+        npm install -g @ramidecodes/mcp-server-notion
+        npm install -g @supabase/mcp-server-supabase
     
     - name: Run AI trend research
       env:
