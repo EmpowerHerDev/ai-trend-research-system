@@ -12,7 +12,7 @@
     {
       "platform": "web",
       "keyword": "生成AI",
-      "timestamp": "2025-07-09T16:47:10.422283",
+      "timestamp": "2025-07-09T17:01:43.616862",
       "results": [
         {
           "title": "【無料】日本語対応の生成AIツール7選を比較｜文章/画像別に紹介 - AI総研｜AI …",
@@ -27,14 +27,8 @@
           "source": "businesskouzamitsuketai.com"
         },
         {
-          "title": "【2025年版】生成AIツールおすすめ10選｜無料・業務向け・個人利用まで徹底比較！ | 生成AI総合研究所 | AI …",
-          "snippet": "generativeai.tokyo この記事では、数ある生成AIツールの中から 厳選した10ツール を「機能性」「生成精度」「使いやすさ」などの観点で徹底比較。 業務用途・個人のワークフロー・副業・マーケティン …",
-          "url": "https://www.generativeai.tokyo/media/10tool/",
-          "source": "www.generativeai.tokyo"
-        },
-        {
           "title": "生成AIツールおすすめランキング10選【2025年最新版】",
-          "snippet": "aidma-hd.jp 6 days ago · 文章・画像・音声などを自動生成できる注目の生成AIツール10選を徹底比較。 ChatGPTやClaude、Canvaなど各ツールの特徴・料金・用途別の活用ポイントをわかりや …",
+          "snippet": "aidma-hd.jp 6 days ago · 文章・画像・音声などを自動生成できる注目の生成AIツール10選を徹底比較。 ChatGPTやClaude、Canvaなど各ツールの特徴・料金・用途別の活用ポイントをわかりや …Missing: 日本語Must include: 日本語",
           "url": "https://www.aidma-hd.jp/ai/generative-ai-tool/",
           "source": "www.aidma-hd.jp"
         },
@@ -45,16 +39,22 @@
           "source": "ai-kenkyujo.com"
         },
         {
+          "title": "生成AI（ジェネレーティブAI）とは？おすすめツール12選",
+          "snippet": "transcope.io 生成AIは文章や画像、動画生成だけではなく、文字起こしやコーディングもできるため、さまざまなコンテンツ作成やビジネスシーンで役立ちます。 本記事では、生成AIの概要や、利用 …",
+          "url": "https://transcope.io/column/generative-ai",
+          "source": "transcope.io"
+        },
+        {
           "title": "国産生成AI10選：日本語LLMや企業向け生成AIと選び方を解説",
           "snippet": "aismiley.co.jp Mar 25, 2025 · 日本企業が開発した最新の大規模言語モデルと生成AI 10選を紹介。 国内データに最適化された高精度モデルから、業務効率化に特化したAIソリューションまで、国産のAI技 …",
           "url": "https://aismiley.co.jp/ai_news/japanese-made-generative-ai/",
           "source": "aismiley.co.jp"
         },
         {
-          "title": "生成AI（ジェネレーティブAI）とは？おすすめツール12選",
-          "snippet": "transcope.io 生成AIは文章や画像、動画生成だけではなく、文字起こしやコーディングもできるため、さまざまなコンテンツ作成やビジネスシーンで役立ちます。 本記事では、生成AIの概要や、利用 …",
-          "url": "https://transcope.io/column/generative-ai",
-          "source": "transcope.io"
+          "title": "【2025年最新版】無料で使える生成AIツールおすすめ15選",
+          "snippet": "hubspot.jp Apr 2, 2024 · 生成AIには無料で活用できるツールもあり、日常業務に取り入れることで生産性の向上が期待できます。 本記事では、無料で使える10種類の文章生成AIと5種類の画像生成AI …",
+          "url": "https://blog.hubspot.jp/marketing/generative-ai-free",
+          "source": "blog.hubspot.jp"
         },
         {
           "title": "【2025年2月最新】ChatGPT以外にもある！日本語に強い生成AI …",
@@ -63,10 +63,10 @@
           "source": "xrcloud.jp"
         },
         {
-          "title": "日本語対応が得意な生成AIツールは？ローカル言語の壁を越えるサービスを徹底解説 | AI …",
-          "snippet": "aiai-catch.com Jun 8, 2025 · AIの急速な進化により、日本語に対応した生成AIツールが次々と登場しています。 文章作成から画像・動画制作まで、さまざまな分野でこれらのツールが注目を集めており、 …",
-          "url": "https://aiai-catch.com/japanese-language-ai-tools-guide-to-overcoming-language-barriers/",
-          "source": "aiai-catch.com"
+          "title": "日本企業製の生成AI 22選｜日本語LLM～ChatGPTサービスまで - AI総研｜AI …",
+          "snippet": "metaversesouken.com Jun 14, 2025 · 本記事では、 日本企業が開発した日本語LLMや生成AI・ChatGPTサービスについて、それぞれの特徴や強みとともにわかりやすくご紹介 します。 また、AI総研では、 国内 …",
+          "url": "https://metaversesouken.com/ai/generative_ai/made-in-japan/",
+          "source": "metaversesouken.com"
         },
         {
           "title": "生成AIサービス一覧【主要12種の性能・料金を徹底比較】",
@@ -84,18 +84,8 @@
     {
       "platform": "youtube",
       "keyword": "生成AI",
-      "timestamp": "2025-07-09T16:47:10.984949",
+      "timestamp": "2025-07-09T17:01:44.094352",
       "results": [
-        {
-          "title": "【知らないと損】生成AIで「ムリ・ムダ・ムラ」を解消！ AIを活用した業務効率化で知っておきたいポイント＆秘訣を1時間でお伝え",
-          "description": "各企業において、経営や業務における「ムリ・ムダ・ムラ」をなくすことは非常に重要です。 生成AIをうまく活用すること ...",
-          "published_at": "2025-07-09T11:00:36Z",
-          "channel": "いけともch_旧リモ研",
-          "video_id": "JKIhBu1RE4M",
-          "url": "https://www.youtube.com/watch?v=JKIhBu1RE4M",
-          "content_type": "その他",
-          "language": "ja"
-        },
         {
           "title": "AIに嘘をつかせるな！#AI #生成AI #ChatGPT #ハルシネーション #プロンプト",
           "description": "生成AI AI ChatGPT プロンプト 命令文 ハルシネーション Claude Genspark Copilot Gemini Adobe Firefly Grok OpenAI Google ...",
@@ -107,22 +97,22 @@
           "language": "ja"
         },
         {
-          "title": "大学教授が思う生成AIの使い方(chatGPT)#大学教授",
-          "description": "",
-          "published_at": "2024-06-27T09:00:27Z",
-          "channel": "としゆき / 木下敏之",
-          "video_id": "c0p_dT60xYw",
-          "url": "https://www.youtube.com/watch?v=c0p_dT60xYw",
-          "content_type": "その他",
-          "language": "ja"
-        },
-        {
           "title": "実際に現場で使われてる生成AIの活用事例10選",
           "description": "",
           "published_at": "2024-06-27T11:05:15Z",
           "channel": "#usutaku_channel",
           "video_id": "HfT6tLxtbgA",
           "url": "https://www.youtube.com/watch?v=HfT6tLxtbgA",
+          "content_type": "その他",
+          "language": "ja"
+        },
+        {
+          "title": "大学教授が思う生成AIの使い方(chatGPT)#大学教授",
+          "description": "",
+          "published_at": "2024-06-27T09:00:27Z",
+          "channel": "としゆき / 木下敏之",
+          "video_id": "c0p_dT60xYw",
+          "url": "https://www.youtube.com/watch?v=c0p_dT60xYw",
           "content_type": "その他",
           "language": "ja"
         },
@@ -167,6 +157,16 @@
           "language": "ja"
         },
         {
+          "title": "インキャの卒業写真AIで動かしてみた#AI生成#AI#AI合成#インキャ#ヨウキャ#編集",
+          "description": "",
+          "published_at": "2024-12-10T10:00:36Z",
+          "channel": "Lazy Lie Crazy【レイクレ】",
+          "video_id": "ZiBHjj9fCO8",
+          "url": "https://www.youtube.com/watch?v=ZiBHjj9fCO8",
+          "content_type": "その他",
+          "language": "ja"
+        },
+        {
           "title": "【生成AIで作った】イカゲーム、だけど何かがおかしい",
           "description": "【生成AIで作った】イカゲーム、だけど何かがおかしい このチャンネルでは、クリエイティブなAI作品を投稿していきます。",
           "published_at": "2025-07-07T23:11:21Z",
@@ -177,13 +177,13 @@
           "language": "ja"
         },
         {
-          "title": "インキャの卒業写真AIで動かしてみた#AI生成#AI#AI合成#インキャ#ヨウキャ#編集",
-          "description": "",
-          "published_at": "2024-12-10T10:00:36Z",
-          "channel": "Lazy Lie Crazy【レイクレ】",
-          "video_id": "ZiBHjj9fCO8",
-          "url": "https://www.youtube.com/watch?v=ZiBHjj9fCO8",
-          "content_type": "その他",
+          "title": "【誰でもできる】全人類使え！ガチで便利な生成AIの使い方 TOP3",
+          "description": "最近AIの進化が速すぎて、新しいAIツールが毎日のようにリリースされています。 あなたはこう思っていませんか？ 「AI、結局 ...",
+          "published_at": "2024-10-10T12:01:16Z",
+          "channel": "マコなり社長",
+          "video_id": "zrluoX5MLfA",
+          "url": "https://www.youtube.com/watch?v=zrluoX5MLfA",
+          "content_type": "ニュース",
           "language": "ja"
         }
       ],
@@ -197,7 +197,7 @@
     {
       "platform": "github",
       "keyword": "生成AI",
-      "timestamp": "2025-07-09T16:47:12.008752",
+      "timestamp": "2025-07-09T17:01:44.957840",
       "results": [
         {
           "name": "JeecgBoot",
@@ -340,26 +340,6 @@
           "trend_score": 0.0
         },
         {
-          "name": "MockingBird",
-          "description": "🚀AI拟声: 5秒内克隆您的声音并生成任意语音内容 Clone a voice in 5 seconds to generate arbitrary speech in real-time",
-          "owner": "babysor",
-          "stars": 0,
-          "language": "",
-          "url": "https://github.com/babysor/MockingBird",
-          "created_at": "2021-08-07T03:53:39Z",
-          "forks": 0,
-          "topics": [],
-          "license": "",
-          "updated_at": "2025-07-09T15:13:26Z",
-          "size": 0,
-          "open_issues": 0,
-          "star_rate": 0.0,
-          "days_old": 1432,
-          "is_trending": false,
-          "is_accelerating": false,
-          "trend_score": 0.0
-        },
-        {
           "name": "ai-rss",
           "description": "AI时代的RSS生成器",
           "owner": "easychen",
@@ -378,6 +358,26 @@
           "is_trending": false,
           "is_accelerating": false,
           "trend_score": 13.64
+        },
+        {
+          "name": "MockingBird",
+          "description": "🚀AI拟声: 5秒内克隆您的声音并生成任意语音内容 Clone a voice in 5 seconds to generate arbitrary speech in real-time",
+          "owner": "babysor",
+          "stars": 0,
+          "language": "",
+          "url": "https://github.com/babysor/MockingBird",
+          "created_at": "2021-08-07T03:53:39Z",
+          "forks": 0,
+          "topics": [],
+          "license": "",
+          "updated_at": "2025-07-09T15:13:26Z",
+          "size": 0,
+          "open_issues": 0,
+          "star_rate": 0.0,
+          "days_old": 1432,
+          "is_trending": false,
+          "is_accelerating": false,
+          "trend_score": 0.0
         },
         {
           "name": "we-drawing",
@@ -814,7 +814,7 @@
     {
       "platform": "arxiv",
       "keyword": "生成AI",
-      "timestamp": "2025-07-09T16:47:14.751838",
+      "timestamp": "2025-07-09T17:01:46.128121",
       "results": [
         {
           "title": "AI Generations: From AI 1.0 to AI 4.0",
@@ -928,7 +928,7 @@
     {
       "platform": "hackernews",
       "keyword": "生成AI",
-      "timestamp": "2025-07-09T16:47:16.038965",
+      "timestamp": "2025-07-09T17:01:47.645733",
       "results": [
         {
           "title": "Generative AI for Beginners",
@@ -1178,7 +1178,7 @@
     {
       "platform": "supabase",
       "keyword": "生成AI",
-      "timestamp": "2025-07-09T16:47:16.039090",
+      "timestamp": "2025-07-09T17:01:47.645830",
       "results": [],
       "new_keywords": [],
       "sentiment_score": 0.0,
@@ -1188,15 +1188,15 @@
   ],
   "new_keywords": [
     "生成AI",
-    "AI 生成",
-    "AI 大模型",
-    "AI 低代码开发",
-    "AI 应用平台",
-    "AI 图片生成",
-    "AI 伦理",
-    "AI 1.0 to AI 4.0",
-    "Weak AI",
-    "Generative AI"
+    "AI画像生成",
+    "低コードAI開発",
+    "AI倫理",
+    "AI発展の系譜",
+    "音声AI",
+    "AI学習パス",
+    "弱AIの価値",
+    "AI大模型",
+    "生成AIツール"
   ],
   "recommendations": [
     "Consider adding 10 new keywords to monitoring"

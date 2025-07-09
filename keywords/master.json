@@ -79,5 +79,68 @@
     "source": "discovered",
     "created_date": "2025-07-07",
     "discovered_from": "daily_research"
+  },
+  "AI画像生成": {
+    "score": 50,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-09",
+    "discovered_from": "daily_research"
+  },
+  "低コードAI開発": {
+    "score": 50,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-09",
+    "discovered_from": "daily_research"
+  },
+  "AI倫理": {
+    "score": 50,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-09",
+    "discovered_from": "daily_research"
+  },
+  "AI発展の系譜": {
+    "score": 50,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-09",
+    "discovered_from": "daily_research"
+  },
+  "音声AI": {
+    "score": 50,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-09",
+    "discovered_from": "daily_research"
+  },
+  "AI学習パス": {
+    "score": 50,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-09",
+    "discovered_from": "daily_research"
+  },
+  "弱AIの価値": {
+    "score": 50,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-09",
+    "discovered_from": "daily_research"
+  },
+  "AI大模型": {
+    "score": 55,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-09",
+    "discovered_from": "daily_research"
+  },
+  "生成AIツール": {
+    "score": 55,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-09",
+    "discovered_from": "daily_research"
   }
 }
