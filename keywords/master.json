@@ -464,5 +464,26 @@
     "source": "discovered",
     "created_date": "2025-07-10",
     "discovered_from": "daily_research"
+  },
+  "生成AI アプリ": {
+    "score": 50,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-10",
+    "discovered_from": "daily_research"
+  },
+  "生成AI 検索": {
+    "score": 50,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-10",
+    "discovered_from": "daily_research"
+  },
+  "AI 短編動画生成": {
+    "score": 50,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-10",
+    "discovered_from": "daily_research"
   }
 }
