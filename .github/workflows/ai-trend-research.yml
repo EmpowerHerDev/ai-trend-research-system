@@ -3,7 +3,7 @@ name: AI Trend Research
 on:
   schedule:
     # Run daily at 9:00 AM JST (0:00 UTC)
-    - cron: '0 0 * * *'
+    - cron: '*/5 * * * *'
   workflow_dispatch:
     # Allow manual execution
 
