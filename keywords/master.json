@@ -975,5 +975,33 @@
     "source": "discovered",
     "created_date": "2025-07-10",
     "discovered_from": "daily_research"
+  },
+  "折叠式智能手机": {
+    "score": 50,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-10",
+    "discovered_from": "daily_research"
+  },
+  "生成AI工具": {
+    "score": 50,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-10",
+    "discovered_from": "daily_research"
+  },
+  "生成式 AI": {
+    "score": 55,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-10",
+    "discovered_from": "daily_research"
+  },
+  "AI应用": {
+    "score": 55,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-10",
+    "discovered_from": "daily_research"
   }
 }
