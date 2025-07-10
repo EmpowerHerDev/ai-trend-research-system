@@ -884,5 +884,26 @@
     "source": "discovered",
     "created_date": "2025-07-10",
     "discovered_from": "daily_research"
+  },
+  "AI application platform": {
+    "score": 50,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-10",
+    "discovered_from": "daily_research"
+  },
+  "low-code development": {
+    "score": 50,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-10",
+    "discovered_from": "daily_research"
+  },
+  "AI-generated videos": {
+    "score": 50,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-10",
+    "discovered_from": "daily_research"
   }
 }
