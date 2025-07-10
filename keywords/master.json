@@ -485,5 +485,54 @@
     "source": "discovered",
     "created_date": "2025-07-10",
     "discovered_from": "daily_research"
+  },
+  "折りたたみ型スマホ": {
+    "score": 55,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-10",
+    "discovered_from": "daily_research"
+  },
+  "低コード開発": {
+    "score": 50,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-10",
+    "discovered_from": "daily_research"
+  },
+  "ジェネレーティブAI": {
+    "score": 50,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-10",
+    "discovered_from": "daily_research"
+  },
+  "ハルシネーション": {
+    "score": 55,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-10",
+    "discovered_from": "daily_research"
+  },
+  "声生成AI": {
+    "score": 50,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-10",
+    "discovered_from": "daily_research"
+  },
+  "AI アプリケーション": {
+    "score": 50,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-10",
+    "discovered_from": "daily_research"
+  },
+  "業務効率化": {
+    "score": 60,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-10",
+    "discovered_from": "daily_research"
   }
 }
