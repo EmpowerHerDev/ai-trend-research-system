@@ -1,7 +1,7 @@
 {
   "生成AI": {
     "score": 100,
-    "last_used": "2025-07-09",
+    "last_used": "2025-07-10",
     "source": "manual",
     "created_date": "2025-01-01"
   },
@@ -141,6 +141,48 @@
     "last_used": null,
     "source": "discovered",
     "created_date": "2025-07-09",
+    "discovered_from": "daily_research"
+  },
+  "AI生成": {
+    "score": 55,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-10",
+    "discovered_from": "daily_research"
+  },
+  "低代码开发": {
+    "score": 55,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-10",
+    "discovered_from": "daily_research"
+  },
+  "AI应用平台": {
+    "score": 55,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-10",
+    "discovered_from": "daily_research"
+  },
+  "代码生成": {
+    "score": 55,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-10",
+    "discovered_from": "daily_research"
+  },
+  "生成短视频": {
+    "score": 50,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-10",
+    "discovered_from": "daily_research"
+  },
+  "AI Ethics": {
+    "score": 55,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-10",
     "discovered_from": "daily_research"
   }
 }
