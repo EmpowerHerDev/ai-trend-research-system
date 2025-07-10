@@ -317,5 +317,26 @@
     "source": "discovered",
     "created_date": "2025-07-10",
     "discovered_from": "daily_research"
+  },
+  "AI 画像生成": {
+    "score": 50,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-10",
+    "discovered_from": "daily_research"
+  },
+  "弱 AI": {
+    "score": 50,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-10",
+    "discovered_from": "daily_research"
+  },
+  "AI 音声生成": {
+    "score": 50,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-10",
+    "discovered_from": "daily_research"
   }
 }
