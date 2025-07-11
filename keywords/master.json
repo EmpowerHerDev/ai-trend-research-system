@@ -1668,5 +1668,12 @@
     "source": "discovered",
     "created_date": "2025-07-11",
     "discovered_from": "daily_research"
+  },
+  "文章生成AI": {
+    "score": 55,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-11",
+    "discovered_from": "daily_research"
   }
 }
