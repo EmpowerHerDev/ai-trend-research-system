@@ -1381,5 +1381,19 @@
     "source": "discovered",
     "created_date": "2025-07-11",
     "discovered_from": "daily_research"
+  },
+  "音声生成AI": {
+    "score": 50,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-11",
+    "discovered_from": "daily_research"
+  },
+  "AI大言語モデル": {
+    "score": 50,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-11",
+    "discovered_from": "daily_research"
   }
 }
