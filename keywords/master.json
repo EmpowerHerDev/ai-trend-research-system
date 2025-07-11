@@ -1192,5 +1192,19 @@
     "source": "discovered",
     "created_date": "2025-07-11",
     "discovered_from": "daily_research"
+  },
+  "AI伦理学": {
+    "score": 50,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-11",
+    "discovered_from": "daily_research"
+  },
+  "AI 1.0 到 AI 4.0": {
+    "score": 50,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-11",
+    "discovered_from": "daily_research"
   }
 }

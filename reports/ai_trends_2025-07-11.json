@@ -12,7 +12,7 @@
     {
       "platform": "web",
       "keyword": "生成AI",
-      "timestamp": "2025-07-11T06:49:21.155399",
+      "timestamp": "2025-07-11T07:01:47.306217",
       "results": [
         {
           "title": "【無料】日本語対応の生成AIツール7選を比較｜文章/画像別に紹介 - AI総研｜AI …",
@@ -21,22 +21,16 @@
           "source": "metaversesouken.com"
         },
         {
-          "title": "生成AIツールおすすめランキング10選【2025年最新版】",
-          "snippet": "aidma-hd.jp Jul 3, 2025 · 文章・画像・音声などを自動生成できる注目の生成AIツール10選を徹底比較。ChatGPTやClaude、Canvaなど各ツールの特徴・料金・用途別の活用ポイントをわかりや …Missing: 日本語Must include: 日本語",
-          "url": "https://www.aidma-hd.jp/ai/generative-ai-tool/",
-          "source": "www.aidma-hd.jp"
-        },
-        {
           "title": "【2025】おすすめ無料生成AIサイト・アプリ20選！日本語対応 …",
           "snippet": "businesskouzamitsuketai.com Jan 17, 2025 · この記事では、無料で使える12の優良画像生成AIサイトを厳選し、日本語対応の有無、商用利用の可否もあわせて紹介します。 選び方や注意点、利用する方法についても …",
           "url": "https://businesskouzamitsuketai.com/seiseiai-muryou/",
           "source": "businesskouzamitsuketai.com"
         },
         {
-          "title": "【2025年最新】生成AIサービス17種類を比較！用途別の特徴や …",
-          "snippet": "dxnavi.com Jun 19, 2025 · 生成AIサービスを導入して作業や業務を効率化したいと考えているものの「自分に合う生成AIがどれなのかわからない」「無料で始められるAIがどれかわからない」などで …",
-          "url": "https://dxnavi.com/ai-serivice-2025/",
-          "source": "dxnavi.com"
+          "title": "生成AIツールおすすめランキング10選【2025年最新版】",
+          "snippet": "aidma-hd.jp Jul 3, 2025 · 文章・画像・音声などを自動生成できる注目の生成AIツール10選を徹底比較。ChatGPTやClaude、Canvaなど各ツールの特徴・料金・用途別の活用ポイントをわかりや …Missing: 日本語Must include: 日本語",
+          "url": "https://www.aidma-hd.jp/ai/generative-ai-tool/",
+          "source": "www.aidma-hd.jp"
         },
         {
           "title": "生成AIサービス16選を徹底比較！主な特徴や料金、メリット・デ …",
@@ -46,7 +40,7 @@
         },
         {
           "title": "生成AI比較30選！【図解】用途別おすすめ紹介！無料プランも",
-          "snippet": "aspicjapan.org Jun 26, 2025 · 生成AIツールを検討しているものの、「たくさん種類があってどれを使ったらいいかわからない」「用途に最適なものを選びたい」という方へ。生成AIにできることや利用 …",
+          "snippet": "aspicjapan.org Jun 26, 2025 · 生成AIツールを検討しているものの、「たくさん種類があってどれを使ったらいいかわからない」「用途に最適なものを選びたい」という方へ。生成AIにできることや利用 …Missing: 日本語Must include: 日本語",
           "url": "https://www.aspicjapan.org/asu/article/68407",
           "source": "www.aspicjapan.org"
         },
@@ -73,6 +67,12 @@
           "snippet": "xrcloud.jp Feb 22, 2025 · 本記事では、日本語に強い生成AIをご紹介しますので、ぜひ普段の業務にお役立てください！ ユーザーの記憶に残る次世代のプロモーション！ 体験型コンテンツ制作 …",
           "url": "https://xrcloud.jp/blog/articles/business/28026/",
           "source": "xrcloud.jp"
+        },
+        {
+          "title": "生成AI（ジェネレーティブAI）とは？おすすめツール12選",
+          "snippet": "transcope.io 生成AIは文章や画像、動画生成だけではなく、文字起こしやコーディングもできるため、さまざまなコンテンツ作成やビジネスシーンで役立ちます。 本記事では、生成AIの概要や、利用 …",
+          "url": "https://transcope.io/column/generative-ai",
+          "source": "transcope.io"
         }
       ],
       "new_keywords": [],
@@ -84,18 +84,8 @@
     {
       "platform": "youtube",
       "keyword": "生成AI",
-      "timestamp": "2025-07-11T06:49:21.517317",
+      "timestamp": "2025-07-11T07:01:47.679452",
       "results": [
-        {
-          "title": "実際に現場で使われてる生成AIの活用事例10選",
-          "description": "",
-          "published_at": "2024-06-27T11:05:15Z",
-          "channel": "#usutaku_channel",
-          "video_id": "HfT6tLxtbgA",
-          "url": "https://www.youtube.com/watch?v=HfT6tLxtbgA",
-          "content_type": "その他",
-          "language": "ja"
-        },
         {
           "title": "サムスン　折りたたみ型スマホの最新モデル発表　生成AI検索機能を拡充",
           "description": "韓国のサムスン電子は9日、ニューヨークで新製品の発表会を開き、生成AIを搭載した、折りたたみ型スマートフォンの最新モデル ...",
@@ -113,6 +103,16 @@
           "channel": "Elith",
           "video_id": "jGGgg3Cqg4Y",
           "url": "https://www.youtube.com/watch?v=jGGgg3Cqg4Y",
+          "content_type": "その他",
+          "language": "ja"
+        },
+        {
+          "title": "実際に現場で使われてる生成AIの活用事例10選",
+          "description": "",
+          "published_at": "2024-06-27T11:05:15Z",
+          "channel": "#usutaku_channel",
+          "video_id": "HfT6tLxtbgA",
+          "url": "https://www.youtube.com/watch?v=HfT6tLxtbgA",
           "content_type": "その他",
           "language": "ja"
         },
@@ -197,7 +197,7 @@
     {
       "platform": "github",
       "keyword": "生成AI",
-      "timestamp": "2025-07-11T06:49:22.506268",
+      "timestamp": "2025-07-11T07:01:48.515286",
       "results": [
         {
           "name": "JeecgBoot",
@@ -310,7 +310,7 @@
           "forks": 0,
           "topics": [],
           "license": "",
-          "updated_at": "2025-07-10T22:03:20Z",
+          "updated_at": "2025-07-11T06:57:49Z",
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
@@ -650,7 +650,7 @@
           "forks": 0,
           "topics": [],
           "license": "",
-          "updated_at": "2025-07-11T06:31:42Z",
+          "updated_at": "2025-07-11T06:53:46Z",
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
@@ -814,7 +814,7 @@
     {
       "platform": "arxiv",
       "keyword": "生成AI",
-      "timestamp": "2025-07-11T06:49:23.792562",
+      "timestamp": "2025-07-11T07:01:50.155630",
       "results": [
         {
           "title": "AI Generations: From AI 1.0 to AI 4.0",
@@ -928,7 +928,7 @@
     {
       "platform": "hackernews",
       "keyword": "生成AI",
-      "timestamp": "2025-07-11T06:49:26.110479",
+      "timestamp": "2025-07-11T07:01:51.792387",
       "results": [
         {
           "title": "Generative AI for Beginners",
@@ -1178,7 +1178,7 @@
     {
       "platform": "supabase",
       "keyword": "生成AI",
-      "timestamp": "2025-07-11T06:49:26.110598",
+      "timestamp": "2025-07-11T07:01:51.792484",
       "results": [],
       "new_keywords": [],
       "sentiment_score": 0.0,
@@ -1188,15 +1188,15 @@
   ],
   "new_keywords": [
     "生成AI",
-    "AI 生成",
-    "AI 画像生成",
-    "AI アプリ",
-    "AI 検索",
-    "AI 倫理",
-    "AI 世代",
-    "weak AI",
-    "AI 大模型",
-    "AI 低コード開発"
+    "AI生成",
+    "AI大模型",
+    "AI低代码开发",
+    "AI应用平台",
+    "AI伦理学",
+    "弱AI",
+    "强AI",
+    "AI 1.0 到 AI 4.0",
+    "生成语音AI"
   ],
   "recommendations": [
     "Consider adding 10 new keywords to monitoring"
