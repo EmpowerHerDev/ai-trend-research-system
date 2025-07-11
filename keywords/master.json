@@ -1262,5 +1262,26 @@
     "source": "discovered",
     "created_date": "2025-07-11",
     "discovered_from": "daily_research"
+  },
+  "AI生成動画": {
+    "score": 50,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-11",
+    "discovered_from": "daily_research"
+  },
+  "AI生成画像": {
+    "score": 50,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-11",
+    "discovered_from": "daily_research"
+  },
+  "AI生成テキスト": {
+    "score": 50,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-11",
+    "discovered_from": "daily_research"
   }
 }
