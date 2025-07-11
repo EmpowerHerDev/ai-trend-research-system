@@ -1241,5 +1241,26 @@
     "source": "discovered",
     "created_date": "2025-07-11",
     "discovered_from": "daily_research"
+  },
+  "生成音声 AI": {
+    "score": 50,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-11",
+    "discovered_from": "daily_research"
+  },
+  "生成 AI 学習パス": {
+    "score": 50,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-11",
+    "discovered_from": "daily_research"
+  },
+  "生成 AI 初心者": {
+    "score": 50,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-11",
+    "discovered_from": "daily_research"
   }
 }
