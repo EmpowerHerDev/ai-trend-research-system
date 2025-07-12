@@ -1843,5 +1843,12 @@
     "source": "discovered",
     "created_date": "2025-07-12",
     "discovered_from": "daily_research"
+  },
+  "生成音声AI": {
+    "score": 50,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-12",
+    "discovered_from": "daily_research"
   }
 }
