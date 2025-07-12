@@ -1,7 +1,7 @@
 {
   "生成AI": {
     "score": 100,
-    "last_used": "2025-07-11",
+    "last_used": "2025-07-12",
     "source": "manual",
     "created_date": "2025-01-01"
   },
@@ -1702,6 +1702,13 @@
     "last_used": null,
     "source": "discovered",
     "created_date": "2025-07-11",
+    "discovered_from": "daily_research"
+  },
+  "AI 進化": {
+    "score": 50,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-12",
     "discovered_from": "daily_research"
   }
 }
