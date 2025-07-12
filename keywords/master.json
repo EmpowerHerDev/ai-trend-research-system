@@ -1822,5 +1822,12 @@
     "source": "discovered",
     "created_date": "2025-07-12",
     "discovered_from": "daily_research"
+  },
+  "Low-Code Development": {
+    "score": 50,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-12",
+    "discovered_from": "daily_research"
   }
 }
