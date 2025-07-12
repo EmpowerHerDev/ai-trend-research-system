@@ -1955,5 +1955,19 @@
     "source": "discovered",
     "created_date": "2025-07-12",
     "discovered_from": "daily_research"
+  },
+  "AI発展": {
+    "score": 50,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-12",
+    "discovered_from": "daily_research"
+  },
+  "AI大モデル": {
+    "score": 50,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-12",
+    "discovered_from": "daily_research"
   }
 }
