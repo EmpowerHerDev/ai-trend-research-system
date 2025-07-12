@@ -1801,5 +1801,12 @@
     "source": "discovered",
     "created_date": "2025-07-12",
     "discovered_from": "daily_research"
+  },
+  "AI 大言モデル": {
+    "score": 50,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-12",
+    "discovered_from": "daily_research"
   }
 }
