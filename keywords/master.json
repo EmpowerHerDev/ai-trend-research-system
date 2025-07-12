@@ -1724,5 +1724,19 @@
     "source": "discovered",
     "created_date": "2025-07-12",
     "discovered_from": "daily_research"
+  },
+  "AI プロンプト": {
+    "score": 50,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-12",
+    "discovered_from": "daily_research"
+  },
+  "AI トレンド": {
+    "score": 50,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-12",
+    "discovered_from": "daily_research"
   }
 }
