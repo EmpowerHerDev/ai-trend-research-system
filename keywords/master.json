@@ -2102,5 +2102,19 @@
     "source": "discovered",
     "created_date": "2025-07-13",
     "discovered_from": "daily_research"
+  },
+  "国产生成AI": {
+    "score": 50,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-13",
+    "discovered_from": "daily_research"
+  },
+  "企业级生成AI": {
+    "score": 50,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-13",
+    "discovered_from": "daily_research"
   }
 }
