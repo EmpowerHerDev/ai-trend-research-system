@@ -2214,5 +2214,12 @@
     "source": "discovered",
     "created_date": "2025-07-13",
     "discovered_from": "daily_research"
+  },
+  "弱人工智能": {
+    "score": 50,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-13",
+    "discovered_from": "daily_research"
   }
 }
