@@ -2032,5 +2032,12 @@
     "source": "discovered",
     "created_date": "2025-07-13",
     "discovered_from": "daily_research"
+  },
+  "AI 工具": {
+    "score": 55,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-13",
+    "discovered_from": "daily_research"
   }
 }
