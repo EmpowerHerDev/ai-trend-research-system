@@ -2137,5 +2137,19 @@
     "source": "discovered",
     "created_date": "2025-07-13",
     "discovered_from": "daily_research"
+  },
+  "大規模言語モデル": {
+    "score": 55,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-13",
+    "discovered_from": "daily_research"
+  },
+  "企業向けAI": {
+    "score": 50,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-13",
+    "discovered_from": "daily_research"
   }
 }
