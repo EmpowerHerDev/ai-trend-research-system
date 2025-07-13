@@ -2046,5 +2046,26 @@
     "source": "discovered",
     "created_date": "2025-07-13",
     "discovered_from": "daily_research"
+  },
+  "強いAI": {
+    "score": 50,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-13",
+    "discovered_from": "daily_research"
+  },
+  "AIアプリ": {
+    "score": 55,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-13",
+    "discovered_from": "daily_research"
+  },
+  "AIツール": {
+    "score": 60,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-13",
+    "discovered_from": "daily_research"
   }
 }
