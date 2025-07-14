@@ -1,7 +1,7 @@
 {
   "生成AI": {
     "score": 100,
-    "last_used": "2025-07-13",
+    "last_used": "2025-07-14",
     "source": "manual",
     "created_date": "2025-01-01"
   },
@@ -2262,6 +2262,20 @@
     "last_used": null,
     "source": "discovered",
     "created_date": "2025-07-13",
+    "discovered_from": "daily_research"
+  },
+  "AI Large Language Models": {
+    "score": 50,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-14",
+    "discovered_from": "daily_research"
+  },
+  "AI Prompting": {
+    "score": 50,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-14",
     "discovered_from": "daily_research"
   }
 }
