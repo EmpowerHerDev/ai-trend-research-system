@@ -2368,5 +2368,19 @@
     "source": "discovered",
     "created_date": "2025-07-14",
     "discovered_from": "daily_research"
+  },
+  "AI生成短视频": {
+    "score": 50,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-14",
+    "discovered_from": "daily_research"
+  },
+  "AI应用实践": {
+    "score": 50,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-14",
+    "discovered_from": "daily_research"
   }
 }
