@@ -2305,5 +2305,12 @@
     "source": "discovered",
     "created_date": "2025-07-14",
     "discovered_from": "daily_research"
+  },
+  "AI-generated Video": {
+    "score": 50,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-14",
+    "discovered_from": "daily_research"
   }
 }
