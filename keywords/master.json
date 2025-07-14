@@ -2319,5 +2319,19 @@
     "source": "discovered",
     "created_date": "2025-07-14",
     "discovered_from": "daily_research"
+  },
+  "生成ビデオAI": {
+    "score": 50,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-14",
+    "discovered_from": "daily_research"
+  },
+  "生成画像AI": {
+    "score": 50,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-14",
+    "discovered_from": "daily_research"
   }
 }
