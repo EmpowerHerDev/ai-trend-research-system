@@ -2347,5 +2347,26 @@
     "source": "discovered",
     "created_date": "2025-07-14",
     "discovered_from": "daily_research"
+  },
+  "AI tool": {
+    "score": 50,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-14",
+    "discovered_from": "daily_research"
+  },
+  "AI application": {
+    "score": 50,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-14",
+    "discovered_from": "daily_research"
+  },
+  "AI platform": {
+    "score": 50,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-14",
+    "discovered_from": "daily_research"
   }
 }
