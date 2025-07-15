@@ -2452,5 +2452,26 @@
     "source": "discovered",
     "created_date": "2025-07-15",
     "discovered_from": "daily_research"
+  },
+  "Generative AI learning": {
+    "score": 55,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-15",
+    "discovered_from": "daily_research"
+  },
+  "AI-powered low-code platforms": {
+    "score": 50,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-15",
+    "discovered_from": "daily_research"
+  },
+  "AI model comparisons": {
+    "score": 50,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-15",
+    "discovered_from": "daily_research"
   }
 }
