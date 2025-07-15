@@ -12,7 +12,7 @@
     {
       "platform": "web",
       "keyword": "生成AI",
-      "timestamp": "2025-07-15T14:26:21.366511",
+      "timestamp": "2025-07-15T14:44:57.301696",
       "results": [
         {
           "title": "【無料】日本語対応の生成AIツール7選を比較｜文章/画像別に紹 …",
@@ -21,20 +21,20 @@
           "source": "metaversesouken.com"
         },
         {
-          "title": "【2025】おすすめ無料生成AIサイト・アプリ20選！日本語対応 …",
-          "snippet": "businesskouzamitsuketai.com Jan 17, 2025 · この記事では、無料で使える12の優良画像生成AIサイトを厳選し、日本語対応の有無、商用利用の可否もあわせて紹介します。",
-          "url": "https://businesskouzamitsuketai.com/seiseiai-muryou/",
-          "source": "businesskouzamitsuketai.com"
-        },
-        {
           "title": "【2025年最新版】生成AIツール16選を業務別に比較｜無料DL付 …",
           "snippet": "shift-ai.co.jp 1 day ago · ChatGPTだけじゃない！資料作成・画像生成・動画編集など業務別に使える生成AIツールを徹底比較。選定ポイントや導入のコツも解説。 セキュリティや商用利用の可否、日 …",
           "url": "https://ai-keiei.shift-ai.co.jp/generative-ai-tool-comparison/",
           "source": "ai-keiei.shift-ai.co.jp"
         },
         {
+          "title": "【2025】おすすめ無料生成AIサイト・アプリ20選！日本語対応 …",
+          "snippet": "businesskouzamitsuketai.com Jan 17, 2025 · この記事では、無料で使える12の優良画像生成AIサイトを厳選し、日本語対応の有無、商用利用の可否もあわせて紹介します。",
+          "url": "https://businesskouzamitsuketai.com/seiseiai-muryou/",
+          "source": "businesskouzamitsuketai.com"
+        },
+        {
           "title": "【2025年最新】5大生成AI比較！ChatGPT・Gemini・Claude・C…",
-          "snippet": "miralab.co.jp May 22, 2025 · 生成AIの導入を考えている方に向け、ChatGPT、Gemini、Claude、copilot、Grokを比較して、最新モデルの性能や料金、用途別の強みをわかりやすく解説します。 生 …",
+          "snippet": "miralab.co.jp May 22, 2025 · 生成AIの導入を考えている方に向け、ChatGPT、Gemini、Claude、copilot、Grokを比較して、最新モデルの性能や料金、用途別の強みをわかりやすく解説します。 生 …Missing: 日本語Must include: 日本語",
           "url": "https://miralab.co.jp/media/chatgpt_gemini_claude_copilot/",
           "source": "miralab.co.jp"
         },
@@ -72,8 +72,18 @@
     {
       "platform": "youtube",
       "keyword": "生成AI",
-      "timestamp": "2025-07-15T14:26:21.842590",
+      "timestamp": "2025-07-15T14:44:57.792778",
       "results": [
+        {
+          "title": "「服が脱がされている」生成AIで30秒ほどで裸に　“性的ディープフェイク”の実態　卒アルの写真を悪用も　「個人と名前が一致しない」卒業アルバムを作成する学校も〈カンテレNEWS〉",
+          "description": "今、急増しているディープフェイクによる性的被害。 見ず知らずのうちに写真が悪用され、生成AIにより、性的な映像や画像が作 ...",
+          "published_at": "2025-07-15T11:37:02Z",
+          "channel": "カンテレNEWS",
+          "video_id": "aJal7QMYlQU",
+          "url": "https://www.youtube.com/watch?v=aJal7QMYlQU",
+          "content_type": "その他",
+          "language": "ja"
+        },
         {
           "title": "実際に現場で使われてる生成AIの活用事例10選",
           "description": "",
@@ -105,16 +115,6 @@
           "language": "ja"
         },
         {
-          "title": "【誰でもできる】全人類使え！ガチで便利な生成AIの使い方 TOP3",
-          "description": "最近AIの進化が速すぎて、新しいAIツールが毎日のようにリリースされています。 あなたはこう思っていませんか？ 「AI、結局 ...",
-          "published_at": "2024-10-10T12:01:16Z",
-          "channel": "マコなり社長",
-          "video_id": "zrluoX5MLfA",
-          "url": "https://www.youtube.com/watch?v=zrluoX5MLfA",
-          "content_type": "ニュース",
-          "language": "ja"
-        },
-        {
           "title": "どれくらい見抜けた？👀#ai #生成ai #画像生成ai",
           "description": "",
           "published_at": "2025-06-15T02:04:41Z",
@@ -125,13 +125,13 @@
           "language": "ja"
         },
         {
-          "title": "考えさせられる動画#ai #aiart #生成ai #号泣 #shorts",
-          "description": "",
-          "published_at": "2024-03-27T10:57:37Z",
-          "channel": "AI攻略チャンネル【AI×自動化】",
-          "video_id": "UWopmyHS3Qk",
-          "url": "https://www.youtube.com/watch?v=UWopmyHS3Qk",
-          "content_type": "その他",
+          "title": "【誰でもできる】全人類使え！ガチで便利な生成AIの使い方 TOP3",
+          "description": "最近AIの進化が速すぎて、新しいAIツールが毎日のようにリリースされています。 あなたはこう思っていませんか？ 「AI、結局 ...",
+          "published_at": "2024-10-10T12:01:16Z",
+          "channel": "マコなり社長",
+          "video_id": "zrluoX5MLfA",
+          "url": "https://www.youtube.com/watch?v=zrluoX5MLfA",
+          "content_type": "ニュース",
           "language": "ja"
         },
         {
@@ -145,13 +145,13 @@
           "language": "ja"
         },
         {
-          "title": "【今さら聞けない？】生成AIとは？AIとどう違うの？（図解で簡単にわかりやすく解説）",
-          "description": "キノクエストの登録・詳細はこちら ...",
-          "published_at": "2025-01-28T11:00:48Z",
-          "channel": "キノコード / プログラミング学習チャンネル",
-          "video_id": "YFtoy_tfYfc",
-          "url": "https://www.youtube.com/watch?v=YFtoy_tfYfc",
-          "content_type": "解説動画",
+          "title": "マイクロソフトが教える生成AI活用法",
+          "description": "飲み会1回分で行けるプログラミングスクール「TECH WORLD」 【提供中のサービス】 ・メガベンチャーエンジニアがメンター ...",
+          "published_at": "2024-06-08T09:53:36Z",
+          "channel": "TECH WORLD",
+          "video_id": "IXcu3fNEgkY",
+          "url": "https://www.youtube.com/watch?v=IXcu3fNEgkY",
+          "content_type": "その他",
           "language": "ja"
         },
         {
@@ -165,13 +165,13 @@
           "language": "ja"
         },
         {
-          "title": "マイクロソフトが教える生成AI活用法",
-          "description": "飲み会1回分で行けるプログラミングスクール「TECH WORLD」 【提供中のサービス】 ・メガベンチャーエンジニアがメンター ...",
-          "published_at": "2024-06-08T09:53:36Z",
-          "channel": "TECH WORLD",
-          "video_id": "IXcu3fNEgkY",
-          "url": "https://www.youtube.com/watch?v=IXcu3fNEgkY",
-          "content_type": "その他",
+          "title": "【今さら聞けない？】生成AIとは？AIとどう違うの？（図解で簡単にわかりやすく解説）",
+          "description": "キノクエストの登録・詳細はこちら ...",
+          "published_at": "2025-01-28T11:00:48Z",
+          "channel": "キノコード / プログラミング学習チャンネル",
+          "video_id": "YFtoy_tfYfc",
+          "url": "https://www.youtube.com/watch?v=YFtoy_tfYfc",
+          "content_type": "解説動画",
           "language": "ja"
         }
       ],
@@ -185,7 +185,7 @@
     {
       "platform": "github",
       "keyword": "生成AI",
-      "timestamp": "2025-07-15T14:26:22.953230",
+      "timestamp": "2025-07-15T14:44:58.754545",
       "results": [
         {
           "name": "JeecgBoot",
@@ -278,7 +278,7 @@
           "forks": 0,
           "topics": [],
           "license": "",
-          "updated_at": "2025-07-15T13:01:20Z",
+          "updated_at": "2025-07-15T14:36:18Z",
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
@@ -518,7 +518,7 @@
           "forks": 0,
           "topics": [],
           "license": "",
-          "updated_at": "2025-07-15T13:50:56Z",
+          "updated_at": "2025-07-15T14:27:49Z",
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
@@ -638,7 +638,7 @@
           "forks": 0,
           "topics": [],
           "license": "",
-          "updated_at": "2025-07-15T11:17:21Z",
+          "updated_at": "2025-07-15T14:42:00Z",
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
@@ -708,26 +708,6 @@
           "trend_score": 0.0
         },
         {
-          "name": "AutoGenTestCase",
-          "description": "借助AI大模型帮助生成测试用例",
-          "owner": "13429837441",
-          "stars": 0,
-          "language": "",
-          "url": "https://github.com/13429837441/AutoGenTestCase",
-          "created_at": "2025-04-08T12:00:15Z",
-          "forks": 0,
-          "topics": [],
-          "license": "",
-          "updated_at": "2025-07-15T14:11:57Z",
-          "size": 0,
-          "open_issues": 0,
-          "star_rate": 0.0,
-          "days_old": 98,
-          "is_trending": false,
-          "is_accelerating": false,
-          "trend_score": 21.95
-        },
-        {
           "name": "bedrock-book",
           "description": "書籍「Amazon Bedrock 生成AIアプリ開発入門」のサンプルコード",
           "owner": "minorun365",
@@ -746,6 +726,26 @@
           "is_trending": false,
           "is_accelerating": false,
           "trend_score": 0.0
+        },
+        {
+          "name": "AutoGenTestCase",
+          "description": "借助AI大模型帮助生成测试用例",
+          "owner": "13429837441",
+          "stars": 0,
+          "language": "",
+          "url": "https://github.com/13429837441/AutoGenTestCase",
+          "created_at": "2025-04-08T12:00:15Z",
+          "forks": 0,
+          "topics": [],
+          "license": "",
+          "updated_at": "2025-07-15T14:11:57Z",
+          "size": 0,
+          "open_issues": 0,
+          "star_rate": 0.0,
+          "days_old": 98,
+          "is_trending": false,
+          "is_accelerating": false,
+          "trend_score": 21.95
         },
         {
           "name": "divination",
@@ -802,7 +802,7 @@
     {
       "platform": "arxiv",
       "keyword": "生成AI",
-      "timestamp": "2025-07-15T14:26:26.213917",
+      "timestamp": "2025-07-15T14:45:01.280021",
       "results": [
         {
           "title": "AI Generations: From AI 1.0 to AI 4.0",
@@ -916,7 +916,7 @@
     {
       "platform": "hackernews",
       "keyword": "生成AI",
-      "timestamp": "2025-07-15T14:26:30.317008",
+      "timestamp": "2025-07-15T14:45:04.150133",
       "results": [
         {
           "title": "Generative AI for Beginners",
@@ -1166,7 +1166,7 @@
     {
       "platform": "supabase",
       "keyword": "生成AI",
-      "timestamp": "2025-07-15T14:26:30.317103",
+      "timestamp": "2025-07-15T14:45:04.150248",
       "results": [],
       "new_keywords": [],
       "sentiment_score": 0.0,
@@ -1176,15 +1176,15 @@
   ],
   "new_keywords": [
     "生成AI",
-    "ChatGPT",
-    "プロンプト",
-    "画像生成AI",
-    "AI低コード開発",
-    "AI動画生成",
-    "AI윞저엲",
-    "AI倫理",
-    "弱AI",
-    "ハルシネーション"
+    "AI generation",
+    "AI ethics",
+    "weak AI",
+    "strong AI",
+    "generative AI",
+    "AI applications",
+    "AI coding",
+    "AI video generation",
+    "AI image generation"
   ],
   "recommendations": [
     "Consider adding 10 new keywords to monitoring"
