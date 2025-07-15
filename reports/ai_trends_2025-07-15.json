@@ -12,7 +12,7 @@
     {
       "platform": "web",
       "keyword": "生成AI",
-      "timestamp": "2025-07-15T08:31:43.949317",
+      "timestamp": "2025-07-15T08:59:06.698385",
       "results": [
         {
           "title": "【無料】日本語対応の生成AIツール7選を比較｜文章/画像別に紹 …",
@@ -57,10 +57,10 @@
           "source": "ai-kenkyujo.com"
         },
         {
-          "title": "生成AIサービス一覧【主要12種の性能・料金を徹底比 …",
-          "snippet": "sejuku.net Jul 2, 2025 · 画像生成、文章生成、動画生成、コーディングの用途別に、主要生成AIサービスの性能・料金を徹底比較します。比較を踏まえ、おすすめのサービスも紹介するので、ぜひ参考にしてください。Missing: 日本語Must include: 日本語",
-          "url": "https://generative-ai.sejuku.net/blog/3732/",
-          "source": "generative-ai.sejuku.net"
+          "title": "初心者でも迷わない！無料AIツール9選徹底活用&選 …",
+          "snippet": "サラリーマンのネタ帳 3 days ago · 本記事では「今すぐ使える！ 無料のAIツール9選」の一覧表をもとに、 画像生成AI／音楽・音声生成AI／文章生成AI の3ジャンルに分け、それぞれの代表的ツールを徹底解説。",
+          "url": "https://salaryman-story.com/free-ai-tools-guide",
+          "source": "salaryman-story.com"
         }
       ],
       "new_keywords": [],
@@ -72,7 +72,7 @@
     {
       "platform": "youtube",
       "keyword": "生成AI",
-      "timestamp": "2025-07-15T08:31:44.325171",
+      "timestamp": "2025-07-15T08:59:07.083048",
       "results": [
         {
           "title": "実際に現場で使われてる生成AIの活用事例10選",
@@ -95,13 +95,13 @@
           "language": "ja"
         },
         {
-          "title": "【誰でもできる】全人類使え！ガチで便利な生成AIの使い方 TOP3",
-          "description": "最近AIの進化が速すぎて、新しいAIツールが毎日のようにリリースされています。 あなたはこう思っていませんか？ 「AI、結局 ...",
-          "published_at": "2024-10-10T12:01:16Z",
-          "channel": "マコなり社長",
-          "video_id": "zrluoX5MLfA",
-          "url": "https://www.youtube.com/watch?v=zrluoX5MLfA",
-          "content_type": "ニュース",
+          "title": "大学教授が思う生成AIの使い方(chatGPT)#大学教授",
+          "description": "",
+          "published_at": "2024-06-27T09:00:27Z",
+          "channel": "としゆき / 木下敏之",
+          "video_id": "c0p_dT60xYw",
+          "url": "https://www.youtube.com/watch?v=c0p_dT60xYw",
+          "content_type": "その他",
           "language": "ja"
         },
         {
@@ -135,32 +135,12 @@
           "language": "ja"
         },
         {
-          "title": "【今さら聞けない？】生成AIとは？AIとどう違うの？（図解で簡単にわかりやすく解説）",
-          "description": "キノクエストの登録・詳細はこちら ...",
-          "published_at": "2025-01-28T11:00:48Z",
-          "channel": "キノコード / プログラミング学習チャンネル",
-          "video_id": "YFtoy_tfYfc",
-          "url": "https://www.youtube.com/watch?v=YFtoy_tfYfc",
-          "content_type": "解説動画",
-          "language": "ja"
-        },
-        {
           "title": "マイクロソフトが教える生成AI活用法",
           "description": "飲み会1回分で行けるプログラミングスクール「TECH WORLD」 【提供中のサービス】 ・メガベンチャーエンジニアがメンター ...",
           "published_at": "2024-06-08T09:53:36Z",
           "channel": "TECH WORLD",
           "video_id": "IXcu3fNEgkY",
           "url": "https://www.youtube.com/watch?v=IXcu3fNEgkY",
-          "content_type": "その他",
-          "language": "ja"
-        },
-        {
-          "title": "グーグルの生成AIジェミニGeminiのCanvas機能がスゴイ！文章の編集がめっちゃ楽",
-          "description": "グーグルの生成AIジェミニGeminiのCanvas機能についてのご紹介です。 文章の編集機能がとても充実しています。 ブログを書い ...",
-          "published_at": "2025-07-13T13:01:23Z",
-          "channel": "ヒーローゆうき",
-          "video_id": "nJM44RE2e6s",
-          "url": "https://www.youtube.com/watch?v=nJM44RE2e6s",
           "content_type": "その他",
           "language": "ja"
         },
@@ -173,19 +153,39 @@
           "url": "https://www.youtube.com/watch?v=ZiBHjj9fCO8",
           "content_type": "その他",
           "language": "ja"
+        },
+        {
+          "title": "有名な生成AI「ChatGPT」でもふもふ黒猫をアニメ風にしてみたら可愛すぎた！",
+          "description": "トモくんが可愛いアニメ調になりました。満足なできあがりです ↓赤ちゃんと過ごす様子はこちらの再生リスト ...",
+          "published_at": "2025-07-13T10:54:13Z",
+          "channel": "黒猫トモVlog",
+          "video_id": "gOYoCC2fJLY",
+          "url": "https://www.youtube.com/watch?v=gOYoCC2fJLY",
+          "content_type": "その他",
+          "language": "ja"
+        },
+        {
+          "title": "【AIコンサル社長が厳選！】1位のツールは特に使える！#生成ai  #ai  #aiツール  #gamma #sunoai #mapify #notebooklm  #perplexity #gpt",
+          "description": "",
+          "published_at": "2024-10-29T11:00:07Z",
+          "channel": "いけともch",
+          "video_id": "7pMLBh1P-w4",
+          "url": "https://www.youtube.com/watch?v=7pMLBh1P-w4",
+          "content_type": "その他",
+          "language": "ja"
         }
       ],
       "new_keywords": [],
       "sentiment_score": 0.0,
       "engagement_metrics": {
-        "video_count": 1,
+        "video_count": 0,
         "total_videos": 10
       }
     },
     {
       "platform": "github",
       "keyword": "生成AI",
-      "timestamp": "2025-07-15T08:31:45.163862",
+      "timestamp": "2025-07-15T08:59:08.227718",
       "results": [
         {
           "name": "JeecgBoot",
@@ -198,7 +198,7 @@
           "forks": 0,
           "topics": [],
           "license": "",
-          "updated_at": "2025-07-15T07:39:14Z",
+          "updated_at": "2025-07-15T08:46:45Z",
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
@@ -218,7 +218,7 @@
           "forks": 0,
           "topics": [],
           "license": "",
-          "updated_at": "2025-07-15T08:19:13Z",
+          "updated_at": "2025-07-15T08:33:00Z",
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
@@ -382,7 +382,7 @@
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
-          "days_old": 636,
+          "days_old": 637,
           "is_trending": false,
           "is_accelerating": false,
           "trend_score": 0.0
@@ -638,7 +638,7 @@
           "forks": 0,
           "topics": [],
           "license": "",
-          "updated_at": "2025-07-15T08:17:49Z",
+          "updated_at": "2025-07-15T08:58:13Z",
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
@@ -802,7 +802,7 @@
     {
       "platform": "arxiv",
       "keyword": "生成AI",
-      "timestamp": "2025-07-15T08:31:47.139830",
+      "timestamp": "2025-07-15T08:59:12.411357",
       "results": [
         {
           "title": "AI Generations: From AI 1.0 to AI 4.0",
@@ -916,7 +916,7 @@
     {
       "platform": "hackernews",
       "keyword": "生成AI",
-      "timestamp": "2025-07-15T08:31:48.915982",
+      "timestamp": "2025-07-15T08:59:14.728162",
       "results": [
         {
           "title": "Generative AI for Beginners",
@@ -1166,7 +1166,7 @@
     {
       "platform": "supabase",
       "keyword": "生成AI",
-      "timestamp": "2025-07-15T08:31:48.916077",
+      "timestamp": "2025-07-15T08:59:14.728287",
       "results": [],
       "new_keywords": [],
       "sentiment_score": 0.0,
@@ -1177,14 +1177,14 @@
   "new_keywords": [
     "生成AI",
     "Generative AI",
-    "AI 生成",
-    "AI 画像生成",
-    "AI 動画生成",
-    "AI アプリケーション",
-    "AI プラットフォーム",
-    "AI ツール",
-    "AI コーディング",
-    "AI 倫理"
+    "AI ethics",
+    "AI applications",
+    "AI generations",
+    "Weak AI",
+    "AI low-code development",
+    "AI-generated video",
+    "AI image generation",
+    "AI language models"
   ],
   "recommendations": [
     "Consider adding 10 new keywords to monitoring"
