@@ -2480,5 +2480,12 @@
     "source": "discovered",
     "created_date": "2025-07-15",
     "discovered_from": "daily_research"
+  },
+  "AI 语音合成": {
+    "score": 50,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-15",
+    "discovered_from": "daily_research"
   }
 }
