@@ -2501,5 +2501,12 @@
     "source": "discovered",
     "created_date": "2025-07-15",
     "discovered_from": "daily_research"
+  },
+  "AI翻译": {
+    "score": 55,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-15",
+    "discovered_from": "daily_research"
   }
 }
