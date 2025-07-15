@@ -2473,5 +2473,12 @@
     "source": "discovered",
     "created_date": "2025-07-15",
     "discovered_from": "daily_research"
+  },
+  "生成AI 工具": {
+    "score": 50,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-15",
+    "discovered_from": "daily_research"
   }
 }
