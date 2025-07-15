@@ -12,7 +12,7 @@
     {
       "platform": "web",
       "keyword": "生成AI",
-      "timestamp": "2025-07-15T17:52:08.077185",
+      "timestamp": "2025-07-15T17:59:08.593238",
       "results": [
         {
           "title": "【2025年最新版】生成AIツール16選を業務別に比較｜無料DL付き導入チェックリストも - AI …",
@@ -84,7 +84,7 @@
     {
       "platform": "youtube",
       "keyword": "生成AI",
-      "timestamp": "2025-07-15T17:52:08.541817",
+      "timestamp": "2025-07-15T17:59:09.065029",
       "results": [
         {
           "title": "「服が脱がされている」生成AIで30秒ほどで裸に　“性的ディープフェイク”の実態　卒アルの写真を悪用も　「個人と名前が一致しない」卒業アルバムを作成する学校も〈カンテレNEWS〉",
@@ -197,7 +197,7 @@
     {
       "platform": "github",
       "keyword": "生成AI",
-      "timestamp": "2025-07-15T17:52:09.617362",
+      "timestamp": "2025-07-15T17:59:10.074471",
       "results": [
         {
           "name": "JeecgBoot",
@@ -570,7 +570,7 @@
           "forks": 0,
           "topics": [],
           "license": "",
-          "updated_at": "2025-07-15T09:48:20Z",
+          "updated_at": "2025-07-15T17:52:54Z",
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
@@ -814,7 +814,7 @@
     {
       "platform": "arxiv",
       "keyword": "生成AI",
-      "timestamp": "2025-07-15T17:52:11.053857",
+      "timestamp": "2025-07-15T17:59:11.258823",
       "results": [
         {
           "title": "AI Generations: From AI 1.0 to AI 4.0",
@@ -928,7 +928,7 @@
     {
       "platform": "hackernews",
       "keyword": "生成AI",
-      "timestamp": "2025-07-15T17:52:13.232126",
+      "timestamp": "2025-07-15T17:59:14.184426",
       "results": [
         {
           "title": "Generative AI for Beginners",
@@ -1178,7 +1178,7 @@
     {
       "platform": "supabase",
       "keyword": "生成AI",
-      "timestamp": "2025-07-15T17:52:13.232250",
+      "timestamp": "2025-07-15T17:59:14.184537",
       "results": [],
       "new_keywords": [],
       "sentiment_score": 0.0,
@@ -1192,11 +1192,11 @@
     "AI Ethics",
     "AI Generations",
     "Weak AI",
-    "Generative Voice AI",
     "AI Applications",
-    "AI Low-code Development",
+    "AI Low-Code Development",
+    "AI Video Generation",
     "AI Image Generation",
-    "AI Video Generation"
+    "AI Voice Generation"
   ],
   "recommendations": [
     "Consider adding 10 new keywords to monitoring"
