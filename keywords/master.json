@@ -2438,5 +2438,19 @@
     "source": "discovered",
     "created_date": "2025-07-15",
     "discovered_from": "daily_research"
+  },
+  "AI プラットフォーム": {
+    "score": 50,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-15",
+    "discovered_from": "daily_research"
+  },
+  "AI コーディング": {
+    "score": 50,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-15",
+    "discovered_from": "daily_research"
   }
 }
