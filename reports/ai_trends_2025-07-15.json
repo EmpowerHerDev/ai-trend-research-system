@@ -12,7 +12,7 @@
     {
       "platform": "web",
       "keyword": "生成AI",
-      "timestamp": "2025-07-15T17:41:06.088957",
+      "timestamp": "2025-07-15T17:52:08.077185",
       "results": [
         {
           "title": "【2025年最新版】生成AIツール16選を業務別に比較｜無料DL付き導入チェックリストも - AI …",
@@ -84,8 +84,18 @@
     {
       "platform": "youtube",
       "keyword": "生成AI",
-      "timestamp": "2025-07-15T17:41:06.562225",
+      "timestamp": "2025-07-15T17:52:08.541817",
       "results": [
+        {
+          "title": "「服が脱がされている」生成AIで30秒ほどで裸に　“性的ディープフェイク”の実態　卒アルの写真を悪用も　「個人と名前が一致しない」卒業アルバムを作成する学校も〈カンテレNEWS〉",
+          "description": "今、急増しているディープフェイクによる性的被害。 見ず知らずのうちに写真が悪用され、生成AIにより、性的な映像や画像が作 ...",
+          "published_at": "2025-07-15T11:37:02Z",
+          "channel": "カンテレNEWS",
+          "video_id": "aJal7QMYlQU",
+          "url": "https://www.youtube.com/watch?v=aJal7QMYlQU",
+          "content_type": "その他",
+          "language": "ja"
+        },
         {
           "title": "実際に現場で使われてる生成AIの活用事例10選",
           "description": "",
@@ -117,16 +127,6 @@
           "language": "ja"
         },
         {
-          "title": "【誰でもできる】全人類使え！ガチで便利な生成AIの使い方 TOP3",
-          "description": "最近AIの進化が速すぎて、新しいAIツールが毎日のようにリリースされています。 あなたはこう思っていませんか？ 「AI、結局 ...",
-          "published_at": "2024-10-10T12:01:16Z",
-          "channel": "マコなり社長",
-          "video_id": "zrluoX5MLfA",
-          "url": "https://www.youtube.com/watch?v=zrluoX5MLfA",
-          "content_type": "ニュース",
-          "language": "ja"
-        },
-        {
           "title": "どれくらい見抜けた？👀#ai #生成ai #画像生成ai",
           "description": "",
           "published_at": "2025-06-15T02:04:41Z",
@@ -147,6 +147,16 @@
           "language": "ja"
         },
         {
+          "title": "【誰でもできる】全人類使え！ガチで便利な生成AIの使い方 TOP3",
+          "description": "最近AIの進化が速すぎて、新しいAIツールが毎日のようにリリースされています。 あなたはこう思っていませんか？ 「AI、結局 ...",
+          "published_at": "2024-10-10T12:01:16Z",
+          "channel": "マコなり社長",
+          "video_id": "zrluoX5MLfA",
+          "url": "https://www.youtube.com/watch?v=zrluoX5MLfA",
+          "content_type": "ニュース",
+          "language": "ja"
+        },
+        {
           "title": "AI生成したら偽花京院出てきた　#ai動画 #石破茂 #おもしろ動画",
           "description": "",
           "published_at": "2025-03-13T09:00:06Z",
@@ -154,16 +164,6 @@
           "video_id": "2tcYwophv8I",
           "url": "https://www.youtube.com/watch?v=2tcYwophv8I",
           "content_type": "その他",
-          "language": "ja"
-        },
-        {
-          "title": "【今さら聞けない？】生成AIとは？AIとどう違うの？（図解で簡単にわかりやすく解説）",
-          "description": "キノクエストの登録・詳細はこちら ...",
-          "published_at": "2025-01-28T11:00:48Z",
-          "channel": "キノコード / プログラミング学習チャンネル",
-          "video_id": "YFtoy_tfYfc",
-          "url": "https://www.youtube.com/watch?v=YFtoy_tfYfc",
-          "content_type": "解説動画",
           "language": "ja"
         },
         {
@@ -177,13 +177,13 @@
           "language": "ja"
         },
         {
-          "title": "マイクロソフトが教える生成AI活用法",
-          "description": "飲み会1回分で行けるプログラミングスクール「TECH WORLD」 【提供中のサービス】 ・メガベンチャーエンジニアがメンター ...",
-          "published_at": "2024-06-08T09:53:36Z",
-          "channel": "TECH WORLD",
-          "video_id": "IXcu3fNEgkY",
-          "url": "https://www.youtube.com/watch?v=IXcu3fNEgkY",
-          "content_type": "その他",
+          "title": "【今さら聞けない？】生成AIとは？AIとどう違うの？（図解で簡単にわかりやすく解説）",
+          "description": "キノクエストの登録・詳細はこちら ...",
+          "published_at": "2025-01-28T11:00:48Z",
+          "channel": "キノコード / プログラミング学習チャンネル",
+          "video_id": "YFtoy_tfYfc",
+          "url": "https://www.youtube.com/watch?v=YFtoy_tfYfc",
+          "content_type": "解説動画",
           "language": "ja"
         }
       ],
@@ -197,7 +197,7 @@
     {
       "platform": "github",
       "keyword": "生成AI",
-      "timestamp": "2025-07-15T17:41:07.413297",
+      "timestamp": "2025-07-15T17:52:09.617362",
       "results": [
         {
           "name": "JeecgBoot",
@@ -814,7 +814,7 @@
     {
       "platform": "arxiv",
       "keyword": "生成AI",
-      "timestamp": "2025-07-15T17:41:09.761546",
+      "timestamp": "2025-07-15T17:52:11.053857",
       "results": [
         {
           "title": "AI Generations: From AI 1.0 to AI 4.0",
@@ -928,7 +928,7 @@
     {
       "platform": "hackernews",
       "keyword": "生成AI",
-      "timestamp": "2025-07-15T17:41:11.610237",
+      "timestamp": "2025-07-15T17:52:13.232126",
       "results": [
         {
           "title": "Generative AI for Beginners",
@@ -1178,7 +1178,7 @@
     {
       "platform": "supabase",
       "keyword": "生成AI",
-      "timestamp": "2025-07-15T17:41:11.610353",
+      "timestamp": "2025-07-15T17:52:13.232250",
       "results": [],
       "new_keywords": [],
       "sentiment_score": 0.0,
@@ -1192,11 +1192,11 @@
     "AI Ethics",
     "AI Generations",
     "Weak AI",
+    "Generative Voice AI",
     "AI Applications",
-    "AI-powered Low-code Development",
-    "AI Video Generation",
+    "AI Low-code Development",
     "AI Image Generation",
-    "AI Voice Generation"
+    "AI Video Generation"
   ],
   "recommendations": [
     "Consider adding 10 new keywords to monitoring"
