@@ -12,7 +12,7 @@
     {
       "platform": "web",
       "keyword": "生成AI",
-      "timestamp": "2025-07-16T12:38:10.606219",
+      "timestamp": "2025-07-16T13:23:24.721910",
       "results": [
         {
           "title": "【2025年最新】無料で使える生成AIツール20選｜比較表＆業務プロンプト例つき - AI …",
@@ -84,7 +84,7 @@
     {
       "platform": "youtube",
       "keyword": "生成AI",
-      "timestamp": "2025-07-16T12:38:11.063432",
+      "timestamp": "2025-07-16T13:23:25.144476",
       "results": [
         {
           "title": "【“日立流”生成AI活用の最前線】人手不足の打ち手に生成AI／熟練者の技術を継承／生成AIの正答率は9割／IT×OTの強みを発揮",
@@ -127,16 +127,6 @@
           "language": "ja"
         },
         {
-          "title": "「佳子さまの水着姿」拡散する生成AI“ディープフェイク” NEWSポストセブン",
-          "description": "秋篠宮家の次女・佳子さまをモデルとし、生成AIを悪用して作られた“ディープフェイク”が問題視されています。 動画共有 ...",
-          "published_at": "2025-07-16T06:45:02Z",
-          "channel": "NEWSポストセブン【動画公式】",
-          "video_id": "q1PgipNKm5A",
-          "url": "https://www.youtube.com/watch?v=q1PgipNKm5A",
-          "content_type": "その他",
-          "language": "ja"
-        },
-        {
           "title": "大学教授が思う生成AIの使い方(chatGPT)#大学教授",
           "description": "",
           "published_at": "2024-06-27T09:00:27Z",
@@ -167,22 +157,32 @@
           "language": "ja"
         },
         {
-          "title": "2. 【驚愕】画像から動画生成AI「Vidu」が進化！Q1モデルで作るCM＆映画風映像！",
-          "description": "今回の動画の概要【@it-skill_routinelabo】 ❏━━━━━━━━━━━━━━━━━━❏ 今回は話題の動画生成AI「Vidu」の最新 ...",
-          "published_at": "2025-07-15T10:30:33Z",
-          "channel": "ITとAIのルーティンラボ",
-          "video_id": "WAcQ9zZ3AtE",
-          "url": "https://www.youtube.com/watch?v=WAcQ9zZ3AtE",
-          "content_type": "ニュース",
-          "language": "ja"
-        },
-        {
           "title": "【AIコンサル社長が厳選！】1位のツールは特に使える！#生成ai  #ai  #aiツール  #gamma #sunoai #mapify #notebooklm  #perplexity #gpt",
           "description": "",
           "published_at": "2024-10-29T11:00:07Z",
           "channel": "いけともch",
           "video_id": "7pMLBh1P-w4",
           "url": "https://www.youtube.com/watch?v=7pMLBh1P-w4",
+          "content_type": "その他",
+          "language": "ja"
+        },
+        {
+          "title": "【生成AIで作った】インド映画は、案の定カオスになった",
+          "description": "【生成AIで作った】インド映画が、案の定カオスになった これは偶然か必然か、出会った男女が結婚して成長する姿をダンスで ...",
+          "published_at": "2025-07-15T04:58:29Z",
+          "channel": "Nogu AI",
+          "video_id": "IYDR66NzTIY",
+          "url": "https://www.youtube.com/watch?v=IYDR66NzTIY",
+          "content_type": "その他",
+          "language": "ja"
+        },
+        {
+          "title": "インキャの卒業写真AIで動かしてみた#AI生成#AI#AI合成#インキャ#ヨウキャ#編集",
+          "description": "",
+          "published_at": "2024-12-10T10:00:36Z",
+          "channel": "Lazy Lie Crazy【レイクレ】",
+          "video_id": "ZiBHjj9fCO8",
+          "url": "https://www.youtube.com/watch?v=ZiBHjj9fCO8",
           "content_type": "その他",
           "language": "ja"
         }
@@ -197,7 +197,7 @@
     {
       "platform": "github",
       "keyword": "生成AI",
-      "timestamp": "2025-07-16T12:38:11.977164",
+      "timestamp": "2025-07-16T13:23:26.218932",
       "results": [
         {
           "name": "JeecgBoot",
@@ -230,7 +230,7 @@
           "forks": 0,
           "topics": [],
           "license": "",
-          "updated_at": "2025-07-16T12:27:41Z",
+          "updated_at": "2025-07-16T12:45:11Z",
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
@@ -290,7 +290,7 @@
           "forks": 0,
           "topics": [],
           "license": "",
-          "updated_at": "2025-07-16T09:30:17Z",
+          "updated_at": "2025-07-16T13:17:33Z",
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
@@ -530,11 +530,11 @@
           "forks": 0,
           "topics": [],
           "license": "",
-          "updated_at": "2025-07-16T10:50:54Z",
+          "updated_at": "2025-07-16T13:05:47Z",
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
-          "days_old": 2144,
+          "days_old": 2145,
           "is_trending": false,
           "is_accelerating": false,
           "trend_score": 0.0
@@ -734,7 +734,7 @@
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
-          "days_old": 480,
+          "days_old": 481,
           "is_trending": false,
           "is_accelerating": false,
           "trend_score": 0.0
@@ -814,7 +814,7 @@
     {
       "platform": "arxiv",
       "keyword": "生成AI",
-      "timestamp": "2025-07-16T12:38:13.793589",
+      "timestamp": "2025-07-16T13:23:28.679895",
       "results": [
         {
           "title": "AI Generations: From AI 1.0 to AI 4.0",
@@ -928,7 +928,7 @@
     {
       "platform": "hackernews",
       "keyword": "生成AI",
-      "timestamp": "2025-07-16T12:38:17.000057",
+      "timestamp": "2025-07-16T13:23:31.615141",
       "results": [
         {
           "title": "Generative AI for Beginners",
@@ -1178,7 +1178,7 @@
     {
       "platform": "supabase",
       "keyword": "生成AI",
-      "timestamp": "2025-07-16T12:38:17.000150",
+      "timestamp": "2025-07-16T13:23:31.615278",
       "results": [],
       "new_keywords": [],
       "sentiment_score": 0.0,
@@ -1188,15 +1188,15 @@
   ],
   "new_keywords": [
     "生成AI",
-    "AI generations",
-    "weak AI",
-    "AI ethics",
-    "generative AI",
-    "AI applications",
-    "AI tools",
-    "AI frameworks",
-    "AI techniques",
-    "AI companies"
+    "AI 生成",
+    "AI 低コード開発",
+    "ディープフェイク",
+    "AI 倫理",
+    "AI 1.0 to AI 4.0",
+    "Weak AI",
+    "Generative AI",
+    "Generative Voice AI",
+    "AI 画像生成"
   ],
   "recommendations": [
     "Consider adding 10 new keywords to monitoring"
