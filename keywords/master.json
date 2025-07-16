@@ -2683,5 +2683,12 @@
     "source": "discovered",
     "created_date": "2025-07-16",
     "discovered_from": "daily_research"
+  },
+  "AI Learning Paths": {
+    "score": 50,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-16",
+    "discovered_from": "daily_research"
   }
 }
