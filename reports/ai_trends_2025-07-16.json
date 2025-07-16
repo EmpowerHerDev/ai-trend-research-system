@@ -12,7 +12,7 @@
     {
       "platform": "web",
       "keyword": "生成AI",
-      "timestamp": "2025-07-16T10:22:27.071236",
+      "timestamp": "2025-07-16T10:45:56.555528",
       "results": [
         {
           "title": "【2025年最新】無料で使える生成AIツール20選｜比較表＆業務プロンプト例つき - AI …",
@@ -27,16 +27,10 @@
           "source": "metaversesouken.com"
         },
         {
-          "title": "【2025】生成AIサービスおすすめ17選を一覧比較！無料・料金 …",
-          "snippet": "businesskouzamitsuketai.com May 8, 2025 · この記事では、文章・画像・動画の4分野から厳選した17ツールを、特徴や無料プラン有無、料金、商用利用可否、日本語対応を徹底比較します。 生成AIツールの比較ポイ …",
-          "url": "https://businesskouzamitsuketai.com/seiseiai-hikaku/",
+          "title": "【2025】おすすめ無料生成AIサイト・アプリ20選！日本語対応 …",
+          "snippet": "businesskouzamitsuketai.com Jan 17, 2025 · この記事では、無料で使える12の優良画像生成AIサイトを厳選し、日本語対応の有無、商用利用の可否もあわせて紹介します。 選び方や注意点、利用する方法についても …",
+          "url": "https://businesskouzamitsuketai.com/seiseiai-muryou/",
           "source": "businesskouzamitsuketai.com"
-        },
-        {
-          "title": "国産生成AI10選：日本語LLMや企業向け生成AIと選び方を解説",
-          "snippet": "aismiley.co.jp Mar 25, 2025 · 日本企業が開発した最新の大規模言語モデルと生成AI 10選を紹介。 国内データに最適化された高精度モデルから、業務効率化に特化したAIソリューションまで、国産のAI技 …",
-          "url": "https://aismiley.co.jp/ai_news/japanese-made-generative-ai/",
-          "source": "aismiley.co.jp"
         },
         {
           "title": "【2025年最新】生成AIサービス17種類を比較！用途別の特徴や …",
@@ -45,16 +39,28 @@
           "source": "dxnavi.com"
         },
         {
-          "title": "ChatGPTよりすごいAI？無料で使える日本語対応の代替ツール10選",
-          "snippet": "stella-international.co.jp Jun 10, 2025 · ChatGPTの代替を探している方必見！無料で使える日本語対応AIツール10選を紹介。用途別に最適な選び方も解説。Missing: null",
-          "url": "https://stella-international.co.jp/media/chatgpt-substitute/",
-          "source": "stella-international.co.jp"
+          "title": "【2025年最新】5大生成AI比較！ChatGPT・Gemini・Claude・C…",
+          "snippet": "miralab.co.jp May 22, 2025 · 生成AIの導入を考えている方に向け、ChatGPT、Gemini、Claude、copilot、Grokを比較して、最新モデルの性能や料金、用途別の強みをわかりやすく解説します。 生 …",
+          "url": "https://miralab.co.jp/media/chatgpt_gemini_claude_copilot/",
+          "source": "miralab.co.jp"
         },
         {
-          "title": "【2025】無料で使える生成AIツール11選！用途別に紹介 | DX/AI …",
-          "snippet": "ai-kenkyujo.com 本記事では、無料で利用できる生成AIツールを、用途別にそれぞれ紹介しています。 合わせて11選紹介しているので、気になったツールがあれば利用してみましょう。",
-          "url": "https://ai-kenkyujo.com/software/generative-ai/muryou-2/",
-          "source": "ai-kenkyujo.com"
+          "title": "国産生成AI10選：日本語LLMや企業向け生成AIと選び方を解説",
+          "snippet": "aismiley.co.jp Mar 25, 2025 · 日本企業が開発した最新の大規模言語モデルと生成AI 10選を紹介。 国内データに最適化された高精度モデルから、業務効率化に特化したAIソリューションまで、国産のAI技 …",
+          "url": "https://aismiley.co.jp/ai_news/japanese-made-generative-ai/",
+          "source": "aismiley.co.jp"
+        },
+        {
+          "title": "生成AIサービス一覧【主要12種の性能・料金を徹底比較】",
+          "snippet": "sejuku.net Jul 2, 2025 · 画像生成、文章生成、動画生成、コーディングの用途別に、主要生成AIサービスの性能・料金を徹底比較します。比較を踏まえ、おすすめのサービスも紹介するので、ぜひ参 …Missing: 日本語Must include: 日本語",
+          "url": "https://generative-ai.sejuku.net/blog/3732/",
+          "source": "generative-ai.sejuku.net"
+        },
+        {
+          "title": "生成AIサービス16選を徹底比較！主な特徴や料金、メリット・デ …",
+          "snippet": "usknet.com Dec 6, 2024 · ChatGPT、Claude、Geminiなど注目の生成AIサービスを徹底比較！ 文章生成、画像生成、音声生成、動画生成の各分野から16のおすすめAIツールを厳選し、料金プランや日 …",
+          "url": "https://usknet.com/dxgo/contents/dx-trend/thorough-comparison-of-16-generative-ai-services/",
+          "source": "usknet.com"
         },
         {
           "title": "【2025年2月最新】ChatGPT以外にもある！日本語に強い生成AI …",
@@ -64,15 +70,9 @@
         },
         {
           "title": "生成AI比較30選！【図解】用途別おすすめ紹介！無料プランも",
-          "snippet": "aspicjapan.org Jun 26, 2025 · 生成AIツールを検討しているものの、「たくさん種類があってどれを使ったらいいかわからない」「用途に最適なものを選びたい」という方へ。生成AIにできることや利用 …Missing: 日本語Must include: 日本語",
+          "snippet": "aspicjapan.org Jun 26, 2025 · 生成AIツールを検討しているものの、「たくさん種類があってどれを使ったらいいかわからない」「用途に最適なものを選びたい」という方へ。生成AIにできることや利用 …",
           "url": "https://www.aspicjapan.org/asu/article/68407",
           "source": "www.aspicjapan.org"
-        },
-        {
-          "title": "生成AIサービス16選を徹底比較！主な特徴や料金、メリット・デ …",
-          "snippet": "usknet.com Dec 6, 2024 · ChatGPT、Claude、Geminiなど注目の生成AIサービスを徹底比較！ 文章生成、画像生成、音声生成、動画生成の各分野から16のおすすめAIツールを厳選し、料金プランや日 …",
-          "url": "https://usknet.com/dxgo/contents/dx-trend/thorough-comparison-of-16-generative-ai-services/",
-          "source": "usknet.com"
         }
       ],
       "new_keywords": [],
@@ -84,7 +84,7 @@
     {
       "platform": "youtube",
       "keyword": "生成AI",
-      "timestamp": "2025-07-16T10:22:27.530667",
+      "timestamp": "2025-07-16T10:45:56.909132",
       "results": [
         {
           "title": "「服が脱がされている」生成AIで30秒ほどで裸に　“性的ディープフェイク”の実態　卒アルの写真を悪用も　「個人と名前が一致しない」卒業アルバムを作成する学校も〈カンテレNEWS〉",
@@ -93,16 +93,6 @@
           "channel": "カンテレNEWS",
           "video_id": "aJal7QMYlQU",
           "url": "https://www.youtube.com/watch?v=aJal7QMYlQU",
-          "content_type": "その他",
-          "language": "ja"
-        },
-        {
-          "title": "【“日立流”生成AI活用の最前線】人手不足の打ち手に生成AI／熟練者の技術を継承／生成AIの正答率は9割／IT×OTの強みを発揮",
-          "description": "【Sponsored by 日立製作所】 注目すべき企業のトップランナーを招き、キーワードをもとに掘り下げていく番組「& questions」 ...",
-          "published_at": "2025-07-16T07:00:28Z",
-          "channel": "PIVOT 公式チャンネル",
-          "video_id": "dbt3E2Eg0oo",
-          "url": "https://www.youtube.com/watch?v=dbt3E2Eg0oo",
           "content_type": "その他",
           "language": "ja"
         },
@@ -137,22 +127,22 @@
           "language": "ja"
         },
         {
-          "title": "「佳子さまの水着姿」拡散する生成AI“ディープフェイク” NEWSポストセブン",
-          "description": "秋篠宮家の次女・佳子さまをモデルとし、生成AIを悪用して作られた“ディープフェイク”が問題視されています。 動画共有 ...",
-          "published_at": "2025-07-16T06:45:02Z",
-          "channel": "NEWSポストセブン【動画公式】",
-          "video_id": "q1PgipNKm5A",
-          "url": "https://www.youtube.com/watch?v=q1PgipNKm5A",
-          "content_type": "その他",
-          "language": "ja"
-        },
-        {
           "title": "どれくらい見抜けた？👀#ai #生成ai #画像生成ai",
           "description": "",
           "published_at": "2025-06-15T02:04:41Z",
           "channel": "けん 今すぐ使えるAI活用術",
           "video_id": "29BcnmZSeqg",
           "url": "https://www.youtube.com/watch?v=29BcnmZSeqg",
+          "content_type": "その他",
+          "language": "ja"
+        },
+        {
+          "title": "マイクロソフトが教える生成AI活用法",
+          "description": "飲み会1回分で行けるプログラミングスクール「TECH WORLD」 【提供中のサービス】 ・メガベンチャーエンジニアがメンター ...",
+          "published_at": "2024-06-08T09:53:36Z",
+          "channel": "TECH WORLD",
+          "video_id": "IXcu3fNEgkY",
+          "url": "https://www.youtube.com/watch?v=IXcu3fNEgkY",
           "content_type": "その他",
           "language": "ja"
         },
@@ -167,6 +157,16 @@
           "language": "ja"
         },
         {
+          "title": "【AIコンサル社長が厳選！】1位のツールは特に使える！#生成ai  #ai  #aiツール  #gamma #sunoai #mapify #notebooklm  #perplexity #gpt",
+          "description": "",
+          "published_at": "2024-10-29T11:00:07Z",
+          "channel": "いけともch",
+          "video_id": "7pMLBh1P-w4",
+          "url": "https://www.youtube.com/watch?v=7pMLBh1P-w4",
+          "content_type": "その他",
+          "language": "ja"
+        },
+        {
           "title": "【生成AIで作った】インド映画は、案の定カオスになった",
           "description": "【生成AIで作った】インド映画が、案の定カオスになった これは偶然か必然か、出会った男女が結婚して成長する姿をダンスで ...",
           "published_at": "2025-07-15T04:58:29Z",
@@ -177,27 +177,27 @@
           "language": "ja"
         },
         {
-          "title": "【今さら聞けない？】生成AIとは？AIとどう違うの？（図解で簡単にわかりやすく解説）",
-          "description": "キノクエストの登録・詳細はこちら ...",
-          "published_at": "2025-01-28T11:00:48Z",
-          "channel": "キノコード / プログラミング学習チャンネル",
-          "video_id": "YFtoy_tfYfc",
-          "url": "https://www.youtube.com/watch?v=YFtoy_tfYfc",
-          "content_type": "解説動画",
+          "title": "インキャの卒業写真AIで動かしてみた#AI生成#AI#AI合成#インキャ#ヨウキャ#編集",
+          "description": "",
+          "published_at": "2024-12-10T10:00:36Z",
+          "channel": "Lazy Lie Crazy【レイクレ】",
+          "video_id": "ZiBHjj9fCO8",
+          "url": "https://www.youtube.com/watch?v=ZiBHjj9fCO8",
+          "content_type": "その他",
           "language": "ja"
         }
       ],
       "new_keywords": [],
       "sentiment_score": 0.0,
       "engagement_metrics": {
-        "video_count": 1,
+        "video_count": 0,
         "total_videos": 10
       }
     },
     {
       "platform": "github",
       "keyword": "生成AI",
-      "timestamp": "2025-07-16T10:22:28.671772",
+      "timestamp": "2025-07-16T10:45:57.725987",
       "results": [
         {
           "name": "JeecgBoot",
@@ -214,7 +214,7 @@
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
-          "days_old": 2423,
+          "days_old": 2424,
           "is_trending": false,
           "is_accelerating": false,
           "trend_score": 0.0
@@ -230,7 +230,7 @@
           "forks": 0,
           "topics": [],
           "license": "",
-          "updated_at": "2025-07-16T10:09:34Z",
+          "updated_at": "2025-07-16T10:35:42Z",
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
@@ -334,7 +334,7 @@
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
-          "days_old": 850,
+          "days_old": 851,
           "is_trending": false,
           "is_accelerating": false,
           "trend_score": 0.0
@@ -814,7 +814,7 @@
     {
       "platform": "arxiv",
       "keyword": "生成AI",
-      "timestamp": "2025-07-16T10:22:29.689667",
+      "timestamp": "2025-07-16T10:45:59.258168",
       "results": [
         {
           "title": "AI Generations: From AI 1.0 to AI 4.0",
@@ -928,7 +928,7 @@
     {
       "platform": "hackernews",
       "keyword": "生成AI",
-      "timestamp": "2025-07-16T10:22:30.953417",
+      "timestamp": "2025-07-16T10:46:00.542732",
       "results": [
         {
           "title": "Generative AI for Beginners",
@@ -1178,7 +1178,7 @@
     {
       "platform": "supabase",
       "keyword": "生成AI",
-      "timestamp": "2025-07-16T10:22:30.953516",
+      "timestamp": "2025-07-16T10:46:00.542824",
       "results": [],
       "new_keywords": [],
       "sentiment_score": 0.0,
@@ -1192,11 +1192,11 @@
     "AI Ethics",
     "AI Generations",
     "Weak AI",
-    "Bibliometric AI",
-    "AI LLM",
     "AI Applications",
-    "AI Low-code Development",
-    "AI Video Generation"
+    "AI Frameworks",
+    "AI Techniques",
+    "Generative Voice AI",
+    "AI Low-Code Development"
   ],
   "recommendations": [
     "Consider adding 10 new keywords to monitoring"
