@@ -2690,5 +2690,12 @@
     "source": "discovered",
     "created_date": "2025-07-16",
     "discovered_from": "daily_research"
+  },
+  "AI伦理发展": {
+    "score": 50,
+    "last_used": null,
+    "source": "discovered",
+    "created_date": "2025-07-16",
+    "discovered_from": "daily_research"
   }
 }
