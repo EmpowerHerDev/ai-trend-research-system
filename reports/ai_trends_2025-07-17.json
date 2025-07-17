@@ -12,7 +12,7 @@
     {
       "platform": "web",
       "keyword": "生成AI",
-      "timestamp": "2025-07-17T11:51:54.779431",
+      "timestamp": "2025-07-17T11:59:17.727112",
       "results": [
         {
           "title": "【2025年最新】無料で使える生成AIツール20選｜比較表＆業務プロンプト例つき - AI …",
@@ -84,18 +84,8 @@
     {
       "platform": "youtube",
       "keyword": "生成AI",
-      "timestamp": "2025-07-17T11:51:55.459776",
+      "timestamp": "2025-07-17T11:59:18.088550",
       "results": [
-        {
-          "title": "【誰でもできる】全人類使え！ガチで便利な生成AIの使い方 TOP3",
-          "description": "最近AIの進化が速すぎて、新しいAIツールが毎日のようにリリースされています。 あなたはこう思っていませんか？ 「AI、結局 ...",
-          "published_at": "2024-10-10T12:01:16Z",
-          "channel": "マコなり社長",
-          "video_id": "zrluoX5MLfA",
-          "url": "https://www.youtube.com/watch?v=zrluoX5MLfA",
-          "content_type": "ニュース",
-          "language": "ja"
-        },
         {
           "title": "実際に現場で使われてる生成AIの活用事例10選",
           "description": "",
@@ -104,6 +94,16 @@
           "video_id": "HfT6tLxtbgA",
           "url": "https://www.youtube.com/watch?v=HfT6tLxtbgA",
           "content_type": "その他",
+          "language": "ja"
+        },
+        {
+          "title": "【誰でもできる】全人類使え！ガチで便利な生成AIの使い方 TOP3",
+          "description": "最近AIの進化が速すぎて、新しいAIツールが毎日のようにリリースされています。 あなたはこう思っていませんか？ 「AI、結局 ...",
+          "published_at": "2024-10-10T12:01:16Z",
+          "channel": "マコなり社長",
+          "video_id": "zrluoX5MLfA",
+          "url": "https://www.youtube.com/watch?v=zrluoX5MLfA",
+          "content_type": "ニュース",
           "language": "ja"
         },
         {
@@ -127,22 +127,22 @@
           "language": "ja"
         },
         {
-          "title": "AIガチ勢が今、生成AIで日常的に効率化している事",
-          "description": "生成AIに関する発信を始めて2年半。様々なイベントやセミナー講演をさせて頂きました。そんな生成AIを生業にしている私が日常 ...",
-          "published_at": "2025-07-17T11:01:17Z",
-          "channel": "KEITO【AI&WEB ch】",
-          "video_id": "gpofGAK5MMU",
-          "url": "https://www.youtube.com/watch?v=gpofGAK5MMU",
-          "content_type": "カンファレンス",
-          "language": "ja"
-        },
-        {
           "title": "人間の脳細胞🧠 VS 生成AI",
           "description": "",
           "published_at": "2024-11-02T07:10:58Z",
           "channel": "ソフトバンク公式 ビジネスチャンネル",
           "video_id": "mcbYswfiN0A",
           "url": "https://www.youtube.com/watch?v=mcbYswfiN0A",
+          "content_type": "その他",
+          "language": "ja"
+        },
+        {
+          "title": "「服が脱がされている」生成AIで30秒ほどで裸に　“性的ディープフェイク”の実態　卒アルの写真を悪用も　「個人と名前が一致しない」卒業アルバムを作成する学校も〈カンテレNEWS〉",
+          "description": "今、急増しているディープフェイクによる性的被害。 見ず知らずのうちに写真が悪用され、生成AIにより、性的な映像や画像が作 ...",
+          "published_at": "2025-07-15T11:37:02Z",
+          "channel": "カンテレNEWS",
+          "video_id": "aJal7QMYlQU",
+          "url": "https://www.youtube.com/watch?v=aJal7QMYlQU",
           "content_type": "その他",
           "language": "ja"
         },
@@ -177,13 +177,13 @@
           "language": "ja"
         },
         {
-          "title": "【AIコンサル社長が厳選！】1位のツールは特に使える！#生成ai  #ai  #aiツール  #gamma #sunoai #mapify #notebooklm  #perplexity #gpt",
-          "description": "",
-          "published_at": "2024-10-29T11:00:07Z",
-          "channel": "いけともch",
-          "video_id": "7pMLBh1P-w4",
-          "url": "https://www.youtube.com/watch?v=7pMLBh1P-w4",
-          "content_type": "その他",
+          "title": "AIガチ勢が今、生成AIで日常的に効率化している事",
+          "description": "生成AIに関する発信を始めて2年半。様々なイベントやセミナー講演をさせて頂きました。そんな生成AIを生業にしている私が日常 ...",
+          "published_at": "2025-07-17T11:01:17Z",
+          "channel": "KEITO【AI&WEB ch】",
+          "video_id": "gpofGAK5MMU",
+          "url": "https://www.youtube.com/watch?v=gpofGAK5MMU",
+          "content_type": "カンファレンス",
           "language": "ja"
         }
       ],
@@ -197,7 +197,7 @@
     {
       "platform": "github",
       "keyword": "生成AI",
-      "timestamp": "2025-07-17T11:51:56.380923",
+      "timestamp": "2025-07-17T11:59:18.856209",
       "results": [
         {
           "name": "JeecgBoot",
@@ -230,7 +230,7 @@
           "forks": 0,
           "topics": [],
           "license": "",
-          "updated_at": "2025-07-17T11:16:36Z",
+          "updated_at": "2025-07-17T11:58:00Z",
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
@@ -470,7 +470,7 @@
           "forks": 0,
           "topics": [],
           "license": "",
-          "updated_at": "2025-07-17T10:51:01Z",
+          "updated_at": "2025-07-17T11:57:32Z",
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
@@ -814,7 +814,7 @@
     {
       "platform": "arxiv",
       "keyword": "生成AI",
-      "timestamp": "2025-07-17T11:51:56.949297",
+      "timestamp": "2025-07-17T11:59:19.228072",
       "results": [],
       "new_keywords": [],
       "sentiment_score": 0.0,
@@ -825,7 +825,7 @@
     {
       "platform": "hackernews",
       "keyword": "生成AI",
-      "timestamp": "2025-07-17T11:51:57.439199",
+      "timestamp": "2025-07-17T11:59:19.631924",
       "results": [
         {
           "title": "Generative AI for Beginners",
@@ -1075,7 +1075,7 @@
     {
       "platform": "supabase",
       "keyword": "生成AI",
-      "timestamp": "2025-07-17T11:51:57.439292",
+      "timestamp": "2025-07-17T11:59:19.632024",
       "results": [],
       "new_keywords": [],
       "sentiment_score": 0.0,
