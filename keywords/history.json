@@ -70,5 +70,13 @@
     "execution_time": "23:53:46",
     "status": "completed",
     "new_keywords_found": 10
+  },
+  "2025-07-17": {
+    "keywords": [
+      "生成AI"
+    ],
+    "execution_time": "00:00:53",
+    "status": "completed",
+    "new_keywords_found": 10
   }
 }
