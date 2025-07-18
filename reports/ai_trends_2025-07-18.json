@@ -6,13 +6,13 @@
       "生成AI"
     ],
     "new_keywords_found": 0,
-    "total_results": 67
+    "total_results": 68
   },
   "detailed_results": [
     {
       "platform": "web",
       "keyword": "生成AI",
-      "timestamp": "2025-07-18T07:13:41.979033",
+      "timestamp": "2025-07-18T07:34:41.475216",
       "results": [
         {
           "title": "【無料】日本語対応の生成AIツール7選を比較｜文章/画像別に紹 …",
@@ -51,28 +51,34 @@
           "source": "dxnavi.com"
         },
         {
+          "title": "日本語対応が得意な生成AIツールは？ローカル言語の …",
+          "snippet": "aiai-catch.com Jun 8, 2025 · AIの急速な進化により、日本語に対応した生成AIツールが次々と登場しています。 文章作成から画像・動画制作まで、さまざまな分野でこれらのツールが注目を集めており、その活用法を理解することが重要になってきまし …",
+          "url": "https://aiai-catch.com/japanese-language-ai-tools-guide-to-overcoming-language-barriers/",
+          "source": "aiai-catch.com"
+        },
+        {
           "title": "【2025】無料で使える生成AIツール11選！用途別に …",
           "snippet": "AI研究所 本記事では、無料で利用できる生成AIツールを、用途別にそれぞれ紹介しています。 合わせて11選紹介しているので、気になったツールがあれば利用してみましょう。",
           "url": "https://ai-kenkyujo.com/software/generative-ai/muryou-2/",
           "source": "ai-kenkyujo.com"
         },
         {
-          "title": "日本語対応が得意な生成AIツールは？ローカル言語の …",
-          "snippet": "aiai-catch.com Jun 8, 2025 · AIの急速な進化により、日本語に対応した生成AIツールが次々と登場しています。 文章作成から画像・動画制作まで、さまざまな分野でこれらのツールが注目を集めており、その活用法を理解することが重要になってきまし …",
-          "url": "https://aiai-catch.com/japanese-language-ai-tools-guide-to-overcoming-language-barriers/",
-          "source": "aiai-catch.com"
+          "title": "生成AI比較30選！【図解】用途別おすすめ紹介！無料プランも",
+          "snippet": "ASPIC Jun 26, 2025 · 生成AIツールを検討しているものの、「たくさん種類があってどれを使ったらいいかわからない」「用途に最適なものを選びたい」という方へ。生成AIにできることや利用 …",
+          "url": "https://www.aspicjapan.org/asu/article/68407",
+          "source": "www.aspicjapan.org"
         }
       ],
       "new_keywords": [],
       "sentiment_score": 0.0,
       "engagement_metrics": {
-        "search_count": 8
+        "search_count": 9
       }
     },
     {
       "platform": "youtube",
       "keyword": "生成AI",
-      "timestamp": "2025-07-18T07:13:42.357573",
+      "timestamp": "2025-07-18T07:34:41.925825",
       "results": [
         {
           "title": "【高橋弘樹 vs AIのプロ】使えなければ時代遅れ!? 生成AI導入で成功の鍵とは？【ReHacQ】",
@@ -82,16 +88,6 @@
           "video_id": "2_1d8DR7m4g",
           "url": "https://www.youtube.com/watch?v=2_1d8DR7m4g",
           "content_type": "その他",
-          "language": "ja"
-        },
-        {
-          "title": "AIガチ勢が今、生成AIで日常的に効率化している事",
-          "description": "生成AIに関する発信を始めて2年半。様々なイベントやセミナー講演をさせて頂きました。そんな生成AIを生業にしている私が日常 ...",
-          "published_at": "2025-07-17T11:01:17Z",
-          "channel": "KEITO【AI&WEB ch】",
-          "video_id": "gpofGAK5MMU",
-          "url": "https://www.youtube.com/watch?v=gpofGAK5MMU",
-          "content_type": "カンファレンス",
           "language": "ja"
         },
         {
@@ -105,16 +101,6 @@
           "language": "ja"
         },
         {
-          "title": "【誰でもできる】全人類使え！ガチで便利な生成AIの使い方 TOP3",
-          "description": "最近AIの進化が速すぎて、新しいAIツールが毎日のようにリリースされています。 あなたはこう思っていませんか？ 「AI、結局 ...",
-          "published_at": "2024-10-10T12:01:16Z",
-          "channel": "マコなり社長",
-          "video_id": "zrluoX5MLfA",
-          "url": "https://www.youtube.com/watch?v=zrluoX5MLfA",
-          "content_type": "ニュース",
-          "language": "ja"
-        },
-        {
           "title": "AIに嘘をつかせるな！#AI #生成AI #ChatGPT #ハルシネーション #プロンプト",
           "description": "生成AI AI ChatGPT プロンプト 命令文 ハルシネーション Claude Genspark Copilot Gemini Adobe Firefly Grok OpenAI Google ...",
           "published_at": "2025-05-27T10:00:17Z",
@@ -122,6 +108,16 @@
           "video_id": "jGGgg3Cqg4Y",
           "url": "https://www.youtube.com/watch?v=jGGgg3Cqg4Y",
           "content_type": "その他",
+          "language": "ja"
+        },
+        {
+          "title": "【誰でもできる】全人類使え！ガチで便利な生成AIの使い方 TOP3",
+          "description": "最近AIの進化が速すぎて、新しいAIツールが毎日のようにリリースされています。 あなたはこう思っていませんか？ 「AI、結局 ...",
+          "published_at": "2024-10-10T12:01:16Z",
+          "channel": "マコなり社長",
+          "video_id": "zrluoX5MLfA",
+          "url": "https://www.youtube.com/watch?v=zrluoX5MLfA",
+          "content_type": "ニュース",
           "language": "ja"
         },
         {
@@ -155,6 +151,16 @@
           "language": "ja"
         },
         {
+          "title": "【AIコンサル社長が厳選！】1位のツールは特に使える！#生成ai  #ai  #aiツール  #gamma #sunoai #mapify #notebooklm  #perplexity #gpt",
+          "description": "",
+          "published_at": "2024-10-29T11:00:07Z",
+          "channel": "いけともch",
+          "video_id": "7pMLBh1P-w4",
+          "url": "https://www.youtube.com/watch?v=7pMLBh1P-w4",
+          "content_type": "その他",
+          "language": "ja"
+        },
+        {
           "title": "2. 【驚愕】画像から動画生成AI「Vidu」が進化！Q1モデルで作るCM＆映画風映像！",
           "description": "今回の動画の概要【@it-skill_routinelabo】 ❏━━━━━━━━━━━━━━━━━━❏ 今回は話題の動画生成AI「Vidu」の最新 ...",
           "published_at": "2025-07-15T10:30:33Z",
@@ -165,28 +171,48 @@
           "language": "ja"
         },
         {
-          "title": "【今さら聞けない？】生成AIとは？AIとどう違うの？（図解で簡単にわかりやすく解説）",
-          "description": "キノクエストの登録・詳細はこちら ...",
-          "published_at": "2025-01-28T11:00:48Z",
-          "channel": "キノコード / プログラミング学習チャンネル",
-          "video_id": "YFtoy_tfYfc",
-          "url": "https://www.youtube.com/watch?v=YFtoy_tfYfc",
-          "content_type": "解説動画",
+          "title": "「服が脱がされている」生成AIで30秒ほどで裸に　“性的ディープフェイク”の実態　卒アルの写真を悪用も　「個人と名前が一致しない」卒業アルバムを作成する学校も〈カンテレNEWS〉",
+          "description": "今、急増しているディープフェイクによる性的被害。 見ず知らずのうちに写真が悪用され、生成AIにより、性的な映像や画像が作 ...",
+          "published_at": "2025-07-15T11:37:02Z",
+          "channel": "カンテレNEWS",
+          "video_id": "aJal7QMYlQU",
+          "url": "https://www.youtube.com/watch?v=aJal7QMYlQU",
+          "content_type": "その他",
           "language": "ja"
         }
       ],
       "new_keywords": [],
       "sentiment_score": 0.0,
       "engagement_metrics": {
-        "video_count": 1,
+        "video_count": 0,
         "total_videos": 10
       }
     },
     {
       "platform": "github",
       "keyword": "生成AI",
-      "timestamp": "2025-07-18T07:13:43.347784",
+      "timestamp": "2025-07-18T07:34:43.215486",
       "results": [
+        {
+          "name": "JeecgBoot",
+          "description": "🔥企业级低代码平台集成了AI应用平台，帮助企业快速实现低代码开发和构建AI应用！前后端分离架构 SpringBoot，SpringCloud、Mybatis，Ant Design4、 Vue3.0、TS+vite！强大的代码生成器让前后端代码一键生成，无需写任何代码! 引领AI低代码开发模式: AI生成->OnlineCoding-> 代码生成-> 手工MERGE，显著的提高效率，又不失灵活~",
+          "owner": "jeecgboot",
+          "stars": 0,
+          "language": "",
+          "url": "https://github.com/jeecgboot/JeecgBoot",
+          "created_at": "2018-11-26T10:40:00Z",
+          "forks": 0,
+          "topics": [],
+          "license": "",
+          "updated_at": "2025-07-18T07:15:41Z",
+          "size": 0,
+          "open_issues": 0,
+          "star_rate": 0.0,
+          "days_old": 2425,
+          "is_trending": false,
+          "is_accelerating": false,
+          "trend_score": 0.0
+        },
         {
           "name": "MoneyPrinterTurbo",
           "description": "利用AI大模型，一键生成高清短视频 Generate short videos with one click using AI LLM.",
@@ -203,26 +229,6 @@
           "open_issues": 0,
           "star_rate": 0.0,
           "days_old": 494,
-          "is_trending": false,
-          "is_accelerating": false,
-          "trend_score": 0.0
-        },
-        {
-          "name": "JeecgBoot",
-          "description": "🔥企业级低代码平台集成了AI应用平台，帮助企业快速实现低代码开发和构建AI应用！前后端分离架构 SpringBoot，SpringCloud、Mybatis，Ant Design4、 Vue3.0、TS+vite！强大的代码生成器让前后端代码一键生成，无需写任何代码! 引领AI低代码开发模式: AI生成->OnlineCoding-> 代码生成-> 手工MERGE，显著的提高效率，又不失灵活~",
-          "owner": "jeecgboot",
-          "stars": 0,
-          "language": "",
-          "url": "https://github.com/jeecgboot/JeecgBoot",
-          "created_at": "2018-11-26T10:40:00Z",
-          "forks": 0,
-          "topics": [],
-          "license": "",
-          "updated_at": "2025-07-18T07:10:12Z",
-          "size": 0,
-          "open_issues": 0,
-          "star_rate": 0.0,
-          "days_old": 2425,
           "is_trending": false,
           "is_accelerating": false,
           "trend_score": 0.0
@@ -278,7 +284,7 @@
           "forks": 0,
           "topics": [],
           "license": "",
-          "updated_at": "2025-07-18T02:00:34Z",
+          "updated_at": "2025-07-18T07:32:56Z",
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
@@ -462,7 +468,7 @@
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
-          "days_old": 546,
+          "days_old": 547,
           "is_trending": false,
           "is_accelerating": false,
           "trend_score": 0.0
@@ -802,7 +808,7 @@
     {
       "platform": "arxiv",
       "keyword": "生成AI",
-      "timestamp": "2025-07-18T07:13:43.821340",
+      "timestamp": "2025-07-18T07:34:43.459623",
       "results": [],
       "new_keywords": [],
       "sentiment_score": 0.0,
@@ -813,7 +819,7 @@
     {
       "platform": "hackernews",
       "keyword": "生成AI",
-      "timestamp": "2025-07-18T07:13:44.383783",
+      "timestamp": "2025-07-18T07:34:44.055818",
       "results": [
         {
           "title": "Generative AI for Beginners",
@@ -1063,7 +1069,7 @@
     {
       "platform": "supabase",
       "keyword": "生成AI",
-      "timestamp": "2025-07-18T07:13:44.383899",
+      "timestamp": "2025-07-18T07:34:44.055916",
       "results": [],
       "new_keywords": [],
       "sentiment_score": 0.0,
