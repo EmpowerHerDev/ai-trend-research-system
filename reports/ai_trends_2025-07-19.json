@@ -6,13 +6,13 @@
       "生成AI"
     ],
     "new_keywords_found": 0,
-    "total_results": 68
+    "total_results": 67
   },
   "detailed_results": [
     {
       "platform": "web",
       "keyword": "生成AI",
-      "timestamp": "2025-07-19T11:46:34.468631",
+      "timestamp": "2025-07-19T11:53:34.934557",
       "results": [
         {
           "title": "【無料】日本語対応の生成AIツール7選を比較｜文章/画像別に紹 …",
@@ -51,34 +51,28 @@
           "source": "ai-kenkyujo.com"
         },
         {
-          "title": "国産生成AI10選：日本語LLMや企業向け生成AIと選び …",
-          "snippet": "AIsmiley Mar 25, 2025 · 日本企業が開発した最新の大規模言語モデルと生成AI 10選を紹介。 国内データに最適化された高精度モデルから、業務効率化に特化したAIソリューションまで、国産のAI技術の現状と活用方法を解説。",
-          "url": "https://aismiley.co.jp/ai_news/japanese-made-generative-ai/",
-          "source": "aismiley.co.jp"
+          "title": "【2025年最新】生成AIサービス17種類を比較！用途別の特徴や …",
+          "snippet": "DXナビ Jun 19, 2025 · 生成AIサービスを導入して作業や業務を効率化したいと考えているものの「自分に合う生成AIがどれなのかわからない」「無料で始められるAIがどれかわからない」などで …",
+          "url": "https://dxnavi.com/ai-serivice-2025/",
+          "source": "dxnavi.com"
         },
         {
           "title": "日本語対応が得意な生成AIツールは？ローカル言語の …",
           "snippet": "aiai-catch.com Jun 8, 2025 · AIの急速な進化により、日本語に対応した生成AIツールが次々と登場しています。 文章作成から画像・動画制作まで、さまざまな分野でこれらのツールが注目を集めており、その活用法を理解することが重要になってきまし …",
           "url": "https://aiai-catch.com/japanese-language-ai-tools-guide-to-overcoming-language-barriers/",
           "source": "aiai-catch.com"
-        },
-        {
-          "title": "生成AI比較30選！【図解】用途別おすすめ紹介！無料プランも",
-          "snippet": "ASPIC Jun 26, 2025 · 生成AIツールを検討しているものの、「たくさん種類があってどれを使ったらいいかわからない」「用途に最適なものを選びたい」という方へ。生成AIにできることや利用 …Missing: 日本語Must include: 日本語",
-          "url": "https://www.aspicjapan.org/asu/article/68407",
-          "source": "www.aspicjapan.org"
         }
       ],
       "new_keywords": [],
       "sentiment_score": 0.0,
       "engagement_metrics": {
-        "search_count": 9
+        "search_count": 8
       }
     },
     {
       "platform": "youtube",
       "keyword": "生成AI",
-      "timestamp": "2025-07-19T11:46:34.870356",
+      "timestamp": "2025-07-19T11:53:35.371682",
       "results": [
         {
           "title": "実際に現場で使われてる生成AIの活用事例10選",
@@ -191,7 +185,7 @@
     {
       "platform": "github",
       "keyword": "生成AI",
-      "timestamp": "2025-07-19T11:46:35.626706",
+      "timestamp": "2025-07-19T11:53:36.160774",
       "results": [
         {
           "name": "JeecgBoot",
@@ -808,7 +802,7 @@
     {
       "platform": "arxiv",
       "keyword": "生成AI",
-      "timestamp": "2025-07-19T11:46:35.927380",
+      "timestamp": "2025-07-19T11:53:36.554738",
       "results": [],
       "new_keywords": [],
       "sentiment_score": 0.0,
@@ -819,7 +813,7 @@
     {
       "platform": "hackernews",
       "keyword": "生成AI",
-      "timestamp": "2025-07-19T11:46:36.309106",
+      "timestamp": "2025-07-19T11:53:36.886302",
       "results": [
         {
           "title": "Generative AI for Beginners",
@@ -1069,7 +1063,7 @@
     {
       "platform": "supabase",
       "keyword": "生成AI",
-      "timestamp": "2025-07-19T11:46:36.309206",
+      "timestamp": "2025-07-19T11:53:36.886433",
       "results": [],
       "new_keywords": [],
       "sentiment_score": 0.0,
