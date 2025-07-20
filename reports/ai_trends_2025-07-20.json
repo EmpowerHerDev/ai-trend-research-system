@@ -6,13 +6,13 @@
       "生成AI"
     ],
     "new_keywords_found": 0,
-    "total_results": 67
+    "total_results": 68
   },
   "detailed_results": [
     {
       "platform": "web",
       "keyword": "生成AI",
-      "timestamp": "2025-07-20T01:09:27.346000",
+      "timestamp": "2025-07-20T03:17:19.266221",
       "results": [
         {
           "title": "【2025】おすすめの生成AIサービス10選をタイプ別で一覧比較…",
@@ -40,7 +40,7 @@
         },
         {
           "title": "【2025】おすすめの生成AIサービス10選をタイプ別で一覧比較…",
-          "snippet": "BIZ ROAD（ビズロード） 2 days ago · そこで本記事では、おすすめの生成AIサービス16選を文章特化型・画像生成型などのタイプ別に分類し、各サービスの特徴や選び方をわかりやすく解説します。",
+          "snippet": "BIZ ROAD（ビズロード） 2 days ago · そこで本記事では、おすすめの生成AIサービス16選を文章特化型・画像生成型などのタイプ別に分類し、各サービスの特徴や選び方をわかりやすく解説します。Missing: 日本語Must include: 日本語",
           "url": "https://bizroad-svc.com/blog/seiseiai-service/",
           "source": "bizroad-svc.com"
         },
@@ -58,32 +58,28 @@
         },
         {
           "title": "生成AI比較30選！【図解】用途別おすすめ紹介！無料プランも",
-          "snippet": "ASPIC Jun 26, 2025 · 生成AIツールを検討しているものの、「たくさん種類があってどれを使ったらいいかわからない」「用途に最適なものを選びたい」という方へ。生成AIにできることや利用 …",
+          "snippet": "ASPIC Jun 26, 2025 · 生成AIツールを検討しているものの、「たくさん種類があってどれを使ったらいいかわからない」「用途に最適なものを選びたい」という方へ。生成AIにできることや利用 …Missing: 日本語Must include: 日本語",
           "url": "https://www.aspicjapan.org/asu/article/68407",
           "source": "www.aspicjapan.org"
+        },
+        {
+          "title": "国産生成AI10選：日本語LLMや企業向け生成AIと選び …",
+          "snippet": "AIsmiley Mar 25, 2025 · 日本企業が開発した最新の大規模言語モデルと生成AI 10選を紹介。 国内データに最適化された高精度モデルから、業務効率化に特化したAIソリューションまで、国産のAI技術の現状と活用方法を解説。",
+          "url": "https://aismiley.co.jp/ai_news/japanese-made-generative-ai/",
+          "source": "aismiley.co.jp"
         }
       ],
       "new_keywords": [],
       "sentiment_score": 0.0,
       "engagement_metrics": {
-        "search_count": 8
+        "search_count": 9
       }
     },
     {
       "platform": "youtube",
       "keyword": "生成AI",
-      "timestamp": "2025-07-20T01:09:27.876415",
+      "timestamp": "2025-07-20T03:17:19.747038",
       "results": [
-        {
-          "title": "【高橋弘樹 vs AIのプロ】使えなければ時代遅れ!? 生成AI導入で成功の鍵とは？【ReHacQ】",
-          "description": "ひろゆき、成田悠輔、後藤達也…、新たな視点で経済・社会を見つめ直すビジネス動画メディア「ReHacQ」！ 「ReHacQスキル ...",
-          "published_at": "2025-07-17T11:00:06Z",
-          "channel": "ReHacQ−リハック−【公式】",
-          "video_id": "2_1d8DR7m4g",
-          "url": "https://www.youtube.com/watch?v=2_1d8DR7m4g",
-          "content_type": "その他",
-          "language": "ja"
-        },
         {
           "title": "【誰でもできる】全人類使え！ガチで便利な生成AIの使い方 TOP3",
           "description": "最近AIの進化が速すぎて、新しいAIツールが毎日のようにリリースされています。 あなたはこう思っていませんか？ 「AI、結局 ...",
@@ -105,12 +101,12 @@
           "language": "ja"
         },
         {
-          "title": "大学教授が思う生成AIの使い方(chatGPT)#大学教授",
-          "description": "",
-          "published_at": "2024-06-27T09:00:27Z",
-          "channel": "としゆき / 木下敏之",
-          "video_id": "c0p_dT60xYw",
-          "url": "https://www.youtube.com/watch?v=c0p_dT60xYw",
+          "title": "【高橋弘樹 vs AIのプロ】使えなければ時代遅れ!? 生成AI導入で成功の鍵とは？【ReHacQ】",
+          "description": "ひろゆき、成田悠輔、後藤達也…、新たな視点で経済・社会を見つめ直すビジネス動画メディア「ReHacQ」！ 「ReHacQスキル ...",
+          "published_at": "2025-07-17T11:00:06Z",
+          "channel": "ReHacQ−リハック−【公式】",
+          "video_id": "2_1d8DR7m4g",
+          "url": "https://www.youtube.com/watch?v=2_1d8DR7m4g",
           "content_type": "その他",
           "language": "ja"
         },
@@ -125,12 +121,12 @@
           "language": "ja"
         },
         {
-          "title": "「服が脱がされている」生成AIで30秒ほどで裸に　“性的ディープフェイク”の実態　卒アルの写真を悪用も　「個人と名前が一致しない」卒業アルバムを作成する学校も〈カンテレNEWS〉",
-          "description": "今、急増しているディープフェイクによる性的被害。 見ず知らずのうちに写真が悪用され、生成AIにより、性的な映像や画像が作 ...",
-          "published_at": "2025-07-18T08:34:58Z",
-          "channel": "カンテレNEWS",
-          "video_id": "XnGWNnUdAWQ",
-          "url": "https://www.youtube.com/watch?v=XnGWNnUdAWQ",
+          "title": "大学教授が思う生成AIの使い方(chatGPT)#大学教授",
+          "description": "",
+          "published_at": "2024-06-27T09:00:27Z",
+          "channel": "としゆき / 木下敏之",
+          "video_id": "c0p_dT60xYw",
+          "url": "https://www.youtube.com/watch?v=c0p_dT60xYw",
           "content_type": "その他",
           "language": "ja"
         },
@@ -155,6 +151,16 @@
           "language": "ja"
         },
         {
+          "title": "【AIコンサル社長が厳選！】1位のツールは特に使える！#生成ai  #ai  #aiツール  #gamma #sunoai #mapify #notebooklm  #perplexity #gpt",
+          "description": "",
+          "published_at": "2024-10-29T11:00:07Z",
+          "channel": "いけともch",
+          "video_id": "7pMLBh1P-w4",
+          "url": "https://www.youtube.com/watch?v=7pMLBh1P-w4",
+          "content_type": "その他",
+          "language": "ja"
+        },
+        {
           "title": "生成AIあるある　違うそうじゃない！",
           "description": "投稿欄もかなり頑張って更新しているのでよかったら遊びに来てください   https://www.youtube.com/@pitagolife/posts #弓道少女 ...",
           "published_at": "2025-07-18T12:00:01Z",
@@ -165,27 +171,27 @@
           "language": "ja"
         },
         {
-          "title": "【今さら聞けない？】生成AIとは？AIとどう違うの？（図解で簡単にわかりやすく解説）",
-          "description": "キノクエストの登録・詳細はこちら ...",
-          "published_at": "2025-01-28T11:00:48Z",
-          "channel": "キノコード / プログラミング学習チャンネル",
-          "video_id": "YFtoy_tfYfc",
-          "url": "https://www.youtube.com/watch?v=YFtoy_tfYfc",
-          "content_type": "解説動画",
+          "title": "インキャの卒業写真AIで動かしてみた#AI生成#AI#AI合成#インキャ#ヨウキャ#編集",
+          "description": "",
+          "published_at": "2024-12-10T10:00:36Z",
+          "channel": "Lazy Lie Crazy【レイクレ】",
+          "video_id": "ZiBHjj9fCO8",
+          "url": "https://www.youtube.com/watch?v=ZiBHjj9fCO8",
+          "content_type": "その他",
           "language": "ja"
         }
       ],
       "new_keywords": [],
       "sentiment_score": 0.0,
       "engagement_metrics": {
-        "video_count": 1,
+        "video_count": 0,
         "total_videos": 10
       }
     },
     {
       "platform": "github",
       "keyword": "生成AI",
-      "timestamp": "2025-07-20T01:09:28.631508",
+      "timestamp": "2025-07-20T03:17:20.642961",
       "results": [
         {
           "name": "JeecgBoot",
@@ -218,11 +224,11 @@
           "forks": 0,
           "topics": [],
           "license": "",
-          "updated_at": "2025-07-20T00:18:04Z",
+          "updated_at": "2025-07-20T03:14:52Z",
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
-          "days_old": 495,
+          "days_old": 496,
           "is_trending": false,
           "is_accelerating": false,
           "trend_score": 0.0
@@ -358,7 +364,7 @@
           "forks": 0,
           "topics": [],
           "license": "",
-          "updated_at": "2025-07-19T15:17:45Z",
+          "updated_at": "2025-07-20T02:46:30Z",
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
@@ -418,7 +424,7 @@
           "forks": 0,
           "topics": [],
           "license": "",
-          "updated_at": "2025-07-19T20:33:25Z",
+          "updated_at": "2025-07-20T03:11:20Z",
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
@@ -458,7 +464,7 @@
           "forks": 0,
           "topics": [],
           "license": "",
-          "updated_at": "2025-07-18T11:49:29Z",
+          "updated_at": "2025-07-20T02:03:17Z",
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
@@ -518,7 +524,7 @@
           "forks": 0,
           "topics": [],
           "license": "",
-          "updated_at": "2025-07-19T23:11:03Z",
+          "updated_at": "2025-07-20T03:16:19Z",
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
@@ -602,10 +608,10 @@
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
-          "days_old": 260,
+          "days_old": 261,
           "is_trending": false,
           "is_accelerating": false,
-          "trend_score": 8.63
+          "trend_score": 8.55
         },
         {
           "name": "Twocast",
@@ -642,10 +648,10 @@
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
-          "days_old": 330,
+          "days_old": 331,
           "is_trending": false,
           "is_accelerating": false,
-          "trend_score": 2.88
+          "trend_score": 2.79
         },
         {
           "name": "ai-to-pptx",
@@ -678,11 +684,11 @@
           "forks": 0,
           "topics": [],
           "license": "",
-          "updated_at": "2025-07-18T13:58:43Z",
+          "updated_at": "2025-07-20T02:25:51Z",
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
-          "days_old": 881,
+          "days_old": 882,
           "is_trending": false,
           "is_accelerating": false,
           "trend_score": 0.0
@@ -802,7 +808,7 @@
     {
       "platform": "arxiv",
       "keyword": "生成AI",
-      "timestamp": "2025-07-20T01:09:29.219383",
+      "timestamp": "2025-07-20T03:17:21.435153",
       "results": [],
       "new_keywords": [],
       "sentiment_score": 0.0,
@@ -813,7 +819,7 @@
     {
       "platform": "hackernews",
       "keyword": "生成AI",
-      "timestamp": "2025-07-20T01:09:29.757900",
+      "timestamp": "2025-07-20T03:17:21.935077",
       "results": [
         {
           "title": "Generative AI for Beginners",
@@ -1063,7 +1069,7 @@
     {
       "platform": "supabase",
       "keyword": "生成AI",
-      "timestamp": "2025-07-20T01:09:29.758029",
+      "timestamp": "2025-07-20T03:17:21.935174",
       "results": [],
       "new_keywords": [],
       "sentiment_score": 0.0,
