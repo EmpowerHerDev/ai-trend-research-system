@@ -12,7 +12,7 @@
     {
       "platform": "web",
       "keyword": "生成AI",
-      "timestamp": "2025-07-20T16:46:33.860884",
+      "timestamp": "2025-07-20T16:57:51.244070",
       "results": [
         {
           "title": "【2025年最新】無料で使える生成AIツール20選｜比較表＆業務プロンプト例つき - AI …",
@@ -84,7 +84,7 @@
     {
       "platform": "youtube",
       "keyword": "生成AI",
-      "timestamp": "2025-07-20T16:46:34.293667",
+      "timestamp": "2025-07-20T16:57:51.689307",
       "results": [
         {
           "title": "【誰でもできる】全人類使え！ガチで便利な生成AIの使い方 TOP3",
@@ -147,22 +147,22 @@
           "language": "ja"
         },
         {
-          "title": "【今さら聞けない？】生成AIとは？AIとどう違うの？（図解で簡単にわかりやすく解説）",
-          "description": "キノクエストの登録・詳細はこちら ...",
-          "published_at": "2025-01-28T11:00:48Z",
-          "channel": "キノコード / プログラミング学習チャンネル",
-          "video_id": "YFtoy_tfYfc",
-          "url": "https://www.youtube.com/watch?v=YFtoy_tfYfc",
-          "content_type": "解説動画",
-          "language": "ja"
-        },
-        {
           "title": "インキャの卒業写真AIで動かしてみた#AI生成#AI#AI合成#インキャ#ヨウキャ#編集",
           "description": "",
           "published_at": "2024-12-10T10:00:36Z",
           "channel": "Lazy Lie Crazy【レイクレ】",
           "video_id": "ZiBHjj9fCO8",
           "url": "https://www.youtube.com/watch?v=ZiBHjj9fCO8",
+          "content_type": "その他",
+          "language": "ja"
+        },
+        {
+          "title": "【AIコンサル社長が厳選！】1位のツールは特に使える！#生成ai  #ai  #aiツール  #gamma #sunoai #mapify #notebooklm  #perplexity #gpt",
+          "description": "",
+          "published_at": "2024-10-29T11:00:07Z",
+          "channel": "いけともch",
+          "video_id": "7pMLBh1P-w4",
+          "url": "https://www.youtube.com/watch?v=7pMLBh1P-w4",
           "content_type": "その他",
           "language": "ja"
         },
@@ -177,12 +177,12 @@
           "language": "ja"
         },
         {
-          "title": "【AIコンサル社長が厳選！】1位のツールは特に使える！#生成ai  #ai  #aiツール  #gamma #sunoai #mapify #notebooklm  #perplexity #gpt",
+          "title": "生成AI動画あるある",
           "description": "",
-          "published_at": "2024-10-29T11:00:07Z",
-          "channel": "いけともch",
-          "video_id": "7pMLBh1P-w4",
-          "url": "https://www.youtube.com/watch?v=7pMLBh1P-w4",
+          "published_at": "2024-12-20T08:32:42Z",
+          "channel": "ユウスケTV",
+          "video_id": "4jzcmSHxjVw",
+          "url": "https://www.youtube.com/watch?v=4jzcmSHxjVw",
           "content_type": "その他",
           "language": "ja"
         }
@@ -190,14 +190,14 @@
       "new_keywords": [],
       "sentiment_score": 0.0,
       "engagement_metrics": {
-        "video_count": 1,
+        "video_count": 0,
         "total_videos": 10
       }
     },
     {
       "platform": "github",
       "keyword": "生成AI",
-      "timestamp": "2025-07-20T16:46:35.159094",
+      "timestamp": "2025-07-20T16:57:52.491272",
       "results": [
         {
           "name": "JeecgBoot",
@@ -814,7 +814,7 @@
     {
       "platform": "arxiv",
       "keyword": "生成AI",
-      "timestamp": "2025-07-20T16:46:35.652579",
+      "timestamp": "2025-07-20T16:57:53.005368",
       "results": [],
       "new_keywords": [],
       "sentiment_score": 0.0,
@@ -825,7 +825,7 @@
     {
       "platform": "hackernews",
       "keyword": "生成AI",
-      "timestamp": "2025-07-20T16:46:36.095898",
+      "timestamp": "2025-07-20T16:57:53.502778",
       "results": [
         {
           "title": "Generative AI for Beginners",
@@ -1075,7 +1075,7 @@
     {
       "platform": "supabase",
       "keyword": "生成AI",
-      "timestamp": "2025-07-20T16:46:36.096001",
+      "timestamp": "2025-07-20T16:57:53.502877",
       "results": [],
       "new_keywords": [],
       "sentiment_score": 0.0,
