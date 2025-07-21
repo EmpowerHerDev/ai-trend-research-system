@@ -12,8 +12,14 @@
     {
       "platform": "web",
       "keyword": "生成AI",
-      "timestamp": "2025-07-21T09:15:32.179999",
+      "timestamp": "2025-07-21T09:43:54.987768",
       "results": [
+        {
+          "title": "【2025】生成AIサービスおすすめ17選を一覧比較！無料・料金 …",
+          "snippet": "businesskouzamitsuketai.com May 8, 2025 · この記事では、文章・画像・動画の4分野から厳選した17ツールを、特徴や無料プラン有無、料金、商用利用可否、日本語対応を徹底比較します。 生成AIツールの比較ポイ …",
+          "url": "https://businesskouzamitsuketai.com/seiseiai-hikaku/",
+          "source": "businesskouzamitsuketai.com"
+        },
         {
           "title": "【2025年最新】無料で使える生成AIツール20選｜比較表＆業務プロンプト例つき - AI …",
           "snippet": "shift-ai.co.jp Jul 14, 2025 · 生成AIを試したい方必見。文章生成・画像作成・プレゼン資料などに使える無料ツール20選を用途別に紹介。商用利用の注意点や活用プロンプト例も掲載。まず何から使えば …",
@@ -27,22 +33,16 @@
           "source": "metaversesouken.com"
         },
         {
-          "title": "【2025】おすすめ無料生成AIサイト・アプリ20選！日本語対応 …",
-          "snippet": "businesskouzamitsuketai.com Jan 17, 2025 · この記事では、無料で使える12の優良画像生成AIサイトを厳選し、日本語対応の有無、商用利用の可否もあわせて紹介します。 選び方や注意点、利用する方法についても …",
-          "url": "https://businesskouzamitsuketai.com/seiseiai-muryou/",
-          "source": "businesskouzamitsuketai.com"
-        },
-        {
-          "title": "【2025】おすすめの生成AIサービス10選をタイプ別で一覧比較…",
-          "snippet": "bizroad-svc.com 3 days ago · そこで本記事では、おすすめの生成AIサービス16選を文章特化型・画像生成型などのタイプ別に分類し、各サービスの特徴や選び方をわかりやすく解説します。",
-          "url": "https://bizroad-svc.com/blog/seiseiai-service/",
-          "source": "bizroad-svc.com"
-        },
-        {
           "title": "国産生成AI10選：日本語LLMや企業向け生成AIと選び方を解説",
           "snippet": "aismiley.co.jp Mar 25, 2025 · 日本企業が開発した最新の大規模言語モデルと生成AI 10選を紹介。 国内データに最適化された高精度モデルから、業務効率化に特化したAIソリューションまで、国産のAI技 …",
           "url": "https://aismiley.co.jp/ai_news/japanese-made-generative-ai/",
           "source": "aismiley.co.jp"
+        },
+        {
+          "title": "【2025】おすすめの生成AIサービス10選をタイプ別で一覧比較…",
+          "snippet": "bizroad-svc.com 3 days ago · そこで本記事では、おすすめの生成AIサービス16選を文章特化型・画像生成型などのタイプ別に分類し、各サービスの特徴や選び方をわかりやすく解説します。Missing: 日本語Must include: 日本語",
+          "url": "https://bizroad-svc.com/blog/seiseiai-service/",
+          "source": "bizroad-svc.com"
         },
         {
           "title": "【2025】無料で使える生成AIツール11選！用途別に紹介 | DX/AI …",
@@ -84,7 +84,7 @@
     {
       "platform": "youtube",
       "keyword": "生成AI",
-      "timestamp": "2025-07-21T09:15:32.666894",
+      "timestamp": "2025-07-21T09:43:55.387722",
       "results": [
         {
           "title": "【誰でもできる】全人類使え！ガチで便利な生成AIの使い方 TOP3",
@@ -107,12 +107,12 @@
           "language": "ja"
         },
         {
-          "title": "AIに嘘をつかせるな！#AI #生成AI #ChatGPT #ハルシネーション #プロンプト",
-          "description": "生成AI AI ChatGPT プロンプト 命令文 ハルシネーション Claude Genspark Copilot Gemini Adobe Firefly Grok OpenAI Google ...",
-          "published_at": "2025-05-27T10:00:17Z",
-          "channel": "Elith",
-          "video_id": "jGGgg3Cqg4Y",
-          "url": "https://www.youtube.com/watch?v=jGGgg3Cqg4Y",
+          "title": "マイクロソフトが教える生成AI活用法",
+          "description": "飲み会1回分で行けるプログラミングスクール「TECH WORLD」 【提供中のサービス】 ・メガベンチャーエンジニアがメンター ...",
+          "published_at": "2024-06-08T09:53:36Z",
+          "channel": "TECH WORLD",
+          "video_id": "IXcu3fNEgkY",
+          "url": "https://www.youtube.com/watch?v=IXcu3fNEgkY",
           "content_type": "その他",
           "language": "ja"
         },
@@ -127,6 +127,16 @@
           "language": "ja"
         },
         {
+          "title": "どれくらい見抜けた？👀#ai #生成ai #画像生成ai",
+          "description": "",
+          "published_at": "2025-06-15T02:04:41Z",
+          "channel": "けん 今すぐ使えるAI活用術",
+          "video_id": "29BcnmZSeqg",
+          "url": "https://www.youtube.com/watch?v=29BcnmZSeqg",
+          "content_type": "その他",
+          "language": "ja"
+        },
+        {
           "title": "考えさせられる動画#ai #aiart #生成ai #号泣 #shorts",
           "description": "",
           "published_at": "2024-03-27T10:57:37Z",
@@ -134,16 +144,6 @@
           "video_id": "UWopmyHS3Qk",
           "url": "https://www.youtube.com/watch?v=UWopmyHS3Qk",
           "content_type": "その他",
-          "language": "ja"
-        },
-        {
-          "title": "【今さら聞けない？】生成AIとは？AIとどう違うの？（図解で簡単にわかりやすく解説）",
-          "description": "キノクエストの登録・詳細はこちら ...",
-          "published_at": "2025-01-28T11:00:48Z",
-          "channel": "キノコード / プログラミング学習チャンネル",
-          "video_id": "YFtoy_tfYfc",
-          "url": "https://www.youtube.com/watch?v=YFtoy_tfYfc",
-          "content_type": "解説動画",
           "language": "ja"
         },
         {
@@ -177,13 +177,13 @@
           "language": "ja"
         },
         {
-          "title": "【AIコンサル社長が厳選！】1位のツールは特に使える！#生成ai  #ai  #aiツール  #gamma #sunoai #mapify #notebooklm  #perplexity #gpt",
-          "description": "",
-          "published_at": "2024-10-29T11:00:07Z",
-          "channel": "いけともch",
-          "video_id": "7pMLBh1P-w4",
-          "url": "https://www.youtube.com/watch?v=7pMLBh1P-w4",
-          "content_type": "その他",
+          "title": "【今さら聞けない？】生成AIとは？AIとどう違うの？（図解で簡単にわかりやすく解説）",
+          "description": "キノクエストの登録・詳細はこちら ...",
+          "published_at": "2025-01-28T11:00:48Z",
+          "channel": "キノコード / プログラミング学習チャンネル",
+          "video_id": "YFtoy_tfYfc",
+          "url": "https://www.youtube.com/watch?v=YFtoy_tfYfc",
+          "content_type": "解説動画",
           "language": "ja"
         }
       ],
@@ -197,7 +197,7 @@
     {
       "platform": "github",
       "keyword": "生成AI",
-      "timestamp": "2025-07-21T09:15:33.632295",
+      "timestamp": "2025-07-21T09:43:56.229112",
       "results": [
         {
           "name": "JeecgBoot",
@@ -210,7 +210,7 @@
           "forks": 0,
           "topics": [],
           "license": "",
-          "updated_at": "2025-07-21T09:11:21Z",
+          "updated_at": "2025-07-21T09:28:08Z",
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
@@ -230,7 +230,7 @@
           "forks": 0,
           "topics": [],
           "license": "",
-          "updated_at": "2025-07-21T08:41:49Z",
+          "updated_at": "2025-07-21T09:28:17Z",
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
@@ -294,10 +294,10 @@
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
-          "days_old": 98,
+          "days_old": 99,
           "is_trending": false,
           "is_accelerating": false,
-          "trend_score": 21.95
+          "trend_score": 21.86
         },
         {
           "name": "AI-Writer",
@@ -814,7 +814,7 @@
     {
       "platform": "arxiv",
       "keyword": "生成AI",
-      "timestamp": "2025-07-21T09:15:34.392728",
+      "timestamp": "2025-07-21T09:43:56.663253",
       "results": [],
       "new_keywords": [],
       "sentiment_score": 0.0,
@@ -825,7 +825,7 @@
     {
       "platform": "hackernews",
       "keyword": "生成AI",
-      "timestamp": "2025-07-21T09:15:35.236889",
+      "timestamp": "2025-07-21T09:43:57.146164",
       "results": [
         {
           "title": "Generative AI for Beginners",
@@ -1075,7 +1075,7 @@
     {
       "platform": "supabase",
       "keyword": "生成AI",
-      "timestamp": "2025-07-21T09:15:35.236988",
+      "timestamp": "2025-07-21T09:43:57.146273",
       "results": [],
       "new_keywords": [],
       "sentiment_score": 0.0,
