@@ -12,7 +12,7 @@
     {
       "platform": "web",
       "keyword": "生成AI",
-      "timestamp": "2025-07-21T13:33:05.673946",
+      "timestamp": "2025-07-21T13:57:47.236838",
       "results": [
         {
           "title": "【無料】日本語対応の生成AIツール7選を比較｜文章/画像別に紹 …",
@@ -57,16 +57,16 @@
           "source": "ai-kenkyujo.com"
         },
         {
-          "title": "【2025年最新】5大生成AI比較！ChatGPT・Gemini・…",
-          "snippet": "miralab.co.jp May 22, 2025 · 生成AIの導入を考えている方に向け、ChatGPT、Gemini、Claude、copilot、Grokを比較して、最新モデルの性能や料金、用途別の強みをわかりやすく解説します。 生成AIの比較表で各AIの特徴を一目で把握でき、 …",
-          "url": "https://miralab.co.jp/media/chatgpt_gemini_claude_copilot/",
-          "source": "miralab.co.jp"
-        },
-        {
           "title": "国産生成AI10選：日本語LLMや企業向け生成AIと選び …",
           "snippet": "AIsmiley Mar 25, 2025 · 日本企業が開発した最新の大規模言語モデルと生成AI 10選を紹介。 国内データに最適化された高精度モデルから、業務効率化に特化したAIソリューションまで、国産のAI技術の現状と活用方法を解説。",
           "url": "https://aismiley.co.jp/ai_news/japanese-made-generative-ai/",
           "source": "aismiley.co.jp"
+        },
+        {
+          "title": "日本語対応が得意な生成AIツールは？ローカル言語の …",
+          "snippet": "aiai-catch.com Jun 8, 2025 · AIの急速な進化により、日本語に対応した生成AIツールが次々と登場しています。 文章作成から画像・動画制作まで、さまざまな分野でこれらのツールが注目を集めており、その活用法を理解することが重要になってきまし …",
+          "url": "https://aiai-catch.com/japanese-language-ai-tools-guide-to-overcoming-language-barriers/",
+          "source": "aiai-catch.com"
         }
       ],
       "new_keywords": [],
@@ -78,7 +78,7 @@
     {
       "platform": "youtube",
       "keyword": "生成AI",
-      "timestamp": "2025-07-21T13:33:06.193005",
+      "timestamp": "2025-07-21T13:57:47.682934",
       "results": [
         {
           "title": "【誰でもできる】全人類使え！ガチで便利な生成AIの使い方 TOP3",
@@ -88,6 +88,16 @@
           "video_id": "zrluoX5MLfA",
           "url": "https://www.youtube.com/watch?v=zrluoX5MLfA",
           "content_type": "ニュース",
+          "language": "ja"
+        },
+        {
+          "title": "【高橋弘樹 vs AIのプロ】使えなければ時代遅れ!? 生成AI導入で成功の鍵とは？【ReHacQ】",
+          "description": "ひろゆき、成田悠輔、後藤達也…、新たな視点で経済・社会を見つめ直すビジネス動画メディア「ReHacQ」！ 「ReHacQスキル ...",
+          "published_at": "2025-07-17T11:00:06Z",
+          "channel": "ReHacQ−リハック−【公式】",
+          "video_id": "2_1d8DR7m4g",
+          "url": "https://www.youtube.com/watch?v=2_1d8DR7m4g",
+          "content_type": "その他",
           "language": "ja"
         },
         {
@@ -121,16 +131,6 @@
           "language": "ja"
         },
         {
-          "title": "どれくらい見抜けた？👀#ai #生成ai #画像生成ai",
-          "description": "",
-          "published_at": "2025-06-15T02:04:41Z",
-          "channel": "けん 今すぐ使えるAI活用術",
-          "video_id": "29BcnmZSeqg",
-          "url": "https://www.youtube.com/watch?v=29BcnmZSeqg",
-          "content_type": "その他",
-          "language": "ja"
-        },
-        {
           "title": "コレをするならこのAI！#AI #生成AI #ChatGPT #ハルシネーション #プロンプト",
           "description": "生成AI AI ChatGPT プロンプト 命令文 ハルシネーション Claude Genspark Copilot Gemini OpenAI Google 画像生成 画像 画像作成 ...",
           "published_at": "2025-06-02T09:50:34Z",
@@ -141,13 +141,13 @@
           "language": "ja"
         },
         {
-          "title": "【今さら聞けない？】生成AIとは？AIとどう違うの？（図解で簡単にわかりやすく解説）",
-          "description": "キノクエストの登録・詳細はこちら ...",
-          "published_at": "2025-01-28T11:00:48Z",
-          "channel": "キノコード / プログラミング学習チャンネル",
-          "video_id": "YFtoy_tfYfc",
-          "url": "https://www.youtube.com/watch?v=YFtoy_tfYfc",
-          "content_type": "解説動画",
+          "title": "どれくらい見抜けた？👀#ai #生成ai #画像生成ai",
+          "description": "",
+          "published_at": "2025-06-15T02:04:41Z",
+          "channel": "けん 今すぐ使えるAI活用術",
+          "video_id": "29BcnmZSeqg",
+          "url": "https://www.youtube.com/watch?v=29BcnmZSeqg",
+          "content_type": "その他",
           "language": "ja"
         },
         {
@@ -161,23 +161,23 @@
           "language": "ja"
         },
         {
-          "title": "AI073 AI 画像生成 動画生成 美女 ルックブック ポートレート lookbook fashion",
-          "description": "ai美女 #ailookbook #美脚 AI画像生成ソフトで生成した画像をAI動画にしています。 BGMにのせて日本の様々な景色の中、素敵な ...",
-          "published_at": "2025-07-20T06:59:20Z",
-          "channel": "AI Lovely Lady Lookbook",
-          "video_id": "DipryeycbdE",
-          "url": "https://www.youtube.com/watch?v=DipryeycbdE",
-          "content_type": "その他",
+          "title": "【生成AI CNC】生成AIで作成した3DモデルをCNCで実際に加工します。#生成 ai #cnc",
+          "description": "【関連動画】 https://youtu.be/s9EW8m9Eo2M (生成AI比較 5選） https://youtu.be/i5GYtvxBrNQ (CAMの基本4ステップ) ...",
+          "published_at": "2025-07-19T03:47:35Z",
+          "channel": "NextCreation",
+          "video_id": "Ly6rE-lDBrM",
+          "url": "https://www.youtube.com/watch?v=Ly6rE-lDBrM",
+          "content_type": "レビュー",
           "language": "ja"
         },
         {
-          "title": "AI生成したら偽花京院出てきた　#ai動画 #石破茂 #おもしろ動画",
-          "description": "",
-          "published_at": "2025-03-13T09:00:06Z",
-          "channel": "ポンコツAI工房",
-          "video_id": "2tcYwophv8I",
-          "url": "https://www.youtube.com/watch?v=2tcYwophv8I",
-          "content_type": "その他",
+          "title": "【今さら聞けない？】生成AIとは？AIとどう違うの？（図解で簡単にわかりやすく解説）",
+          "description": "キノクエストの登録・詳細はこちら ...",
+          "published_at": "2025-01-28T11:00:48Z",
+          "channel": "キノコード / プログラミング学習チャンネル",
+          "video_id": "YFtoy_tfYfc",
+          "url": "https://www.youtube.com/watch?v=YFtoy_tfYfc",
+          "content_type": "解説動画",
           "language": "ja"
         }
       ],
@@ -191,7 +191,7 @@
     {
       "platform": "github",
       "keyword": "生成AI",
-      "timestamp": "2025-07-21T13:33:07.108550",
+      "timestamp": "2025-07-21T13:57:48.700983",
       "results": [
         {
           "name": "JeecgBoot",
@@ -808,7 +808,7 @@
     {
       "platform": "arxiv",
       "keyword": "生成AI",
-      "timestamp": "2025-07-21T13:33:07.660341",
+      "timestamp": "2025-07-21T13:57:49.291005",
       "results": [],
       "new_keywords": [],
       "sentiment_score": 0.0,
@@ -819,7 +819,7 @@
     {
       "platform": "hackernews",
       "keyword": "生成AI",
-      "timestamp": "2025-07-21T13:33:08.033946",
+      "timestamp": "2025-07-21T13:57:49.893990",
       "results": [
         {
           "title": "Generative AI for Beginners",
@@ -1069,7 +1069,7 @@
     {
       "platform": "supabase",
       "keyword": "生成AI",
-      "timestamp": "2025-07-21T13:33:08.034034",
+      "timestamp": "2025-07-21T13:57:49.894115",
       "results": [],
       "new_keywords": [],
       "sentiment_score": 0.0,
