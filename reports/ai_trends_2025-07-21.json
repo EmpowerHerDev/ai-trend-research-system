@@ -12,7 +12,7 @@
     {
       "platform": "web",
       "keyword": "生成AI",
-      "timestamp": "2025-07-21T05:17:06.609608",
+      "timestamp": "2025-07-21T05:46:09.560219",
       "results": [
         {
           "title": "【2025】生成AIサービスおすすめ17選を一覧比較！無料・料金 …",
@@ -84,7 +84,7 @@
     {
       "platform": "youtube",
       "keyword": "生成AI",
-      "timestamp": "2025-07-21T05:17:07.125403",
+      "timestamp": "2025-07-21T05:46:10.079903",
       "results": [
         {
           "title": "【誰でもできる】全人類使え！ガチで便利な生成AIの使い方 TOP3",
@@ -177,27 +177,27 @@
           "language": "ja"
         },
         {
-          "title": "【2025最新版】AI動画の作り方を初心者向けに徹底解説。今からAI動画を始めるならオールインワンツールpollo aiがおすすめ",
-          "description": "今回紹介したpollo aiはこちらから⬇︎ Pollo AI: https://cutt.ly/9rIGUnuT 00:00 挨拶 00:50 AI動画を作る方法（基本的な流れ） ...",
-          "published_at": "2025-07-19T11:01:13Z",
-          "channel": "RKJ VIDEO 【イケている動画を作りたいなら】",
-          "video_id": "gWu2mF6NTuU",
-          "url": "https://www.youtube.com/watch?v=gWu2mF6NTuU",
-          "content_type": "解説動画",
+          "title": "【AIコンサル社長が厳選！】1位のツールは特に使える！#生成ai  #ai  #aiツール  #gamma #sunoai #mapify #notebooklm  #perplexity #gpt",
+          "description": "",
+          "published_at": "2024-10-29T11:00:07Z",
+          "channel": "いけともch",
+          "video_id": "7pMLBh1P-w4",
+          "url": "https://www.youtube.com/watch?v=7pMLBh1P-w4",
+          "content_type": "その他",
           "language": "ja"
         }
       ],
       "new_keywords": [],
       "sentiment_score": 0.0,
       "engagement_metrics": {
-        "video_count": 2,
+        "video_count": 1,
         "total_videos": 10
       }
     },
     {
       "platform": "github",
       "keyword": "生成AI",
-      "timestamp": "2025-07-21T05:17:08.146903",
+      "timestamp": "2025-07-21T05:46:11.062012",
       "results": [
         {
           "name": "JeecgBoot",
@@ -270,7 +270,7 @@
           "forks": 0,
           "topics": [],
           "license": "",
-          "updated_at": "2025-07-21T03:07:02Z",
+          "updated_at": "2025-07-21T05:43:01Z",
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
@@ -370,7 +370,7 @@
           "forks": 0,
           "topics": [],
           "license": "",
-          "updated_at": "2025-07-20T15:31:56Z",
+          "updated_at": "2025-07-21T05:44:55Z",
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
@@ -714,7 +714,7 @@
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
-          "days_old": 2996,
+          "days_old": 2997,
           "is_trending": false,
           "is_accelerating": false,
           "trend_score": 0.0
@@ -814,7 +814,7 @@
     {
       "platform": "arxiv",
       "keyword": "生成AI",
-      "timestamp": "2025-07-21T05:17:08.954263",
+      "timestamp": "2025-07-21T05:46:11.624578",
       "results": [],
       "new_keywords": [],
       "sentiment_score": 0.0,
@@ -825,7 +825,7 @@
     {
       "platform": "hackernews",
       "keyword": "生成AI",
-      "timestamp": "2025-07-21T05:17:09.450051",
+      "timestamp": "2025-07-21T05:46:12.140160",
       "results": [
         {
           "title": "Generative AI for Beginners",
@@ -1075,7 +1075,7 @@
     {
       "platform": "supabase",
       "keyword": "生成AI",
-      "timestamp": "2025-07-21T05:17:09.450149",
+      "timestamp": "2025-07-21T05:46:12.140280",
       "results": [],
       "new_keywords": [],
       "sentiment_score": 0.0,
