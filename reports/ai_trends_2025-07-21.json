@@ -12,7 +12,7 @@
     {
       "platform": "web",
       "keyword": "生成AI",
-      "timestamp": "2025-07-21T16:54:52.667167",
+      "timestamp": "2025-07-21T17:12:28.674801",
       "results": [
         {
           "title": "【2025】おすすめの生成AIサービス10選をタイプ別で一覧比較…",
@@ -28,13 +28,13 @@
         },
         {
           "title": "【無料】日本語対応の生成AIツール7選を比較｜文章/画像別に紹 …",
-          "snippet": "メタバース総研 Jun 14, 2025 · そこで本記事では、生成AIツールを初めて利用する方に向けて、 無料で使える日本語対応の生成AIツールを、選び方とともにわかりやすくご紹介 します。",
+          "snippet": "メタバース総研 Jun 14, 2025 · 無料で使える日本語対応の生成AIツール7選 ＜文章生成＞①ChatGPT：OpenAIが開発し、世界中で最も使われているAIツール ②Copilot ③Gemini ＜画像生成＞④Adobe …",
           "url": "https://metaversesouken.com/ai/generative_ai/japanese-tools/",
           "source": "metaversesouken.com"
         },
         {
           "title": "【2025】おすすめ無料生成AIサイト・アプリ20選！日本語対応 …",
-          "snippet": "businesskouzamitsuketai.com Jan 17, 2025 · この記事では、無料で使える12の優良画像生成AIサイトを厳選し、日本語対応の有無、商用利用の可否もあわせて紹介します。 選び方や注意点、利用する方法についても …",
+          "snippet": "businesskouzamitsuketai.com Jan 17, 2025 · 近年注目を集めている画像生成AI。画像生成AIは無料で使えるサイトも多いですが、無料のサービスだからこそ慎重に選ばなくてはいけません。この記事では、無料で使え …",
           "url": "https://businesskouzamitsuketai.com/seiseiai-muryou/",
           "source": "businesskouzamitsuketai.com"
         },
@@ -45,6 +45,12 @@
           "source": "miralab.co.jp"
         },
         {
+          "title": "【2025】無料で使える生成AIツール11選！用途別に …",
+          "snippet": "AI研究所 Jun 27, 2024 · プロンプトに基づいて、さまざまなコンテンツを作り出せる生成AI。文章や画像の生成などあらゆることが可能ですが、無料で利用できる …セミナー名: 生成AIセミナー開催期間: 2日間価格 (税込): 27,500円〜",
+          "url": "https://ai-kenkyujo.com/software/generative-ai/muryou-2/",
+          "source": "ai-kenkyujo.com"
+        },
+        {
           "title": "【2025年最新】生成AIサービス17種類を比較！用途別の特徴や …",
           "snippet": "DXナビ Jun 19, 2025 · 生成AIサービスを導入して作業や業務を効率化したいと考えているものの「自分に合う生成AIがどれなのかわからない」「無料で始められるAIがどれかわからない」などで …",
           "url": "https://dxnavi.com/ai-serivice-2025/",
@@ -52,19 +58,13 @@
         },
         {
           "title": "【2025】おすすめの生成AIサービス10選をタイプ別で一覧比較…",
-          "snippet": "BIZ ROAD（ビズロード） 3 days ago · そこで本記事では、おすすめの生成AIサービス16選を文章特化型・画像生成型などのタイプ別に分類し、各サービスの特徴や選び方をわかりやすく解説します。Missing: 日本語Must include: 日本語",
+          "snippet": "BIZ ROAD（ビズロード） 3 days ago · そこで本記事では、おすすめの生成AIサービス16選を文章特化型・画像生成型などのタイプ別に分類し、各サービスの特徴や選び方をわかりやすく解説します。",
           "url": "https://bizroad-svc.com/blog/seiseiai-service/",
           "source": "bizroad-svc.com"
         },
         {
-          "title": "【2025】無料で使える生成AIツール11選！用途別に …",
-          "snippet": "AI研究所 本記事では、無料で利用できる生成AIツールを、用途別にそれぞれ紹介しています。 合わせて11選紹介しているので、気になったツールがあれば利用してみましょう。",
-          "url": "https://ai-kenkyujo.com/software/generative-ai/muryou-2/",
-          "source": "ai-kenkyujo.com"
-        },
-        {
           "title": "国産生成AI10選：日本語LLMや企業向け生成AIと選び …",
-          "snippet": "AIsmiley Mar 25, 2025 · 日本企業が開発した最新の大規模言語モデルと生成AI 10選を紹介。 国内データに最適化された高精度モデルから、業務効率化に特化したAIソリューションまで、国産のAI技術の現状と活用方法を解説。",
+          "snippet": "AIsmiley Mar 25, 2025 · 日本企業が開発した最新の大規模言語モデルと生成AI 10選を紹介。国内データに最適化された高精度モデルから、業務効率化に特化したAIソリューションまで、国産のAI技術の現状と活用方法を解説。企業のAI導入の際 …",
           "url": "https://aismiley.co.jp/ai_news/japanese-made-generative-ai/",
           "source": "aismiley.co.jp"
         }
@@ -78,7 +78,7 @@
     {
       "platform": "youtube",
       "keyword": "生成AI",
-      "timestamp": "2025-07-21T16:54:53.147526",
+      "timestamp": "2025-07-21T17:12:29.105674",
       "results": [
         {
           "title": "【誰でもできる】全人類使え！ガチで便利な生成AIの使い方 TOP3",
@@ -88,16 +88,6 @@
           "video_id": "zrluoX5MLfA",
           "url": "https://www.youtube.com/watch?v=zrluoX5MLfA",
           "content_type": "ニュース",
-          "language": "ja"
-        },
-        {
-          "title": "【高橋弘樹 vs AIのプロ】使えなければ時代遅れ!? 生成AI導入で成功の鍵とは？【ReHacQ】",
-          "description": "ひろゆき、成田悠輔、後藤達也…、新たな視点で経済・社会を見つめ直すビジネス動画メディア「ReHacQ」！ 「ReHacQスキル ...",
-          "published_at": "2025-07-17T11:00:06Z",
-          "channel": "ReHacQ−リハック−【公式】",
-          "video_id": "2_1d8DR7m4g",
-          "url": "https://www.youtube.com/watch?v=2_1d8DR7m4g",
-          "content_type": "その他",
           "language": "ja"
         },
         {
@@ -131,6 +121,16 @@
           "language": "ja"
         },
         {
+          "title": "【高橋弘樹 vs AIのプロ】使えなければ時代遅れ!? 生成AI導入で成功の鍵とは？【ReHacQ】",
+          "description": "ひろゆき、成田悠輔、後藤達也…、新たな視点で経済・社会を見つめ直すビジネス動画メディア「ReHacQ」！ 「ReHacQスキル ...",
+          "published_at": "2025-07-17T11:00:06Z",
+          "channel": "ReHacQ−リハック−【公式】",
+          "video_id": "2_1d8DR7m4g",
+          "url": "https://www.youtube.com/watch?v=2_1d8DR7m4g",
+          "content_type": "その他",
+          "language": "ja"
+        },
+        {
           "title": "コレをするならこのAI！#AI #生成AI #ChatGPT #ハルシネーション #プロンプト",
           "description": "生成AI AI ChatGPT プロンプト 命令文 ハルシネーション Claude Genspark Copilot Gemini OpenAI Google 画像生成 画像 画像作成 ...",
           "published_at": "2025-06-02T09:50:34Z",
@@ -151,12 +151,12 @@
           "language": "ja"
         },
         {
-          "title": "考えさせられる動画#ai #aiart #生成ai #号泣 #shorts",
+          "title": "AI生成したら偽花京院出てきた　#ai動画 #石破茂 #おもしろ動画",
           "description": "",
-          "published_at": "2024-03-27T10:57:37Z",
-          "channel": "AI攻略チャンネル【AI×自動化】",
-          "video_id": "UWopmyHS3Qk",
-          "url": "https://www.youtube.com/watch?v=UWopmyHS3Qk",
+          "published_at": "2025-03-13T09:00:06Z",
+          "channel": "ポンコツAI工房",
+          "video_id": "2tcYwophv8I",
+          "url": "https://www.youtube.com/watch?v=2tcYwophv8I",
           "content_type": "その他",
           "language": "ja"
         },
@@ -171,27 +171,27 @@
           "language": "ja"
         },
         {
-          "title": "【今さら聞けない？】生成AIとは？AIとどう違うの？（図解で簡単にわかりやすく解説）",
-          "description": "キノクエストの登録・詳細はこちら ...",
-          "published_at": "2025-01-28T11:00:48Z",
-          "channel": "キノコード / プログラミング学習チャンネル",
-          "video_id": "YFtoy_tfYfc",
-          "url": "https://www.youtube.com/watch?v=YFtoy_tfYfc",
-          "content_type": "解説動画",
+          "title": "インキャの卒業写真AIで動かしてみた#AI生成#AI#AI合成#インキャ#ヨウキャ#編集",
+          "description": "",
+          "published_at": "2024-12-10T10:00:36Z",
+          "channel": "Lazy Lie Crazy【レイクレ】",
+          "video_id": "ZiBHjj9fCO8",
+          "url": "https://www.youtube.com/watch?v=ZiBHjj9fCO8",
+          "content_type": "その他",
           "language": "ja"
         }
       ],
       "new_keywords": [],
       "sentiment_score": 0.0,
       "engagement_metrics": {
-        "video_count": 1,
+        "video_count": 0,
         "total_videos": 10
       }
     },
     {
       "platform": "github",
       "keyword": "生成AI",
-      "timestamp": "2025-07-21T16:54:54.156536",
+      "timestamp": "2025-07-21T17:12:30.500809",
       "results": [
         {
           "name": "JeecgBoot",
@@ -808,7 +808,7 @@
     {
       "platform": "arxiv",
       "keyword": "生成AI",
-      "timestamp": "2025-07-21T16:54:54.670498",
+      "timestamp": "2025-07-21T17:12:30.956350",
       "results": [],
       "new_keywords": [],
       "sentiment_score": 0.0,
@@ -819,7 +819,7 @@
     {
       "platform": "hackernews",
       "keyword": "生成AI",
-      "timestamp": "2025-07-21T16:54:55.043114",
+      "timestamp": "2025-07-21T17:12:31.566583",
       "results": [
         {
           "title": "Generative AI for Beginners",
@@ -1069,7 +1069,7 @@
     {
       "platform": "supabase",
       "keyword": "生成AI",
-      "timestamp": "2025-07-21T16:54:55.043210",
+      "timestamp": "2025-07-21T17:12:31.566676",
       "results": [],
       "new_keywords": [],
       "sentiment_score": 0.0,
