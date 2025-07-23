@@ -12,7 +12,7 @@
     {
       "platform": "web",
       "keyword": "生成AI",
-      "timestamp": "2025-07-23T17:56:18.826749",
+      "timestamp": "2025-07-23T18:17:04.339552",
       "results": [
         {
           "title": "【2025年最新】生成AIサービス17種類を比較！用途別の特徴や …",
@@ -78,7 +78,7 @@
     {
       "platform": "youtube",
       "keyword": "生成AI",
-      "timestamp": "2025-07-23T17:56:19.339831",
+      "timestamp": "2025-07-23T18:17:04.938539",
       "results": [
         {
           "title": "AIが作った『架空のYouTuber動画』を作る方法。おすすめのAIツールや手順をご紹介",
@@ -141,26 +141,6 @@
           "language": "ja"
         },
         {
-          "title": "【神連携‼️】NotebookLM×Genspark AIエージェントを使って資料・ドキュメント作成を超効率化する方法を徹底解説します",
-          "description": "動画をご覧いただきありがとうございます。 今回はNotebookLM×Genspark AIエージェントを使って資料・ドキュメント・ ...",
-          "published_at": "2025-07-21T10:09:02Z",
-          "channel": "mikimiki web スクール",
-          "video_id": "igxyQmrbr3I",
-          "url": "https://www.youtube.com/watch?v=igxyQmrbr3I",
-          "content_type": "解説動画",
-          "language": "ja"
-        },
-        {
-          "title": "Wan 2.1のFusion Xがすごい！（ローカル動画生成 / 動画AI / Phantom解説）",
-          "description": "今日は動画生成AIで注目されているWan 2.1のFusion Xについて紹介しています。またPhantomというByteDance発の動画生成 ...",
-          "published_at": "2025-07-23T10:00:48Z",
-          "channel": "サファはユーチューバー【AIイラスト】",
-          "video_id": "PLDgipqGIs8",
-          "url": "https://www.youtube.com/watch?v=PLDgipqGIs8",
-          "content_type": "解説動画",
-          "language": "ja"
-        },
-        {
           "title": "【高橋弘樹 vs AIのプロ】使えなければ時代遅れ!? 生成AI導入で成功の鍵とは？【ReHacQ】",
           "description": "ひろゆき、成田悠輔、後藤達也…、新たな視点で経済・社会を見つめ直すビジネス動画メディア「ReHacQ」！ 「ReHacQスキル ...",
           "published_at": "2025-07-17T11:00:06Z",
@@ -171,27 +151,47 @@
           "language": "ja"
         },
         {
-          "title": "【進化する『生成AI』】アナウンサーをダンスさせる動画を作ってみたら…【コレミテ】",
-          "description": "文字の入力だけで画像や動画、音声などが簡単に作れる『生成AI』。便利なツールとして、最近ではさまざまなシーンで利用者が ...",
-          "published_at": "2025-07-22T10:15:04Z",
-          "channel": "日テレNEWS",
-          "video_id": "OoBgFzdDyj4",
-          "url": "https://www.youtube.com/watch?v=OoBgFzdDyj4",
+          "title": "【生成AIと組織変革】現場レベルでの主体的なAI活用／ボトムアップ型組織への変革／「AI活用力」と「ドメインナレッジ」",
+          "description": "【Sponsored by ブリューアス】 注目すべき企業やプロジェクトのトップランナーを招き、キーワードをもとに掘り下げていく ...",
+          "published_at": "2025-06-29T07:00:53Z",
+          "channel": "PIVOT 公式チャンネル",
+          "video_id": "yG0KpF8PQsM",
+          "url": "https://www.youtube.com/watch?v=yG0KpF8PQsM",
           "content_type": "その他",
+          "language": "ja"
+        },
+        {
+          "title": "Google【Veo3】生成AI 無料体験中 #PC用 #タブレット用 #スマートテレビ用",
+          "description": "ご視聴頂きまして有難うございます。 今回はGoogleのAI Studioの 生成AI Veo3（無料体験）をして バイク走行動画などの好みの ...",
+          "published_at": "2025-07-22T00:14:18Z",
+          "channel": "せるにぃの AI 空撮 山歩き チャンネル",
+          "video_id": "ZjFh7WJbt7A",
+          "url": "https://www.youtube.com/watch?v=ZjFh7WJbt7A",
+          "content_type": "その他",
+          "language": "ja"
+        },
+        {
+          "title": "【生成AIパスポート 聞き流し】 第1章 AI（人工知能）  ~2025年2月試験シラバス対応~　#ysdata",
+          "description": "聞き流して覚える！生成AIパスポート試験講義シリーズ 第1弾 AI（人工知能）の基本概念や基礎知識について詳しく解説します ...",
+          "published_at": "2024-11-04T12:53:45Z",
+          "channel": "ワイズデータ [社会人の教養チャンネル]",
+          "video_id": "qKDJ2fly-Ek",
+          "url": "https://www.youtube.com/watch?v=qKDJ2fly-Ek",
+          "content_type": "解説動画",
           "language": "ja"
         }
       ],
       "new_keywords": [],
       "sentiment_score": 0.0,
       "engagement_metrics": {
-        "video_count": 5,
+        "video_count": 4,
         "total_videos": 10
       }
     },
     {
       "platform": "github",
       "keyword": "生成AI",
-      "timestamp": "2025-07-23T17:56:20.277224",
+      "timestamp": "2025-07-23T18:17:06.304380",
       "results": [
         {
           "name": "JeecgBoot",
@@ -624,7 +624,7 @@
           "forks": 0,
           "topics": [],
           "license": "",
-          "updated_at": "2025-07-23T14:14:20Z",
+          "updated_at": "2025-07-23T17:56:33Z",
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
@@ -644,7 +644,7 @@
           "forks": 0,
           "topics": [],
           "license": "",
-          "updated_at": "2025-07-20T14:35:07Z",
+          "updated_at": "2025-07-23T18:15:20Z",
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
@@ -808,7 +808,7 @@
     {
       "platform": "arxiv",
       "keyword": "生成AI",
-      "timestamp": "2025-07-23T17:56:20.694201",
+      "timestamp": "2025-07-23T18:17:06.868894",
       "results": [],
       "new_keywords": [],
       "sentiment_score": 0.0,
@@ -819,7 +819,7 @@
     {
       "platform": "hackernews",
       "keyword": "生成AI",
-      "timestamp": "2025-07-23T17:56:21.090241",
+      "timestamp": "2025-07-23T18:17:07.471042",
       "results": [
         {
           "title": "Generative AI for Beginners",
@@ -1069,7 +1069,7 @@
     {
       "platform": "supabase",
       "keyword": "生成AI",
-      "timestamp": "2025-07-23T17:56:21.090372",
+      "timestamp": "2025-07-23T18:17:07.471144",
       "results": [],
       "new_keywords": [],
       "sentiment_score": 0.0,
