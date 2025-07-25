@@ -12,7 +12,7 @@
     {
       "platform": "web",
       "keyword": "生成AI",
-      "timestamp": "2025-07-25T19:48:25.299408",
+      "timestamp": "2025-07-25T19:55:56.617126",
       "results": [
         {
           "title": "【2025】無料で使える生成AIツール11選！用途別に紹介 | DX/AI …",
@@ -34,7 +34,7 @@
         },
         {
           "title": "2025年最新｜実用性が高い生成AIのおすすめツール15選【無料 …",
-          "snippet": "geekom.jp 1 day ago · 本記事では、生成AIとは何か、主な種類や特徴、またおすすめの生成AIツール（無料あり）までをわかりやすく解説します。初めての方にも役立つ内容をお届けします。",
+          "snippet": "geekom.jp 1 day ago · 本記事では、生成AIとは何か、主な種類や特徴、またおすすめの生成AIツール（無料あり）までをわかりやすく解説します。初めての方にも役立つ内容をお届けします。Missing: 日本語Must include: 日本語",
           "url": "https://blog.geekom.jp/recommended-generative-ai/",
           "source": "blog.geekom.jp"
         },
@@ -63,10 +63,10 @@
           "source": "aismiley.co.jp"
         },
         {
-          "title": "【2025】おすすめの生成AIサービス16選をタイプ別 …",
-          "snippet": "BIZ ROAD（ビズロード） Jul 18, 2025 · そこで本記事では、おすすめの生成AIサービス16選を文章特化型・画像生成型などのタイプ別に分類し、各サービスの特徴や選び方をわかりやすく解説します。Missing: 日本語Must include: 日本語",
-          "url": "https://bizroad-svc.com/blog/seiseiai-service/",
-          "source": "bizroad-svc.com"
+          "title": "日本語対応が得意な生成AIツールは？ローカル言語の …",
+          "snippet": "aiai-catch.com Jun 8, 2025 · 本記事では、「日本語対応が得意な生成AIツールは？ ローカル言語の壁を越えるサービス」というテーマに基づき、日本語に特化した生成AIツールをうまく選ぶためのポイントを解説します。",
+          "url": "https://aiai-catch.com/japanese-language-ai-tools-guide-to-overcoming-language-barriers/",
+          "source": "aiai-catch.com"
         }
       ],
       "new_keywords": [],
@@ -78,7 +78,7 @@
     {
       "platform": "youtube",
       "keyword": "生成AI",
-      "timestamp": "2025-07-25T19:48:25.759647",
+      "timestamp": "2025-07-25T19:55:57.110423",
       "results": [
         {
           "title": "【誰でもできる】全人類使え！ガチで便利な生成AIの使い方 TOP3",
@@ -141,16 +141,6 @@
           "language": "ja"
         },
         {
-          "title": "考えさせられる動画#ai #aiart #生成ai #号泣 #shorts",
-          "description": "",
-          "published_at": "2024-03-27T10:57:37Z",
-          "channel": "AI攻略チャンネル【AI×自動化】",
-          "video_id": "UWopmyHS3Qk",
-          "url": "https://www.youtube.com/watch?v=UWopmyHS3Qk",
-          "content_type": "その他",
-          "language": "ja"
-        },
-        {
           "title": "【今さら聞けない？】生成AIとは？AIとどう違うの？（図解で簡単にわかりやすく解説）",
           "description": "キノクエストの登録・詳細はこちら ...",
           "published_at": "2025-01-28T11:00:48Z",
@@ -158,6 +148,16 @@
           "video_id": "YFtoy_tfYfc",
           "url": "https://www.youtube.com/watch?v=YFtoy_tfYfc",
           "content_type": "解説動画",
+          "language": "ja"
+        },
+        {
+          "title": "考えさせられる動画#ai #aiart #生成ai #号泣 #shorts",
+          "description": "",
+          "published_at": "2024-03-27T10:57:37Z",
+          "channel": "AI攻略チャンネル【AI×自動化】",
+          "video_id": "UWopmyHS3Qk",
+          "url": "https://www.youtube.com/watch?v=UWopmyHS3Qk",
+          "content_type": "その他",
           "language": "ja"
         },
         {
@@ -191,7 +191,7 @@
     {
       "platform": "github",
       "keyword": "生成AI",
-      "timestamp": "2025-07-25T19:48:26.662081",
+      "timestamp": "2025-07-25T19:55:58.211511",
       "results": [
         {
           "name": "JeecgBoot",
@@ -564,7 +564,7 @@
           "forks": 0,
           "topics": [],
           "license": "",
-          "updated_at": "2025-07-25T10:45:15Z",
+          "updated_at": "2025-07-25T19:51:55Z",
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
@@ -808,7 +808,7 @@
     {
       "platform": "arxiv",
       "keyword": "生成AI",
-      "timestamp": "2025-07-25T19:48:26.960250",
+      "timestamp": "2025-07-25T19:55:58.593752",
       "results": [],
       "new_keywords": [],
       "sentiment_score": 0.0,
@@ -819,7 +819,7 @@
     {
       "platform": "hackernews",
       "keyword": "生成AI",
-      "timestamp": "2025-07-25T19:48:27.798404",
+      "timestamp": "2025-07-25T19:55:58.920811",
       "results": [
         {
           "title": "Generative AI for Beginners",
@@ -1069,7 +1069,7 @@
     {
       "platform": "supabase",
       "keyword": "生成AI",
-      "timestamp": "2025-07-25T19:48:27.798502",
+      "timestamp": "2025-07-25T19:55:58.920908",
       "results": [],
       "new_keywords": [],
       "sentiment_score": 0.0,
