@@ -12,7 +12,7 @@
     {
       "platform": "web",
       "keyword": "生成AI",
-      "timestamp": "2025-07-25T09:01:17.985276",
+      "timestamp": "2025-07-25T09:30:23.318024",
       "results": [
         {
           "title": "【2025】生成AIサービスおすすめ17選を一覧比較！無料・料金 …",
@@ -84,7 +84,7 @@
     {
       "platform": "youtube",
       "keyword": "生成AI",
-      "timestamp": "2025-07-25T09:01:18.415049",
+      "timestamp": "2025-07-25T09:30:23.806221",
       "results": [
         {
           "title": "マイクロソフトが教える生成AI活用法",
@@ -117,16 +117,6 @@
           "language": "ja"
         },
         {
-          "title": "【誰でもできる】全人類使え！ガチで便利な生成AIの使い方 TOP3",
-          "description": "最近AIの進化が速すぎて、新しいAIツールが毎日のようにリリースされています。 あなたはこう思っていませんか？ 「AI、結局 ...",
-          "published_at": "2024-10-10T12:01:16Z",
-          "channel": "マコなり社長",
-          "video_id": "zrluoX5MLfA",
-          "url": "https://www.youtube.com/watch?v=zrluoX5MLfA",
-          "content_type": "ニュース",
-          "language": "ja"
-        },
-        {
           "title": "コレをするならこのAI！#AI #生成AI #ChatGPT #ハルシネーション #プロンプト",
           "description": "生成AI AI ChatGPT プロンプト 命令文 ハルシネーション Claude Genspark Copilot Gemini OpenAI Google 画像生成 画像 画像作成 ...",
           "published_at": "2025-06-02T09:50:34Z",
@@ -134,16 +124,6 @@
           "video_id": "9pHLlqVTL48",
           "url": "https://www.youtube.com/watch?v=9pHLlqVTL48",
           "content_type": "その他",
-          "language": "ja"
-        },
-        {
-          "title": "生成AI・ChatGPTって何なの？【超入門講座、初心者向け】",
-          "description": "今回は、生成AIやChatGPTについて、超初心者向けに分かりやすく解説します。 ▽目次 0:00 はじめに 生成AIとは？",
-          "published_at": "2024-04-17T08:00:12Z",
-          "channel": "AIキャンプ / 中村俊也",
-          "video_id": "LnbTfZCI4aE",
-          "url": "https://www.youtube.com/watch?v=LnbTfZCI4aE",
-          "content_type": "解説動画",
           "language": "ja"
         },
         {
@@ -167,6 +147,26 @@
           "language": "ja"
         },
         {
+          "title": "AI生成したら偽花京院出てきた　#ai動画 #石破茂 #おもしろ動画",
+          "description": "",
+          "published_at": "2025-03-13T09:00:06Z",
+          "channel": "ポンコツAI工房",
+          "video_id": "2tcYwophv8I",
+          "url": "https://www.youtube.com/watch?v=2tcYwophv8I",
+          "content_type": "その他",
+          "language": "ja"
+        },
+        {
+          "title": "【誰でもできる】全人類使え！ガチで便利な生成AIの使い方 TOP3",
+          "description": "最近AIの進化が速すぎて、新しいAIツールが毎日のようにリリースされています。 あなたはこう思っていませんか？ 「AI、結局 ...",
+          "published_at": "2024-10-10T12:01:16Z",
+          "channel": "マコなり社長",
+          "video_id": "zrluoX5MLfA",
+          "url": "https://www.youtube.com/watch?v=zrluoX5MLfA",
+          "content_type": "ニュース",
+          "language": "ja"
+        },
+        {
           "title": "【生成AI】AIアニメ制作　「新たな一歩」",
           "description": "生成AI #ai生成アニメ作品 #短編アニメ #DOMO AI.",
           "published_at": "2025-07-24T12:32:12Z",
@@ -177,12 +177,12 @@
           "language": "ja"
         },
         {
-          "title": "AI生成したら偽花京院出てきた　#ai動画 #石破茂 #おもしろ動画",
+          "title": "生成AI動画あるある",
           "description": "",
-          "published_at": "2025-03-13T09:00:06Z",
-          "channel": "ポンコツAI工房",
-          "video_id": "2tcYwophv8I",
-          "url": "https://www.youtube.com/watch?v=2tcYwophv8I",
+          "published_at": "2024-12-20T08:32:42Z",
+          "channel": "ユウスケTV",
+          "video_id": "4jzcmSHxjVw",
+          "url": "https://www.youtube.com/watch?v=4jzcmSHxjVw",
           "content_type": "その他",
           "language": "ja"
         }
@@ -190,14 +190,14 @@
       "new_keywords": [],
       "sentiment_score": 0.0,
       "engagement_metrics": {
-        "video_count": 1,
+        "video_count": 0,
         "total_videos": 10
       }
     },
     {
       "platform": "github",
       "keyword": "生成AI",
-      "timestamp": "2025-07-25T09:01:19.334694",
+      "timestamp": "2025-07-25T09:30:24.668681",
       "results": [
         {
           "name": "JeecgBoot",
@@ -210,7 +210,7 @@
           "forks": 0,
           "topics": [],
           "license": "",
-          "updated_at": "2025-07-25T08:49:28Z",
+          "updated_at": "2025-07-25T09:16:57Z",
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
@@ -230,7 +230,7 @@
           "forks": 0,
           "topics": [],
           "license": "",
-          "updated_at": "2025-07-25T08:59:54Z",
+          "updated_at": "2025-07-25T09:29:27Z",
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
@@ -290,7 +290,7 @@
           "forks": 0,
           "topics": [],
           "license": "",
-          "updated_at": "2025-07-25T07:10:36Z",
+          "updated_at": "2025-07-25T09:06:32Z",
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
@@ -630,7 +630,7 @@
           "forks": 0,
           "topics": [],
           "license": "",
-          "updated_at": "2025-07-25T02:57:00Z",
+          "updated_at": "2025-07-25T09:09:12Z",
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
@@ -730,7 +730,7 @@
           "forks": 0,
           "topics": [],
           "license": "",
-          "updated_at": "2025-07-23T06:05:26Z",
+          "updated_at": "2025-07-25T09:05:02Z",
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
@@ -814,7 +814,7 @@
     {
       "platform": "arxiv",
       "keyword": "生成AI",
-      "timestamp": "2025-07-25T09:01:19.869668",
+      "timestamp": "2025-07-25T09:30:25.418512",
       "results": [],
       "new_keywords": [],
       "sentiment_score": 0.0,
@@ -825,7 +825,7 @@
     {
       "platform": "hackernews",
       "keyword": "生成AI",
-      "timestamp": "2025-07-25T09:01:20.440071",
+      "timestamp": "2025-07-25T09:30:25.917616",
       "results": [
         {
           "title": "Generative AI for Beginners",
@@ -1075,7 +1075,7 @@
     {
       "platform": "supabase",
       "keyword": "生成AI",
-      "timestamp": "2025-07-25T09:01:20.440170",
+      "timestamp": "2025-07-25T09:30:25.917745",
       "results": [],
       "new_keywords": [],
       "sentiment_score": 0.0,
