@@ -12,7 +12,7 @@
     {
       "platform": "web",
       "keyword": "生成AI",
-      "timestamp": "2025-07-27T10:51:21.111867",
+      "timestamp": "2025-07-27T10:57:57.900472",
       "results": [
         {
           "title": "【無料】日本語対応の生成AIツール7選を比較｜文章/画像別に紹介 - AI総研｜AI …",
@@ -84,7 +84,7 @@
     {
       "platform": "youtube",
       "keyword": "生成AI",
-      "timestamp": "2025-07-27T10:51:21.513594",
+      "timestamp": "2025-07-27T10:57:58.282648",
       "results": [
         {
           "title": "注目AIニュース17選～Googleの生成AIアプリ作成Opal、Googleの新たな検索Web Guide、みずほクリスタルインテリジェンス導入など",
@@ -137,16 +137,6 @@
           "language": "ja"
         },
         {
-          "title": "マイクロソフトが教える生成AI活用法",
-          "description": "飲み会1回分で行けるプログラミングスクール「TECH WORLD」 【提供中のサービス】 ・メガベンチャーエンジニアがメンター ...",
-          "published_at": "2024-06-08T09:53:36Z",
-          "channel": "TECH WORLD",
-          "video_id": "IXcu3fNEgkY",
-          "url": "https://www.youtube.com/watch?v=IXcu3fNEgkY",
-          "content_type": "その他",
-          "language": "ja"
-        },
-        {
           "title": "生成AIを「使いこなせる人」と「使いこなせない人」の違いとは？ ビジネスシーンでの具体的な活用方法も解説します",
           "description": "提供：DMM 生成AI CAMP 様々なビジネスシーンでAIを使いこなすホリエモンと生成AI活用のプロ・小澤健祐さんに、「生成AIを ...",
           "published_at": "2024-07-30T09:00:52Z",
@@ -154,6 +144,16 @@
           "video_id": "uVUlWOZRFKo",
           "url": "https://www.youtube.com/watch?v=uVUlWOZRFKo",
           "content_type": "解説動画",
+          "language": "ja"
+        },
+        {
+          "title": "マイクロソフトが教える生成AI活用法",
+          "description": "飲み会1回分で行けるプログラミングスクール「TECH WORLD」 【提供中のサービス】 ・メガベンチャーエンジニアがメンター ...",
+          "published_at": "2024-06-08T09:53:36Z",
+          "channel": "TECH WORLD",
+          "video_id": "IXcu3fNEgkY",
+          "url": "https://www.youtube.com/watch?v=IXcu3fNEgkY",
+          "content_type": "その他",
           "language": "ja"
         },
         {
@@ -197,7 +197,7 @@
     {
       "platform": "github",
       "keyword": "生成AI",
-      "timestamp": "2025-07-27T10:51:22.219221",
+      "timestamp": "2025-07-27T10:57:59.036727",
       "results": [
         {
           "name": "JeecgBoot",
@@ -814,7 +814,7 @@
     {
       "platform": "arxiv",
       "keyword": "生成AI",
-      "timestamp": "2025-07-27T10:51:22.675041",
+      "timestamp": "2025-07-27T10:57:59.461304",
       "results": [],
       "new_keywords": [],
       "sentiment_score": 0.0,
@@ -825,7 +825,7 @@
     {
       "platform": "hackernews",
       "keyword": "生成AI",
-      "timestamp": "2025-07-27T10:51:23.058545",
+      "timestamp": "2025-07-27T10:58:00.290829",
       "results": [
         {
           "title": "Generative AI for Beginners",
@@ -1075,7 +1075,7 @@
     {
       "platform": "supabase",
       "keyword": "生成AI",
-      "timestamp": "2025-07-27T10:51:23.058630",
+      "timestamp": "2025-07-27T10:58:00.290924",
       "results": [],
       "new_keywords": [],
       "sentiment_score": 0.0,
