@@ -12,7 +12,7 @@
     {
       "platform": "web",
       "keyword": "生成AI",
-      "timestamp": "2025-07-29T22:51:51.286735",
+      "timestamp": "2025-07-29T22:59:40.840201",
       "results": [
         {
           "title": "【2025年最新】日本語対応AIツール9選｜実務で“本当に使える”生成AI …",
@@ -84,7 +84,7 @@
     {
       "platform": "youtube",
       "keyword": "生成AI",
-      "timestamp": "2025-07-29T22:51:51.714900",
+      "timestamp": "2025-07-29T22:59:41.249269",
       "results": [
         {
           "title": "【誰でもできる】全人類使え！ガチで便利な生成AIの使い方 TOP3",
@@ -117,16 +117,6 @@
           "language": "ja"
         },
         {
-          "title": "【今さら聞けない？】生成AIとは？AIとどう違うの？（図解で簡単にわかりやすく解説）",
-          "description": "キノクエストの登録・詳細はこちら ...",
-          "published_at": "2025-01-28T11:00:48Z",
-          "channel": "キノコード / プログラミング学習チャンネル",
-          "video_id": "YFtoy_tfYfc",
-          "url": "https://www.youtube.com/watch?v=YFtoy_tfYfc",
-          "content_type": "解説動画",
-          "language": "ja"
-        },
-        {
           "title": "コレをするならこのAI！#AI #生成AI #ChatGPT #ハルシネーション #プロンプト",
           "description": "生成AI AI ChatGPT プロンプト 命令文 ハルシネーション Claude Genspark Copilot Gemini OpenAI Google 画像生成 画像 画像作成 ...",
           "published_at": "2025-06-02T09:50:34Z",
@@ -134,6 +124,16 @@
           "video_id": "9pHLlqVTL48",
           "url": "https://www.youtube.com/watch?v=9pHLlqVTL48",
           "content_type": "その他",
+          "language": "ja"
+        },
+        {
+          "title": "【今さら聞けない？】生成AIとは？AIとどう違うの？（図解で簡単にわかりやすく解説）",
+          "description": "キノクエストの登録・詳細はこちら ...",
+          "published_at": "2025-01-28T11:00:48Z",
+          "channel": "キノコード / プログラミング学習チャンネル",
+          "video_id": "YFtoy_tfYfc",
+          "url": "https://www.youtube.com/watch?v=YFtoy_tfYfc",
+          "content_type": "解説動画",
           "language": "ja"
         },
         {
@@ -197,7 +197,7 @@
     {
       "platform": "github",
       "keyword": "生成AI",
-      "timestamp": "2025-07-29T22:51:53.888214",
+      "timestamp": "2025-07-29T22:59:42.295895",
       "results": [
         {
           "name": "JeecgBoot",
@@ -814,7 +814,7 @@
     {
       "platform": "arxiv",
       "keyword": "生成AI",
-      "timestamp": "2025-07-29T22:51:54.381235",
+      "timestamp": "2025-07-29T22:59:42.929490",
       "results": [],
       "new_keywords": [],
       "sentiment_score": 0.0,
@@ -825,7 +825,7 @@
     {
       "platform": "hackernews",
       "keyword": "生成AI",
-      "timestamp": "2025-07-29T22:51:54.999758",
+      "timestamp": "2025-07-29T22:59:43.393223",
       "results": [
         {
           "title": "Generative AI for Beginners",
@@ -1075,7 +1075,7 @@
     {
       "platform": "supabase",
       "keyword": "生成AI",
-      "timestamp": "2025-07-29T22:51:54.999855",
+      "timestamp": "2025-07-29T22:59:43.393327",
       "results": [],
       "new_keywords": [],
       "sentiment_score": 0.0,
