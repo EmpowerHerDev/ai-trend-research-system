@@ -12,7 +12,7 @@
     {
       "platform": "web",
       "keyword": "生成AI",
-      "timestamp": "2025-07-29T22:36:21.234348",
+      "timestamp": "2025-07-29T22:51:51.286735",
       "results": [
         {
           "title": "【2025年最新】日本語対応AIツール9選｜実務で“本当に使える”生成AI …",
@@ -84,7 +84,7 @@
     {
       "platform": "youtube",
       "keyword": "生成AI",
-      "timestamp": "2025-07-29T22:36:21.664973",
+      "timestamp": "2025-07-29T22:51:51.714900",
       "results": [
         {
           "title": "【誰でもできる】全人類使え！ガチで便利な生成AIの使い方 TOP3",
@@ -107,12 +107,12 @@
           "language": "ja"
         },
         {
-          "title": "コレをするならこのAI！#AI #生成AI #ChatGPT #ハルシネーション #プロンプト",
-          "description": "生成AI AI ChatGPT プロンプト 命令文 ハルシネーション Claude Genspark Copilot Gemini OpenAI Google 画像生成 画像 画像作成 ...",
-          "published_at": "2025-06-02T09:50:34Z",
-          "channel": "Elith",
-          "video_id": "9pHLlqVTL48",
-          "url": "https://www.youtube.com/watch?v=9pHLlqVTL48",
+          "title": "どれが好き？🙂‍↕️🫶🏻#ai #aiツール #動画生成 #動画生成ai",
+          "description": "",
+          "published_at": "2025-07-26T20:52:57Z",
+          "channel": "みゅう",
+          "video_id": "QEZUNzaOb0E",
+          "url": "https://www.youtube.com/watch?v=QEZUNzaOb0E",
           "content_type": "その他",
           "language": "ja"
         },
@@ -124,6 +124,16 @@
           "video_id": "YFtoy_tfYfc",
           "url": "https://www.youtube.com/watch?v=YFtoy_tfYfc",
           "content_type": "解説動画",
+          "language": "ja"
+        },
+        {
+          "title": "コレをするならこのAI！#AI #生成AI #ChatGPT #ハルシネーション #プロンプト",
+          "description": "生成AI AI ChatGPT プロンプト 命令文 ハルシネーション Claude Genspark Copilot Gemini OpenAI Google 画像生成 画像 画像作成 ...",
+          "published_at": "2025-06-02T09:50:34Z",
+          "channel": "Elith",
+          "video_id": "9pHLlqVTL48",
+          "url": "https://www.youtube.com/watch?v=9pHLlqVTL48",
+          "content_type": "その他",
           "language": "ja"
         },
         {
@@ -175,16 +185,6 @@
           "url": "https://www.youtube.com/watch?v=mcbYswfiN0A",
           "content_type": "その他",
           "language": "ja"
-        },
-        {
-          "title": "実際に現場で使われてる生成AIの活用事例10選",
-          "description": "",
-          "published_at": "2024-06-27T11:05:15Z",
-          "channel": "#usutaku_channel",
-          "video_id": "HfT6tLxtbgA",
-          "url": "https://www.youtube.com/watch?v=HfT6tLxtbgA",
-          "content_type": "その他",
-          "language": "ja"
         }
       ],
       "new_keywords": [],
@@ -197,7 +197,7 @@
     {
       "platform": "github",
       "keyword": "生成AI",
-      "timestamp": "2025-07-29T22:36:22.865946",
+      "timestamp": "2025-07-29T22:51:53.888214",
       "results": [
         {
           "name": "JeecgBoot",
@@ -270,7 +270,7 @@
           "forks": 0,
           "topics": [],
           "license": "",
-          "updated_at": "2025-07-29T15:49:07Z",
+          "updated_at": "2025-07-29T22:49:46Z",
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
@@ -314,7 +314,7 @@
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
-          "days_old": 1463,
+          "days_old": 1464,
           "is_trending": false,
           "is_accelerating": false,
           "trend_score": 0.0
@@ -420,26 +420,6 @@
           "trend_score": 19.23
         },
         {
-          "name": "AI_NovelGenerator",
-          "description": "使用ai生成多章节的长篇小说，自动衔接上下文、伏笔",
-          "owner": "YILING0013",
-          "stars": 0,
-          "language": "",
-          "url": "https://github.com/YILING0013/AI_NovelGenerator",
-          "created_at": "2025-01-29T12:33:29Z",
-          "forks": 0,
-          "topics": [],
-          "license": "",
-          "updated_at": "2025-07-29T21:01:26Z",
-          "size": 0,
-          "open_issues": 0,
-          "star_rate": 0.0,
-          "days_old": 181,
-          "is_trending": false,
-          "is_accelerating": false,
-          "trend_score": 15.12
-        },
-        {
           "name": "generative-ai-roadmap",
           "description": "The roadmap of generative AI: use cases and applications | 生成式AI的应用路线图",
           "owner": "SeedV",
@@ -458,6 +438,26 @@
           "is_trending": false,
           "is_accelerating": false,
           "trend_score": 0.0
+        },
+        {
+          "name": "AI_NovelGenerator",
+          "description": "使用ai生成多章节的长篇小说，自动衔接上下文、伏笔",
+          "owner": "YILING0013",
+          "stars": 0,
+          "language": "",
+          "url": "https://github.com/YILING0013/AI_NovelGenerator",
+          "created_at": "2025-01-29T12:33:29Z",
+          "forks": 0,
+          "topics": [],
+          "license": "",
+          "updated_at": "2025-07-29T21:01:26Z",
+          "size": 0,
+          "open_issues": 0,
+          "star_rate": 0.0,
+          "days_old": 181,
+          "is_trending": false,
+          "is_accelerating": false,
+          "trend_score": 15.12
         },
         {
           "name": "paper-ai",
@@ -814,7 +814,7 @@
     {
       "platform": "arxiv",
       "keyword": "生成AI",
-      "timestamp": "2025-07-29T22:36:23.352291",
+      "timestamp": "2025-07-29T22:51:54.381235",
       "results": [],
       "new_keywords": [],
       "sentiment_score": 0.0,
@@ -825,7 +825,7 @@
     {
       "platform": "hackernews",
       "keyword": "生成AI",
-      "timestamp": "2025-07-29T22:36:24.080868",
+      "timestamp": "2025-07-29T22:51:54.999758",
       "results": [
         {
           "title": "Generative AI for Beginners",
@@ -1075,7 +1075,7 @@
     {
       "platform": "supabase",
       "keyword": "生成AI",
-      "timestamp": "2025-07-29T22:36:24.080961",
+      "timestamp": "2025-07-29T22:51:54.999855",
       "results": [],
       "new_keywords": [],
       "sentiment_score": 0.0,
