@@ -12,7 +12,7 @@
     {
       "platform": "web",
       "keyword": "生成AI",
-      "timestamp": "2025-07-30T23:46:29.940638",
+      "timestamp": "2025-07-30T23:55:41.026166",
       "results": [
         {
           "title": "【2025】生成AIサービスおすすめ21選を一覧比較！無料・料金 …",
@@ -33,20 +33,20 @@
           "source": "soken.signate.jp"
         },
         {
-          "title": "【無料】日本語対応の生成AIツール7選を比較｜文章/画像別に紹介 - AI総研｜AI …",
-          "snippet": "metaversesouken.com Jun 14, 2025 · そこで本記事では、生成AIツールを初めて利用する方に向けて、 無料で使える日本語対応の生成AIツールを、選び方とともにわかりやすくご紹介 します。",
-          "url": "https://metaversesouken.com/ai/generative_ai/japanese-tools/",
-          "source": "metaversesouken.com"
-        },
-        {
           "title": "【2025年最新】生成AIサービス17種類を比較！用途別の特徴や …",
           "snippet": "dxnavi.com Jun 19, 2025 · 本記事では、最新の各生成AIの機能や特徴、利用シーン、料金などをまとめました。 無料で使い始められるものや、比較的低コストのプランがある生成AIを中心に紹介し …",
           "url": "https://dxnavi.com/ai-serivice-2025/",
           "source": "dxnavi.com"
         },
         {
+          "title": "【無料】日本語対応の生成AIツール7選を比較｜文章/画像別に紹介 - AI総研｜AI …",
+          "snippet": "metaversesouken.com Jun 14, 2025 · そこで本記事では、生成AIツールを初めて利用する方に向けて、 無料で使える日本語対応の生成AIツールを、選び方とともにわかりやすくご紹介 します。",
+          "url": "https://metaversesouken.com/ai/generative_ai/japanese-tools/",
+          "source": "metaversesouken.com"
+        },
+        {
           "title": "2025年最新｜実用性が高い生成AIのおすすめツール15選【無料 …",
-          "snippet": "geekom.jp 6 days ago · 本記事では、生成AIとは何か、主な種類や特徴、またおすすめの生成AIツール（無料あり）までをわかりやすく解説します。初めての方にも役立つ内容をお届けします。",
+          "snippet": "geekom.jp 6 days ago · 本記事では、生成AIとは何か、主な種類や特徴、またおすすめの生成AIツール（無料あり）までをわかりやすく解説します。初めての方にも役立つ内容をお届けします。Missing: 日本語Must include: 日本語",
           "url": "https://blog.geekom.jp/recommended-generative-ai/",
           "source": "blog.geekom.jp"
         },
@@ -84,7 +84,7 @@
     {
       "platform": "youtube",
       "keyword": "生成AI",
-      "timestamp": "2025-07-30T23:46:30.418357",
+      "timestamp": "2025-07-30T23:55:41.472935",
       "results": [
         {
           "title": "【誰でもできる】全人類使え！ガチで便利な生成AIの使い方 TOP3",
@@ -157,13 +157,13 @@
           "language": "ja"
         },
         {
-          "title": "【下手すれば“文明崩壊”の危険】生成AIの源流を築いた伝説的な数理工学者・甘利俊一／人工知能が「心、個性、信念、正義感」を持つように／AIの未来は恐怖と希望が50:50【CROSS DIG 1on1】",
-          "description": "https://youtube.com/@tbs_bloomberg チャンネル登録・高評価をよろしくお願いします 現代のAI技術の源流を築いた数理工 ...",
-          "published_at": "2025-07-29T10:00:34Z",
-          "channel": "TBS CROSS DIG with Bloomberg",
-          "video_id": "HESnb9aNhQI",
-          "url": "https://www.youtube.com/watch?v=HESnb9aNhQI",
-          "content_type": "レビュー",
+          "title": "日本語精度No.1の生成AIはこれ❗️",
+          "description": "",
+          "published_at": "2024-06-04T11:35:14Z",
+          "channel": "KEITO【AI&WEB ch】",
+          "video_id": "utV-n8reqeQ",
+          "url": "https://www.youtube.com/watch?v=utV-n8reqeQ",
+          "content_type": "その他",
           "language": "ja"
         },
         {
@@ -177,12 +177,12 @@
           "language": "ja"
         },
         {
-          "title": "日本語精度No.1の生成AIはこれ❗️",
-          "description": "",
-          "published_at": "2024-06-04T11:35:14Z",
-          "channel": "KEITO【AI&WEB ch】",
-          "video_id": "utV-n8reqeQ",
-          "url": "https://www.youtube.com/watch?v=utV-n8reqeQ",
+          "title": "【一般教養】生成AIとは何なのか？",
+          "description": "バイエンスストアはこちらから☟ https://vaience.store □もしも科学大全のご購入はこちらから☟ https://amzn.to/3sxrbXx ...",
+          "published_at": "2024-06-01T10:16:00Z",
+          "channel": "VAIENCE バイエンス",
+          "video_id": "e_FiuVkPqkQ",
+          "url": "https://www.youtube.com/watch?v=e_FiuVkPqkQ",
           "content_type": "その他",
           "language": "ja"
         }
@@ -197,7 +197,7 @@
     {
       "platform": "github",
       "keyword": "生成AI",
-      "timestamp": "2025-07-30T23:46:31.582843",
+      "timestamp": "2025-07-30T23:55:42.342666",
       "results": [
         {
           "name": "JeecgBoot",
@@ -230,7 +230,7 @@
           "forks": 0,
           "topics": [],
           "license": "",
-          "updated_at": "2025-07-30T23:27:21Z",
+          "updated_at": "2025-07-30T23:54:58Z",
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
@@ -814,7 +814,7 @@
     {
       "platform": "arxiv",
       "keyword": "生成AI",
-      "timestamp": "2025-07-30T23:46:32.225427",
+      "timestamp": "2025-07-30T23:55:42.764551",
       "results": [],
       "new_keywords": [],
       "sentiment_score": 0.0,
@@ -825,7 +825,7 @@
     {
       "platform": "hackernews",
       "keyword": "生成AI",
-      "timestamp": "2025-07-30T23:46:32.881922",
+      "timestamp": "2025-07-30T23:55:43.132139",
       "results": [
         {
           "title": "Generative AI for Beginners",
@@ -1075,7 +1075,7 @@
     {
       "platform": "supabase",
       "keyword": "生成AI",
-      "timestamp": "2025-07-30T23:46:32.882034",
+      "timestamp": "2025-07-30T23:55:43.132224",
       "results": [],
       "new_keywords": [],
       "sentiment_score": 0.0,
