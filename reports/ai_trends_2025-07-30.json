@@ -12,7 +12,7 @@
     {
       "platform": "web",
       "keyword": "生成AI",
-      "timestamp": "2025-07-30T12:00:06.974533",
+      "timestamp": "2025-07-30T12:49:45.076586",
       "results": [
         {
           "title": "【2025年最新】日本語対応AIツール9選｜実務で“本当に使える”生成AIを比較解説 - AI …",
@@ -84,7 +84,7 @@
     {
       "platform": "youtube",
       "keyword": "生成AI",
-      "timestamp": "2025-07-30T12:00:07.514788",
+      "timestamp": "2025-07-30T12:49:45.517613",
       "results": [
         {
           "title": "生成AI・ChatGPTって何なの？【超入門講座、初心者向け】",
@@ -97,22 +97,52 @@
           "language": "ja"
         },
         {
-          "title": "AIに嘘をつかせるな！#AI #生成AI #ChatGPT #ハルシネーション #プロンプト",
-          "description": "生成AI AI ChatGPT プロンプト 命令文 ハルシネーション Claude Genspark Copilot Gemini Adobe Firefly Grok OpenAI Google ...",
-          "published_at": "2025-05-27T10:00:17Z",
-          "channel": "Elith",
-          "video_id": "jGGgg3Cqg4Y",
-          "url": "https://www.youtube.com/watch?v=jGGgg3Cqg4Y",
-          "content_type": "その他",
-          "language": "ja"
-        },
-        {
           "title": "どれが好き？🙂‍↕️🫶🏻#ai #aiツール #動画生成 #動画生成ai",
           "description": "",
           "published_at": "2025-07-26T20:52:57Z",
           "channel": "みゅう",
           "video_id": "QEZUNzaOb0E",
           "url": "https://www.youtube.com/watch?v=QEZUNzaOb0E",
+          "content_type": "その他",
+          "language": "ja"
+        },
+        {
+          "title": "生成AIを「使いこなせる人」と「使いこなせない人」の違いとは？ ビジネスシーンでの具体的な活用方法も解説します",
+          "description": "提供：DMM 生成AI CAMP 様々なビジネスシーンでAIを使いこなすホリエモンと生成AI活用のプロ・小澤健祐さんに、「生成AIを ...",
+          "published_at": "2024-07-30T09:00:52Z",
+          "channel": "堀江貴文 ホリエモン",
+          "video_id": "uVUlWOZRFKo",
+          "url": "https://www.youtube.com/watch?v=uVUlWOZRFKo",
+          "content_type": "解説動画",
+          "language": "ja"
+        },
+        {
+          "title": "【今さら聞けない？】生成AIとは？AIとどう違うの？（図解で簡単にわかりやすく解説）",
+          "description": "キノクエストの登録・詳細はこちら ...",
+          "published_at": "2025-01-28T11:00:48Z",
+          "channel": "キノコード / プログラミング学習チャンネル",
+          "video_id": "YFtoy_tfYfc",
+          "url": "https://www.youtube.com/watch?v=YFtoy_tfYfc",
+          "content_type": "解説動画",
+          "language": "ja"
+        },
+        {
+          "title": "【誰でもできる】全人類使え！ガチで便利な生成AIの使い方 TOP3",
+          "description": "最近AIの進化が速すぎて、新しいAIツールが毎日のようにリリースされています。 あなたはこう思っていませんか？ 「AI、結局 ...",
+          "published_at": "2024-10-10T12:01:16Z",
+          "channel": "マコなり社長",
+          "video_id": "zrluoX5MLfA",
+          "url": "https://www.youtube.com/watch?v=zrluoX5MLfA",
+          "content_type": "ニュース",
+          "language": "ja"
+        },
+        {
+          "title": "コレをするならこのAI！#AI #生成AI #ChatGPT #ハルシネーション #プロンプト",
+          "description": "生成AI AI ChatGPT プロンプト 命令文 ハルシネーション Claude Genspark Copilot Gemini OpenAI Google 画像生成 画像 画像作成 ...",
+          "published_at": "2025-06-02T09:50:34Z",
+          "channel": "Elith",
+          "video_id": "9pHLlqVTL48",
+          "url": "https://www.youtube.com/watch?v=9pHLlqVTL48",
           "content_type": "その他",
           "language": "ja"
         },
@@ -127,26 +157,6 @@
           "language": "ja"
         },
         {
-          "title": "コレをするならこのAI！#AI #生成AI #ChatGPT #ハルシネーション #プロンプト",
-          "description": "生成AI AI ChatGPT プロンプト 命令文 ハルシネーション Claude Genspark Copilot Gemini OpenAI Google 画像生成 画像 画像作成 ...",
-          "published_at": "2025-06-02T09:50:34Z",
-          "channel": "Elith",
-          "video_id": "9pHLlqVTL48",
-          "url": "https://www.youtube.com/watch?v=9pHLlqVTL48",
-          "content_type": "その他",
-          "language": "ja"
-        },
-        {
-          "title": "考えさせられる動画#ai #aiart #生成ai #号泣 #shorts",
-          "description": "",
-          "published_at": "2024-03-27T10:57:37Z",
-          "channel": "AI攻略チャンネル【AI×自動化】",
-          "video_id": "UWopmyHS3Qk",
-          "url": "https://www.youtube.com/watch?v=UWopmyHS3Qk",
-          "content_type": "その他",
-          "language": "ja"
-        },
-        {
           "title": "マイクロソフトが教える生成AI活用法",
           "description": "飲み会1回分で行けるプログラミングスクール「TECH WORLD」 【提供中のサービス】 ・メガベンチャーエンジニアがメンター ...",
           "published_at": "2024-06-08T09:53:36Z",
@@ -157,47 +167,37 @@
           "language": "ja"
         },
         {
-          "title": "AIでYouTube動画が一瞬で量産できる◎ #AI #AIツール #vrew #ChatGPT #チャットgpt #チャットジーピーティー #生成AI #自然言語処理 #shorts #short",
-          "description": "AIでYouTube動画を作って稼ぎたい。。」 そんな方へ、今回の投稿が役立ちます。 あるツールを使うことで実現します     ...",
-          "published_at": "2023-07-17T09:03:22Z",
-          "channel": "かずりりぃ【ChatGPT・AI活用術 × SNSブログの裏技】",
-          "video_id": "L6O8UmKoKDg",
-          "url": "https://www.youtube.com/watch?v=L6O8UmKoKDg",
+          "title": "【ワールドガールズ ギリシャ 前編 Animon版】 ～蒼き旋律～ 生成AI美少女",
+          "description": "Copilot Bing の Image Creator の画像生成AIをメインに利用しています。 世界中の女性たちをファンタジー要素を入れながら生成 ...",
+          "published_at": "2025-07-28T14:30:19Z",
+          "channel": "AI Fantasy Art [ あいふぁ ]",
+          "video_id": "JBCJ0zThAdk",
+          "url": "https://www.youtube.com/watch?v=JBCJ0zThAdk",
           "content_type": "その他",
           "language": "ja"
         },
         {
-          "title": "手取りって誰の取り分だ？ #ai作曲 #画像生成ai #給与明細",
-          "description": "給与明細の「読み方」は学校で教えてほしかった   #ai作曲 #画像生成ai #ボーナス #給与明細 #給料明細 #社会保険 #税金 ...",
-          "published_at": "2025-07-27T16:33:10Z",
-          "channel": "サラリーマン辞典",
-          "video_id": "SlBwRq-SllY",
-          "url": "https://www.youtube.com/watch?v=SlBwRq-SllY",
-          "content_type": "その他",
-          "language": "ja"
-        },
-        {
-          "title": "リアルか動画生成AIか見分けがつかない動画④",
-          "description": "",
-          "published_at": "2025-04-27T12:36:36Z",
-          "channel": "息子はYouTuber",
-          "video_id": "U09gPyjskDg",
-          "url": "https://www.youtube.com/watch?v=U09gPyjskDg",
-          "content_type": "その他",
+          "title": "【下手すれば“文明崩壊”の危険】生成AIの源流を築いた伝説的な数理工学者・甘利俊一／人工知能が「心、個性、信念、正義感」を持つように／AIの未来は恐怖と希望が50:50【CROSS DIG 1on1】",
+          "description": "https://youtube.com/@tbs_bloomberg チャンネル登録・高評価をよろしくお願いします 現代のAI技術の源流を築いた数理工 ...",
+          "published_at": "2025-07-29T10:00:34Z",
+          "channel": "TBS CROSS DIG with Bloomberg",
+          "video_id": "HESnb9aNhQI",
+          "url": "https://www.youtube.com/watch?v=HESnb9aNhQI",
+          "content_type": "レビュー",
           "language": "ja"
         }
       ],
       "new_keywords": [],
       "sentiment_score": 0.0,
       "engagement_metrics": {
-        "video_count": 1,
+        "video_count": 3,
         "total_videos": 10
       }
     },
     {
       "platform": "github",
       "keyword": "生成AI",
-      "timestamp": "2025-07-30T12:00:08.627340",
+      "timestamp": "2025-07-30T12:49:46.574377",
       "results": [
         {
           "name": "JeecgBoot",
@@ -210,7 +210,7 @@
           "forks": 0,
           "topics": [],
           "license": "",
-          "updated_at": "2025-07-30T09:23:18Z",
+          "updated_at": "2025-07-30T12:23:59Z",
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
@@ -230,7 +230,7 @@
           "forks": 0,
           "topics": [],
           "license": "",
-          "updated_at": "2025-07-30T11:37:18Z",
+          "updated_at": "2025-07-30T12:49:16Z",
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
@@ -290,7 +290,7 @@
           "forks": 0,
           "topics": [],
           "license": "",
-          "updated_at": "2025-07-30T09:21:55Z",
+          "updated_at": "2025-07-30T12:40:24Z",
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
@@ -454,10 +454,10 @@
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
-          "days_old": 181,
+          "days_old": 182,
           "is_trending": false,
           "is_accelerating": false,
-          "trend_score": 15.12
+          "trend_score": 15.04
         },
         {
           "name": "paper-ai",
@@ -530,7 +530,7 @@
           "forks": 0,
           "topics": [],
           "license": "",
-          "updated_at": "2025-07-30T09:43:08Z",
+          "updated_at": "2025-07-30T12:39:04Z",
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
@@ -574,7 +574,7 @@
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
-          "days_old": 884,
+          "days_old": 885,
           "is_trending": false,
           "is_accelerating": false,
           "trend_score": 0.0
@@ -634,10 +634,10 @@
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
-          "days_old": 39,
+          "days_old": 40,
           "is_trending": false,
           "is_accelerating": false,
-          "trend_score": 26.79
+          "trend_score": 26.71
         },
         {
           "name": "lpanda",
@@ -734,10 +734,10 @@
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
-          "days_old": 112,
+          "days_old": 113,
           "is_trending": false,
           "is_accelerating": false,
-          "trend_score": 20.79
+          "trend_score": 20.71
         },
         {
           "name": "bedrock-book",
@@ -814,7 +814,7 @@
     {
       "platform": "arxiv",
       "keyword": "生成AI",
-      "timestamp": "2025-07-30T12:00:09.234989",
+      "timestamp": "2025-07-30T12:49:46.842348",
       "results": [],
       "new_keywords": [],
       "sentiment_score": 0.0,
@@ -825,7 +825,7 @@
     {
       "platform": "hackernews",
       "keyword": "生成AI",
-      "timestamp": "2025-07-30T12:00:09.631069",
+      "timestamp": "2025-07-30T12:49:47.528649",
       "results": [
         {
           "title": "Generative AI for Beginners",
@@ -1075,7 +1075,7 @@
     {
       "platform": "supabase",
       "keyword": "生成AI",
-      "timestamp": "2025-07-30T12:00:09.631165",
+      "timestamp": "2025-07-30T12:49:47.528763",
       "results": [],
       "new_keywords": [],
       "sentiment_score": 0.0,
