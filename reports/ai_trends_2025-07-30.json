@@ -12,7 +12,7 @@
     {
       "platform": "web",
       "keyword": "生成AI",
-      "timestamp": "2025-07-30T09:57:42.099782",
+      "timestamp": "2025-07-30T10:19:06.092516",
       "results": [
         {
           "title": "Google Gemini",
@@ -84,18 +84,8 @@
     {
       "platform": "youtube",
       "keyword": "生成AI",
-      "timestamp": "2025-07-30T09:57:42.511485",
+      "timestamp": "2025-07-30T10:19:06.531230",
       "results": [
-        {
-          "title": "【下手すれば“文明崩壊”の危険】生成AIの源流を築いた伝説的な数理工学者・甘利俊一／人工知能が「心、個性、信念、正義感」を持つように／AIの未来は恐怖と希望が50:50【CROSS DIG 1on1】",
-          "description": "https://youtube.com/@tbs_bloomberg チャンネル登録・高評価をよろしくお願いします 現代のAI技術の源流を築いた数理工 ...",
-          "published_at": "2025-07-29T10:00:34Z",
-          "channel": "TBS CROSS DIG with Bloomberg",
-          "video_id": "HESnb9aNhQI",
-          "url": "https://www.youtube.com/watch?v=HESnb9aNhQI",
-          "content_type": "レビュー",
-          "language": "ja"
-        },
         {
           "title": "生成AI・ChatGPTって何なの？【超入門講座、初心者向け】",
           "description": "今回は、生成AIやChatGPTについて、超初心者向けに分かりやすく解説します。 ▽目次 0:00 はじめに 生成AIとは？",
@@ -103,6 +93,16 @@
           "channel": "AIキャンプ / 中村俊也",
           "video_id": "LnbTfZCI4aE",
           "url": "https://www.youtube.com/watch?v=LnbTfZCI4aE",
+          "content_type": "解説動画",
+          "language": "ja"
+        },
+        {
+          "title": "【今さら聞けない？】生成AIとは？AIとどう違うの？（図解で簡単にわかりやすく解説）",
+          "description": "キノクエストの登録・詳細はこちら ...",
+          "published_at": "2025-01-28T11:00:48Z",
+          "channel": "キノコード / プログラミング学習チャンネル",
+          "video_id": "YFtoy_tfYfc",
+          "url": "https://www.youtube.com/watch?v=YFtoy_tfYfc",
           "content_type": "解説動画",
           "language": "ja"
         },
@@ -127,26 +127,6 @@
           "language": "ja"
         },
         {
-          "title": "【今さら聞けない？】生成AIとは？AIとどう違うの？（図解で簡単にわかりやすく解説）",
-          "description": "キノクエストの登録・詳細はこちら ...",
-          "published_at": "2025-01-28T11:00:48Z",
-          "channel": "キノコード / プログラミング学習チャンネル",
-          "video_id": "YFtoy_tfYfc",
-          "url": "https://www.youtube.com/watch?v=YFtoy_tfYfc",
-          "content_type": "解説動画",
-          "language": "ja"
-        },
-        {
-          "title": "生成AIを「使いこなせる人」と「使いこなせない人」の違いとは？ ビジネスシーンでの具体的な活用方法も解説します",
-          "description": "提供：DMM 生成AI CAMP 様々なビジネスシーンでAIを使いこなすホリエモンと生成AI活用のプロ・小澤健祐さんに、「生成AIを ...",
-          "published_at": "2024-07-30T09:00:52Z",
-          "channel": "堀江貴文 ホリエモン",
-          "video_id": "uVUlWOZRFKo",
-          "url": "https://www.youtube.com/watch?v=uVUlWOZRFKo",
-          "content_type": "解説動画",
-          "language": "ja"
-        },
-        {
           "title": "コレをするならこのAI！#AI #生成AI #ChatGPT #ハルシネーション #プロンプト",
           "description": "生成AI AI ChatGPT プロンプト 命令文 ハルシネーション Claude Genspark Copilot Gemini OpenAI Google 画像生成 画像 画像作成 ...",
           "published_at": "2025-06-02T09:50:34Z",
@@ -167,6 +147,16 @@
           "language": "ja"
         },
         {
+          "title": "生成AIを「使いこなせる人」と「使いこなせない人」の違いとは？ ビジネスシーンでの具体的な活用方法も解説します",
+          "description": "提供：DMM 生成AI CAMP 様々なビジネスシーンでAIを使いこなすホリエモンと生成AI活用のプロ・小澤健祐さんに、「生成AIを ...",
+          "published_at": "2024-07-30T09:00:52Z",
+          "channel": "堀江貴文 ホリエモン",
+          "video_id": "uVUlWOZRFKo",
+          "url": "https://www.youtube.com/watch?v=uVUlWOZRFKo",
+          "content_type": "解説動画",
+          "language": "ja"
+        },
+        {
           "title": "マイクロソフトが教える生成AI活用法",
           "description": "飲み会1回分で行けるプログラミングスクール「TECH WORLD」 【提供中のサービス】 ・メガベンチャーエンジニアがメンター ...",
           "published_at": "2024-06-08T09:53:36Z",
@@ -177,12 +167,22 @@
           "language": "ja"
         },
         {
-          "title": "リアルか動画生成AIか見分けがつかない動画④",
+          "title": "日本語精度No.1の生成AIはこれ❗️",
           "description": "",
-          "published_at": "2025-04-27T12:36:36Z",
-          "channel": "息子はYouTuber",
-          "video_id": "U09gPyjskDg",
-          "url": "https://www.youtube.com/watch?v=U09gPyjskDg",
+          "published_at": "2024-06-04T11:35:14Z",
+          "channel": "KEITO【AI&WEB ch】",
+          "video_id": "utV-n8reqeQ",
+          "url": "https://www.youtube.com/watch?v=utV-n8reqeQ",
+          "content_type": "その他",
+          "language": "ja"
+        },
+        {
+          "title": "人間の脳細胞🧠 VS 生成AI",
+          "description": "",
+          "published_at": "2024-11-02T07:10:58Z",
+          "channel": "ソフトバンク公式 ビジネスチャンネル",
+          "video_id": "mcbYswfiN0A",
+          "url": "https://www.youtube.com/watch?v=mcbYswfiN0A",
           "content_type": "その他",
           "language": "ja"
         }
@@ -197,7 +197,7 @@
     {
       "platform": "github",
       "keyword": "生成AI",
-      "timestamp": "2025-07-30T09:57:43.563439",
+      "timestamp": "2025-07-30T10:19:07.519767",
       "results": [
         {
           "name": "JeecgBoot",
@@ -230,7 +230,7 @@
           "forks": 0,
           "topics": [],
           "license": "",
-          "updated_at": "2025-07-30T09:57:27Z",
+          "updated_at": "2025-07-30T10:00:46Z",
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
@@ -434,7 +434,7 @@
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
-          "days_old": 779,
+          "days_old": 780,
           "is_trending": false,
           "is_accelerating": false,
           "trend_score": 0.0
@@ -814,7 +814,7 @@
     {
       "platform": "arxiv",
       "keyword": "生成AI",
-      "timestamp": "2025-07-30T09:57:44.432163",
+      "timestamp": "2025-07-30T10:19:08.069736",
       "results": [],
       "new_keywords": [],
       "sentiment_score": 0.0,
@@ -825,7 +825,7 @@
     {
       "platform": "hackernews",
       "keyword": "生成AI",
-      "timestamp": "2025-07-30T09:57:44.879950",
+      "timestamp": "2025-07-30T10:19:08.592847",
       "results": [
         {
           "title": "Generative AI for Beginners",
@@ -1075,7 +1075,7 @@
     {
       "platform": "supabase",
       "keyword": "生成AI",
-      "timestamp": "2025-07-30T09:57:44.880069",
+      "timestamp": "2025-07-30T10:19:08.592960",
       "results": [],
       "new_keywords": [],
       "sentiment_score": 0.0,
