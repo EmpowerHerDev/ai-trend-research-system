@@ -12,7 +12,7 @@
     {
       "platform": "web",
       "keyword": "生成AI",
-      "timestamp": "2025-07-31T13:31:19.610206",
+      "timestamp": "2025-07-31T13:57:42.253964",
       "results": [
         {
           "title": "【2025年最新】日本語対応AIツール9選｜実務で“本当に使える”生成AIを比較解説 - AI …",
@@ -84,18 +84,8 @@
     {
       "platform": "youtube",
       "keyword": "生成AI",
-      "timestamp": "2025-07-31T13:31:20.048985",
+      "timestamp": "2025-07-31T13:57:42.640757",
       "results": [
-        {
-          "title": "どれを使うべき？ChatGPT・Gemini・Claudeなど各生成AIの違いを解説！",
-          "description": "ChatGPT・Gemini・Claudeなど各生成AIの違いを解説！どれを使うべきか？ ☆プロセボ｜ワークショップ型AIコミュニティ ...",
-          "published_at": "2025-07-31T11:00:06Z",
-          "channel": "KEITO【AI&WEB ch】",
-          "video_id": "3Swg5DbKY64",
-          "url": "https://www.youtube.com/watch?v=3Swg5DbKY64",
-          "content_type": "解説動画",
-          "language": "ja"
-        },
         {
           "title": "【誰でもできる】全人類使え！ガチで便利な生成AIの使い方 TOP3",
           "description": "最近AIの進化が速すぎて、新しいAIツールが毎日のようにリリースされています。 あなたはこう思っていませんか？ 「AI、結局 ...",
@@ -137,22 +127,22 @@
           "language": "ja"
         },
         {
-          "title": "コレをするならこのAI！#AI #生成AI #ChatGPT #ハルシネーション #プロンプト",
-          "description": "生成AI AI ChatGPT プロンプト 命令文 ハルシネーション Claude Genspark Copilot Gemini OpenAI Google 画像生成 画像 画像作成 ...",
-          "published_at": "2025-06-02T09:50:34Z",
-          "channel": "Elith",
-          "video_id": "9pHLlqVTL48",
-          "url": "https://www.youtube.com/watch?v=9pHLlqVTL48",
-          "content_type": "その他",
-          "language": "ja"
-        },
-        {
           "title": "生成AI動画あるある",
           "description": "",
           "published_at": "2024-12-20T08:32:42Z",
           "channel": "ユウスケTV",
           "video_id": "4jzcmSHxjVw",
           "url": "https://www.youtube.com/watch?v=4jzcmSHxjVw",
+          "content_type": "その他",
+          "language": "ja"
+        },
+        {
+          "title": "コレをするならこのAI！#AI #生成AI #ChatGPT #ハルシネーション #プロンプト",
+          "description": "生成AI AI ChatGPT プロンプト 命令文 ハルシネーション Claude Genspark Copilot Gemini OpenAI Google 画像生成 画像 画像作成 ...",
+          "published_at": "2025-06-02T09:50:34Z",
+          "channel": "Elith",
+          "video_id": "9pHLlqVTL48",
+          "url": "https://www.youtube.com/watch?v=9pHLlqVTL48",
           "content_type": "その他",
           "language": "ja"
         },
@@ -167,6 +157,16 @@
           "language": "ja"
         },
         {
+          "title": "日本語精度No.1の生成AIはこれ❗️",
+          "description": "",
+          "published_at": "2024-06-04T11:35:14Z",
+          "channel": "KEITO【AI&WEB ch】",
+          "video_id": "utV-n8reqeQ",
+          "url": "https://www.youtube.com/watch?v=utV-n8reqeQ",
+          "content_type": "その他",
+          "language": "ja"
+        },
+        {
           "title": "【140億パラメータの衝撃】動画生成AI「WAN2.2」、これで商用利用OKなのもすごい！Google ColabでWAN2.2 14B t2vモデルを使って動画を生成する方法",
           "description": "解説補足ページ https://amused-egret-94a.notion.site/WAN2-2-14B-t2v-23f866581bd7807096fad990579ca1ca?source=copy_link ...",
           "published_at": "2025-07-30T12:45:02Z",
@@ -177,12 +177,12 @@
           "language": "ja"
         },
         {
-          "title": "日本語精度No.1の生成AIはこれ❗️",
+          "title": "リアルか動画生成AIか見分けがつかない動画④",
           "description": "",
-          "published_at": "2024-06-04T11:35:14Z",
-          "channel": "KEITO【AI&WEB ch】",
-          "video_id": "utV-n8reqeQ",
-          "url": "https://www.youtube.com/watch?v=utV-n8reqeQ",
+          "published_at": "2025-04-27T12:36:36Z",
+          "channel": "息子はYouTuber",
+          "video_id": "U09gPyjskDg",
+          "url": "https://www.youtube.com/watch?v=U09gPyjskDg",
           "content_type": "その他",
           "language": "ja"
         }
@@ -190,14 +190,14 @@
       "new_keywords": [],
       "sentiment_score": 0.0,
       "engagement_metrics": {
-        "video_count": 5,
+        "video_count": 4,
         "total_videos": 10
       }
     },
     {
       "platform": "github",
       "keyword": "生成AI",
-      "timestamp": "2025-07-31T13:31:20.983632",
+      "timestamp": "2025-07-31T13:57:43.581238",
       "results": [
         {
           "name": "JeecgBoot",
@@ -210,7 +210,7 @@
           "forks": 0,
           "topics": [],
           "license": "",
-          "updated_at": "2025-07-31T12:21:19Z",
+          "updated_at": "2025-07-31T13:31:44Z",
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
@@ -230,7 +230,7 @@
           "forks": 0,
           "topics": [],
           "license": "",
-          "updated_at": "2025-07-31T13:20:51Z",
+          "updated_at": "2025-07-31T13:54:43Z",
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
@@ -814,7 +814,7 @@
     {
       "platform": "arxiv",
       "keyword": "生成AI",
-      "timestamp": "2025-07-31T13:31:21.510891",
+      "timestamp": "2025-07-31T13:57:43.931707",
       "results": [],
       "new_keywords": [],
       "sentiment_score": 0.0,
@@ -825,7 +825,7 @@
     {
       "platform": "hackernews",
       "keyword": "生成AI",
-      "timestamp": "2025-07-31T13:31:21.879814",
+      "timestamp": "2025-07-31T13:57:44.408365",
       "results": [
         {
           "title": "Generative AI for Beginners",
@@ -1075,7 +1075,7 @@
     {
       "platform": "supabase",
       "keyword": "生成AI",
-      "timestamp": "2025-07-31T13:31:21.879910",
+      "timestamp": "2025-07-31T13:57:44.408459",
       "results": [],
       "new_keywords": [],
       "sentiment_score": 0.0,
