@@ -12,7 +12,7 @@
     {
       "platform": "web",
       "keyword": "生成AI",
-      "timestamp": "2025-07-31T11:54:06.412034",
+      "timestamp": "2025-07-31T12:00:44.941999",
       "results": [
         {
           "title": "【2025年最新】日本語対応AIツール9選｜実務で“本当に使える”生成AIを比較解説 - AI …",
@@ -34,7 +34,7 @@
         },
         {
           "title": "【2025年最新版】今話題の生成AIツール17選｜目的別で“使える” …",
-          "snippet": "omokaji-web.co.jp 11 hours ago · 特徴：ビジネス文書や企画資料の作成に特化した日本語対応の生成aiツール。 使い方：職種・目的・文体を選ぶだけで、提案書や挨拶文、営業メールなどを自動生成。 お …",
+          "snippet": "omokaji-web.co.jp 12 hours ago · 特徴：ビジネス文書や企画資料の作成に特化した日本語対応の生成aiツール。 使い方：職種・目的・文体を選ぶだけで、提案書や挨拶文、営業メールなどを自動生成。 お …",
           "url": "https://omokaji-web.co.jp/tool/ai_tool/",
           "source": "omokaji-web.co.jp"
         },
@@ -84,7 +84,7 @@
     {
       "platform": "youtube",
       "keyword": "生成AI",
-      "timestamp": "2025-07-31T11:54:06.797004",
+      "timestamp": "2025-07-31T12:00:45.328972",
       "results": [
         {
           "title": "【誰でもできる】全人類使え！ガチで便利な生成AIの使い方 TOP3",
@@ -197,7 +197,7 @@
     {
       "platform": "github",
       "keyword": "生成AI",
-      "timestamp": "2025-07-31T11:54:07.712150",
+      "timestamp": "2025-07-31T12:00:46.107306",
       "results": [
         {
           "name": "JeecgBoot",
@@ -310,7 +310,7 @@
           "forks": 0,
           "topics": [],
           "license": "",
-          "updated_at": "2025-07-31T06:48:56Z",
+          "updated_at": "2025-07-31T11:56:21Z",
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
@@ -450,7 +450,7 @@
           "forks": 0,
           "topics": [],
           "license": "",
-          "updated_at": "2025-07-31T08:57:49Z",
+          "updated_at": "2025-07-31T11:56:28Z",
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
@@ -734,10 +734,10 @@
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
-          "days_old": 113,
+          "days_old": 114,
           "is_trending": false,
           "is_accelerating": false,
-          "trend_score": 20.71
+          "trend_score": 20.63
         },
         {
           "name": "bedrock-book",
@@ -814,7 +814,7 @@
     {
       "platform": "arxiv",
       "keyword": "生成AI",
-      "timestamp": "2025-07-31T11:54:07.916040",
+      "timestamp": "2025-07-31T12:00:46.631815",
       "results": [],
       "new_keywords": [],
       "sentiment_score": 0.0,
@@ -825,7 +825,7 @@
     {
       "platform": "hackernews",
       "keyword": "生成AI",
-      "timestamp": "2025-07-31T11:54:08.392862",
+      "timestamp": "2025-07-31T12:00:48.120430",
       "results": [
         {
           "title": "Generative AI for Beginners",
@@ -1075,7 +1075,7 @@
     {
       "platform": "supabase",
       "keyword": "生成AI",
-      "timestamp": "2025-07-31T11:54:08.392957",
+      "timestamp": "2025-07-31T12:00:48.120530",
       "results": [],
       "new_keywords": [],
       "sentiment_score": 0.0,
