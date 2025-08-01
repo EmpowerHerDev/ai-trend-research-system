@@ -12,7 +12,7 @@
     {
       "platform": "web",
       "keyword": "生成AI",
-      "timestamp": "2025-08-01T00:59:53.391665",
+      "timestamp": "2025-08-01T03:13:42.168855",
       "results": [
         {
           "title": "【2025年最新】日本語対応AIツール9選｜実務で“本当に使える”生成AIを比較解説 - AI …",
@@ -22,9 +22,15 @@
         },
         {
           "title": "【2025】生成AIサービスおすすめ21選を一覧比較！無料・料金 …",
-          "snippet": "businesskouzamitsuketai.com 進化著しい生成AIツール選びで迷う企業担当者様も多いのではないでしょうか？ この記事では、文章・画像・動画の4分野から厳選したツールを、特徴や無料プラン有無、料金、商用利用可否、日本語対応を徹底比較します。",
+          "snippet": "businesskouzamitsuketai.com 進化著しい生成AIツール選びで迷う企業担当者様も多いのではないでしょうか？ この記事では、文章・画像・動画の4分野から厳選したツールを、特徴や無料プラン有無、料金、商用利用可否、日本 …",
           "url": "https://businesskouzamitsuketai.com/seiseiai-hikaku/",
           "source": "businesskouzamitsuketai.com"
+        },
+        {
+          "title": "生成AI比較｜用途・日本語対応・商用利用・API提供で選定 …",
+          "snippet": "signate.jp Jun 17, 2025 · 5つの比較ポイント（用途・日本語対応・商用利用・API提供・価格）をもとに主な生成AIツールの特徴をまとめました。 比較表を参考に活用目的に適した生成AIを見つけ、業務効率や …",
+          "url": "https://soken.signate.jp/column/generation-ai-comparison",
+          "source": "soken.signate.jp"
         },
         {
           "title": "2025年最新｜実用性が高い生成AIのおすすめツール15選【無料 …",
@@ -33,10 +39,16 @@
           "source": "blog.geekom.jp"
         },
         {
-          "title": "【無料】日本語対応の生成AIツール7選を比較｜文章/画像別に紹介 - AI総研｜AI …",
-          "snippet": "metaversesouken.com Jun 14, 2025 · そこで本記事では、生成AIツールを初めて利用する方に向けて、 無料で使える日本語対応の生成AIツールを、選び方とともにわかりやすくご紹介 します。",
-          "url": "https://metaversesouken.com/ai/generative_ai/japanese-tools/",
-          "source": "metaversesouken.com"
+          "title": "【2025年版】生成AIツールおすすめ10選｜無料・業務向け・個人利用まで徹底比較！ | 生成AI総合研究所 | AI …",
+          "snippet": "generativeai.tokyo この記事では、数ある生成AIツールの中から 厳選した10ツール を「機能性」「生成精度」「使いやすさ」などの観点で徹底比較。 業務用途・個人のワークフロー・副業・マーケティングなど、 目的 …",
+          "url": "https://www.generativeai.tokyo/media/10tool/",
+          "source": "www.generativeai.tokyo"
+        },
+        {
+          "title": "【2025年最新版】今話題の生成AIツール17選｜目的別で“使え …",
+          "snippet": "omokaji-web.co.jp 1 day ago · ChatGPTだけじゃない！文章生成、情報整理、資料作成、デザインなど、目的別におすすめの生成AIツール17選を厳選紹介。初心者でもすぐ使える実践ガイド付き！",
+          "url": "https://omokaji-web.co.jp/tool/ai_tool/",
+          "source": "omokaji-web.co.jp"
         },
         {
           "title": "【2025年最新】生成AIサービス17種類を比較！用途別の特徴や …",
@@ -45,22 +57,10 @@
           "source": "dxnavi.com"
         },
         {
-          "title": "日本語対応の画像生成AIおすすめランキング【2025年最新版】",
-          "snippet": "sorokatu.com Dec 28, 2024 · 数ある画像生成AIツールの中から、日本語に対応したおすすめのサービスをランキング形式で紹介します。 機能、料金、使いやすさなどを比較し、あなたのニーズにぴったりのツールを見つけてください。",
-          "url": "https://sorokatu.com/entry/recommended-ranking-of-image-generation-ai-that-supports-japanese",
-          "source": "sorokatu.com"
-        },
-        {
-          "title": "【2025年版】生成AIツールおすすめ10選｜無料・業務向け・個人利用まで徹底比較！ | 生成AI総合研究所 | AI …",
-          "snippet": "generativeai.tokyo この記事では、数ある生成AIツールの中から 厳選した10ツール を「機能性」「生成精度」「使いやすさ」などの観点で徹底比較。 業務用途・個人のワークフロー・副業・マーケティングなど、 目的別のおすすめ も紹介します。",
-          "url": "https://www.generativeai.tokyo/media/10tool/",
-          "source": "www.generativeai.tokyo"
-        },
-        {
-          "title": "【2025】無料で使える生成AIツール11選！用途別に紹介 | DX/AI …",
-          "snippet": "ai-kenkyujo.com プロンプトに基づいて、さまざまなコンテンツを作り出せる生成AI。 文章や画像の生成などあらゆることが可能ですが、無料で利用できるツールも豊富です。 本記事では、無料で利用できる生成AIツールを、用途別にそれぞれ紹介しています。",
-          "url": "https://ai-kenkyujo.com/software/generative-ai/muryou-2/",
-          "source": "ai-kenkyujo.com"
+          "title": "【無料】日本語対応の生成AIツール7選を比較｜文章/画像別に紹介 - AI総研｜AI …",
+          "snippet": "metaversesouken.com Jun 14, 2025 · そこで本記事では、生成AIツールを初めて利用する方に向けて、 無料で使える日本語対応の生成AIツールを、選び方とともにわかりやすくご紹介 します。",
+          "url": "https://metaversesouken.com/ai/generative_ai/japanese-tools/",
+          "source": "metaversesouken.com"
         },
         {
           "title": "国産生成AI10選：日本語LLMや企業向け生成AIと選び方を解説",
@@ -69,10 +69,10 @@
           "source": "aismiley.co.jp"
         },
         {
-          "title": "【2025年2月最新】ChatGPT以外にもある！日本語に強い生成AI …",
-          "snippet": "xrcloud.jp Feb 22, 2025 · ChatGPTをはじめとするAIチャットサービスを筆頭に、海外発のAIサービスが注目を集めるなか、日本語対応の精度や自然な会話能力を持つAIは限られており、英語ベースのモデルが多くを占めているのが現状です。",
-          "url": "https://xrcloud.jp/blog/articles/business/28026/",
-          "source": "xrcloud.jp"
+          "title": "【2025年7月最新】生成AIサービス・ツール比較おすすめ一覧！ …",
+          "snippet": "miralab.co.jp Jul 18, 2025 · 本記事では、注目の音声生成AIサイト・アプリを徹底比較し、無料で使えるものから高性能な有料ツールまで、音声生成AIおすすめの選び方やAIボイス作成のコツを初心者にもわかりや …",
+          "url": "https://miralab.co.jp/media/generative_ai_tools_comparison/",
+          "source": "miralab.co.jp"
         }
       ],
       "new_keywords": [],
@@ -84,18 +84,8 @@
     {
       "platform": "youtube",
       "keyword": "生成AI",
-      "timestamp": "2025-08-01T00:59:53.906273",
+      "timestamp": "2025-08-01T03:13:42.756308",
       "results": [
-        {
-          "title": "【誰でもできる】全人類使え！ガチで便利な生成AIの使い方 TOP3",
-          "description": "最近AIの進化が速すぎて、新しいAIツールが毎日のようにリリースされています。 あなたはこう思っていませんか？ 「AI、結局 ...",
-          "published_at": "2024-10-10T12:01:16Z",
-          "channel": "マコなり社長",
-          "video_id": "zrluoX5MLfA",
-          "url": "https://www.youtube.com/watch?v=zrluoX5MLfA",
-          "content_type": "ニュース",
-          "language": "ja"
-        },
         {
           "title": "生成AI・ChatGPTって何なの？【超入門講座、初心者向け】",
           "description": "今回は、生成AIやChatGPTについて、超初心者向けに分かりやすく解説します。 ▽目次 0:00 はじめに 生成AIとは？",
@@ -104,6 +94,16 @@
           "video_id": "LnbTfZCI4aE",
           "url": "https://www.youtube.com/watch?v=LnbTfZCI4aE",
           "content_type": "解説動画",
+          "language": "ja"
+        },
+        {
+          "title": "【誰でもできる】全人類使え！ガチで便利な生成AIの使い方 TOP3",
+          "description": "最近AIの進化が速すぎて、新しいAIツールが毎日のようにリリースされています。 あなたはこう思っていませんか？ 「AI、結局 ...",
+          "published_at": "2024-10-10T12:01:16Z",
+          "channel": "マコなり社長",
+          "video_id": "zrluoX5MLfA",
+          "url": "https://www.youtube.com/watch?v=zrluoX5MLfA",
+          "content_type": "ニュース",
           "language": "ja"
         },
         {
@@ -127,16 +127,6 @@
           "language": "ja"
         },
         {
-          "title": "コレをするならこのAI！#AI #生成AI #ChatGPT #ハルシネーション #プロンプト",
-          "description": "生成AI AI ChatGPT プロンプト 命令文 ハルシネーション Claude Genspark Copilot Gemini OpenAI Google 画像生成 画像 画像作成 ...",
-          "published_at": "2025-06-02T09:50:34Z",
-          "channel": "Elith",
-          "video_id": "9pHLlqVTL48",
-          "url": "https://www.youtube.com/watch?v=9pHLlqVTL48",
-          "content_type": "その他",
-          "language": "ja"
-        },
-        {
           "title": "生成AI動画あるある",
           "description": "",
           "published_at": "2024-12-20T08:32:42Z",
@@ -154,6 +144,16 @@
           "video_id": "uVUlWOZRFKo",
           "url": "https://www.youtube.com/watch?v=uVUlWOZRFKo",
           "content_type": "解説動画",
+          "language": "ja"
+        },
+        {
+          "title": "コレをするならこのAI！#AI #生成AI #ChatGPT #ハルシネーション #プロンプト",
+          "description": "生成AI AI ChatGPT プロンプト 命令文 ハルシネーション Claude Genspark Copilot Gemini OpenAI Google 画像生成 画像 画像作成 ...",
+          "published_at": "2025-06-02T09:50:34Z",
+          "channel": "Elith",
+          "video_id": "9pHLlqVTL48",
+          "url": "https://www.youtube.com/watch?v=9pHLlqVTL48",
+          "content_type": "その他",
           "language": "ja"
         },
         {
@@ -197,7 +197,7 @@
     {
       "platform": "github",
       "keyword": "生成AI",
-      "timestamp": "2025-08-01T00:59:55.021815",
+      "timestamp": "2025-08-01T03:13:43.502531",
       "results": [
         {
           "name": "JeecgBoot",
@@ -210,7 +210,7 @@
           "forks": 0,
           "topics": [],
           "license": "",
-          "updated_at": "2025-07-31T16:34:09Z",
+          "updated_at": "2025-08-01T03:13:42Z",
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
@@ -230,11 +230,11 @@
           "forks": 0,
           "topics": [],
           "license": "",
-          "updated_at": "2025-08-01T00:47:22Z",
+          "updated_at": "2025-08-01T03:13:28Z",
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
-          "days_old": 507,
+          "days_old": 508,
           "is_trending": false,
           "is_accelerating": false,
           "trend_score": 0.0
@@ -290,7 +290,7 @@
           "forks": 0,
           "topics": [],
           "license": "",
-          "updated_at": "2025-07-31T18:06:18Z",
+          "updated_at": "2025-08-01T02:38:32Z",
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
@@ -310,7 +310,7 @@
           "forks": 0,
           "topics": [],
           "license": "",
-          "updated_at": "2025-07-31T11:56:21Z",
+          "updated_at": "2025-08-01T01:52:23Z",
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
@@ -370,7 +370,7 @@
           "forks": 0,
           "topics": [],
           "license": "",
-          "updated_at": "2025-07-31T16:35:28Z",
+          "updated_at": "2025-08-01T02:20:55Z",
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
@@ -420,26 +420,6 @@
           "trend_score": 19.07
         },
         {
-          "name": "generative-ai-roadmap",
-          "description": "The roadmap of generative AI: use cases and applications | 生成式AI的应用路线图",
-          "owner": "SeedV",
-          "stars": 0,
-          "language": "",
-          "url": "https://github.com/SeedV/generative-ai-roadmap",
-          "created_at": "2023-06-11T10:17:24Z",
-          "forks": 0,
-          "topics": [],
-          "license": "",
-          "updated_at": "2025-07-26T12:43:46Z",
-          "size": 0,
-          "open_issues": 0,
-          "star_rate": 0.0,
-          "days_old": 781,
-          "is_trending": false,
-          "is_accelerating": false,
-          "trend_score": 0.0
-        },
-        {
           "name": "AI_NovelGenerator",
           "description": "使用ai生成多章节的长篇小说，自动衔接上下文、伏笔",
           "owner": "YILING0013",
@@ -460,6 +440,26 @@
           "trend_score": 14.96
         },
         {
+          "name": "generative-ai-roadmap",
+          "description": "The roadmap of generative AI: use cases and applications | 生成式AI的应用路线图",
+          "owner": "SeedV",
+          "stars": 0,
+          "language": "",
+          "url": "https://github.com/SeedV/generative-ai-roadmap",
+          "created_at": "2023-06-11T10:17:24Z",
+          "forks": 0,
+          "topics": [],
+          "license": "",
+          "updated_at": "2025-07-26T12:43:46Z",
+          "size": 0,
+          "open_issues": 0,
+          "star_rate": 0.0,
+          "days_old": 781,
+          "is_trending": false,
+          "is_accelerating": false,
+          "trend_score": 0.0
+        },
+        {
           "name": "paper-ai",
           "description": "搜索真实文献并生成引用对应文献的AI论文",
           "owner": "14790897",
@@ -470,7 +470,7 @@
           "forks": 0,
           "topics": [],
           "license": "",
-          "updated_at": "2025-07-31T10:51:57Z",
+          "updated_at": "2025-08-01T02:29:15Z",
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
@@ -530,7 +530,7 @@
           "forks": 0,
           "topics": [],
           "license": "",
-          "updated_at": "2025-07-31T19:06:00Z",
+          "updated_at": "2025-08-01T03:07:55Z",
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
@@ -560,6 +560,26 @@
           "trend_score": 20.79
         },
         {
+          "name": "WELearnHelper",
+          "description": "显示WE Learn随行课堂题目答案；支持班级测试；自动答题；刷时长；基于生成式AI(ChatGPT)的答案生成",
+          "owner": "SSmJaE",
+          "stars": 0,
+          "language": "",
+          "url": "https://github.com/SSmJaE/WELearnHelper",
+          "created_at": "2020-02-06T03:55:15Z",
+          "forks": 0,
+          "topics": [],
+          "license": "",
+          "updated_at": "2025-08-01T01:02:43Z",
+          "size": 0,
+          "open_issues": 0,
+          "star_rate": 0.0,
+          "days_old": 2002,
+          "is_trending": false,
+          "is_accelerating": false,
+          "trend_score": 0.0
+        },
+        {
           "name": "AI0x0.com",
           "description": "一个多模态多模型通用型的全局全能 AI 查询生成桌面悬浮助手应用",
           "owner": "mushan0x0",
@@ -580,26 +600,6 @@
           "trend_score": 0.0
         },
         {
-          "name": "WELearnHelper",
-          "description": "显示WE Learn随行课堂题目答案；支持班级测试；自动答题；刷时长；基于生成式AI(ChatGPT)的答案生成",
-          "owner": "SSmJaE",
-          "stars": 0,
-          "language": "",
-          "url": "https://github.com/SSmJaE/WELearnHelper",
-          "created_at": "2020-02-06T03:55:15Z",
-          "forks": 0,
-          "topics": [],
-          "license": "",
-          "updated_at": "2025-07-13T15:19:55Z",
-          "size": 0,
-          "open_issues": 0,
-          "star_rate": 0.0,
-          "days_old": 2002,
-          "is_trending": false,
-          "is_accelerating": false,
-          "trend_score": 0.0
-        },
-        {
           "name": "clipturbo",
           "description": "小视频宝：AI 驱动的视频生成工具，一键生成高质量营销视频 AI-powered video generation tool for creating high-quality marketing videos with one click.",
           "owner": "clipturbo",
@@ -614,10 +614,10 @@
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
-          "days_old": 272,
+          "days_old": 273,
           "is_trending": false,
           "is_accelerating": false,
-          "trend_score": 7.64
+          "trend_score": 7.56
         },
         {
           "name": "Twocast",
@@ -654,10 +654,10 @@
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
-          "days_old": 342,
+          "days_old": 343,
           "is_trending": false,
           "is_accelerating": false,
-          "trend_score": 1.89
+          "trend_score": 1.81
         },
         {
           "name": "ai-to-pptx",
@@ -690,11 +690,11 @@
           "forks": 0,
           "topics": [],
           "license": "",
-          "updated_at": "2025-07-31T14:38:53Z",
+          "updated_at": "2025-08-01T02:21:21Z",
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
-          "days_old": 893,
+          "days_old": 894,
           "is_trending": false,
           "is_accelerating": false,
           "trend_score": 0.0
@@ -814,7 +814,7 @@
     {
       "platform": "arxiv",
       "keyword": "生成AI",
-      "timestamp": "2025-08-01T00:59:55.654878",
+      "timestamp": "2025-08-01T03:13:44.005925",
       "results": [],
       "new_keywords": [],
       "sentiment_score": 0.0,
@@ -825,7 +825,7 @@
     {
       "platform": "hackernews",
       "keyword": "生成AI",
-      "timestamp": "2025-08-01T00:59:56.205328",
+      "timestamp": "2025-08-01T03:13:44.406701",
       "results": [
         {
           "title": "Generative AI for Beginners",
@@ -1075,7 +1075,7 @@
     {
       "platform": "supabase",
       "keyword": "生成AI",
-      "timestamp": "2025-08-01T00:59:56.205425",
+      "timestamp": "2025-08-01T03:13:44.406800",
       "results": [],
       "new_keywords": [],
       "sentiment_score": 0.0,
