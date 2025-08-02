@@ -12,7 +12,7 @@
     {
       "platform": "web",
       "keyword": "生成AI",
-      "timestamp": "2025-08-02T00:00:03.446310",
+      "timestamp": "2025-08-02T01:50:29.164479",
       "results": [
         {
           "title": "2025年最新｜実用性が高い生成AIのおすすめツール15選【無料 …",
@@ -84,7 +84,7 @@
     {
       "platform": "youtube",
       "keyword": "生成AI",
-      "timestamp": "2025-08-02T00:00:03.890211",
+      "timestamp": "2025-08-02T01:50:29.557741",
       "results": [
         {
           "title": "【無料で使える】話題の動画生成AIでテキストから高品質な動画を作ってみた！AI初心者でも簡単で楽しく面白い動画が作れちゃう！",
@@ -117,6 +117,16 @@
           "language": "ja"
         },
         {
+          "title": "AI 视频生成神器！免费开源本地部署！音频对口型、图生视频、文生视频，WanGP 一键轻松搞定！ | 零度解说",
+          "description": "【更多资源】▷https://www.youtube.com/channel/UCvijahEyGtvMpmMHBu4FS2w?sub_confirmation=1 【零度 ...",
+          "published_at": "2025-07-27T12:21:17Z",
+          "channel": "零度解说",
+          "video_id": "xzBiF8TJ_t4",
+          "url": "https://www.youtube.com/watch?v=xzBiF8TJ_t4",
+          "content_type": "その他",
+          "language": "en"
+        },
+        {
           "title": "マイクロソフトが教える生成AI活用法",
           "description": "飲み会1回分で行けるプログラミングスクール「TECH WORLD」 【提供中のサービス】 ・メガベンチャーエンジニアがメンター ...",
           "published_at": "2024-06-08T09:53:36Z",
@@ -135,16 +145,6 @@
           "url": "https://www.youtube.com/watch?v=YFtoy_tfYfc",
           "content_type": "解説動画",
           "language": "ja"
-        },
-        {
-          "title": "AI 视频生成神器！免费开源本地部署！音频对口型、图生视频、文生视频，WanGP 一键轻松搞定！ | 零度解说",
-          "description": "【更多资源】▷https://www.youtube.com/channel/UCvijahEyGtvMpmMHBu4FS2w?sub_confirmation=1 【零度 ...",
-          "published_at": "2025-07-27T12:21:17Z",
-          "channel": "零度解说",
-          "video_id": "xzBiF8TJ_t4",
-          "url": "https://www.youtube.com/watch?v=xzBiF8TJ_t4",
-          "content_type": "その他",
-          "language": "en"
         },
         {
           "title": "【誰でもできる】全人類使え！ガチで便利な生成AIの使い方 TOP3",
@@ -197,7 +197,7 @@
     {
       "platform": "github",
       "keyword": "生成AI",
-      "timestamp": "2025-08-02T00:00:04.815837",
+      "timestamp": "2025-08-02T01:50:30.247680",
       "results": [
         {
           "name": "JeecgBoot",
@@ -230,7 +230,7 @@
           "forks": 0,
           "topics": [],
           "license": "",
-          "updated_at": "2025-08-01T22:52:23Z",
+          "updated_at": "2025-08-02T00:38:22Z",
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
@@ -290,7 +290,7 @@
           "forks": 0,
           "topics": [],
           "license": "",
-          "updated_at": "2025-08-01T13:20:22Z",
+          "updated_at": "2025-08-02T01:34:22Z",
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
@@ -630,7 +630,7 @@
           "forks": 0,
           "topics": [],
           "license": "",
-          "updated_at": "2025-08-01T06:12:32Z",
+          "updated_at": "2025-08-02T01:07:19Z",
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
@@ -694,7 +694,7 @@
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
-          "days_old": 894,
+          "days_old": 895,
           "is_trending": false,
           "is_accelerating": false,
           "trend_score": 0.0
@@ -814,7 +814,7 @@
     {
       "platform": "arxiv",
       "keyword": "生成AI",
-      "timestamp": "2025-08-02T00:00:05.411543",
+      "timestamp": "2025-08-02T01:50:30.888676",
       "results": [],
       "new_keywords": [],
       "sentiment_score": 0.0,
@@ -825,7 +825,7 @@
     {
       "platform": "hackernews",
       "keyword": "生成AI",
-      "timestamp": "2025-08-02T00:00:05.823859",
+      "timestamp": "2025-08-02T01:50:31.236218",
       "results": [
         {
           "title": "Generative AI for Beginners",
@@ -1075,7 +1075,7 @@
     {
       "platform": "supabase",
       "keyword": "生成AI",
-      "timestamp": "2025-08-02T00:00:05.823957",
+      "timestamp": "2025-08-02T01:50:31.236310",
       "results": [],
       "new_keywords": [],
       "sentiment_score": 0.0,
