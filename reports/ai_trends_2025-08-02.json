@@ -12,7 +12,7 @@
     {
       "platform": "web",
       "keyword": "生成AI",
-      "timestamp": "2025-08-02T20:59:28.600540",
+      "timestamp": "2025-08-02T21:19:15.147008",
       "results": [
         {
           "title": "讯飞智文 - AI在线生成PPT、Word",
@@ -36,7 +36,7 @@
     {
       "platform": "youtube",
       "keyword": "生成AI",
-      "timestamp": "2025-08-02T20:59:29.031257",
+      "timestamp": "2025-08-02T21:19:15.570414",
       "results": [
         {
           "title": "【無料で使える】話題の動画生成AIでテキストから高品質な動画を作ってみた！AI初心者でも簡単で楽しく面白い動画が作れちゃう！",
@@ -56,6 +56,36 @@
           "video_id": "LnbTfZCI4aE",
           "url": "https://www.youtube.com/watch?v=LnbTfZCI4aE",
           "content_type": "解説動画",
+          "language": "ja"
+        },
+        {
+          "title": "米誌警鐘『生成ＡＩの危険性』　GROK、GOOGLEのAIが津波や選挙で誤情報拡散の脅威！",
+          "description": "深田萌絵×森永卓郎×倉田真由美 『生きる』 https://amzn.asia/d/5VgJnST 深田萌絵新刊「EVの終焉とエネルギー利権の闘い」 ...",
+          "published_at": "2025-08-01T11:12:08Z",
+          "channel": "深田萌絵TV",
+          "video_id": "rXvN9zNUFOM",
+          "url": "https://www.youtube.com/watch?v=rXvN9zNUFOM",
+          "content_type": "その他",
+          "language": "ja"
+        },
+        {
+          "title": "【無料で使える‼️】Google最新生成AI「Opal」爆誕！自然言語でアプリ・AIワークフローを秒で生成！徹底解説",
+          "description": "動画をご覧いただきありがとうございます。 今回はGoogleから最新生成AI「Opal」リリース！今後のバイブコーディングや ...",
+          "published_at": "2025-08-01T10:32:04Z",
+          "channel": "mikimiki web スクール",
+          "video_id": "8Zv17mLNcdk",
+          "url": "https://www.youtube.com/watch?v=8Zv17mLNcdk",
+          "content_type": "解説動画",
+          "language": "ja"
+        },
+        {
+          "title": "マイクロソフトが教える生成AI活用法",
+          "description": "飲み会1回分で行けるプログラミングスクール「TECH WORLD」 【提供中のサービス】 ・メガベンチャーエンジニアがメンター ...",
+          "published_at": "2024-06-08T09:53:36Z",
+          "channel": "TECH WORLD",
+          "video_id": "IXcu3fNEgkY",
+          "url": "https://www.youtube.com/watch?v=IXcu3fNEgkY",
+          "content_type": "その他",
           "language": "ja"
         },
         {
@@ -89,36 +119,6 @@
           "language": "ja"
         },
         {
-          "title": "生成AI動画あるある",
-          "description": "",
-          "published_at": "2024-12-20T08:32:42Z",
-          "channel": "ユウスケTV",
-          "video_id": "4jzcmSHxjVw",
-          "url": "https://www.youtube.com/watch?v=4jzcmSHxjVw",
-          "content_type": "その他",
-          "language": "ja"
-        },
-        {
-          "title": "生成AIを「使いこなせる人」と「使いこなせない人」の違いとは？ ビジネスシーンでの具体的な活用方法も解説します",
-          "description": "提供：DMM 生成AI CAMP 様々なビジネスシーンでAIを使いこなすホリエモンと生成AI活用のプロ・小澤健祐さんに、「生成AIを ...",
-          "published_at": "2024-07-30T09:00:52Z",
-          "channel": "堀江貴文 ホリエモン",
-          "video_id": "uVUlWOZRFKo",
-          "url": "https://www.youtube.com/watch?v=uVUlWOZRFKo",
-          "content_type": "解説動画",
-          "language": "ja"
-        },
-        {
-          "title": "考えさせられる動画#ai #aiart #生成ai #号泣 #shorts",
-          "description": "",
-          "published_at": "2024-03-27T10:57:37Z",
-          "channel": "AI攻略チャンネル【AI×自動化】",
-          "video_id": "UWopmyHS3Qk",
-          "url": "https://www.youtube.com/watch?v=UWopmyHS3Qk",
-          "content_type": "その他",
-          "language": "ja"
-        },
-        {
           "title": "「AI生成MV」＋「音楽・映像生成：Hedra + Suno」",
           "description": "ツギ○ハギ◎NOTE 第4弾｜よるまえ 音楽・映像すべてAIで制作したミュージックビデオです。 感情と風景が交差する、切ない ...",
           "published_at": "2025-07-31T02:09:29Z",
@@ -129,12 +129,12 @@
           "language": "ja"
         },
         {
-          "title": "日本語精度No.1の生成AIはこれ❗️",
+          "title": "生成AI動画あるある",
           "description": "",
-          "published_at": "2024-06-04T11:35:14Z",
-          "channel": "KEITO【AI&WEB ch】",
-          "video_id": "utV-n8reqeQ",
-          "url": "https://www.youtube.com/watch?v=utV-n8reqeQ",
+          "published_at": "2024-12-20T08:32:42Z",
+          "channel": "ユウスケTV",
+          "video_id": "4jzcmSHxjVw",
+          "url": "https://www.youtube.com/watch?v=4jzcmSHxjVw",
           "content_type": "その他",
           "language": "ja"
         }
@@ -149,7 +149,7 @@
     {
       "platform": "github",
       "keyword": "生成AI",
-      "timestamp": "2025-08-02T20:59:29.879582",
+      "timestamp": "2025-08-02T21:19:17.191016",
       "results": [
         {
           "name": "JeecgBoot",
@@ -766,7 +766,7 @@
     {
       "platform": "arxiv",
       "keyword": "生成AI",
-      "timestamp": "2025-08-02T20:59:30.369807",
+      "timestamp": "2025-08-02T21:19:17.628636",
       "results": [],
       "new_keywords": [],
       "sentiment_score": 0.0,
@@ -777,7 +777,7 @@
     {
       "platform": "hackernews",
       "keyword": "生成AI",
-      "timestamp": "2025-08-02T20:59:30.896083",
+      "timestamp": "2025-08-02T21:19:18.290249",
       "results": [
         {
           "title": "Generative AI for Beginners",
@@ -1027,7 +1027,7 @@
     {
       "platform": "supabase",
       "keyword": "生成AI",
-      "timestamp": "2025-08-02T20:59:30.896179",
+      "timestamp": "2025-08-02T21:19:18.290347",
       "results": [],
       "new_keywords": [],
       "sentiment_score": 0.0,
