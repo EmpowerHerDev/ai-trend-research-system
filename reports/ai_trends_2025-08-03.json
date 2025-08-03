@@ -12,23 +12,23 @@
     {
       "platform": "web",
       "keyword": "生成AI",
-      "timestamp": "2025-08-03T04:46:35.321687",
+      "timestamp": "2025-08-03T05:17:31.827529",
       "results": [
         {
           "title": "现在这些大模型，哪个在代码编写上表现的最好呀？ - 知乎",
-          "snippet": "zhihu.com 4.Gemini gemini是谷歌的AI产品早期叫Bard后来统一成Gemini。 我们知道生成式AI大模型基本上都有谷歌Transformer的影子，谷歌在AI领域也是居功至伟。 gemini也是先创建react项目 然后报了一些错，最后的效果 代码风格上gemini和claude还是很不错的。",
+          "snippet": "zhihu.com 4.Gemini gemini是谷歌的AI产品早期叫Bard后来统一成Gemini。 我们知道生成式AI大模型基本上都有谷歌Transformer的影子，谷歌在AI领域也是居功至伟。 gemini也是先创建react项目 然后 …",
           "url": "https://www.zhihu.com/question/11016066228",
           "source": "www.zhihu.com"
         },
         {
           "title": "有哪些好用且免费的AI 工具，自动生成 PPT的 - 知乎",
-          "snippet": "zhihu.com 可以看到通义PPT在生成过程中，会要求选模板，这也是目前AI生成PPT的普遍操作，通过预置好的模板，来确定风格和样式。 好在通义目前有37款模板，各种色系的都有，还是比较丰富的。 我选择了一个“无限流光”的模板。",
+          "snippet": "zhihu.com 可以看到通义PPT在生成过程中，会要求选模板，这也是目前AI生成PPT的普遍操作，通过预置好的模板，来确定风格和样式。 好在通义目前有37款模板，各种色系的都有，还是比较丰富的 …",
           "url": "https://www.zhihu.com/question/7301065221?write",
           "source": "www.zhihu.com"
         },
         {
           "title": "贪便宜买的游戏激活码要Win+R输入irm steam.run|iex打开Steam …",
-          "snippet": "zhihu.com 回答靠谱的，不是蠢就是坏。 我就先不说这种破解会不会导致Steam账号被红信，哪怕现在没有，不排除后面会不会有秋后算账。 咱先来看看这个脚本： 我自己也爬过那个脚本，具体内容我自己就不重复写了，在知乎上随手找了个相同的问题 某宝贪买的steam激活码，好像是破解steam的插件，我该怎么 ...",
+          "snippet": "zhihu.com 回答靠谱的，不是蠢就是坏。 我就先不说这种破解会不会导致Steam账号被红信，哪怕现在没有，不排除后面会不会有秋后算账。 咱先来看看这个脚本： 我自己也爬过那个脚本，具体内容 …",
           "url": "https://www.zhihu.com/question/628569920",
           "source": "www.zhihu.com"
         },
@@ -40,7 +40,7 @@
         },
         {
           "title": "一文读懂：大模型RAG（检索增强生成）含高级方法",
-          "snippet": "zhihu.com Jul 27, 2025 · RAG RAG 检索增强生成（Retrieval Augmented Generation），已经成为当前最火热的LLM应用方案。 理解起来不难，就是通过自有垂域数据库检索相关信息，然后合并成为提示模板，给大模型润色生成回答。",
+          "snippet": "zhihu.com Jul 27, 2025 · RAG RAG 检索增强生成（Retrieval Augmented Generation），已经成为当前最火热的LLM应用方案。 理解起来不难，就是通过自有垂域数据库检索相关信息，然后合并成为 …",
           "url": "https://www.zhihu.com/tardis/zm/art/675509396",
           "source": "www.zhihu.com"
         },
@@ -58,19 +58,19 @@
         },
         {
           "title": "ChatGPT 不再限制用户制作成人内容，此举何意？ - 知乎",
-          "snippet": "zhihu.com 出处其实是reddit，加了这一句话就打开了新世界的大门。 这句话是根据R1的思维链生成方式加上去的，如果不加他会纠结 另外 不用翻译成中文 (在它眼里都是token)。 另外写这种需要注意温度，",
+          "snippet": "zhihu.com 出处其实是reddit，加了这一句话就打开了新世界的大门。 这句话是根据R1的思维链生成方式加上去的，如果不加他会纠结 另外 不用翻译成中文 (在它眼里都是token)。 另外写这种需要注意 …",
           "url": "https://www.zhihu.com/question/12326109231",
           "source": "www.zhihu.com"
         },
         {
           "title": "求问deepseek出现这种情况怎么办啊？ ? - 知乎",
-          "snippet": "zhihu.com Jan 31, 2025 · Claude 3.5 Sonnect超过对话长度限制的错误提示 所以这种情况在目前这个阶段是无法避免的，目前比较通用的办法就是 让LLM自己对于这段对话生成一个摘要，然后把这段概要作为上下文，放到新对话中接着聊。 当然这个 信息压缩过程不是无损 的，如果对话中有一些不可忽略的重要信息，可以手动拎 ...",
+          "snippet": "zhihu.com Jan 31, 2025 · Claude 3.5 Sonnect超过对话长度限制的错误提示 所以这种情况在目前这个阶段是无法避免的，目前比较通用的办法就是 让LLM自己对于这段对话生成一个摘要，然后把这段 …",
           "url": "https://www.zhihu.com/question/10976549748",
           "source": "www.zhihu.com"
         },
         {
           "title": "微信新版本聊天记录文件夹改为xwechat_file了，老的聊天记 …",
-          "snippet": "zhihu.com 今天为这个弄了一下午，还是没搞定。正在经历你所说的问题。差不多200G的记录，真是要了命了。现在为了不影响手头工作，只能还继续用原来的电脑挂着微信，新电脑没办法完全交接老电脑的工作。真TM是R了狗了。 微信这帮孙子好事没干几样，缺德的破事层出不穷。这种毫无意义的迭代 …",
+          "snippet": "zhihu.com 今天为这个弄了一下午，还是没搞定。正在经历你所说的问题。差不多200G的记录，真是要了命了。现在为了不影响手头工作，只能还继续用原来的电脑挂着微信，新电脑没办法完全交接老电 …",
           "url": "https://www.zhihu.com/question/1908545238106088164",
           "source": "www.zhihu.com"
         }
@@ -84,7 +84,7 @@
     {
       "platform": "youtube",
       "keyword": "生成AI",
-      "timestamp": "2025-08-03T04:46:35.805253",
+      "timestamp": "2025-08-03T05:17:32.279405",
       "results": [
         {
           "title": "生成AI・ChatGPTって何なの？【超入門講座、初心者向け】",
@@ -104,16 +104,6 @@
           "video_id": "_BcGgrQa7OY",
           "url": "https://www.youtube.com/watch?v=_BcGgrQa7OY",
           "content_type": "その他",
-          "language": "ja"
-        },
-        {
-          "title": "生成AIを「使いこなせる人」と「使いこなせない人」の違いとは？ ビジネスシーンでの具体的な活用方法も解説します",
-          "description": "提供：DMM 生成AI CAMP 様々なビジネスシーンでAIを使いこなすホリエモンと生成AI活用のプロ・小澤健祐さんに、「生成AIを ...",
-          "published_at": "2024-07-30T09:00:52Z",
-          "channel": "堀江貴文 ホリエモン",
-          "video_id": "uVUlWOZRFKo",
-          "url": "https://www.youtube.com/watch?v=uVUlWOZRFKo",
-          "content_type": "解説動画",
           "language": "ja"
         },
         {
@@ -157,13 +147,23 @@
           "language": "ja"
         },
         {
-          "title": "生成AI動画あるある",
-          "description": "",
-          "published_at": "2024-12-20T08:32:42Z",
-          "channel": "ユウスケTV",
-          "video_id": "4jzcmSHxjVw",
-          "url": "https://www.youtube.com/watch?v=4jzcmSHxjVw",
+          "title": "コレをするならこのAI！#AI #生成AI #ChatGPT #ハルシネーション #プロンプト",
+          "description": "生成AI AI ChatGPT プロンプト 命令文 ハルシネーション Claude Genspark Copilot Gemini OpenAI Google 画像生成 画像 画像作成 ...",
+          "published_at": "2025-06-02T09:50:34Z",
+          "channel": "Elith",
+          "video_id": "9pHLlqVTL48",
+          "url": "https://www.youtube.com/watch?v=9pHLlqVTL48",
           "content_type": "その他",
+          "language": "ja"
+        },
+        {
+          "title": "生成AIを「使いこなせる人」と「使いこなせない人」の違いとは？ ビジネスシーンでの具体的な活用方法も解説します",
+          "description": "提供：DMM 生成AI CAMP 様々なビジネスシーンでAIを使いこなすホリエモンと生成AI活用のプロ・小澤健祐さんに、「生成AIを ...",
+          "published_at": "2024-07-30T09:00:52Z",
+          "channel": "堀江貴文 ホリエモン",
+          "video_id": "uVUlWOZRFKo",
+          "url": "https://www.youtube.com/watch?v=uVUlWOZRFKo",
+          "content_type": "解説動画",
           "language": "ja"
         },
         {
@@ -177,12 +177,12 @@
           "language": "ja"
         },
         {
-          "title": "リアルか動画生成AIか見分けがつかない動画④",
+          "title": "生成AI動画あるある",
           "description": "",
-          "published_at": "2025-04-27T12:36:36Z",
-          "channel": "息子はYouTuber",
-          "video_id": "U09gPyjskDg",
-          "url": "https://www.youtube.com/watch?v=U09gPyjskDg",
+          "published_at": "2024-12-20T08:32:42Z",
+          "channel": "ユウスケTV",
+          "video_id": "4jzcmSHxjVw",
+          "url": "https://www.youtube.com/watch?v=4jzcmSHxjVw",
           "content_type": "その他",
           "language": "ja"
         }
@@ -197,7 +197,7 @@
     {
       "platform": "github",
       "keyword": "生成AI",
-      "timestamp": "2025-08-03T04:46:36.779951",
+      "timestamp": "2025-08-03T05:17:33.243884",
       "results": [
         {
           "name": "JeecgBoot",
@@ -210,7 +210,7 @@
           "forks": 0,
           "topics": [],
           "license": "",
-          "updated_at": "2025-08-03T03:16:30Z",
+          "updated_at": "2025-08-03T04:47:59Z",
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
@@ -230,7 +230,7 @@
           "forks": 0,
           "topics": [],
           "license": "",
-          "updated_at": "2025-08-03T04:42:06Z",
+          "updated_at": "2025-08-03T05:12:18Z",
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
@@ -494,7 +494,7 @@
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
-          "days_old": 854,
+          "days_old": 855,
           "is_trending": false,
           "is_accelerating": false,
           "trend_score": 0.0
@@ -510,7 +510,7 @@
           "forks": 0,
           "topics": [],
           "license": "",
-          "updated_at": "2025-08-02T11:43:55Z",
+          "updated_at": "2025-08-03T05:12:07Z",
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
@@ -530,7 +530,7 @@
           "forks": 0,
           "topics": [],
           "license": "",
-          "updated_at": "2025-08-03T03:16:12Z",
+          "updated_at": "2025-08-03T05:12:33Z",
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
@@ -814,7 +814,7 @@
     {
       "platform": "arxiv",
       "keyword": "生成AI",
-      "timestamp": "2025-08-03T04:46:37.503910",
+      "timestamp": "2025-08-03T05:17:33.957132",
       "results": [],
       "new_keywords": [],
       "sentiment_score": 0.0,
@@ -825,7 +825,7 @@
     {
       "platform": "hackernews",
       "keyword": "生成AI",
-      "timestamp": "2025-08-03T04:46:38.022513",
+      "timestamp": "2025-08-03T05:17:34.404634",
       "results": [
         {
           "title": "Generative AI for Beginners",
@@ -1075,7 +1075,7 @@
     {
       "platform": "supabase",
       "keyword": "生成AI",
-      "timestamp": "2025-08-03T04:46:38.022610",
+      "timestamp": "2025-08-03T05:17:34.404748",
       "results": [],
       "new_keywords": [],
       "sentiment_score": 0.0,
