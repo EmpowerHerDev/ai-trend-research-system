@@ -12,7 +12,7 @@
     {
       "platform": "web",
       "keyword": "生成AI",
-      "timestamp": "2025-08-04T22:59:32.655811",
+      "timestamp": "2025-08-04T23:21:23.789437",
       "results": [
         {
           "title": "【2025】生成AIサイトおすすめ15選！料金・無料＆登録不要・日本語対応の画像生成AI …",
@@ -84,7 +84,7 @@
     {
       "platform": "youtube",
       "keyword": "生成AI",
-      "timestamp": "2025-08-04T22:59:33.076304",
+      "timestamp": "2025-08-04T23:21:24.242036",
       "results": [
         {
           "title": "生成AI・ChatGPTって何なの？【超入門講座、初心者向け】",
@@ -107,13 +107,23 @@
           "language": "ja"
         },
         {
-          "title": "初心者におすすめコスパ最強の生成AI【Vivago AI】。月額700円で画像生成が無制限？",
-          "description": "今回Vivago AIの紹介動画では、AI生成画像を魅力的なショート動画へと変換する次世代ツールについて詳しくご紹介します。",
-          "published_at": "2025-08-03T09:00:18Z",
-          "channel": "RKJ VIDEO 【イケている動画を作りたいなら】",
-          "video_id": "FAuLQRXmxwM",
-          "url": "https://www.youtube.com/watch?v=FAuLQRXmxwM",
-          "content_type": "その他",
+          "title": "生成AIを「使いこなせる人」と「使いこなせない人」の違いとは？ ビジネスシーンでの具体的な活用方法も解説します",
+          "description": "提供：DMM 生成AI CAMP 様々なビジネスシーンでAIを使いこなすホリエモンと生成AI活用のプロ・小澤健祐さんに、「生成AIを ...",
+          "published_at": "2024-07-30T09:00:52Z",
+          "channel": "堀江貴文 ホリエモン",
+          "video_id": "uVUlWOZRFKo",
+          "url": "https://www.youtube.com/watch?v=uVUlWOZRFKo",
+          "content_type": "解説動画",
+          "language": "ja"
+        },
+        {
+          "title": "【誰でもできる】全人類使え！ガチで便利な生成AIの使い方 TOP3",
+          "description": "最近AIの進化が速すぎて、新しいAIツールが毎日のようにリリースされています。 あなたはこう思っていませんか？ 「AI、結局 ...",
+          "published_at": "2024-10-10T12:01:16Z",
+          "channel": "マコなり社長",
+          "video_id": "zrluoX5MLfA",
+          "url": "https://www.youtube.com/watch?v=zrluoX5MLfA",
+          "content_type": "ニュース",
           "language": "ja"
         },
         {
@@ -147,22 +157,12 @@
           "language": "ja"
         },
         {
-          "title": "人間の脳細胞🧠 VS 生成AI",
-          "description": "",
-          "published_at": "2024-11-02T07:10:58Z",
-          "channel": "ソフトバンク公式 ビジネスチャンネル",
-          "video_id": "mcbYswfiN0A",
-          "url": "https://www.youtube.com/watch?v=mcbYswfiN0A",
-          "content_type": "その他",
-          "language": "ja"
-        },
-        {
-          "title": "リアルか動画生成AIか見分けがつかない動画④",
-          "description": "",
-          "published_at": "2025-04-27T12:36:36Z",
-          "channel": "息子はYouTuber",
-          "video_id": "U09gPyjskDg",
-          "url": "https://www.youtube.com/watch?v=U09gPyjskDg",
+          "title": "マイクロソフトが教える生成AI活用法",
+          "description": "飲み会1回分で行けるプログラミングスクール「TECH WORLD」 【提供中のサービス】 ・メガベンチャーエンジニアがメンター ...",
+          "published_at": "2024-06-08T09:53:36Z",
+          "channel": "TECH WORLD",
+          "video_id": "IXcu3fNEgkY",
+          "url": "https://www.youtube.com/watch?v=IXcu3fNEgkY",
           "content_type": "その他",
           "language": "ja"
         },
@@ -177,12 +177,12 @@
           "language": "ja"
         },
         {
-          "title": "インキャの卒業写真AIで動かしてみた#AI生成#AI#AI合成#インキャ#ヨウキャ#編集",
+          "title": "人間の脳細胞🧠 VS 生成AI",
           "description": "",
-          "published_at": "2024-12-10T10:00:36Z",
-          "channel": "Lazy Lie Crazy【レイクレ】",
-          "video_id": "ZiBHjj9fCO8",
-          "url": "https://www.youtube.com/watch?v=ZiBHjj9fCO8",
+          "published_at": "2024-11-02T07:10:58Z",
+          "channel": "ソフトバンク公式 ビジネスチャンネル",
+          "video_id": "mcbYswfiN0A",
+          "url": "https://www.youtube.com/watch?v=mcbYswfiN0A",
           "content_type": "その他",
           "language": "ja"
         }
@@ -190,14 +190,14 @@
       "new_keywords": [],
       "sentiment_score": 0.0,
       "engagement_metrics": {
-        "video_count": 2,
+        "video_count": 3,
         "total_videos": 10
       }
     },
     {
       "platform": "github",
       "keyword": "生成AI",
-      "timestamp": "2025-08-04T22:59:33.985957",
+      "timestamp": "2025-08-04T23:21:25.228641",
       "results": [
         {
           "name": "JeecgBoot",
@@ -390,7 +390,7 @@
           "forks": 0,
           "topics": [],
           "license": "",
-          "updated_at": "2025-08-03T23:02:17Z",
+          "updated_at": "2025-08-04T23:02:14Z",
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
@@ -398,6 +398,26 @@
           "is_trending": false,
           "is_accelerating": false,
           "trend_score": 0.0
+        },
+        {
+          "name": "AI_NovelGenerator",
+          "description": "使用ai生成多章节的长篇小说，自动衔接上下文、伏笔",
+          "owner": "YILING0013",
+          "stars": 0,
+          "language": "",
+          "url": "https://github.com/YILING0013/AI_NovelGenerator",
+          "created_at": "2025-01-29T12:33:29Z",
+          "forks": 0,
+          "topics": [],
+          "license": "",
+          "updated_at": "2025-08-04T23:13:09Z",
+          "size": 0,
+          "open_issues": 0,
+          "star_rate": 0.0,
+          "days_old": 187,
+          "is_trending": false,
+          "is_accelerating": false,
+          "trend_score": 14.63
         },
         {
           "name": "auto-audio-book",
@@ -418,26 +438,6 @@
           "is_trending": false,
           "is_accelerating": false,
           "trend_score": 18.74
-        },
-        {
-          "name": "AI_NovelGenerator",
-          "description": "使用ai生成多章节的长篇小说，自动衔接上下文、伏笔",
-          "owner": "YILING0013",
-          "stars": 0,
-          "language": "",
-          "url": "https://github.com/YILING0013/AI_NovelGenerator",
-          "created_at": "2025-01-29T12:33:29Z",
-          "forks": 0,
-          "topics": [],
-          "license": "",
-          "updated_at": "2025-08-04T16:45:24Z",
-          "size": 0,
-          "open_issues": 0,
-          "star_rate": 0.0,
-          "days_old": 187,
-          "is_trending": false,
-          "is_accelerating": false,
-          "trend_score": 14.63
         },
         {
           "name": "generative-ai-roadmap",
@@ -814,7 +814,7 @@
     {
       "platform": "arxiv",
       "keyword": "生成AI",
-      "timestamp": "2025-08-04T22:59:34.363497",
+      "timestamp": "2025-08-04T23:21:25.519389",
       "results": [],
       "new_keywords": [],
       "sentiment_score": 0.0,
@@ -825,7 +825,7 @@
     {
       "platform": "hackernews",
       "keyword": "生成AI",
-      "timestamp": "2025-08-04T22:59:34.777299",
+      "timestamp": "2025-08-04T23:21:25.956888",
       "results": [
         {
           "title": "Generative AI for Beginners",
@@ -1075,7 +1075,7 @@
     {
       "platform": "supabase",
       "keyword": "生成AI",
-      "timestamp": "2025-08-04T22:59:34.777412",
+      "timestamp": "2025-08-04T23:21:25.956987",
       "results": [],
       "new_keywords": [],
       "sentiment_score": 0.0,
