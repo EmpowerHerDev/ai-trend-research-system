@@ -12,7 +12,7 @@
     {
       "platform": "web",
       "keyword": "生成AI",
-      "timestamp": "2025-08-05T11:20:21.451357",
+      "timestamp": "2025-08-05T11:36:15.204249",
       "results": [
         {
           "title": "【2025】生成AIサイトおすすめ15選！料金・無料＆登録不要・日本語対応の画像生成AI …",
@@ -84,7 +84,7 @@
     {
       "platform": "youtube",
       "keyword": "生成AI",
-      "timestamp": "2025-08-05T11:20:21.820070",
+      "timestamp": "2025-08-05T11:36:15.696031",
       "results": [
         {
           "title": "生成AI・ChatGPTって何なの？【超入門講座、初心者向け】",
@@ -107,13 +107,13 @@
           "language": "ja"
         },
         {
-          "title": "【誰でもできる】全人類使え！ガチで便利な生成AIの使い方 TOP3",
-          "description": "最近AIの進化が速すぎて、新しいAIツールが毎日のようにリリースされています。 あなたはこう思っていませんか？ 「AI、結局 ...",
-          "published_at": "2024-10-10T12:01:16Z",
-          "channel": "マコなり社長",
-          "video_id": "zrluoX5MLfA",
-          "url": "https://www.youtube.com/watch?v=zrluoX5MLfA",
-          "content_type": "ニュース",
+          "title": "AIに嘘をつかせるな！#AI #生成AI #ChatGPT #ハルシネーション #プロンプト",
+          "description": "生成AI AI ChatGPT プロンプト 命令文 ハルシネーション Claude Genspark Copilot Gemini Adobe Firefly Grok OpenAI Google ...",
+          "published_at": "2025-05-27T10:00:17Z",
+          "channel": "Elith",
+          "video_id": "jGGgg3Cqg4Y",
+          "url": "https://www.youtube.com/watch?v=jGGgg3Cqg4Y",
+          "content_type": "その他",
           "language": "ja"
         },
         {
@@ -124,6 +124,16 @@
           "video_id": "rXvN9zNUFOM",
           "url": "https://www.youtube.com/watch?v=rXvN9zNUFOM",
           "content_type": "その他",
+          "language": "ja"
+        },
+        {
+          "title": "【誰でもできる】全人類使え！ガチで便利な生成AIの使い方 TOP3",
+          "description": "最近AIの進化が速すぎて、新しいAIツールが毎日のようにリリースされています。 あなたはこう思っていませんか？ 「AI、結局 ...",
+          "published_at": "2024-10-10T12:01:16Z",
+          "channel": "マコなり社長",
+          "video_id": "zrluoX5MLfA",
+          "url": "https://www.youtube.com/watch?v=zrluoX5MLfA",
+          "content_type": "ニュース",
           "language": "ja"
         },
         {
@@ -157,16 +167,6 @@
           "language": "ja"
         },
         {
-          "title": "【無料で使える‼️】Google最新生成AI「Opal」爆誕！自然言語でアプリ・AIワークフローを秒で生成！徹底解説",
-          "description": "動画をご覧いただきありがとうございます。 今回はGoogleから最新生成AI「Opal」リリース！今後のバイブコーディングや ...",
-          "published_at": "2025-08-01T10:32:04Z",
-          "channel": "mikimiki web スクール",
-          "video_id": "8Zv17mLNcdk",
-          "url": "https://www.youtube.com/watch?v=8Zv17mLNcdk",
-          "content_type": "解説動画",
-          "language": "ja"
-        },
-        {
           "title": "「#生成AI と #知財業界 」について語る （ #弁理士の日 記念ブログ企画2025）－内田 浩輔 氏・ドクガク（ 東京セントラル特許事務所 弁理士）",
           "description": "7月1日は弁理士の日。これは弁理士法の前身である「特許代理業者登録規則」が施行されましたのが明治32（1899）年7月1日で ...",
           "published_at": "2025-08-03T01:50:34Z",
@@ -177,12 +177,12 @@
           "language": "ja"
         },
         {
-          "title": "マイクロソフトが教える生成AI活用法",
-          "description": "飲み会1回分で行けるプログラミングスクール「TECH WORLD」 【提供中のサービス】 ・メガベンチャーエンジニアがメンター ...",
-          "published_at": "2024-06-08T09:53:36Z",
-          "channel": "TECH WORLD",
-          "video_id": "IXcu3fNEgkY",
-          "url": "https://www.youtube.com/watch?v=IXcu3fNEgkY",
+          "title": "プレゼン用の資料を一瞬で作る方法【Genspark】【ChatGPT】",
+          "description": "",
+          "published_at": "2025-05-31T09:40:37Z",
+          "channel": "#usutaku_channel",
+          "video_id": "epJ4pGatH7o",
+          "url": "https://www.youtube.com/watch?v=epJ4pGatH7o",
           "content_type": "その他",
           "language": "ja"
         }
@@ -190,14 +190,14 @@
       "new_keywords": [],
       "sentiment_score": 0.0,
       "engagement_metrics": {
-        "video_count": 4,
+        "video_count": 3,
         "total_videos": 10
       }
     },
     {
       "platform": "github",
       "keyword": "生成AI",
-      "timestamp": "2025-08-05T11:20:22.746951",
+      "timestamp": "2025-08-05T11:36:16.780008",
       "results": [
         {
           "name": "JeecgBoot",
@@ -794,7 +794,7 @@
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
-          "days_old": 1376,
+          "days_old": 1377,
           "is_trending": false,
           "is_accelerating": false,
           "trend_score": 0.0
@@ -814,7 +814,7 @@
     {
       "platform": "arxiv",
       "keyword": "生成AI",
-      "timestamp": "2025-08-05T11:20:23.299719",
+      "timestamp": "2025-08-05T11:36:17.255906",
       "results": [],
       "new_keywords": [],
       "sentiment_score": 0.0,
@@ -825,7 +825,7 @@
     {
       "platform": "hackernews",
       "keyword": "生成AI",
-      "timestamp": "2025-08-05T11:20:24.695411",
+      "timestamp": "2025-08-05T11:36:17.719437",
       "results": [
         {
           "title": "Generative AI for Beginners",
@@ -1075,7 +1075,7 @@
     {
       "platform": "supabase",
       "keyword": "生成AI",
-      "timestamp": "2025-08-05T11:20:24.695505",
+      "timestamp": "2025-08-05T11:36:17.719556",
       "results": [],
       "new_keywords": [],
       "sentiment_score": 0.0,
