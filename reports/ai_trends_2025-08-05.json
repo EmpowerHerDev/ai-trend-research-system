@@ -12,7 +12,7 @@
     {
       "platform": "web",
       "keyword": "生成AI",
-      "timestamp": "2025-08-05T10:59:48.752474",
+      "timestamp": "2025-08-05T11:20:21.451357",
       "results": [
         {
           "title": "【2025】生成AIサイトおすすめ15選！料金・無料＆登録不要・日本語対応の画像生成AI …",
@@ -84,7 +84,7 @@
     {
       "platform": "youtube",
       "keyword": "生成AI",
-      "timestamp": "2025-08-05T10:59:49.154653",
+      "timestamp": "2025-08-05T11:20:21.820070",
       "results": [
         {
           "title": "生成AI・ChatGPTって何なの？【超入門講座、初心者向け】",
@@ -137,22 +137,22 @@
           "language": "ja"
         },
         {
-          "title": "【無料で試せる】話題の動画生成AIでテキストから高品質な動画を作ってみた！AI初心者でも簡単で楽しく面白い動画が作れちゃう！",
-          "description": "提供：DeeVid AI 『DeeVid AI』を無料でお試し https://bit.ly/4nLwkG4 —————————————————— ⭐️ SF超大作『 ...",
-          "published_at": "2025-08-01T11:00:58Z",
-          "channel": "ためになるAppleの話",
-          "video_id": "_BcGgrQa7OY",
-          "url": "https://www.youtube.com/watch?v=_BcGgrQa7OY",
-          "content_type": "その他",
-          "language": "ja"
-        },
-        {
           "title": "生成AI動画あるある",
           "description": "",
           "published_at": "2024-12-20T08:32:42Z",
           "channel": "ユウスケTV",
           "video_id": "4jzcmSHxjVw",
           "url": "https://www.youtube.com/watch?v=4jzcmSHxjVw",
+          "content_type": "その他",
+          "language": "ja"
+        },
+        {
+          "title": "【無料で試せる】話題の動画生成AIでテキストから高品質な動画を作ってみた！AI初心者でも簡単で楽しく面白い動画が作れちゃう！",
+          "description": "提供：DeeVid AI 『DeeVid AI』を無料でお試し https://bit.ly/4nLwkG4 —————————————————— ⭐️ SF超大作『 ...",
+          "published_at": "2025-08-01T11:00:58Z",
+          "channel": "ためになるAppleの話",
+          "video_id": "_BcGgrQa7OY",
+          "url": "https://www.youtube.com/watch?v=_BcGgrQa7OY",
           "content_type": "その他",
           "language": "ja"
         },
@@ -197,7 +197,7 @@
     {
       "platform": "github",
       "keyword": "生成AI",
-      "timestamp": "2025-08-05T10:59:50.172449",
+      "timestamp": "2025-08-05T11:20:22.746951",
       "results": [
         {
           "name": "JeecgBoot",
@@ -230,7 +230,7 @@
           "forks": 0,
           "topics": [],
           "license": "",
-          "updated_at": "2025-08-05T10:18:54Z",
+          "updated_at": "2025-08-05T11:15:00Z",
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
@@ -400,6 +400,26 @@
           "trend_score": 0.0
         },
         {
+          "name": "auto-audio-book",
+          "description": "AI 有声书自动化生成工具",
+          "owner": "zqq-nuli",
+          "stars": 0,
+          "language": "",
+          "url": "https://github.com/zqq-nuli/auto-audio-book",
+          "created_at": "2025-03-20T11:16:01Z",
+          "forks": 0,
+          "topics": [],
+          "license": "",
+          "updated_at": "2025-08-02T18:35:16Z",
+          "size": 0,
+          "open_issues": 0,
+          "star_rate": 0.0,
+          "days_old": 138,
+          "is_trending": false,
+          "is_accelerating": false,
+          "trend_score": 18.66
+        },
+        {
           "name": "AI_NovelGenerator",
           "description": "使用ai生成多章节的长篇小说，自动衔接上下文、伏笔",
           "owner": "YILING0013",
@@ -418,26 +438,6 @@
           "is_trending": false,
           "is_accelerating": false,
           "trend_score": 14.63
-        },
-        {
-          "name": "auto-audio-book",
-          "description": "AI 有声书自动化生成工具",
-          "owner": "zqq-nuli",
-          "stars": 0,
-          "language": "",
-          "url": "https://github.com/zqq-nuli/auto-audio-book",
-          "created_at": "2025-03-20T11:16:01Z",
-          "forks": 0,
-          "topics": [],
-          "license": "",
-          "updated_at": "2025-08-02T18:35:16Z",
-          "size": 0,
-          "open_issues": 0,
-          "star_rate": 0.0,
-          "days_old": 137,
-          "is_trending": false,
-          "is_accelerating": false,
-          "trend_score": 18.74
         },
         {
           "name": "generative-ai-roadmap",
@@ -560,26 +560,6 @@
           "trend_score": 20.38
         },
         {
-          "name": "AI0x0.com",
-          "description": "一个多模态多模型通用型的全局全能 AI 查询生成桌面悬浮助手应用",
-          "owner": "mushan0x0",
-          "stars": 0,
-          "language": "",
-          "url": "https://github.com/mushan0x0/AI0x0.com",
-          "created_at": "2023-02-26T12:34:31Z",
-          "forks": 0,
-          "topics": [],
-          "license": "",
-          "updated_at": "2025-08-03T06:13:34Z",
-          "size": 0,
-          "open_issues": 0,
-          "star_rate": 0.0,
-          "days_old": 890,
-          "is_trending": false,
-          "is_accelerating": false,
-          "trend_score": 0.0
-        },
-        {
           "name": "WELearnHelper",
           "description": "显示WE Learn随行课堂题目答案；支持班级测试；自动答题；刷时长；基于生成式AI(ChatGPT)的答案生成",
           "owner": "SSmJaE",
@@ -595,6 +575,26 @@
           "open_issues": 0,
           "star_rate": 0.0,
           "days_old": 2007,
+          "is_trending": false,
+          "is_accelerating": false,
+          "trend_score": 0.0
+        },
+        {
+          "name": "AI0x0.com",
+          "description": "一个多模态多模型通用型的全局全能 AI 查询生成桌面悬浮助手应用",
+          "owner": "mushan0x0",
+          "stars": 0,
+          "language": "",
+          "url": "https://github.com/mushan0x0/AI0x0.com",
+          "created_at": "2023-02-26T12:34:31Z",
+          "forks": 0,
+          "topics": [],
+          "license": "",
+          "updated_at": "2025-08-03T06:13:34Z",
+          "size": 0,
+          "open_issues": 0,
+          "star_rate": 0.0,
+          "days_old": 890,
           "is_trending": false,
           "is_accelerating": false,
           "trend_score": 0.0
@@ -690,7 +690,7 @@
           "forks": 0,
           "topics": [],
           "license": "",
-          "updated_at": "2025-08-05T07:37:29Z",
+          "updated_at": "2025-08-05T11:18:09Z",
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
@@ -814,7 +814,7 @@
     {
       "platform": "arxiv",
       "keyword": "生成AI",
-      "timestamp": "2025-08-05T10:59:50.665416",
+      "timestamp": "2025-08-05T11:20:23.299719",
       "results": [],
       "new_keywords": [],
       "sentiment_score": 0.0,
@@ -825,7 +825,7 @@
     {
       "platform": "hackernews",
       "keyword": "生成AI",
-      "timestamp": "2025-08-05T10:59:51.184696",
+      "timestamp": "2025-08-05T11:20:24.695411",
       "results": [
         {
           "title": "Generative AI for Beginners",
@@ -1075,7 +1075,7 @@
     {
       "platform": "supabase",
       "keyword": "生成AI",
-      "timestamp": "2025-08-05T10:59:51.184806",
+      "timestamp": "2025-08-05T11:20:24.695505",
       "results": [],
       "new_keywords": [],
       "sentiment_score": 0.0,
