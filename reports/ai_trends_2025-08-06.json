@@ -6,13 +6,13 @@
       "生成AI"
     ],
     "new_keywords_found": 0,
-    "total_results": 68
+    "total_results": 70
   },
   "detailed_results": [
     {
       "platform": "web",
       "keyword": "生成AI",
-      "timestamp": "2025-08-06T17:59:17.550412",
+      "timestamp": "2025-08-06T18:28:13.292262",
       "results": [
         {
           "title": "【2025】生成AIサイトおすすめ15選！料金・無料＆登録不要・ …",
@@ -67,18 +67,30 @@
           "snippet": "generativeai.tokyo この記事では、数ある生成AIツールの中から 厳選した10ツール を「機能性」「生成精度」「使いやすさ」などの観点で徹底比較。 業務用途・個人のワークフロー・副業・マーケティングなど、 目的別のおすすめ も紹介します。",
           "url": "https://www.generativeai.tokyo/media/10tool/",
           "source": "www.generativeai.tokyo"
+        },
+        {
+          "title": "【2025年最新】生成AIサービス17種類を比較！用途別の特徴や …",
+          "snippet": "DXナビ Jun 19, 2025 · 本記事では、最新の各生成AIの機能や特徴、利用シーン、料金などをまとめました。 無料で使い始められるものや、比較的低コストのプランがある生成AIを中心に紹介し …",
+          "url": "https://dxnavi.com/ai-serivice-2025/",
+          "source": "dxnavi.com"
+        },
+        {
+          "title": "生成AIサイトのおすすめ20選【用途別に使いやすいサービスを厳 …",
+          "snippet": "sejuku.net 1 day ago · おすすめの生成AIサイトを用途別に徹底比較します。画像制作・文章作成・動画制作・音声読み上げ・合成まで、特徴や費用、使い方など分かりやすく解説しているので初心者 …",
+          "url": "https://generative-ai.sejuku.net/blog/9147/",
+          "source": "generative-ai.sejuku.net"
         }
       ],
       "new_keywords": [],
       "sentiment_score": 0.0,
       "engagement_metrics": {
-        "search_count": 9
+        "search_count": 11
       }
     },
     {
       "platform": "youtube",
       "keyword": "生成AI",
-      "timestamp": "2025-08-06T17:59:17.953298",
+      "timestamp": "2025-08-06T18:28:13.665725",
       "results": [
         {
           "title": "生成AI・ChatGPTって何なの？【超入門講座、初心者向け】",
@@ -121,22 +133,22 @@
           "language": "ja"
         },
         {
-          "title": "米誌警鐘『生成ＡＩの危険性』　GROK、GOOGLEのAIが津波や選挙で誤情報拡散の脅威！",
-          "description": "深田萌絵×森永卓郎×倉田真由美 『生きる』 https://amzn.asia/d/5VgJnST 深田萌絵新刊「EVの終焉とエネルギー利権の闘い」 ...",
-          "published_at": "2025-08-01T11:12:08Z",
-          "channel": "深田萌絵TV",
-          "video_id": "rXvN9zNUFOM",
-          "url": "https://www.youtube.com/watch?v=rXvN9zNUFOM",
-          "content_type": "その他",
-          "language": "ja"
-        },
-        {
           "title": "生成AI動画あるある",
           "description": "",
           "published_at": "2024-12-20T08:32:42Z",
           "channel": "ユウスケTV",
           "video_id": "4jzcmSHxjVw",
           "url": "https://www.youtube.com/watch?v=4jzcmSHxjVw",
+          "content_type": "その他",
+          "language": "ja"
+        },
+        {
+          "title": "米誌警鐘『生成ＡＩの危険性』　GROK、GOOGLEのAIが津波や選挙で誤情報拡散の脅威！",
+          "description": "深田萌絵×森永卓郎×倉田真由美 『生きる』 https://amzn.asia/d/5VgJnST 深田萌絵新刊「EVの終焉とエネルギー利権の闘い」 ...",
+          "published_at": "2025-08-01T11:12:08Z",
+          "channel": "深田萌絵TV",
+          "video_id": "rXvN9zNUFOM",
+          "url": "https://www.youtube.com/watch?v=rXvN9zNUFOM",
           "content_type": "その他",
           "language": "ja"
         },
@@ -191,7 +203,7 @@
     {
       "platform": "github",
       "keyword": "生成AI",
-      "timestamp": "2025-08-06T17:59:18.987969",
+      "timestamp": "2025-08-06T18:28:14.753524",
       "results": [
         {
           "name": "JeecgBoot",
@@ -808,7 +820,7 @@
     {
       "platform": "arxiv",
       "keyword": "生成AI",
-      "timestamp": "2025-08-06T17:59:19.280966",
+      "timestamp": "2025-08-06T18:28:15.265867",
       "results": [],
       "new_keywords": [],
       "sentiment_score": 0.0,
@@ -819,7 +831,7 @@
     {
       "platform": "hackernews",
       "keyword": "生成AI",
-      "timestamp": "2025-08-06T17:59:19.707936",
+      "timestamp": "2025-08-06T18:28:15.815215",
       "results": [
         {
           "title": "Generative AI for Beginners",
@@ -1069,7 +1081,7 @@
     {
       "platform": "supabase",
       "keyword": "生成AI",
-      "timestamp": "2025-08-06T17:59:19.708032",
+      "timestamp": "2025-08-06T18:28:15.815314",
       "results": [],
       "new_keywords": [],
       "sentiment_score": 0.0,
