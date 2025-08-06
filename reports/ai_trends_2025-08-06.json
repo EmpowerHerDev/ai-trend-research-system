@@ -12,7 +12,7 @@
     {
       "platform": "web",
       "keyword": "生成AI",
-      "timestamp": "2025-08-06T15:44:41.648727",
+      "timestamp": "2025-08-06T15:56:10.132008",
       "results": [
         {
           "title": "【2025】生成AIサービスおすすめ21選を一覧比較！無料・料金 …",
@@ -84,7 +84,7 @@
     {
       "platform": "youtube",
       "keyword": "生成AI",
-      "timestamp": "2025-08-06T15:44:42.159842",
+      "timestamp": "2025-08-06T15:56:10.726288",
       "results": [
         {
           "title": "生成AI・ChatGPTって何なの？【超入門講座、初心者向け】",
@@ -127,22 +127,22 @@
           "language": "ja"
         },
         {
-          "title": "生成AI動画あるある",
-          "description": "",
-          "published_at": "2024-12-20T08:32:42Z",
-          "channel": "ユウスケTV",
-          "video_id": "4jzcmSHxjVw",
-          "url": "https://www.youtube.com/watch?v=4jzcmSHxjVw",
-          "content_type": "その他",
-          "language": "ja"
-        },
-        {
           "title": "米誌警鐘『生成ＡＩの危険性』　GROK、GOOGLEのAIが津波や選挙で誤情報拡散の脅威！",
           "description": "深田萌絵×森永卓郎×倉田真由美 『生きる』 https://amzn.asia/d/5VgJnST 深田萌絵新刊「EVの終焉とエネルギー利権の闘い」 ...",
           "published_at": "2025-08-01T11:12:08Z",
           "channel": "深田萌絵TV",
           "video_id": "rXvN9zNUFOM",
           "url": "https://www.youtube.com/watch?v=rXvN9zNUFOM",
+          "content_type": "その他",
+          "language": "ja"
+        },
+        {
+          "title": "生成AI動画あるある",
+          "description": "",
+          "published_at": "2024-12-20T08:32:42Z",
+          "channel": "ユウスケTV",
+          "video_id": "4jzcmSHxjVw",
+          "url": "https://www.youtube.com/watch?v=4jzcmSHxjVw",
           "content_type": "その他",
           "language": "ja"
         },
@@ -157,12 +157,12 @@
           "language": "ja"
         },
         {
-          "title": "マイクロソフトが教える生成AI活用法",
-          "description": "飲み会1回分で行けるプログラミングスクール「TECH WORLD」 【提供中のサービス】 ・メガベンチャーエンジニアがメンター ...",
-          "published_at": "2024-06-08T09:53:36Z",
-          "channel": "TECH WORLD",
-          "video_id": "IXcu3fNEgkY",
-          "url": "https://www.youtube.com/watch?v=IXcu3fNEgkY",
+          "title": "【高橋弘樹 vs AIのプロ】使えなければ時代遅れ!? 生成AI導入で成功の鍵とは？【ReHacQ】",
+          "description": "ひろゆき、成田悠輔、後藤達也…、新たな視点で経済・社会を見つめ直すビジネス動画メディア「ReHacQ」！ 「ReHacQスキル ...",
+          "published_at": "2025-07-17T11:00:06Z",
+          "channel": "ReHacQ−リハック−【公式】",
+          "video_id": "2_1d8DR7m4g",
+          "url": "https://www.youtube.com/watch?v=2_1d8DR7m4g",
           "content_type": "その他",
           "language": "ja"
         },
@@ -177,12 +177,12 @@
           "language": "ja"
         },
         {
-          "title": "【高橋弘樹 vs AIのプロ】使えなければ時代遅れ!? 生成AI導入で成功の鍵とは？【ReHacQ】",
-          "description": "ひろゆき、成田悠輔、後藤達也…、新たな視点で経済・社会を見つめ直すビジネス動画メディア「ReHacQ」！ 「ReHacQスキル ...",
-          "published_at": "2025-07-17T11:00:06Z",
-          "channel": "ReHacQ−リハック−【公式】",
-          "video_id": "2_1d8DR7m4g",
-          "url": "https://www.youtube.com/watch?v=2_1d8DR7m4g",
+          "title": "マイクロソフトが教える生成AI活用法",
+          "description": "飲み会1回分で行けるプログラミングスクール「TECH WORLD」 【提供中のサービス】 ・メガベンチャーエンジニアがメンター ...",
+          "published_at": "2024-06-08T09:53:36Z",
+          "channel": "TECH WORLD",
+          "video_id": "IXcu3fNEgkY",
+          "url": "https://www.youtube.com/watch?v=IXcu3fNEgkY",
           "content_type": "その他",
           "language": "ja"
         }
@@ -197,7 +197,7 @@
     {
       "platform": "github",
       "keyword": "生成AI",
-      "timestamp": "2025-08-06T15:44:43.308004",
+      "timestamp": "2025-08-06T15:56:11.641686",
       "results": [
         {
           "name": "JeecgBoot",
@@ -230,7 +230,7 @@
           "forks": 0,
           "topics": [],
           "license": "",
-          "updated_at": "2025-08-06T15:21:35Z",
+          "updated_at": "2025-08-06T15:54:25Z",
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
@@ -814,7 +814,7 @@
     {
       "platform": "arxiv",
       "keyword": "生成AI",
-      "timestamp": "2025-08-06T15:44:43.872331",
+      "timestamp": "2025-08-06T15:56:12.092983",
       "results": [],
       "new_keywords": [],
       "sentiment_score": 0.0,
@@ -825,7 +825,7 @@
     {
       "platform": "hackernews",
       "keyword": "生成AI",
-      "timestamp": "2025-08-06T15:44:44.343814",
+      "timestamp": "2025-08-06T15:56:13.127712",
       "results": [
         {
           "title": "Generative AI for Beginners",
@@ -1075,7 +1075,7 @@
     {
       "platform": "supabase",
       "keyword": "生成AI",
-      "timestamp": "2025-08-06T15:44:44.343913",
+      "timestamp": "2025-08-06T15:56:13.127809",
       "results": [],
       "new_keywords": [],
       "sentiment_score": 0.0,
