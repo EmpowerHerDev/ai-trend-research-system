@@ -6,42 +6,86 @@
       "生成AI"
     ],
     "new_keywords_found": 0,
-    "total_results": 60
+    "total_results": 69
   },
   "detailed_results": [
     {
       "platform": "web",
       "keyword": "生成AI",
-      "timestamp": "2025-08-09T22:01:23.922649",
+      "timestamp": "2025-08-09T22:23:58.461172",
       "results": [
         {
-          "title": "Opaku Map - Locality - Taranaki, New Zealand - Mapcarta",
-          "snippet": "mapcarta.com Opaku Opaku is a locality in Taranaki, North Island. Opaku is situated nearby to the locality Karahaki, as well as near Hurleyville.",
-          "url": "https://www.bing.com/ck/a?!&&p=48e8ff8c1a2a0e8de9933958e8c3f88e5350677c4802c54ed06bc11180b78b06JmltdHM9MTc1NDY5NzYwMA&ptn=3&ver=2&hsh=4&fclid=3e7ad6bb-b67b-66b4-38da-c0f8b7bf67ed&psq=%e7%94%9f%e6%88%90AI+%e6%97%a5%e6%9c%ac%e8%aa%9e&u=a1aHR0cHM6Ly9tYXBjYXJ0YS5jb20vMjQ3OTM2MTI&ntb=1",
+          "title": "Remote Desktop can't connect to the remote computer",
+          "snippet": "microsoft.com Jan 15, 2025 · This computer can't connect to the remote computer. Try connecting again. If the problem continues, contact the owner of the remote computer or your network administrator. …",
+          "url": "https://www.bing.com/ck/a?!&&p=0cadab0bc3a43a05c9db883ca7ff086b223abc188f5c07de9afc6382c747433aJmltdHM9MTc1NDY5NzYwMA&ptn=3&ver=2&hsh=4&fclid=114ab189-253f-635c-0a68-a7ca245e62ed&u=a1aHR0cHM6Ly9sZWFybi5taWNyb3NvZnQuY29tL2VuLXVzL3Ryb3VibGVzaG9vdC93aW5kb3dzLXNlcnZlci9yZW1vdGUvcmVtb3RlLWRlc2t0b3AtY2Fubm90LWNvbm5lY3QtcmVtb3RlLWNvbXB1dGVy&ntb=1",
+          "source": "www.bing.com"
+        },
+        {
+          "title": "Fixing an RDP error: This computer can’t connect to the ... - TheITBros",
+          "snippet": "theitbros.com Struggling with \"This computer can't connect to the remote computer\" error? Discover fixes for RDP issues, including network checks, firewall settings, and Remote Desktop configuration …",
+          "url": "https://www.bing.com/ck/a?!&&p=74e565cbe1fce1e14a34b6b5410b9dbbc6da471baf58385c938b725241ab01daJmltdHM9MTc1NDY5NzYwMA&ptn=3&ver=2&hsh=4&fclid=114ab189-253f-635c-0a68-a7ca245e62ed&u=a1aHR0cHM6Ly90aGVpdGJyb3MuY29tL3RoaXMtY29tcHV0ZXItY2FudC1jb25uZWN0LXRvLXRoZS1yZW1vdGUtY29tcHV0ZXIv&ntb=1",
+          "source": "www.bing.com"
+        },
+        {
+          "title": "How to Fix the Remote Desktop Can’t Connect to the Remote ... - MUO",
+          "snippet": "makeuseof.com Aug 27, 2021 · If your computer can't seem to establish a connection through Remote Desktop, here are some tricks you can try to get things working once more.",
+          "url": "https://www.bing.com/ck/a?!&&p=6b372eba9dc0c6db7b3358bf777ff5ae4c388113ff1335ba5995d3e34af14976JmltdHM9MTc1NDY5NzYwMA&ptn=3&ver=2&hsh=4&fclid=114ab189-253f-635c-0a68-a7ca245e62ed&u=a1aHR0cHM6Ly93d3cubWFrZXVzZW9mLmNvbS9maXgtcmVtb3RlLWRlc2t0b3AtY2FudC1jb25uZWN0LXRvLXRoZS1yZW1vdGUtY29tcHV0ZXIv&ntb=1",
+          "source": "www.bing.com"
+        },
+        {
+          "title": "Fix: Remote Desktop can’t Connect to the Remote Computer ... - Appuals",
+          "snippet": "appuals.com Oct 19, 2024 · 2. Allow Remote Desktop Connections if not allowed This issue usually happens when Remote Desktop connections aren’t allowed on the remote system. Enabling this setting …",
+          "url": "https://www.bing.com/ck/a?!&&p=26e8a7c45eb6905d878978120baf61b04533e9552476200f5833e07a10230710JmltdHM9MTc1NDY5NzYwMA&ptn=3&ver=2&hsh=4&fclid=114ab189-253f-635c-0a68-a7ca245e62ed&u=a1aHR0cHM6Ly9hcHB1YWxzLmNvbS9maXgtcmVtb3RlLWRlc2t0b3AtY2FudC1jb25uZWN0LXRvLXRoZS1yZW1vdGUtY29tcHV0ZXItZm9yLW9uZS1vZi10aGVzZS1yZWFzb25zLw&ntb=1",
+          "source": "www.bing.com"
+        },
+        {
+          "title": "Fix Remote Desktop connection issues & errors on Windows 11/10",
+          "snippet": "thewindowsclub.com Dec 26, 2023 · This post shows multiple solutions that can help you troubleshoot & fix general Remote Desktop connection problems on Windows 11/10.",
+          "url": "https://www.bing.com/ck/a?!&&p=786fb9a98215794023d9e7af22269c69f64ed702e66bf3b09f63ed3763fc8d7fJmltdHM9MTc1NDY5NzYwMA&ptn=3&ver=2&hsh=4&fclid=114ab189-253f-635c-0a68-a7ca245e62ed&u=a1aHR0cHM6Ly93d3cudGhld2luZG93c2NsdWIuY29tL2ZpeC1yZW1vdGUtZGVza3RvcC1jb25uZWN0aW9uLWlzc3Vlcw&ntb=1",
+          "source": "www.bing.com"
+        },
+        {
+          "title": "RDP Server Is Not Connecting - 20 Fixes You Should Try",
+          "snippet": "operavps.com Jul 8, 2025 · Not being able to connect to the RDP server? In this article, you will learn 20 solutions to solve the problem of RDP Server Is Not Connecting.",
+          "url": "https://www.bing.com/ck/a?!&&p=1af50fad96e5e1846cfb97e53c4a7bfe63f2dec24caca89149a65e095257ac10JmltdHM9MTc1NDY5NzYwMA&ptn=3&ver=2&hsh=4&fclid=114ab189-253f-635c-0a68-a7ca245e62ed&u=a1aHR0cHM6Ly9vcGVyYXZwcy5jb20vZG9jcy9yZHAtY29ubmVjdGlvbi1pc3N1ZXMv&ntb=1",
+          "source": "www.bing.com"
+        },
+        {
+          "title": "Remote Desktop Connection is Not Working [9 Fixes]",
+          "snippet": "windowsreport.com Dec 11, 2023 · Remote Desktop is a useful feature, but many users reported that it is not working in Windows 10. This guide will show you how to fix it.",
+          "url": "https://www.bing.com/ck/a?!&&p=5d6bf18f43e2ad9b9b1e37945ea9fb266650547483e3e1fdaf3c0b9c1e85d854JmltdHM9MTc1NDY5NzYwMA&ptn=3&ver=2&hsh=4&fclid=114ab189-253f-635c-0a68-a7ca245e62ed&u=a1aHR0cHM6Ly93aW5kb3dzcmVwb3J0LmNvbS9yZW1vdGUtZGVza3RvcC13b250LWNvbm5lY3Qtd2luZG93cy0xMC8&ntb=1",
+          "source": "www.bing.com"
+        },
+        {
+          "title": "[SOLVED] Remote Desktop Not Working On Windows 11",
+          "snippet": "techartful.com Tired of the remote desktop not working on windows 11? Don't worry, you'll easily fix this problem after going through this helpful post.",
+          "url": "https://www.bing.com/ck/a?!&&p=0570b3a6c60f204fd88df3d94c2b15eecce272077cced965bf28123fcf3b2d38JmltdHM9MTc1NDY5NzYwMA&ptn=3&ver=2&hsh=4&fclid=114ab189-253f-635c-0a68-a7ca245e62ed&u=a1aHR0cHM6Ly90ZWNoYXJ0ZnVsLmNvbS9yZW1vdGUtZGVza3RvcC1ub3Qtd29ya2luZy1vbi13aW5kb3dzLTExLw&ntb=1",
+          "source": "www.bing.com"
+        },
+        {
+          "title": "Troubleshooting access denied and user not authorized issues in ...",
+          "snippet": "microsoft.com Jan 15, 2025 · Provides solutions to access denied and authorization issues that occur when you try to connect to a remote computer by using Remote Desktop Services.",
+          "url": "https://www.bing.com/ck/a?!&&p=7e3e124e3c349b58149f7c8f3237af581c899846467e8c685d3ff28ed56bdb1aJmltdHM9MTc1NDY5NzYwMA&ptn=3&ver=2&hsh=4&fclid=114ab189-253f-635c-0a68-a7ca245e62ed&u=a1aHR0cHM6Ly9sZWFybi5taWNyb3NvZnQuY29tL2VuLXVzL3Ryb3VibGVzaG9vdC93aW5kb3dzLXNlcnZlci9yZW1vdGUvdHJvdWJsZXNob290aW5nLWFjY2Vzcy1kZW5pZWQtYW5kLXVzZXItbm90LWF1dGhvcml6ZWQtcmRzLWlzc3Vlcw&ntb=1",
+          "source": "www.bing.com"
+        },
+        {
+          "title": "Fix: Remote Desktop Not Working in Windows 10/11 - Techbout",
+          "snippet": "techbout.com Dec 24, 2023 · A common reason for Remote Desktop not working in Windows 10/11 is due to Remote Desktop being blocked by Windows Defender Firewall.",
+          "url": "https://www.bing.com/ck/a?!&&p=9614bb9133aafa98714361958c99ffa592bd92da8c9ac712c803485df6169e9fJmltdHM9MTc1NDY5NzYwMA&ptn=3&ver=2&hsh=4&fclid=114ab189-253f-635c-0a68-a7ca245e62ed&u=a1aHR0cHM6Ly93d3cudGVjaGJvdXQuY29tL3JlbW90ZS1kZXNrdG9wLW5vdC13b3JraW5nLXdpbmRvd3MtNjI0Njcv&ntb=1",
           "source": "www.bing.com"
         }
       ],
       "new_keywords": [],
       "sentiment_score": 0.0,
       "engagement_metrics": {
-        "search_count": 1
+        "search_count": 10
       }
     },
     {
       "platform": "youtube",
       "keyword": "生成AI",
-      "timestamp": "2025-08-09T22:01:24.398242",
+      "timestamp": "2025-08-09T22:23:58.956676",
       "results": [
-        {
-          "title": "Galaxy AI | 約2億画素カメラ&amp;生成AI編集 | Galaxy Z Fold7 |  Samsung",
-          "description": "最新の Galaxy Z Fold7 なら、約2億画素のカメラで細部まで撮影し、生成AI編集も大画面で楽しめます   ▽Galaxy の最新 ...",
-          "published_at": "2025-08-04T08:45:05Z",
-          "channel": "Samsung Japan公式",
-          "video_id": "v9rijT22fS8",
-          "url": "https://www.youtube.com/watch?v=v9rijT22fS8",
-          "content_type": "ニュース",
-          "language": "ja"
-        },
         {
           "title": "生成AI・ChatGPTって何なの？【超入門講座、初心者向け】",
           "description": "今回は、生成AIやChatGPTについて、超初心者向けに分かりやすく解説します。 ▽目次 0:00 はじめに 生成AIとは？",
@@ -50,16 +94,6 @@
           "video_id": "LnbTfZCI4aE",
           "url": "https://www.youtube.com/watch?v=LnbTfZCI4aE",
           "content_type": "解説動画",
-          "language": "ja"
-        },
-        {
-          "title": "AIに嘘をつかせるな！#AI #生成AI #ChatGPT #ハルシネーション #プロンプト",
-          "description": "生成AI AI ChatGPT プロンプト 命令文 ハルシネーション Claude Genspark Copilot Gemini Adobe Firefly Grok OpenAI Google ...",
-          "published_at": "2025-05-27T10:00:17Z",
-          "channel": "Elith",
-          "video_id": "jGGgg3Cqg4Y",
-          "url": "https://www.youtube.com/watch?v=jGGgg3Cqg4Y",
-          "content_type": "その他",
           "language": "ja"
         },
         {
@@ -93,22 +127,42 @@
           "language": "ja"
         },
         {
-          "title": "AIでYouTube動画が一瞬で量産できる◎ #AI #AIツール #vrew #ChatGPT #チャットgpt #チャットジーピーティー #生成AI #自然言語処理 #shorts #short",
-          "description": "AIでYouTube動画を作って稼ぎたい。。」 そんな方へ、今回の投稿が役立ちます。 あるツールを使うことで実現します     ...",
-          "published_at": "2023-07-17T09:03:22Z",
-          "channel": "かずりりぃ【ChatGPT・AI活用 × SNS発信の裏技】",
-          "video_id": "L6O8UmKoKDg",
-          "url": "https://www.youtube.com/watch?v=L6O8UmKoKDg",
-          "content_type": "その他",
-          "language": "ja"
-        },
-        {
           "title": "人間の脳細胞🧠 VS 生成AI",
           "description": "",
           "published_at": "2024-11-02T07:10:58Z",
           "channel": "ソフトバンク公式 ビジネスチャンネル",
           "video_id": "mcbYswfiN0A",
           "url": "https://www.youtube.com/watch?v=mcbYswfiN0A",
+          "content_type": "その他",
+          "language": "ja"
+        },
+        {
+          "title": "画像から動画生成AIおすすめ5選｜初心者でも簡単！商用利用可【動画生成AI】",
+          "description": "画像から動画作成AI/動画生成AIのおすすめテンプレ5選を紹介✨ 初心者でも簡単に使えて、商用利用可能な人気のテンプレだけを ...",
+          "published_at": "2025-08-08T12:01:53Z",
+          "channel": "PowerDirector Japan - 動画編集",
+          "video_id": "ucrC5A7jANQ",
+          "url": "https://www.youtube.com/watch?v=ucrC5A7jANQ",
+          "content_type": "その他",
+          "language": "ja"
+        },
+        {
+          "title": "AIが考えた美しすぎるサザエさん #生成ai #ai実写化 #サザエさん",
+          "description": "AIがサザエさんを実写化したら…驚きの美男美女に変身！ みんなが知っているあの国民的アニメ『サザエさん』が、AIの手 ...",
+          "published_at": "2024-11-02T09:00:25Z",
+          "channel": "AIすごいぜ",
+          "video_id": "H5jQmqz9pZg",
+          "url": "https://www.youtube.com/watch?v=H5jQmqz9pZg",
+          "content_type": "その他",
+          "language": "ja"
+        },
+        {
+          "title": "リアルか動画生成AIか見分けがつかない動画④",
+          "description": "",
+          "published_at": "2025-04-27T12:36:36Z",
+          "channel": "息子はYouTuber",
+          "video_id": "U09gPyjskDg",
+          "url": "https://www.youtube.com/watch?v=U09gPyjskDg",
           "content_type": "その他",
           "language": "ja"
         },
@@ -123,12 +177,12 @@
           "language": "ja"
         },
         {
-          "title": "リアルか動画生成AIか見分けがつかない動画④",
-          "description": "",
-          "published_at": "2025-04-27T12:36:36Z",
-          "channel": "息子はYouTuber",
-          "video_id": "U09gPyjskDg",
-          "url": "https://www.youtube.com/watch?v=U09gPyjskDg",
+          "title": "【読売新聞】アメリカの生成AI事業者を提訴  記事情報を無断利用されたとして約21億円求める",
+          "description": "生成AIを使った検索サービスに記事の情報を無断で利用されたとして、読売新聞がアメリカの生成AI事業者に対し、およそ21億円 ...",
+          "published_at": "2025-08-08T13:44:55Z",
+          "channel": "日テレNEWS",
+          "video_id": "rioGEIt1W6w",
+          "url": "https://www.youtube.com/watch?v=rioGEIt1W6w",
           "content_type": "その他",
           "language": "ja"
         }
@@ -143,7 +197,7 @@
     {
       "platform": "github",
       "keyword": "生成AI",
-      "timestamp": "2025-08-09T22:01:25.156765",
+      "timestamp": "2025-08-09T22:23:59.863520",
       "results": [
         {
           "name": "JeecgBoot",
@@ -760,7 +814,7 @@
     {
       "platform": "arxiv",
       "keyword": "生成AI",
-      "timestamp": "2025-08-09T22:01:25.683699",
+      "timestamp": "2025-08-09T22:24:00.156923",
       "results": [],
       "new_keywords": [],
       "sentiment_score": 0.0,
@@ -771,7 +825,7 @@
     {
       "platform": "hackernews",
       "keyword": "生成AI",
-      "timestamp": "2025-08-09T22:01:26.061071",
+      "timestamp": "2025-08-09T22:24:00.516286",
       "results": [
         {
           "title": "Generative AI for Beginners",
@@ -1021,7 +1075,7 @@
     {
       "platform": "supabase",
       "keyword": "生成AI",
-      "timestamp": "2025-08-09T22:01:26.061178",
+      "timestamp": "2025-08-09T22:24:00.516399",
       "results": [],
       "new_keywords": [],
       "sentiment_score": 0.0,
