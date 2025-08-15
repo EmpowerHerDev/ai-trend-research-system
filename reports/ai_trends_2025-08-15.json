@@ -12,7 +12,7 @@
     {
       "platform": "web",
       "keyword": "生成AI",
-      "timestamp": "2025-08-15T16:40:48.178562",
+      "timestamp": "2025-08-15T16:55:03.646168",
       "results": [
         {
           "title": "生成AI比較｜用途・日本語対応・商用利用・API提供で選定 …",
@@ -84,7 +84,7 @@
     {
       "platform": "youtube",
       "keyword": "生成AI",
-      "timestamp": "2025-08-15T16:40:48.654667",
+      "timestamp": "2025-08-15T16:55:04.096030",
       "results": [
         {
           "title": "生成AIを「使いこなせる人」と「使いこなせない人」の違いとは？ ビジネスシーンでの具体的な活用方法も解説します",
@@ -104,6 +104,16 @@
           "video_id": "LnbTfZCI4aE",
           "url": "https://www.youtube.com/watch?v=LnbTfZCI4aE",
           "content_type": "解説動画",
+          "language": "ja"
+        },
+        {
+          "title": "AIに嘘をつかせるな！#AI #生成AI #ChatGPT #ハルシネーション #プロンプト",
+          "description": "生成AI AI ChatGPT プロンプト 命令文 ハルシネーション Claude Genspark Copilot Gemini Adobe Firefly Grok OpenAI Google ...",
+          "published_at": "2025-05-27T10:00:17Z",
+          "channel": "Elith",
+          "video_id": "jGGgg3Cqg4Y",
+          "url": "https://www.youtube.com/watch?v=jGGgg3Cqg4Y",
+          "content_type": "その他",
           "language": "ja"
         },
         {
@@ -127,16 +137,6 @@
           "language": "ja"
         },
         {
-          "title": "【警鐘】「AI生成コンテンツの本当の恐ろしさ、まだ気づいてない人が多いです。AIはもはや道具ではなく”主体”になりつつあります」【岡田斗司夫 / 切り抜き / サイコパスおじさん】",
-          "description": "最近AI生成コンテンツを見かけることが増えてきましたね… ステマやアジテーションなどに悪用されているケースも増えているの ...",
-          "published_at": "2025-08-13T15:05:49Z",
-          "channel": "サイコパスおじさん【岡田斗司夫 切り抜き】",
-          "video_id": "Pq03xor2KgM",
-          "url": "https://www.youtube.com/watch?v=Pq03xor2KgM",
-          "content_type": "その他",
-          "language": "ja"
-        },
-        {
           "title": "【誰でもできる】全人類使え！ガチで便利な生成AIの使い方 TOP3",
           "description": "最近AIの進化が速すぎて、新しいAIツールが毎日のようにリリースされています。 あなたはこう思っていませんか？ 「AI、結局 ...",
           "published_at": "2024-10-10T12:01:16Z",
@@ -147,22 +147,22 @@
           "language": "ja"
         },
         {
-          "title": "インキャの卒業写真AIで動かしてみた#AI生成#AI#AI合成#インキャ#ヨウキャ#編集",
-          "description": "",
-          "published_at": "2024-12-10T10:00:36Z",
-          "channel": "Lazy Lie Crazy【レイクレ】",
-          "video_id": "ZiBHjj9fCO8",
-          "url": "https://www.youtube.com/watch?v=ZiBHjj9fCO8",
-          "content_type": "その他",
-          "language": "ja"
-        },
-        {
           "title": "リアルか動画生成AIか見分けがつかない動画④",
           "description": "",
           "published_at": "2025-04-27T12:36:36Z",
           "channel": "息子はYouTuber",
           "video_id": "U09gPyjskDg",
           "url": "https://www.youtube.com/watch?v=U09gPyjskDg",
+          "content_type": "その他",
+          "language": "ja"
+        },
+        {
+          "title": "インキャの卒業写真AIで動かしてみた#AI生成#AI#AI合成#インキャ#ヨウキャ#編集",
+          "description": "",
+          "published_at": "2024-12-10T10:00:36Z",
+          "channel": "Lazy Lie Crazy【レイクレ】",
+          "video_id": "ZiBHjj9fCO8",
+          "url": "https://www.youtube.com/watch?v=ZiBHjj9fCO8",
           "content_type": "その他",
           "language": "ja"
         },
@@ -197,7 +197,7 @@
     {
       "platform": "github",
       "keyword": "生成AI",
-      "timestamp": "2025-08-15T16:40:49.635367",
+      "timestamp": "2025-08-15T16:55:04.957134",
       "results": [
         {
           "name": "JeecgBoot",
@@ -230,7 +230,7 @@
           "forks": 0,
           "topics": [],
           "license": "",
-          "updated_at": "2025-08-15T16:22:54Z",
+          "updated_at": "2025-08-15T16:44:13Z",
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
@@ -290,7 +290,7 @@
           "forks": 0,
           "topics": [],
           "license": "",
-          "updated_at": "2025-08-15T14:52:49Z",
+          "updated_at": "2025-08-15T16:47:55Z",
           "size": 0,
           "open_issues": 0,
           "star_rate": 0.0,
@@ -814,7 +814,7 @@
     {
       "platform": "arxiv",
       "keyword": "生成AI",
-      "timestamp": "2025-08-15T16:40:50.132611",
+      "timestamp": "2025-08-15T16:55:05.225565",
       "results": [],
       "new_keywords": [],
       "sentiment_score": 0.0,
@@ -825,7 +825,7 @@
     {
       "platform": "hackernews",
       "keyword": "生成AI",
-      "timestamp": "2025-08-15T16:40:50.660958",
+      "timestamp": "2025-08-15T16:55:05.719440",
       "results": [
         {
           "title": "Generative AI for Beginners",
@@ -1075,7 +1075,7 @@
     {
       "platform": "supabase",
       "keyword": "生成AI",
-      "timestamp": "2025-08-15T16:40:50.661051",
+      "timestamp": "2025-08-15T16:55:05.719532",
       "results": [],
       "new_keywords": [],
       "sentiment_score": 0.0,
