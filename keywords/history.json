@@ -382,5 +382,13 @@
     "execution_time": "23:55:15",
     "status": "completed",
     "new_keywords_found": 0
+  },
+  "2025-08-25": {
+    "keywords": [
+      "生成AI"
+    ],
+    "execution_time": "00:48:12",
+    "status": "completed",
+    "new_keywords_found": 0
   }
 }
